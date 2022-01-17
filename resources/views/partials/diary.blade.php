@@ -11,7 +11,7 @@
                 <p class="mt-4">As most remaining forests in Indonesia, Way Kambas National Park is also not immune to fires. Every year, the park suffers from conflagration and hazardously causes haze that affects local community living near the conservation area.</p>
             </div>
             <div class="sm:w-1/2  w-full  px-4 relative">
-                <img src="https://waykambas.restorasi.earth/upload/feature/thumbnails/id/515a6996-79d7-4d37-86c4-23f87474dc3c.jpg" alt="" class="w-full">
+                <img src="https://images.unsplash.com/photo-1602484894924-75eddc89d32b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="w-full">
                 <div @click="item1=!item1" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-4 right-6 h-5 w-5  text-black flex justify-center items-center">
                     <a class="text-sm select-none">i</a>
                 </div>
@@ -28,7 +28,7 @@
         <!-- item 2 -->
         <div x-data="{item2: false}" class="sm:py-8 py-2 flex sm:flex-row flex-col sm:space-x-6 space-x-0 space-y-6 sm:space-y-0 items-center mx-auto max-w-5xl">
             <div class="sm:w-1/2  w-full  px-4 relative">
-                <img src="https://waykambas.restorasi.earth/upload/feature/thumbnails/id/f3ee3fe6-0b47-4263-88c2-0882bbe3d335.jpg" alt="" class="w-full">
+                <img src="https://images.unsplash.com/photo-1586400792375-d6b8f82db2e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="" class="w-full">
                 <div @click="item2=!item2" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-4 right-6 h-5 w-5  text-black flex justify-center items-center">
                     <a class="text-sm select-none">i</a>
                 </div>
