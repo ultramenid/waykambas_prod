@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  }
+  .swiper-slide {
+    opacity: .25;
+  }
+  .swiper-slide-visible {
+    opacity: 1;
+  }
+  .selection-bg ::selection {
+    background-color: #79ffe1;
+}
+
+.dark .selection-bg ::selection {
+        background-color: #f81ce5;
+        color: white;
+}
