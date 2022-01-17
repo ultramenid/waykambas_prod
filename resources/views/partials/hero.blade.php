@@ -14,7 +14,7 @@
             <!-- nav -->
             <div class=" justify-between items-center sm:flex hidden">
                 <div class="flex space-x-4 items-center mb-2">
-                    <h1 class="text-4xl font-bold text-white mr-6"> <a href="index.html">Rawa Kadut</a> </h1>
+                    <h1 class="text-4xl font-bold text-white mr-6"> <a href="{{ route('index', app()->getlocale() )}}">Rawa Kadut</a> </h1>
                     <!-- about -->
                     <div class="flex-col flex" x-data="{pages:false}">
                         <a @click="pages = ! pages" @click.away="pages=false"  class=" text-white cursor-pointer inline-flex   items-center" >About

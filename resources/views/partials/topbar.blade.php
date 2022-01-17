@@ -20,7 +20,7 @@
             </button>
             <div class="mt-12 space-y-3">
                 <div class=" px-6">
-                    <a href="index.html"   class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">Home<a>
+                    <a href="{{ route('index', app()->getlocale() )}}"   class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">Home<a>
                     <p class="border-b border-gray-300"></p>
                 </div>
                 <div class=" px-6" x-data="{open1: false}">
