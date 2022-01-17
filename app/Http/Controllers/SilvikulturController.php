@@ -23,8 +23,9 @@ class SilvikulturController extends Controller
                 ->first();
     }
     public function index(){
+        $text = 'Silvikultur';
         $content = $this->getsilvikultur();
         $title = 'Silvikultur - Way kambas';
-        return view('frontend.silvikultur', compact('title', 'content'));
+        return view('frontend.silvikultur', compact('title', 'content', 'text'));
     }
 }

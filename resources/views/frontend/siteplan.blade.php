@@ -6,10 +6,9 @@
 
 @section('content')
     @include('partials.topbar')
-    @include('partials.hero')
+    @include('partials.heroPage')
      <!-- content -->
-    <div class="flex flex-col space-y-6 max-w-7xl mx-auto sm:py-32 py-12 px-4">
-        <h1 class="sm:text-7xl text-5xl font-bold sm:mb-12 mb-4">Site Plan</h1>
+    <div class="flex flex-col space-y-6 max-w-3xl mx-auto py-12 px-4">
         <div class="prose max-w-none">
             {!! $content->textsiteplan !!}
         </div>

@@ -23,8 +23,9 @@ class WaykambasController extends Controller
                 ->first();
     }
     public function index(){
+        $text = 'Way Kambas';
         $content = $this->getwaykambas();
         $title = 'About - Way kambas';
-        return view('frontend.waykambas', compact('title', 'content'));
+        return view('frontend.waykambas', compact('title', 'content', 'text'));
     }
 }

@@ -23,8 +23,9 @@ class SiteplanController extends Controller
                 ->first();
     }
     public function index(){
+        $text = 'Site Plan';
         $content = $this->getsiteplan();
         $title = 'Site Plan - Way kambas';
-        return view('frontend.siteplan', compact('title', 'content'));
+        return view('frontend.siteplan', compact('title', 'content', 'text'));
     }
 }

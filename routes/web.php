@@ -15,6 +15,7 @@ use App\Http\Controllers\SiteplanController;
 use App\Http\Controllers\WaykambasController;
 use App\Http\Controllers\WhowheareController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +27,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// //https force https
 
+URL::forceScheme('https');
 
 Route::redirect('/', '/en');
 

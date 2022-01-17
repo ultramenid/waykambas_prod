@@ -24,8 +24,9 @@ class RawakadutController extends Controller
                 ->first();
     }
     public function index(){
+        $text = 'Rawa Kadut';
         $content = $this->getrawakadut();
         $title = 'Rawa Kadut - Way kambas';
-        return view('frontend.rawakadut', compact('title', 'content'));
+        return view('frontend.rawakadut', compact('title', 'content', 'text'));
     }
 }

@@ -8,6 +8,13 @@ use Illuminate\Support\Facades\DB;
 
 class WhowheareController extends Controller
 {
+    public function geth1(){
+        if (App::getLocale() == 'id') {
+            return 'Sekilas tentang Taman Nasional Way Kambas';
+        }else{
+            return 'A glimpse of Way Kambas National Park';
+        }
+    }
     public function getSelect(){
         if (App::getLocale() == 'id') {
             return 'id, textwhoweareID as textwhoweare';
@@ -24,8 +31,9 @@ class WhowheareController extends Controller
     }
 
     public function index(){
+        $text = $this->geth1();
         $content = $this->getWhoweare();
         $title = 'Who whe are - Way kambas';
-        return view('frontend.whoweare', compact('title', 'content'));
+        return view('frontend.whoweare', compact('title', 'content', 'text'));
     }
 }
