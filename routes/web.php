@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CmsDiaryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
@@ -56,6 +57,7 @@ Route::group(['middleware' => 'checkSession'], function () {
     Route::get('/cms/pagerawakadut', [PageRawakadutController::class, 'index']);
     Route::get('/cms/pagesiteplan', [PageSiteplanController::class, 'index']);
     Route::get('/cms/pagesilvikultur', [PageSilvikulturController::class, 'index']);
+    Route::get('/cms/cmsdiary', [CmsDiaryController::class, 'index']);
 
 });
 

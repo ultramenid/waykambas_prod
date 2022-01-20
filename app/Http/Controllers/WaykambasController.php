@@ -22,8 +22,15 @@ class WaykambasController extends Controller
                 ->where('id', 1)
                 ->first();
     }
+    public function geth1(){
+        if (App::getLocale() == 'id') {
+            return 'Sekilas Way Kambas';
+        }else{
+            return 'Way Kambas at a glance';
+        }
+    }
     public function index(){
-        $text = 'Way Kambas';
+        $text = $this->geth1();
         $content = $this->getwaykambas();
         $title = 'About - Way kambas';
         return view('frontend.waykambas', compact('title', 'content', 'text'));

@@ -10,9 +10,9 @@ class WhowheareController extends Controller
 {
     public function geth1(){
         if (App::getLocale() == 'id') {
-            return 'Sekilas tentang Taman Nasional Way Kambas';
+            return 'Tentang kami';
         }else{
-            return 'A glimpse of Way Kambas National Park';
+            return 'Who we are';
         }
     }
     public function getSelect(){

@@ -18,7 +18,9 @@
                     <a href="{{url('/cms/pagesilvikultur')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">Silvikultur</a>
                 </div>
             </div>
-
+            <div class="hover:bg-gray-200 dark:hover:bg-newgray-700 py-3 px-2 rounded @if($nav == 'diary' )border-b-2  dark:border-gray-300 border-newgray-900 @endif">
+                <a href="{{url('/cms/cmsdiary')}}" class=" px-0.5 py-3  @if($nav == 'diary' )  text-newgray-900:text-gray-300 @endif hover:text-newgray-900 dark:hover:text-gray-300 cursor-pointer   " >Diary</a>
+            </div>
             <div class="hover:bg-gray-200 dark:hover:bg-newgray-700 py-3 px-2 rounded @if($nav == 'settings' )border-b-2  dark:border-gray-300 border-newgray-900 @endif">
                 <a href="{{url('/cms/settings')}}" class=" px-0.5 py-3  @if($nav == 'settings' )  text-newgray-900:text-gray-300 @endif hover:text-newgray-900 dark:hover:text-gray-300 cursor-pointer   " >Settings</a>
             </div>
