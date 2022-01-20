@@ -6,7 +6,7 @@
 </div>
 
 
-<div class="mx-4 bg-white shadow-xl p-8 text-slate-700 dark:bg-slate-800 dark:text-slate-400">
+<div class="mx-4 mt-8">
     <div class="sm:float-left float-none mr-6">
       <div class="relative w-full sm:w-44">
         <img class="object-cover rounded-lg w-full" src="https://i.ibb.co/gDX1MWG/Whats-App-Image-2022-01-20-at-4-36-18-PM.jpg" />
