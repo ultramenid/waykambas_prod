@@ -5,9 +5,9 @@
     <livewire:toastr />
 
     <div class="flex justify-between mb-6">
-        <h1 class="sm:text-4xl text-xl text-newgray-900 dark:text-newgray-300 font-semibold ">Updates</h1>
+        <h1 class="sm:text-4xl text-xl text-newgray-900 dark:text-newgray-300 font-semibold ">Green Diary</h1>
 
-        <a href="{{ url('/cms/addeksternal') }}" class="inline-flex sm:px-12 px-8 sm:py-2 py-1 rounded dark:hover:bg-newgray-900 dark:hover:border-gray-200 dark:hover:text-gray-200 hover:bg-white hover:text-newgray-900 border hover:border-newgray-900 bg-newgray-900 dark:bg-gray-100 text-newgray-100 dark:text-newgray-900">
+        <a href="{{ url('/cms/adddiary') }}" class="inline-flex sm:px-12 px-8 sm:py-2 py-1 rounded dark:hover:bg-newgray-900 dark:hover:border-gray-200 dark:hover:text-gray-200 hover:bg-white hover:text-newgray-900 border hover:border-newgray-900 bg-newgray-900 dark:bg-gray-100 text-newgray-100 dark:text-newgray-900">
             Add
         </a>
     </div>
@@ -31,19 +31,8 @@
                                     </svg>
                                 </div>
                             </th>
-                            <th class="px-4 py-3 bg-gray-50 dark:bg-opacity-10  dark:text-white text-center text-xs font-medium text-gray-500 uppercase tracking-wider  sm:w-3/12 w-0">
-                                <a class="hidden sm:block">Tags</a>
-                            </th>
                             <th class="px-4 py-3 bg-gray-50 dark:bg-opacity-10  dark:text-white text-left text-xs font-medium text-gray-500 uppercase tracking-wider  sm:w-2/12 w-0">
                                 <a class="hidden sm:block">Images</a>
-                            </th>
-                            <th wire:click='sortingField("isActive")' class=" cursor-pointer px-4 py-3 bg-gray-50 dark:bg-opacity-10  dark:text-white text-center font-medium text-gray-500 uppercase tracking-wider  sm:w-2/12 w-0">
-                                <div class=" space-x-1 hidden sm:flex justify-center">
-                                    <a class="hidden sm:block text-xs">Status</a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 my-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
-                                     </svg>
-                                 </div>
                             </th>
                             <th class=" text-right bg-gray-50 dark:bg-opacity-10  dark:text-white text-xs font-medium text-gray-500 uppercase tracking-wider w-1/12">
 
@@ -57,28 +46,14 @@
                                 <a href="{{ url('/cms/eksternal/'.$item->id) }}">{{ $item->titleEN }}</a>
                             </td>
 
-                            <td class="px-2 py-4 break-words text-sm font-bold text-newgray-700 dark:text-gray-300 text-center">
-                                <a>@php
-                                   $tags = (explode(",",$item->tags))
-                                @endphp
-                                @foreach ($tags as $key => $value)
-                                    <a class="break-all sm:inline-flex hidden justify-between  bg-gray-200 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded mt-1 py-2 px-2 focus:outline-none items-center"> {{ $value }}</a>
-                                @endforeach
-                            </td>
+
                             <td class=" py-4 break-words text-sm font-bold text-newgray-700 dark:text-gray-300  ">
                                 <div class="px-4 items-center flex ">
                                     <img src="{{ asset('/storage/thumbnail/'.$item->img) }}" alt="" class="spect-w-16 aspect-h-9  sm:block hidden bg-cover bg-center">
                                 </div>
 
                             </td>
-                            <td class=" py-4 break-words text-sm text-center font-bold text-newgray-700 dark:text-gray-300">
 
-                                    @if( $item->isActive == 1)
-                                        <a class="break-all sm:inline-flex hidden justify-between  bg-gray-200 dark:bg-newgray-700 text-green-800 rounded mt-1 py-2 px-2 focus:outline-none items-center">Published</a>
-                                    @else
-                                        <a class="break-all sm:inline-flex hidden justify-between  bg-gray-200 dark:bg-newgray-700 text-red-800 rounded mt-1 py-2 px-2 focus:outline-none items-center">Unpublish</a>
-                                    @endif
-                            </td>
                             <td colspan="2" class=" break-words text-sm text-gray-500 dark:text-gray-300 px-6">
                                 <div class="relative flex justify-end" x-data="{ open: false }">
 
