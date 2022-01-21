@@ -14,6 +14,7 @@ use App\Http\Controllers\RawakadutController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\SilvikulturController;
 use App\Http\Controllers\SiteplanController;
+use App\Http\Controllers\StoryIlalangController;
 use App\Http\Controllers\WaykambasController;
 use App\Http\Controllers\WhowheareController;
 use Illuminate\Support\Facades\Route;
@@ -44,6 +45,12 @@ Route::group(['prefix' => '{lang}'], function () {
     Route::get('/rawakadut', [RawakadutController::class, 'index'])->name('rawakadut');
     Route::get('/siteplan', [SiteplanController::class, 'index'])->name('siteplan');
     Route::get('/silvikultur', [SilvikulturController::class, 'index'])->name('silvikultur');
+
+
+
+    // story
+    Route::get('/Waykambas_tenggelam_dalam_balutan_ilalang', [StoryIlalangController::class, 'index'])->name('Waykambas_tenggelam_dalam_balutan_ilalang');
+
 
 });
 

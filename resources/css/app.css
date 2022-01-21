@@ -22,3 +22,8 @@
         color: white;
 }
 
+
+
+.swiper-button-disabled{
+    display:none;
+}

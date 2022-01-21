@@ -32,42 +32,24 @@
                     </div>
                     <div class="bg-white px-4 py-3 mb-4 flex flex-col space-y-2 rounded" x-show="open1" style="display: none !important;">
                         <a href="{{ route('whoweare', app()->getlocale() )}}" class="text-sm mr-6">Who We Are</a>
-                        <a href="{{ route('waykambas', app()->getlocale() )}}" class="text-sm mr-6">Way Kambas</a>
-                        <a href="{{ route('rawakadut', app()->getlocale() )}}" class="text-sm mr-6">Rawa Kadut</a>
-                    </div>
-                    <p class="border-b border-gray-300"></p>
-                </div>
-                <div class=" px-6" x-data="{open2: false}">
-                    <div class="flex items-center  px-4 mb-2" @click=" open2 =! open2">
-                        <a class=" text-gray-300 font-semibold uppercase">Restorasi </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <div class="bg-white px-4 py-3 mb-4 flex flex-col space-y-2 rounded" x-show="open2">
-                        <a href="{{ route('siteplan', app()->getlocale() )}}" class="text-sm mr-6">Site Plan</a>
-                        <a href="{{ route('silvikultur', app()->getlocale() )}}" class="text-sm mr-6">SilviKultur</a>
-                        <a href="#" class="text-sm mr-6">Species</a>
-                    </div>
-                    <p class="border-b border-gray-300"></p>
-                </div>
-                <div class=" px-6" x-data="{open2: false}">
-                    <div class="flex items-center  px-4 mb-2" @click=" open2 =! open2">
-                        <a class=" text-gray-300 font-semibold uppercase">Resources </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <div class="bg-white px-4 py-3 mb-4 flex flex-col space-y-2 rounded" x-show="open2">
-                        <a href="#" class="text-sm mr-6">Green Diary</a>
-                        <a href="#" class="text-sm mr-6">Feature Story</a>
-                        <a href="#" class="text-sm mr-6">Report</a>
-                        <a href="#" class="text-sm mr-6">Galery</a>
+                            <a href="{{ route('waykambas', app()->getlocale() )}}" class="text-sm mr-6">Way Kambas</a>
+                            <a href="{{ route('rawakadut', app()->getlocale() )}}" class="text-sm mr-6">Restorasi Kadut</a>
                     </div>
                     <p class="border-b border-gray-300"></p>
                 </div>
                 <div class=" px-6">
-                    <a href="#"class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">Event<a>
+                    <a href="#"class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">A-Z Restoration<a>
+                    <p class="border-b border-gray-300"></p>
+                </div><div class=" px-6">
+                    <a href="#"class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">Kebakaran<a>
+                    <p class="border-b border-gray-300"></p>
+                </div>
+                <div class=" px-6">
+                    <a href="#"class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">Story<a>
+                    <p class="border-b border-gray-300"></p>
+                </div>
+                <div class=" px-6">
+                    <a href="#"class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">Diary<a>
                     <p class="border-b border-gray-300"></p>
                 </div>
                 <div class="px-6 flex space-x-2 text-gray-300 text-sm  bottom-10 fixed z-30">
