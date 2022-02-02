@@ -11,4 +11,9 @@ class CmsDiaryController extends Controller
         $nav = 'diary';
         return view('backend.cmsdiary', compact('title','nav'));
     }
+    public function addDiary(){
+        $title = 'Add  Diary - Way kambas';
+        $nav = 'diary';
+        return view('backend.addDiary', compact('title','nav'));
+    }
 }

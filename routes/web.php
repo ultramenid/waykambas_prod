@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AdddiaryController;
+use App\Http\Controllers\AZrestorationController;
+use App\Http\Controllers\CmsAzController;
 use App\Http\Controllers\CmsDiaryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\IndexController;
@@ -43,8 +45,10 @@ Route::group(['prefix' => '{lang}'], function () {
     Route::get('/whowheare', [WhowheareController::class, 'index'])->name('whoweare');
     Route::get('/waykambas', [WaykambasController::class, 'index'])->name('waykambas');
     Route::get('/rawakadut', [RawakadutController::class, 'index'])->name('rawakadut');
-    Route::get('/siteplan', [SiteplanController::class, 'index'])->name('siteplan');
-    Route::get('/silvikultur', [SilvikulturController::class, 'index'])->name('silvikultur');
+    Route::get('/azrestoration', [AZrestorationController::class, 'index'])->name('azrestoration');
+
+    // Route::get('/siteplan', [SiteplanController::class, 'index'])->name('siteplan');
+    // Route::get('/silvikultur', [SilvikulturController::class, 'index'])->name('silvikultur');
 
 
 
@@ -66,8 +70,10 @@ Route::group(['middleware' => 'checkSession'], function () {
     Route::get('/cms/pagesiteplan', [PageSiteplanController::class, 'index']);
     Route::get('/cms/pagesilvikultur', [PageSilvikulturController::class, 'index']);
     Route::get('/cms/cmsdiary', [CmsDiaryController::class, 'index']);
-    Route::get('/cms/adddiary', [AdddiaryController::class, 'index']);
-
+    Route::get('/cms/adddiary', [CmsDiaryController::class, 'addDiary']);
+    Route::get('/cms/cmsaz', [CmsAzController::class, 'index']);
+    Route::get('/cms/addaz', [CmsAzController::class, 'addAz']);
+    Route::get('/cms/cmsaz/{id}', [CmsAzController::class, 'editAz']);
 
 });
 

@@ -45,7 +45,6 @@ class AdddiaryComponent extends Component
     }
 
     public function storediary(){
-        if($this->manualValidation()){
             if($this->manualValidation()){
                 DB::table('greendiary')->insert([
                     'publishdate' => $this->publishdate,
@@ -61,8 +60,9 @@ class AdddiaryComponent extends Component
                     'slugID' => Str::slug($this->titleID,'-'),
                     'created_at' => Carbon::now('Asia/Jakarta')
                 ]);
+                redirect()->to('/cms/cmsdiary');
             }
-        }
+
     }
 
     public function render()

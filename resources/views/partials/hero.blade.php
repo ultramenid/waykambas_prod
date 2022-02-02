@@ -42,7 +42,7 @@
                             <a href="#" class="text-sm mr-6">Species</a>
                         </div>
                     </div> --}}
-                    <a href="#" class="text-white">A-Z Restoration</a>
+                    <a href="{{ route('azrestoration', app()->getlocale() )}}" class="text-white">A-Z Restoration</a>
 
                     <a href="#" class="text-white">Kebakaran</a>
 

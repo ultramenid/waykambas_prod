@@ -9,7 +9,7 @@
 
     <div class="w-full">
         <h1 class="text-5xl text-gray-500  py-12 px-4">Feature Story</h1>
-        <div class="swiper-container h-screen w-full">
+        <div class="swiper-container sm:h-screen h-full w-full">
             <div class="swiper-wrapper" >
                 <div class="swiper-slide flex items-center " >
                     <img src="https://images.unsplash.com/photo-1613521722547-521a94c4f3a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="object-cover aspect-video ">

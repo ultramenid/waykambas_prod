@@ -1,5 +1,5 @@
     <meta name="title" content="{{$title}}"/>
-    <meta name="description" content="Save the remaining natural forest cover, including in concessions'" />
+    <meta name="description" content="Auriga activity in Way Kambas National Park to restoring greenery to the park as well as re-creating a home for the endangered wildlife that lost their habitat due to illegal logging and annual forest fire." />
     <meta name="news_keywords" content="way kambas, Auriga Nusantara, waykambas, way kambas, rawa kadut, way kambas Transparency Platform, way kambas indonesia, {{$title}}" />
     <meta name="geo.country" content="id" />
     <meta http-equiv="content-language" content="ID-id" />
@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@AURIGA_ID">
     <meta name="twitter:title" content="{{$title}}">
-    <meta name="twitter:description" content="Save the remaining natural forest cover, including in concessions'">
+    <meta name="twitter:description" content="Auriga activity in Way Kambas National Park to restoring greenery to the park as well as re-creating a home for the endangered wildlife that lost their habitat due to illegal logging and annual forest fire.">
     <meta name="twitter:creator" content="@AURIGA_ID">
     <meta name="twitter:url" content="{{url()->full()}}" />
     <!-- Twitter summary card with large image must be at least 280x150px -->
@@ -30,7 +30,7 @@
     <meta property="og:url" content="{{url()->full()}}" />
     <!-- Facebook image must be at least 600x315px -->
     {{-- <meta property="og:image" content="{{asset('assets/way kambas.jpg')}}" /> --}}
-    <meta property="og:description" content="Save the remaining natural forest cover, including in concessions'" />
+    <meta property="og:description" content="Auriga activity in Way Kambas National Park to restoring greenery to the park as well as re-creating a home for the endangered wildlife that lost their habitat due to illegal logging and annual forest fire." />
     <meta property="og:site_name" content="{{$title}}" />
     <meta property="article:tag" content="way kambas, Auriga Nusantara, waykambas, way kambas, rawa kadut, way kambas Transparency Platform, way kambas indonesia" />
 
