@@ -4,18 +4,30 @@ namespace App\Http\Livewire;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
-use Livewire\Component;
 use Intervention\Image\ImageManager;
+use Livewire\Component;
 use Livewire\WithFileUploads;
 use Illuminate\Support\Str;
 
-
-class AdddiaryComponent extends Component
+class EditdiaryComponent extends Component
 {
     use WithFileUploads;
-    public $tags = [], $urlfiles = [];
-    public $photo, $imgDescEN,$imgDescID,  $diaryEN, $diaryID, $publishdate, $titleID, $titleEN;
-    public $mediafile, $urlfile, $isactive = 1;
+    public $idDiary;
+    public $urlfiles = [];
+    public $uphoto, $imgDescEN,$imgDescID,  $diaryEN, $diaryID, $publishdate, $titleID, $titleEN, $photo;
+
+    public function mount($idDiary){
+        $this->idDiary = $idDiary;
+        $data = DB::table('greendiary')->where('id', $idDiary)->first();
+        $this->titleEN = $data->titleEN;
+        $this->titleID = $data->titleID;
+        $this->diaryEN = $data->diaryEN;
+        $this->diaryID = $data->diaryID;
+        $this->publishdate = $data->publishdate;
+        $this->imgDescEN = $data->imgDescEN;
+        $this->imgDescID = $data->imgDescID;
+        $this->uphoto = $data->img;
+    }
 
     public function uploadImage(){
         $file = $this->photo->store('public');
@@ -46,38 +58,50 @@ class AdddiaryComponent extends Component
     }
 
     public function storediary(){
-            if($this->manualValidation()){
-                DB::table('greendiary')->insert([
-                    'publishdate' => $this->publishdate,
-                    'img' => $this->uploadImage(),
+        if($this->manualValidation()){
+            if(!$this->photo){
+                $name = $this->uphoto;
+            }else{
+                try {
+                    unlink(storage_path('app/public/'.$this->uphoto));
+                     unlink(storage_path('app/public/thumbnail/'.$this->uphoto));
+                     $name=  $this->uploadImage();
+                } catch (\Throwable $th) {
+                   $name=  $this->uploadImage();
+                }
+
+            }
+            DB::table('greendiary')
+            ->where('id', $this->idDiary)
+            ->update([
+                'publishdate' => $this->publishdate,
+                    'img' => $name,
                     'imgDescEN' => $this->imgDescEN,
                     'imgDescID' => $this->imgDescID,
                     'titleEN' => $this->titleEN,
                     'titleID' => $this->titleID,
                     'diaryEN' => $this->diaryEN,
                     'diaryID' => $this->diaryID,
-                    'isActive' => $this->isactive,
+                    // 'isActive' => $this->isactive,
                     'slugEN' => Str::slug($this->titleEN,'-'),
                     'slugID' => Str::slug($this->titleID,'-'),
-                    'created_at' => Carbon::now('Asia/Jakarta')
-                ]);
-                redirect()->to('/cms/cmsdiary');
-            }
+                    'updated_at' => Carbon::now('Asia/Jakarta')
+            ]);
 
+            //passing to toast
+            $message = 'Successfully updating diary';
+            $type = 'success'; //error, success
+            $this->emit('toast',$message, $type);
+        }
     }
 
     public function render()
     {
-        return view('livewire.adddiary-component');
+        return view('livewire.editdiary-component');
     }
     public function manualValidation(){
         if($this->publishdate == ''){
             $message = 'Publish date is required';
-            $type = 'error'; //error, success
-            $this->emit('toast',$message, $type);
-            return;
-        }elseif($this->photo == ''){
-            $message = 'Image is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;

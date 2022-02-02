@@ -13,8 +13,8 @@
                 <div class=" flex flex-col space-y-3 sm:w-1/12 w-full  rounded sm:absolute relative sm:mt-10 mt-2 z-20 bg-gray-200 dark:bg-newgray-700  px-4 py-2" x-show="pages" x-cloak style="display: none !important">
                     <a  href="{{url('/cms/pagewhoweare')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">Who we are</a>
                     <a href="{{url('/cms/pagewaykambas')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">Way kambas</a>
-                    <a href="{{url('/cms/pagerawakadut')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">Rawa kadut</a>
-                    <a href="{{url('/cms/pagesilvikultur')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">Silvikultur</a>
+                    <a href="{{url('/cms/pagerawakadut')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">Restorasi kadut</a>
+                    {{-- <a href="{{url('/cms/pagesilvikultur')}}" class="hover:text-newgray-900 dark:hover:text-gray-300">Silvikultur</a> --}}
                 </div>
             </div>
             <div class="hover:bg-gray-200 dark:hover:bg-newgray-700 py-3 px-2 rounded @if($nav == 'az' )border-b-2  dark:border-gray-300 border-newgray-900 @endif">

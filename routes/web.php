@@ -74,6 +74,7 @@ Route::group(['middleware' => 'checkSession'], function () {
     Route::get('/cms/cmsaz', [CmsAzController::class, 'index']);
     Route::get('/cms/addaz', [CmsAzController::class, 'addAz']);
     Route::get('/cms/cmsaz/{id}', [CmsAzController::class, 'editAz']);
+    Route::get('/cms/diary/{id}', [CmsDiaryController::class, 'editDiary']);
 
 });
 

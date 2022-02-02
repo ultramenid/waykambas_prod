@@ -58,7 +58,7 @@
                                         x-show.transition="open"
                                         @click.away="open = false"
                                         x-cloak style="display: none !important">
-                                        <a data-turbolinks="false" href="{{ url('/cms/eksternal/'.$item->id) }}"><li class="block hover:bg-gray-200 cursor-pointer py-1 mt-2 px-4 dark:text-gray-500" @click.away="open = false">Edit</li></a>
+                                        <a data-turbolinks="false" href="{{ url('/cms/cmsaz/'.$item->id) }}"><li class="block hover:bg-gray-200 cursor-pointer py-1 mt-2 px-4 dark:text-gray-500" @click.away="open = false">Edit</li></a>
                                         <li class="block hover:bg-gray-200 cursor-pointer  py-1 mb-2 px-4 dark:text-gray-500"  wire:click="delete({{ $item->id }})" @click.away="open = false">Delete</li>
                                     </ul>
                                 </div>

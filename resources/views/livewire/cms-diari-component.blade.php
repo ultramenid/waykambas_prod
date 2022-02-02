@@ -43,7 +43,7 @@
                         @forelse ($diary as $item)
                         <tr>
                             <td class="px-6 py-4 break-words text-sm font-bold text-newgray-700 dark:text-gray-300">
-                                <a href="{{ url('/cms/eksternal/'.$item->id) }}">{{ $item->titleEN }}</a>
+                                <a href="{{ url('/cms/diary/'.$item->id) }}">{{ $item->titleEN }}</a>
                             </td>
 
 
@@ -68,7 +68,7 @@
                                         x-show.transition="open"
                                         @click.away="open = false"
                                         x-cloak style="display: none !important">
-                                        <a data-turbolinks="false" href="{{ url('/cms/eksternal/'.$item->id) }}"><li class="block hover:bg-gray-200 cursor-pointer py-1 mt-2 px-4 dark:text-gray-500" @click.away="open = false">Edit</li></a>
+                                        <a data-turbolinks="false" href="{{ url('/cms/diary/'.$item->id) }}"><li class="block hover:bg-gray-200 cursor-pointer py-1 mt-2 px-4 dark:text-gray-500" @click.away="open = false">Edit</li></a>
                                         <li class="block hover:bg-gray-200 cursor-pointer  py-1 mb-2 px-4 dark:text-gray-500"  wire:click="delete({{ $item->id }})" @click.away="open = false">Delete</li>
                                     </ul>
                                 </div>
