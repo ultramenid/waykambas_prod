@@ -48,23 +48,14 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-8 w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6 ">
-                <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4">Media uploader</h1>
-                <p class="text-newgray-700 dark:text-gray-500  italic text-xs mb-4">upload and get url</p>
-                <div class="flex items-center justify-center px-2 py-2 border border-dashed border-gray-400 rounded">
-                    <label class="cursor-pointer">
-                        <p wire:loading.remove wire:target="mediafile" class="text-xs text-center text-gray-400 ">Clik to upload</p>
-                        <input type='file' class="hidden" wire:model='mediafile' accept="" />
-                        <p wire:loading wire:target="mediafile" class="text-xs text-center text-gray-400">Uploding. . . . . </p>
-                    </label>
-                </div>
-
-                    @if ($urlfiles)
-                        <p class="text-newgray-700 dark:text-gray-500  italic text-xs mt-6">file url:</p>
-                        @foreach ($urlfiles as $key => $value)
-                            <a class="break-all inline-flex justify-between  mr-4 mt-2 bg-gray-200 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded py-2 px-2 focus:outline-none items-center"> {{ $value }}</a>
-                        @endforeach
-                    @endif
+            <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6 ">
+                <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4">Status</h1>
+                <label class="w-full"  >
+                    <select wire:model='isactive' class=" mb-6 bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20">
+                        <option value="1">Publish</option>
+                        <option value="0">Non Publish</option>
+                    </select>
+                </label>
             </div>
         </div>
         <div class="sm:col-span-9 col-span-12 " >
@@ -105,44 +96,12 @@
                 </div>
 
 
-                <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6">
-                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-6">Content </h1>
-                    <div class="w-full py-2 mb-6">
-                        <div class="w-full border border-gray-300 dark:border-opacity-20 rounded"
-                            wire:ignore
-                            x-init="
-                            tinymce.init({
-                                selector: '#diaryEN',
-                                mobile: {
-                                        menubar: 'file edit view insert format',
-                                },
-                                height : 500,
-                                height : '40vh',
-                                relative_urls : false,
-                                    remove_script_host : false,
-                                    convert_urls : true,
-
-                                plugins: [
-                                        'advlist autolink textcolor link image lists charmap print preview hr anchor pagebreak',
-                                        'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
-                                        'table emoticons template paste help'
-                                        ],
-                                        toolbar: 'fullscreen preview bold italic underline forecolor backcolor |bullist numlist alignleft aligncenter alignright alignjustify outdent indent|  fontselect fontsizeselect formatselect   | ' +
-                                                ' | link image | print  media  | ' +
-                                                ' backcolor emoticons |undo redo  help',
-                                        menu: {
-                                        favs: {title: 'My Favorites', items: 'code visualaid | searchreplace | emoticons'}
-                                        },
-                                        menubar: ' file edit view insert format tools table help',
-                                        setup: function(editor) {
-                                            editor.on('change', function(e) {
-                                                @this.set('diaryEN', editor.getContent());
-                                        });
-                                    }
-                            });">
-                            <textarea rows="20" id="diaryEN" name="diaryEN"  wire:model.defer='diaryEN' required></textarea>
-                        </div>
-                    </div>
+                <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6" x-data="{ count1:0}">
+                    <h1 class="text-2xl font-semibold mt-4  text-newbg-newgray-900 dark:text-gray-300 mb-6">Diary Description</h1>
+                    <textarea maxlength="160" x-ref="countme1" x-on:keyup="count1 = $refs.countme1.value.length"  rows="6"  wire:model.defer='diaryEN' required class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20" placeholder="Description. . ."></textarea>
+                    <div class="flex justify-end text-newgray-700 dark:text-gray-500  italic text-xs">
+                        <span x-html="count1"></span> / <span  x-html="$refs.countme1.maxLength"></span>
+                      </div>
                 </div>
             </div>
 
@@ -165,44 +124,12 @@
 
 
 
-                <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6">
-                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-6">Content </h1>
-                    <div class="w-full py-2 mb-6">
-                        <div class="w-full border border-gray-300 dark:border-opacity-20 rounded"
-                            wire:ignore
-                            x-init="
-                            tinymce.init({
-                                selector: '#diaryID',
-                                mobile: {
-                                        menubar: 'file edit view insert format',
-                                },
-                                height : 500,
-                                height : '40vh',
-                                relative_urls : false,
-                                    remove_script_host : false,
-                                    convert_urls : true,
-
-                                plugins: [
-                                        'advlist autolink textcolor link image lists charmap print preview hr anchor pagebreak',
-                                        'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
-                                        'table emoticons template paste help'
-                                        ],
-                                        toolbar: 'fullscreen preview bold italic underline forecolor backcolor |bullist numlist alignleft aligncenter alignright alignjustify outdent indent|  fontselect fontsizeselect formatselect   | ' +
-                                                ' | link image | print  media  | ' +
-                                                ' backcolor emoticons |undo redo  help',
-                                        menu: {
-                                        favs: {title: 'My Favorites', items: 'code visualaid | searchreplace | emoticons'}
-                                        },
-                                        menubar: ' file edit view insert format tools table help',
-                                        setup: function(editor) {
-                                            editor.on('change', function(e) {
-                                                @this.set('diaryID', editor.getContent());
-                                        });
-                                    }
-                            });">
-                            <textarea rows="20" id="diaryID" name="diaryID"  wire:model.defer='diaryID' required></textarea>
-                        </div>
-                    </div>
+                <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6" x-data="{desc1:0}">
+                    <h1 class="text-2xl font-semibold mt-4  text-newbg-newgray-900 dark:text-gray-300 mb-6">Diary Description</h1>
+                    <textarea maxlength="160" x-ref="countme1" x-on:keyup="desc1 = $refs.countme1.value.length"  rows="6"  wire:model.defer='diaryID' required class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20" placeholder="Description. . ."></textarea>
+                    <div class="flex justify-end text-newgray-700 dark:text-gray-500  italic text-xs">
+                        <span x-html="desc1"></span> / <span  x-html="$refs.countme1.maxLength"></span>
+                      </div>
                 </div>
             </div>
 

@@ -7,17 +7,17 @@
         <div x-data="{ item1: false }" class="sm:py-8 py-2 flex sm:flex-row flex-col sm:space-x-6 space-x-0 space-y-6 sm:space-y-0 items-center mx-auto max-w-5xl">
             <div class="sm:w-1/2 w-full px-4">
                 <p class="mb-6 text-sm"> Dec 14, 2020</p>
-                <h1 class="sm:text-4xl text-2xl font-semibold">Fire Control</h1>
-                <p class="mt-4">As most remaining forests in Indonesia, Way Kambas National Park is also not immune to fires. Every year, the park suffers from conflagration and hazardously causes haze that affects local community living near the conservation area.</p>
+                <h1 class="sm:text-4xl text-2xl font-semibold">{{ $diary[0]->title }}</h1>
+                <p class="mt-4">{{$diary[0]->diary}}</p>
             </div>
             <div class="sm:w-1/2  w-full  px-4 relative">
-                <img src="https://images.unsplash.com/photo-1602484894924-75eddc89d32b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="w-full">
+                <img src="{{asset('storage/'.$diary[0]->img)}}" alt="" class="w-full">
                 <div @click="item1=!item1" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-4 right-6 h-5 w-5  text-black flex justify-center items-center">
                     <a class="text-sm select-none">i</a>
                 </div>
                 <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-700 opacity-80" x-show="item1">
                     <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                        Ini adalah text boongan, jangan lupa diganti. Bisa kena api kita !
+                        {{$diary[0]->imgDesc}}
                     </div>
                 </div>
             </div>
@@ -28,20 +28,20 @@
         <!-- item 2 -->
         <div x-data="{item2: false}" class="sm:py-8 py-2 flex sm:flex-row flex-col sm:space-x-6 space-x-0 space-y-6 sm:space-y-0 items-center mx-auto max-w-5xl">
             <div class="sm:w-1/2  w-full  px-4 relative">
-                <img src="https://images.unsplash.com/photo-1586400792375-d6b8f82db2e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="" class="w-full">
+                <img src="{{asset('storage/'.$diary[1]->img)}}" alt="" class="w-full">
                 <div @click="item2=!item2" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-4 right-6 h-5 w-5  text-black flex justify-center items-center">
                     <a class="text-sm select-none">i</a>
                 </div>
                 <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-700 opacity-80" x-show="item2">
                     <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                        Ini adalah text boongan, jangan lupa diganti. Bisa kena api kita !
+                        {{ $diary[1]->imgDesc }}
                     </div>
                 </div>
             </div>
             <div class="sm:w-1/2 w-full px-4">
                 <p class="mb-6 text-sm"> Dec 14, 2020</p>
-                <h1 class="sm:text-4xl text-2xl font-semibold">A-Z Way Kambas Restoration</h1>
-                <p class="mt-4">Auriga’s reforestation activity in Way Kambas National Park has been running since 2013. The program itself is an effort to bring back greenery to the park as well as re-creating a home for the endangered wildlife roaming surround the park, such as tiger, rhinoceros, and elephant, that lost their habitat due to illegal logging and annual forest fire.</p>
+                <h1 class="sm:text-4xl text-2xl font-semibold">{{ $diary[1]->title }}</h1>
+                <p class="mt-4">{{ $diary[1]->title }}</p>
             </div>
 
         </div>

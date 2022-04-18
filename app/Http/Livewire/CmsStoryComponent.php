@@ -2,27 +2,24 @@
 
 namespace App\Http\Livewire;
 
-use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;
-use Intervention\Image\ImageManager;
-use Livewire\WithFileUploads;
-use Illuminate\Support\Str;
 
-
-class CmsDiariComponent extends Component
+class CmsStoryComponent extends Component
 {
     public $deleteName, $deleteID, $deleter;
     public $dataField = 'titleEN', $dataOrder = 'asc', $paginate = 10, $search = '';
+
+
 
     public function sortingField($field){
         $this->dataField = $field;
         $this->dataOrder = $this->dataOrder == 'asc' ? 'desc' : 'asc';
     }
-    public function getDiary(){
+    public function getStory(){
         $sc = '%' . $this->search . '%';
         try {
-            return  DB::table('greendiary')
+            return  DB::table('featurestory')
                         ->select('id', 'titleEN', 'img', 'isActive')
                         ->where('titleEN', 'like', $sc)
                         ->orderBy($this->dataField, $this->dataOrder)
@@ -39,14 +36,14 @@ class CmsDiariComponent extends Component
     public function delete($id){
 
         //load data to delete function
-        $dataDelete = DB::table('greendiary')->where('id', $id)->first();
+        $dataDelete = DB::table('featurestory')->where('id', $id)->first();
         $this->deleteName = $dataDelete->titleEN;
         $this->deleteID = $dataDelete->id;
 
         $this->deleter = true;
     }
     public function deleting($id){
-        DB::table('greendiary')->where('id', $id)->delete();
+        DB::table('featurestory')->where('id', $id)->delete();
 
         $message = 'Successfully deleting internal news';
         $type = 'success'; //error, success
@@ -55,10 +52,10 @@ class CmsDiariComponent extends Component
 
         $this->closeDelete();
     }
+
     public function render()
     {
-        $diary = $this->getDiary();
-        return view('livewire.cms-diari-component', compact('diary'));
+        $story = $this->getStory();
+        return view('livewire.cms-story-component', compact('story'));
     }
-
 }

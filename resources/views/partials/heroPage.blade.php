@@ -34,13 +34,13 @@
                     <a href="#" class="text-white">Kebakaran</a>
 
                     <a href="#" class="text-white">Story</a>
-                    <a href="#" class="text-white">Diary</a>
+                    <a href="{{ route('diary', app()->getlocale() )}}" class="text-white">Diary</a>
                 </div>
                 <div class="flex space-x-4 items-center">
                     <button class="bg-green-600 px-8  text-sm font-bold py-1 text-white hover:bg-white border border-green-600 hover:text-green-600">Donate</button>
                 </div>
             </div>
-            <h1 class="text-6xl font-bold text-white text-center mx-auto py-32 max-w-3xl">{{ $text }}</h1>
+            <h1 class="text-6xl font-bold text-white text-center mx-auto py-24 max-w-3xl">{{ $text }}</h1>
         </div>
     </div>
 

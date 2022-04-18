@@ -5,9 +5,9 @@
     <livewire:toastr />
 
     <div class="flex justify-between mb-6">
-        <h1 class="sm:text-4xl text-xl text-newgray-900 dark:text-newgray-300 font-semibold ">Green Diary</h1>
+        <h1 class="sm:text-4xl text-xl text-newgray-900 dark:text-newgray-300 font-semibold ">Feature Story</h1>
 
-        <a href="{{ url('/cms/adddiary') }}" class="inline-flex sm:px-12 px-8 sm:py-2 py-1 rounded dark:hover:bg-newgray-900 dark:hover:border-gray-200 dark:hover:text-gray-200 hover:bg-white hover:text-newgray-900 border hover:border-newgray-900 bg-newgray-900 dark:bg-gray-100 text-newgray-100 dark:text-newgray-900">
+        <a href="{{ url('/cms/addstory') }}" class="inline-flex sm:px-12 px-8 sm:py-2 py-1 rounded dark:hover:bg-newgray-900 dark:hover:border-gray-200 dark:hover:text-gray-200 hover:bg-white hover:text-newgray-900 border hover:border-newgray-900 bg-newgray-900 dark:bg-gray-100 text-newgray-100 dark:text-newgray-900">
             Add
         </a>
     </div>
@@ -48,10 +48,10 @@
                         </tr>
                     </thead>
                     <tbody class="bg-white dark:bg-opacity-20 dark:text-white divide-y divide-gray-200 dark:divide-gray-900">
-                        @forelse ($diary as $item)
+                        @forelse ($story as $item)
                         <tr>
                             <td class="px-6 py-4 break-words text-sm font-bold text-newgray-700 dark:text-gray-300">
-                                <a href="{{ url('/cms/diary/'.$item->id) }}">{{ $item->titleEN }}</a>
+                                <a href="{{ url('/cms/story/'.$item->id) }}">{{ $item->titleEN }}</a>
                             </td>
 
 
@@ -83,7 +83,7 @@
                                         x-show.transition="open"
                                         @click.away="open = false"
                                         x-cloak style="display: none !important">
-                                        <a data-turbolinks="false" href="{{ url('/cms/diary/'.$item->id) }}"><li class="block hover:bg-gray-200 cursor-pointer py-1 mt-2 px-4 dark:text-gray-500" @click.away="open = false">Edit</li></a>
+                                        <a data-turbolinks="false" href="{{ url('/cms/story/'.$item->id) }}"><li class="block hover:bg-gray-200 cursor-pointer py-1 mt-2 px-4 dark:text-gray-500" @click.away="open = false">Edit</li></a>
                                         <li class="block hover:bg-gray-200 cursor-pointer  py-1 mb-2 px-4 dark:text-gray-500"  wire:click="delete({{ $item->id }})" @click.away="open = false">Delete</li>
                                     </ul>
                                 </div>
@@ -101,7 +101,7 @@
             </div>
         </div>
     </div>
-    @if ($diary)
-    {{ $diary->links('livewire.pagination') }}
+    @if ($story)
+    {{ $story->links('livewire.pagination') }}
     @endif
 </div>

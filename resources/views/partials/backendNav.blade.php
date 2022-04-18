@@ -20,6 +20,9 @@
             <div class="hover:bg-gray-200 dark:hover:bg-newgray-700 py-3 px-2 rounded @if($nav == 'az' )border-b-2  dark:border-gray-300 border-newgray-900 @endif">
                 <a href="{{url('/cms/cmsaz')}}" class=" px-0.5 py-3  @if($nav == 'az' )  text-newgray-900:text-gray-300 @endif hover:text-newgray-900 dark:hover:text-gray-300 cursor-pointer   " >A-Z Restoration</a>
             </div>
+            <div class="hover:bg-gray-200 dark:hover:bg-newgray-700 py-3 px-2 rounded @if($nav == 'story' )border-b-2  dark:border-gray-300 border-newgray-900 @endif">
+                <a href="{{url('/cms/cmsstory')}}" class=" px-0.5 py-3  @if($nav == 'story' )  text-newgray-900:text-gray-300 @endif hover:text-newgray-900 dark:hover:text-gray-300 cursor-pointer   " >Story</a>
+            </div>
             <div class="hover:bg-gray-200 dark:hover:bg-newgray-700 py-3 px-2 rounded @if($nav == 'diary' )border-b-2  dark:border-gray-300 border-newgray-900 @endif">
                 <a href="{{url('/cms/cmsdiary')}}" class=" px-0.5 py-3  @if($nav == 'diary' )  text-newgray-900:text-gray-300 @endif hover:text-newgray-900 dark:hover:text-gray-300 cursor-pointer   " >Diary</a>
             </div>

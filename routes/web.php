@@ -4,7 +4,9 @@ use App\Http\Controllers\AdddiaryController;
 use App\Http\Controllers\AZrestorationController;
 use App\Http\Controllers\CmsAzController;
 use App\Http\Controllers\CmsDiaryController;
+use App\Http\Controllers\CmsStoryController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DiaryController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PageRawakadutController;
@@ -34,7 +36,7 @@ use Illuminate\Support\Facades\URL;
 */
 // //https force https
 
-URL::forceScheme('https');
+// URL::forceScheme('https');
 
 Route::redirect('/', '/en');
 
@@ -46,6 +48,7 @@ Route::group(['prefix' => '{lang}'], function () {
     Route::get('/waykambas', [WaykambasController::class, 'index'])->name('waykambas');
     Route::get('/rawakadut', [RawakadutController::class, 'index'])->name('rawakadut');
     Route::get('/azrestoration', [AZrestorationController::class, 'index'])->name('azrestoration');
+    Route::get('/diary', [DiaryController::class, 'index'])->name('diary');
 
     // Route::get('/siteplan', [SiteplanController::class, 'index'])->name('siteplan');
     // Route::get('/silvikultur', [SilvikulturController::class, 'index'])->name('silvikultur');
@@ -75,6 +78,9 @@ Route::group(['middleware' => 'checkSession'], function () {
     Route::get('/cms/addaz', [CmsAzController::class, 'addAz']);
     Route::get('/cms/cmsaz/{id}', [CmsAzController::class, 'editAz']);
     Route::get('/cms/diary/{id}', [CmsDiaryController::class, 'editDiary']);
+    Route::get('/cms/cmsstory', [CmsStoryController::class, 'index']);
+    Route::get('/cms/addstory', [CmsStoryController::class, 'addStory']);
+    Route::get('/cms/story/{id}', [CmsStoryController::class, 'editStory']);
 
 });
 

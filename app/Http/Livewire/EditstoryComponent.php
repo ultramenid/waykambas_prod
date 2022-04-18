@@ -7,27 +7,24 @@ use Illuminate\Support\Facades\DB;
 use Intervention\Image\ImageManager;
 use Livewire\Component;
 use Livewire\WithFileUploads;
-use Illuminate\Support\Str;
 
-class EditdiaryComponent extends Component
+class EditstoryComponent extends Component
 {
     use WithFileUploads;
-    public $idDiary;
-    public $urlfiles = [];
-    public $uphoto, $imgDescEN,$imgDescID,  $diaryEN, $diaryID, $publishdate, $titleID, $titleEN, $photo, $isactive;
+    public $idStory;
+    public $photo, $imgDescEN,$imgDescID, $publishdate, $titleID, $titleEN, $slug, $uphoto, $isactive;
 
-    public function mount($idDiary){
-        $this->idDiary = $idDiary;
-        $data = DB::table('greendiary')->where('id', $idDiary)->first();
+    public function mount($idStory){
+        $this->idStory = $idStory;
+        $data = DB::table('featurestory')->where('id', $idStory)->first();
         $this->titleEN = $data->titleEN;
         $this->titleID = $data->titleID;
-        $this->diaryEN = $data->diaryEN;
-        $this->diaryID = $data->diaryID;
-        $this->isactive = $data->isActive;
+        $this->slug = $data->slug;
         $this->publishdate = $data->publishdate;
         $this->imgDescEN = $data->imgDescEN;
         $this->imgDescID = $data->imgDescID;
-        $this->uphoto = $data->img;
+        $this->uphoto =  $data->img ;
+        $this->isactive = $data->isActive;
     }
 
     public function uploadImage(){
@@ -58,7 +55,7 @@ class EditdiaryComponent extends Component
         }
     }
 
-    public function storediary(){
+    public function storestory(){
         if($this->manualValidation()){
             if(!$this->photo){
                 $name = $this->uphoto;
@@ -70,10 +67,8 @@ class EditdiaryComponent extends Component
                 } catch (\Throwable $th) {
                    $name=  $this->uploadImage();
                 }
-
             }
-            DB::table('greendiary')
-            ->where('id', $this->idDiary)
+            DB::table('featurestory')->where('id', $this->idStory)
             ->update([
                 'publishdate' => $this->publishdate,
                     'img' => $name,
@@ -81,25 +76,22 @@ class EditdiaryComponent extends Component
                     'imgDescID' => $this->imgDescID,
                     'titleEN' => $this->titleEN,
                     'titleID' => $this->titleID,
-                    'diaryEN' => $this->diaryEN,
-                    'diaryID' => $this->diaryID,
                     'isActive' => $this->isactive,
-                    'slugEN' => Str::slug($this->titleEN,'-'),
-                    'slugID' => Str::slug($this->titleID,'-'),
+                    'slug' => $this->slug,
                     'updated_at' => Carbon::now('Asia/Jakarta')
             ]);
-
-            //passing to toast
-            $message = 'Successfully updating diary';
-            $type = 'success'; //error, success
-            $this->emit('toast',$message, $type);
+             //passing to toast
+             $message = 'Successfully updating story';
+             $type = 'success'; //error, success
+             $this->emit('toast',$message, $type);
         }
     }
 
     public function render()
     {
-        return view('livewire.editdiary-component');
+        return view('livewire.editstory-component');
     }
+
     public function manualValidation(){
         if($this->publishdate == ''){
             $message = 'Publish date is required';
@@ -111,8 +103,8 @@ class EditdiaryComponent extends Component
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
-        }elseif(strlen($this->imgDescEN) > 160){
-            $message = 'Image description  max limit 160 character';
+        }elseif(strlen($this->imgDescEN) > 250){
+            $message = 'Image description  max limit 250 character';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
@@ -121,8 +113,8 @@ class EditdiaryComponent extends Component
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
-        }elseif(strlen($this->imgDescID) > 160){
-            $message = 'Image description  max limit 160 character';
+        }elseif(strlen($this->imgDescID) > 250){
+            $message = 'Image description  max limit 250 character';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
@@ -146,16 +138,10 @@ class EditdiaryComponent extends Component
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
-        }elseif($this->diaryEN == ''){
-            $message = 'Content diary english is required';
+        }elseif($this->slug == ''){
+            $message = 'Slug is required';
             $type = 'error'; //error, success
-            $this->emit('toast',$message, $type);
-            return;
-        }elseif($this->diaryID == ''){
-            $message = 'Content diary Indonesia is required';
-            $type = 'error'; //error, success
-            $this->emit('toast',$message, $type);
-            return;
+            $this->emit('toast', $message, $type);
         }
         return true;
     }
