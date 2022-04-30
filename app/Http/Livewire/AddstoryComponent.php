@@ -23,7 +23,7 @@ class AddstoryComponent extends Component
 
         // https://image.intervention.io/v2/api/fit
         //crop the best fitting 1:1 ratio (200x200) and resize to 200x200 pixel
-        $image = $manager->make('storage/files/photos/'.$foto)->fit(600, 360);
+        $image = $manager->make('storage/'.$foto)->fit(600, 360);
         $image->save('storage/files/photos/thumbnail/'.$foto);
         return $foto;
     }
