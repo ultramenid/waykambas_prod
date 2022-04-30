@@ -62,9 +62,6 @@
                             x-init="
                             tinymce.init({
                                 selector: '#azEN',
-                                mobile: {
-                                        menubar: 'file edit view insert format',
-                                },
                                 height : 500,
                                 height : '40vh',
                                 relative_urls : false,
@@ -76,6 +73,7 @@
                                         'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
                                         'table emoticons template paste help'
                                         ],
+
                                         toolbar: 'fullscreen preview bold italic underline forecolor backcolor |bullist numlist alignleft aligncenter alignright alignjustify outdent indent|  fontselect fontsizeselect formatselect   | ' +
                                                 ' | link image | print  media  | ' +
                                                 ' backcolor emoticons |undo redo  help',
@@ -83,11 +81,38 @@
                                         favs: {title: 'My Favorites', items: 'code visualaid | searchreplace | emoticons'}
                                         },
                                         menubar: ' file edit view insert format tools table help',
+
+                                        file_picker_callback : function(callback, value, meta) {
+                                            var x = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+                                            var y = window.innerHeight|| document.documentElement.clientHeight|| document.getElementsByTagName('body')[0].clientHeight;
+
+                                            var cmsURL = '/cms/' + 'laravel-filemanager?editor=' + meta.fieldname;
+                                            if (meta.filetype == 'image') {
+                                                cmsURL = cmsURL + '&type=Images';
+                                            } else {
+                                                cmsURL = cmsURL + '&type=Files';
+                                            }
+
+                                            tinyMCE.activeEditor.windowManager.openUrl({
+                                                url : cmsURL,
+                                                title : 'Filemanager',
+                                                width : x * 0.8,
+                                                height : y * 0.8,
+                                                resizable : 'yes',
+                                                close_previous : 'no',
+                                                onMessage: (api, message) => {
+                                                callback(message.content);
+                                                }
+
+                                            });
+                                        },
                                         setup: function(editor) {
                                             editor.on('change', function(e) {
                                                 @this.set('azEN', editor.getContent());
                                         });
+
                                     }
+
                             });">
                             <textarea rows="20" id="azEN" name="azEN"  wire:model.defer='azEN' required></textarea>
                         </div>
@@ -116,9 +141,6 @@
                             x-init="
                             tinymce.init({
                                 selector: '#azID',
-                                mobile: {
-                                        menubar: 'file edit view insert format',
-                                },
                                 height : 500,
                                 height : '40vh',
                                 relative_urls : false,
@@ -130,6 +152,7 @@
                                         'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
                                         'table emoticons template paste help'
                                         ],
+
                                         toolbar: 'fullscreen preview bold italic underline forecolor backcolor |bullist numlist alignleft aligncenter alignright alignjustify outdent indent|  fontselect fontsizeselect formatselect   | ' +
                                                 ' | link image | print  media  | ' +
                                                 ' backcolor emoticons |undo redo  help',
@@ -137,11 +160,38 @@
                                         favs: {title: 'My Favorites', items: 'code visualaid | searchreplace | emoticons'}
                                         },
                                         menubar: ' file edit view insert format tools table help',
+
+                                        file_picker_callback : function(callback, value, meta) {
+                                            var x = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+                                            var y = window.innerHeight|| document.documentElement.clientHeight|| document.getElementsByTagName('body')[0].clientHeight;
+
+                                            var cmsURL = '/cms/' + 'laravel-filemanager?editor=' + meta.fieldname;
+                                            if (meta.filetype == 'image') {
+                                                cmsURL = cmsURL + '&type=Images';
+                                            } else {
+                                                cmsURL = cmsURL + '&type=Files';
+                                            }
+
+                                            tinyMCE.activeEditor.windowManager.openUrl({
+                                                url : cmsURL,
+                                                title : 'Filemanager',
+                                                width : x * 0.8,
+                                                height : y * 0.8,
+                                                resizable : 'yes',
+                                                close_previous : 'no',
+                                                onMessage: (api, message) => {
+                                                callback(message.content);
+                                                }
+
+                                            });
+                                        },
                                         setup: function(editor) {
                                             editor.on('change', function(e) {
                                                 @this.set('azID', editor.getContent());
                                         });
+
                                     }
+
                             });">
                             <textarea rows="20" id="azID" name="azID"  wire:model.defer='azID' required></textarea>
                         </div>

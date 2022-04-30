@@ -33,7 +33,7 @@ class CmsAzComponent extends Component
     public function deleting($id){
         DB::table('azrestoration')->where('id', $id)->delete();
 
-        $message = 'Successfully deleting internal news';
+        $message = 'Successfully deleting AZ Restoration';
         $type = 'success'; //error, success
         $this->emit('toast',$message, $type);
 

@@ -20,7 +20,7 @@
                     <div class="sm:w-3/12 w-full sm:mr-8 mr-0 mb-4 " x-data="{item2:false}">
                         {{-- image --}}
                         <div class="relative mt-4">
-                            <img src="{{asset('storage/'.$list->img)}}" alt="" class="object-cover object-top w-full h-44">
+                            <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="" class="object-cover object-top w-full h-44">
                             <div @click="item2=!item2" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-2 right-3 h-4 w-4  text-black flex justify-center items-center">
                                 <a class="text-sm select-none">i</a>
                             </div>

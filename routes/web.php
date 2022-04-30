@@ -81,6 +81,9 @@ Route::group(['middleware' => 'checkSession'], function () {
     Route::get('/cms/cmsstory', [CmsStoryController::class, 'index']);
     Route::get('/cms/addstory', [CmsStoryController::class, 'addStory']);
     Route::get('/cms/story/{id}', [CmsStoryController::class, 'editStory']);
+    Route::group(['prefix' => '/cms/laravel-filemanager', 'middleware' => 'checkSession'], function () {
+        \UniSharp\LaravelFilemanager\Lfm::routes();
+    });
 
 });
 

@@ -43,33 +43,57 @@
                 x-init="
                 tinymce.init({
                     selector: '#textsilvikulturEN',
-                    mobile: {
-                            menubar: 'file edit view insert format',
-                    },
                     height : 500,
-
-                    height : '100vh',
+                    height : '40vh',
                     relative_urls : false,
-                remove_script_host : false,
-                convert_urls : true,
+                        remove_script_host : false,
+                        convert_urls : true,
+
                     plugins: [
                             'advlist autolink textcolor link image lists charmap print preview hr anchor pagebreak',
                             'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
                             'table emoticons template paste help'
                             ],
+
                             toolbar: 'fullscreen preview bold italic underline forecolor backcolor |bullist numlist alignleft aligncenter alignright alignjustify outdent indent|  fontselect fontsizeselect formatselect   | ' +
-                            ' | link image | print  media  | ' +
-                            ' backcolor emoticons |undo redo  help',
+                                    ' | link image | print  media  | ' +
+                                    ' backcolor emoticons |undo redo  help',
                             menu: {
                             favs: {title: 'My Favorites', items: 'code visualaid | searchreplace | emoticons'}
                             },
                             menubar: ' file edit view insert format tools table help',
 
+                            file_picker_callback : function(callback, value, meta) {
+                                var x = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+                                var y = window.innerHeight|| document.documentElement.clientHeight|| document.getElementsByTagName('body')[0].clientHeight;
+
+                                var cmsURL = '/cms/' + 'laravel-filemanager?editor=' + meta.fieldname;
+                                if (meta.filetype == 'image') {
+                                    cmsURL = cmsURL + '&type=Images';
+                                } else {
+                                    cmsURL = cmsURL + '&type=Files';
+                                }
+
+                                tinyMCE.activeEditor.windowManager.openUrl({
+                                    url : cmsURL,
+                                    title : 'Filemanager',
+                                    width : x * 0.8,
+                                    height : y * 0.8,
+                                    resizable : 'yes',
+                                    close_previous : 'no',
+                                    onMessage: (api, message) => {
+                                    callback(message.content);
+                                    }
+
+                                });
+                            },
                             setup: function(editor) {
                                 editor.on('change', function(e) {
                                     @this.set('textsilvikulturEN', editor.getContent());
                             });
+
                         }
+
                 });">
                 <textarea rows="20" id="textsilvikulturEN" name="textsilvikulturEN"  wire:model.defer='textsilvikulturEN' required></textarea>
             </div>
@@ -83,33 +107,57 @@
                 x-init="
                 tinymce.init({
                     selector: '#textsilvikulturID',
-                    mobile: {
-                            menubar: 'file edit view insert format',
-                    },
                     height : 500,
-
-                    height : '100vh',
+                    height : '40vh',
                     relative_urls : false,
-                remove_script_host : false,
-                convert_urls : true,
+                        remove_script_host : false,
+                        convert_urls : true,
+
                     plugins: [
                             'advlist autolink textcolor link image lists charmap print preview hr anchor pagebreak',
                             'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
                             'table emoticons template paste help'
                             ],
+
                             toolbar: 'fullscreen preview bold italic underline forecolor backcolor |bullist numlist alignleft aligncenter alignright alignjustify outdent indent|  fontselect fontsizeselect formatselect   | ' +
-                            ' | link image | print  media  | ' +
-                            ' backcolor emoticons |undo redo  help',
+                                    ' | link image | print  media  | ' +
+                                    ' backcolor emoticons |undo redo  help',
                             menu: {
                             favs: {title: 'My Favorites', items: 'code visualaid | searchreplace | emoticons'}
                             },
                             menubar: ' file edit view insert format tools table help',
 
+                            file_picker_callback : function(callback, value, meta) {
+                                var x = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+                                var y = window.innerHeight|| document.documentElement.clientHeight|| document.getElementsByTagName('body')[0].clientHeight;
+
+                                var cmsURL = '/cms/' + 'laravel-filemanager?editor=' + meta.fieldname;
+                                if (meta.filetype == 'image') {
+                                    cmsURL = cmsURL + '&type=Images';
+                                } else {
+                                    cmsURL = cmsURL + '&type=Files';
+                                }
+
+                                tinyMCE.activeEditor.windowManager.openUrl({
+                                    url : cmsURL,
+                                    title : 'Filemanager',
+                                    width : x * 0.8,
+                                    height : y * 0.8,
+                                    resizable : 'yes',
+                                    close_previous : 'no',
+                                    onMessage: (api, message) => {
+                                    callback(message.content);
+                                    }
+
+                                });
+                            },
                             setup: function(editor) {
                                 editor.on('change', function(e) {
                                     @this.set('textsilvikulturID', editor.getContent());
                             });
+
                         }
+
                 });">
                 <textarea rows="20" id="textsilvikulturID" name="textsilvikulturID"  wire:model.defer='textsilvikulturID' required></textarea>
             </div>
