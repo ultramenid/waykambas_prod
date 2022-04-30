@@ -16,7 +16,7 @@ class AddstoryComponent extends Component
     public $isactive = 1;
 
     public function uploadImage(){
-        $file = $this->photo->store('public');
+        $file = $this->photo->store('public/files/photos');
         $foto = $this->photo->hashName();
 
         $manager = new ImageManager();
