@@ -14,15 +14,13 @@ class EditdiaryComponent extends Component
     use WithFileUploads;
     public $idDiary;
     public $urlfiles = [];
-    public $uphoto, $imgDescEN,$imgDescID,  $diaryEN, $diaryID, $publishdate, $titleID, $titleEN, $photo, $isactive;
+    public $uphoto, $imgDescEN,$imgDescID, $publishdate, $titleID, $titleEN, $photo, $isactive;
 
     public function mount($idDiary){
         $this->idDiary = $idDiary;
         $data = DB::table('greendiary')->where('id', $idDiary)->first();
         $this->titleEN = $data->titleEN;
         $this->titleID = $data->titleID;
-        $this->diaryEN = $data->diaryEN;
-        $this->diaryID = $data->diaryID;
         $this->isactive = $data->isActive;
         $this->publishdate = $data->publishdate;
         $this->imgDescEN = $data->imgDescEN;
@@ -81,8 +79,6 @@ class EditdiaryComponent extends Component
                     'imgDescID' => $this->imgDescID,
                     'titleEN' => $this->titleEN,
                     'titleID' => $this->titleID,
-                    'diaryEN' => $this->diaryEN,
-                    'diaryID' => $this->diaryID,
                     'isActive' => $this->isactive,
                     'slugEN' => Str::slug($this->titleEN,'-'),
                     'slugID' => Str::slug($this->titleID,'-'),
@@ -111,8 +107,8 @@ class EditdiaryComponent extends Component
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
-        }elseif(strlen($this->imgDescEN) > 160){
-            $message = 'Image description  max limit 160 character';
+        }elseif(strlen($this->imgDescEN) > 500){
+            $message = 'Image description  max limit 500 character';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
@@ -121,8 +117,8 @@ class EditdiaryComponent extends Component
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
-        }elseif(strlen($this->imgDescID) > 160){
-            $message = 'Image description  max limit 160 character';
+        }elseif(strlen($this->imgDescID) > 500){
+            $message = 'Image description  max limit 500 character';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
@@ -143,16 +139,6 @@ class EditdiaryComponent extends Component
             return;
         }elseif(strlen($this->titleID) > 120){
             $message = 'Title indonesia max limit 120 character';
-            $type = 'error'; //error, success
-            $this->emit('toast',$message, $type);
-            return;
-        }elseif($this->diaryEN == ''){
-            $message = 'Content diary english is required';
-            $type = 'error'; //error, success
-            $this->emit('toast',$message, $type);
-            return;
-        }elseif($this->diaryID == ''){
-            $message = 'Content diary Indonesia is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;

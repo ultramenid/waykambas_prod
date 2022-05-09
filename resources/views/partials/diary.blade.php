@@ -8,7 +8,6 @@
             <div class="sm:w-1/2 w-full px-4">
                 <p class="mb-6 text-sm"> Dec 14, 2020</p>
                 <h1 class="sm:text-4xl text-2xl font-semibold">{{ $diary[0]->title }}</h1>
-                <p class="mt-4">{{$diary[0]->diary}}</p>
             </div>
             <div class="sm:w-1/2  w-full  px-4 relative">
                 <img src="{{asset('storage/files/photos/'.$diary[0]->img)}}" alt="" class="w-full">

@@ -26,11 +26,11 @@
                             </div>
                             <div class="absolute inset-x-0 bottom-0 h-full bg-gray-700 opacity-80 overflow-y-auto" x-show="item2">
                                 <div class=" mx-auto text-white flex items-center py-2 px-4 text-xs ">
-                                    {{ $list->diary}}
+                                    {{ $list->imgDesc}}
                                 </div>
                             </div>
                         </div>
-                        <p class="text-sm mt-2 text-gray-500">{{$list->title}}</p>
+                        <p class="mt-2 ">{{$list->title}}</p>
                     </div>
                     @endforeach
 

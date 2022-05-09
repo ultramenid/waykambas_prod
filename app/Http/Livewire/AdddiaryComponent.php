@@ -14,7 +14,7 @@ class AdddiaryComponent extends Component
 {
     use WithFileUploads;
     public $tags = [], $urlfiles = [];
-    public $photo, $imgDescEN,$imgDescID,  $diaryEN, $diaryID, $publishdate, $titleID, $titleEN;
+    public $photo, $imgDescEN,$imgDescID, $publishdate, $titleID, $titleEN;
     public $mediafile, $urlfile, $isactive = 1;
 
     public function uploadImage(){
@@ -54,8 +54,6 @@ class AdddiaryComponent extends Component
                     'imgDescID' => $this->imgDescID,
                     'titleEN' => $this->titleEN,
                     'titleID' => $this->titleID,
-                    'diaryEN' => $this->diaryEN,
-                    'diaryID' => $this->diaryID,
                     'isActive' => $this->isactive,
                     'slugEN' => Str::slug($this->titleEN,'-'),
                     'slugID' => Str::slug($this->titleID,'-'),
@@ -118,16 +116,6 @@ class AdddiaryComponent extends Component
             return;
         }elseif(strlen($this->titleID) > 120){
             $message = 'Title indonesia max limit 120 character';
-            $type = 'error'; //error, success
-            $this->emit('toast',$message, $type);
-            return;
-        }elseif($this->diaryEN == ''){
-            $message = 'Content diary english is required';
-            $type = 'error'; //error, success
-            $this->emit('toast',$message, $type);
-            return;
-        }elseif($this->diaryID == ''){
-            $message = 'Content diary Indonesia is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
