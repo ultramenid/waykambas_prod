@@ -62,8 +62,8 @@ class EditdiaryComponent extends Component
                 $name = $this->uphoto;
             }else{
                 try {
-                    unlink(storage_path('app/public/'.$this->uphoto));
-                     unlink(storage_path('app/public/thumbnail/'.$this->uphoto));
+                    unlink(storage_path('app/public/files/photos/'.$this->uphoto));
+                     unlink(storage_path('app/publicfiles/photos/thumbnail/'.$this->uphoto));
                      $name=  $this->uploadImage();
                 } catch (\Throwable $th) {
                    $name=  $this->uploadImage();
