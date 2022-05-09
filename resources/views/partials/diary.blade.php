@@ -28,7 +28,7 @@
         <!-- item 2 -->
         <div x-data="{item2: false}" class="sm:py-8 py-2 flex sm:flex-row flex-col sm:space-x-6 space-x-0 space-y-6 sm:space-y-0 items-center mx-auto max-w-5xl">
             <div class="sm:w-1/2  w-full  px-4 relative">
-                <img src="{{asset('storage/'.$diary[1]->img)}}" alt="" class="w-full">
+                <img src="{{asset('storage/files/photos/'.$diary[1]->img)}}" alt="" class="w-full">
                 <div @click="item2=!item2" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-4 right-6 h-5 w-5  text-black flex justify-center items-center">
                     <a class="text-sm select-none">i</a>
                 </div>
