@@ -11,7 +11,7 @@
                 <p class="mt-4">{{$diary[0]->diary}}</p>
             </div>
             <div class="sm:w-1/2  w-full  px-4 relative">
-                <img src="{{asset('storage/'.$diary[0]->img)}}" alt="" class="w-full">
+                <img src="{{asset('storage/files/photos/'.$diary[0]->img)}}" alt="" class="w-full">
                 <div @click="item1=!item1" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-4 right-6 h-5 w-5  text-black flex justify-center items-center">
                     <a class="text-sm select-none">i</a>
                 </div>
