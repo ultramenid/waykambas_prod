@@ -25,7 +25,7 @@
                                 <a class="text-sm select-none">i</a>
                             </div>
                             <div class="absolute inset-x-0 bottom-0 h-full bg-gray-700 opacity-80 overflow-y-auto" x-show="item2">
-                                <div class=" mx-auto text-white flex items-center py-2 px-4 text-xs ">
+                                <div class=" mx-auto text-white flex items-center py-2 px-4 text-xs whitespace-pre-line" >
                                     {{ $list->imgDesc}}
                                 </div>
                             </div>

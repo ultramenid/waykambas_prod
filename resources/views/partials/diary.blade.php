@@ -15,7 +15,7 @@
                     <a class="text-sm select-none">i</a>
                 </div>
                 <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-700 opacity-80" x-show="item1">
-                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
+                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm whitespace-pre-line">
                         {{$diary[0]->imgDesc}}
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                     <a class="text-sm select-none">i</a>
                 </div>
                 <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-700 opacity-80" x-show="item2">
-                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
+                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm whitespace-pre-line">
                         {{ $diary[1]->imgDesc }}
                     </div>
                 </div>
