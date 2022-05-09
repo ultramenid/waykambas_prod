@@ -12,9 +12,9 @@ class IndexController extends Controller
 {
     public function getSelectDiary(){
         if (App::getLocale() == 'id') {
-            return 'id, titleID as title, slugID as slug, imgDescID as imgDesc, diaryID as diary, img';
+            return 'id, titleID as title, slugID as slug, imgDescID as imgDesc, img';
         }else{
-            return 'id, titleEN as title, slugEN as slug, imgDescEN as imgDesc, diaryEN as diary, img';
+            return 'id, titleEN as title, slugEN as slug, imgDescEN as imgDesc, img';
         }
     }
     public function getDiary(){
