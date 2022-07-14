@@ -12,7 +12,7 @@
         @foreach ($diary as $item)
             <section class="flex sm:flex-row flex-col mb-12">
                 <div class="sm:w-2/12 w-full">
-                    <h1 class="lg:text-2xl md:text-1xl text-xl font-bold mb-6">{{ date("Y m d", strtotime($item->publishdate))}}</h1>
+                    <h1 class="lg:text-2xl md:text-1xl text-xl font-bold mb-6">{{ date("Y F d", strtotime($item->publishdate))}}</h1>
                 </div>
                 <div class="sm:w-10/12 w-full flex flex-wrap border-t border-gray-400 py-4">
                     {{-- loop here --}}
