@@ -22,8 +22,9 @@
                         <div class="relative mt-4">
                             <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="" class="object-cover object-top w-full h-72">
                         </div>
-                        <p class="mt-2 font-bold">{{$list->title}} <a class="text-xs mt-1">{{ $list->imgDesc}}</a></p>
-
+                        <div class="mt-2">
+                            <a class=" font-bold">{{$list->title}}</a> <a class="text-xs mt-1">{{ $list->imgDesc}}</a>
+                        </div>
                     </div>
                     @endforeach
 
