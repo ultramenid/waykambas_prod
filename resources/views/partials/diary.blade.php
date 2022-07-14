@@ -6,7 +6,7 @@
         <!-- item 1 -->
         <div x-data="{ item1: false }" class="sm:py-8 py-2 flex sm:flex-row flex-col sm:space-x-6 space-x-0 space-y-6 sm:space-y-0 items-center mx-auto max-w-5xl">
             <div class="sm:w-1/2 w-full px-4">
-                <p class="mb-6 text-sm"> Dec 14, 2020</p>
+                <p class="mb-6 text-sm"> {{ \Carbon\Carbon::parse($diary[0]->publishdate)->format('d F, Y')}}</p>
                 <h1 class="sm:text-4xl text-2xl font-semibold">{{ $diary[0]->title }}</h1>
             </div>
             <div class="sm:w-1/2  w-full  px-4 relative">
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="sm:w-1/2 w-full px-4">
-                <p class="mb-6 text-sm"> Dec 14, 2020</p>
+                <p class="mb-6 text-sm"> {{ \Carbon\Carbon::parse($diary[1]->publishdate)->format('d F, Y')}}</p>
                 <h1 class="sm:text-4xl text-2xl font-semibold">{{ $diary[1]->title }}</h1>
             </div>
 
