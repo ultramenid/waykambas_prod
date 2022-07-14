@@ -24,7 +24,7 @@
                             <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="{{$list->title}}" />
                         </a>
                         <div class="mt-2">
-                            <a class=" font-bold">{{$list->title}}</a> <a class="">{{ $list->imgDesc}}</a>
+                            <a class=" font-bold">{{ Str::limit($list->title, 60) }}  </a> <a class="">{{ Str::limit($list->imgDesc, 155) }} </a>
                         </div>
                     </div>
                     @endforeach
