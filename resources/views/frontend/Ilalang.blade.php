@@ -598,7 +598,12 @@
                                 musuh utama restorasi. Diperlukan pengawasan
                                 dan perlindungan yang efektif agar tanaman leluasa tumbuh. @ Wito Dwi Prawiro / SILVAGAMA
                         </p>
-
+                        <p class="mt-4">
+                            Betapapun perlu usaha keras sebelum semuanya terwujud.
+                            Mencapainya, kami harus tersuruk-suruk menaklukkan kelebatan
+                            ilalang. Dan, bayangan pepohonan lebat yang kembali menghutan
+                            menggantikan padang ilalang semakin menguat di benak kami.
+                        </p>
 
 
                 </div>
@@ -672,12 +677,7 @@
         </div>
         <div class="max-w-4xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify mb-12">
             <div class="sm:w-8/12 w-full">
-                <p class="mt-4">
-                    Betapapun perlu usaha keras sebelum semuanya terwujud.
-                    Mencapainya, kami harus tersuruk-suruk menaklukkan kelebatan
-                    ilalang. Dan, bayangan pepohonan lebat yang kembali menghutan
-                    menggantikan padang ilalang semakin menguat di benak kami.
-                </p>
+
                 <p class="mt-4">
                     <i>“Jangan pernah menyerah sebelum mencobanya,”</i> seloroh Hendra.
                     Bernada kelakar memang dia, tapi tepat menggambarkan tekad
