@@ -8,9 +8,11 @@
 
     @yield('meta')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" >
     <script src="{{ asset('js/app.js') }}" defer ></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 </head>
 <body>
 

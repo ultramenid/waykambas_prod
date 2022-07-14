@@ -14,14 +14,14 @@
                 <div class="sm:w-2/12 w-full">
                     <h1 class="lg:text-2xl md:text-1xl text-xl font-bold mb-6">{{ date("Y M d", strtotime($item->publishdate))}}</h1>
                 </div>
-                <div class="sm:w-10/12 w-full flex flex-wrap border-t border-gray-400">
+                <div class="sm:w-10/12 w-full flex flex-wrap border-t border-gray-400 py-4">
                     {{-- loop here --}}
                     @foreach (getContentDiary($item->publishdate) as $list)
                     <div class="sm:w-5/12 w-full sm:mr-8 mr-0 mb-4 " x-data="{item2:false}">
                         {{-- image --}}
-                        <div class="relative mt-4">
-                            <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="" class="object-cover object-top w-full h-72">
-                        </div>
+                        <a href="{{asset('storage/files/photos/'.$list->img)}}" class="mt-4 object-cover object-top w-full h-72 glightbox">
+                            <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="{{$list->title}}" />
+                        </a>
                         <div class="mt-2">
                             <a class=" font-bold">{{$list->title}}</a> <a class="">{{ $list->imgDesc}}</a>
                         </div>
@@ -34,7 +34,11 @@
     </div>
 
 
-
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+        });
+    </script>
 
     @include('partials.footer')
 @endsection
