@@ -10,7 +10,7 @@
     @include('partials.storyHero')
 
     <section x-data="{open:0, open2:0}">
-        <div class="max-w-7xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify"  >
+        <div class="max-w-4xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify"  >
             <div class="sm:w-8/12 w-full">
                 <p>Motor yang aku tumpangi melaju kencang meninggalkan
                     Camp ALeRT di Bungur, kawasan hutan<sup id="id1"  class="font-bold rounded border-r border-l border-black px-1"><a href="#1" @click="open=1, open2= 1, setTimeout(() => open = 0, 10000)" >1</a></sup> Taman Nasional<sup id="id2" class="font-bold rounded border-r border-l border-black px-1"><a href="#2" @click="open=2 , open2= 2, setTimeout(() => open = 0, 10000)">2</a></sup>
@@ -82,25 +82,16 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-col px-4 mt-4 ">
-            <div class="relative" x-data="{gajah: false}">
-                <img src="{{ asset('assets/gajah.jpg') }}" alt="" class="w-full h-full">
-                <div @click="gajah =! gajah" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
-                    <a class="text-sm select-none">i</a>
-                </div>
-                <div class="absolute inset-x-0 bottom-0 h-22 bg-gray-700 opacity-80" x-show="gajah">
-                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                        Gambar 2. Gajah-gajah di Pusat Latihan Gajah
-                        (PLG) di TN Way Kambas. Awalnya didirikan
-                        sebagai salah satu solusi mengatasi konflik
-                        gajah dan manusia tetapi kemudian berkembang
-                        sebagai atraksi wisata. Tapi konfliknya sendiri
-                        tak kunjung reda. @ Timer Manurung / SILVAGAMA
-                    </div>
-                </div>
-            </div>
+        <div class="max-w-4xl mx-auto flex flex-col px-4 mt-4 ">
+            <img src="{{ asset('assets/gajah.jpg') }}" alt="" class="w-full h-full">
+            <p class="text-xs mt-1">Gambar 2. Gajah-gajah di Pusat Latihan Gajah
+                (PLG) di TN Way Kambas. Awalnya didirikan
+                sebagai salah satu solusi mengatasi konflik
+                gajah dan manusia tetapi kemudian berkembang
+                sebagai atraksi wisata. Tapi konfliknya sendiri
+                tak kunjung reda. @ Timer Manurung / SILVAGAMA</p>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
+        <div class="max-w-4xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
             <div class="sm:w-8/12 w-full">
                 <p class="mt-4">tepi taman nasional berbatas langsung dengan pemukiman
                     penduduk<sup id="id6" class="font-bold rounded border-r border-l border-black px-1"><a href="#6" @click="open=6, open2= 6, setTimeout(() => open = 0, 10000)">6</a></sup> sehingga begitu gajah keluar taman nasional, ia langsung
@@ -202,26 +193,20 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-col px-4 mt-4 ">
-            <div class="relative" x-data="{kebakaran: false}">
+        <div class="max-w-4xl mx-auto flex flex-col px-4 mt-4 ">
                 <img src="{{ asset('assets/kebakaran.jpg') }}" alt="" class="w-full h-full">
-                <div @click="kebakaran =! kebakaran" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
-                    <a class="text-sm select-none">i</a>
-                </div>
-                <div class="absolute inset-x-0 bottom-0 h-22 bg-gray-700 opacity-80" x-show="kebakaran">
-                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                        Gambar 3. Kebakaran yang terjadi di
+                <p class="text-xs mt-1">
+                    Gambar 3. Kebakaran yang terjadi di
                         SPTN II Bungur pada Oktober 2013.
                         Butuh waktu seminggu untuk
                         memadamkan api. Peristiwa ini
                         menghanguskan sebagian tanaman
                         hutan yang telah susah payah ditanam
                         melalui program Gerhan pada 2012. @ Wito Dwi Prawiro / SILVAGAMA
-                    </div>
-                </div>
+                </p>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
+        <div class="max-w-4xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
             <div class="sm:w-8/12 w-full">
                 <h1 class="font-bold mt-4"> RESTORASI</h1>
                 <p class="mt-4">
@@ -304,26 +289,18 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-col px-4 mt-4 ">
-            <div class="relative" x-data="{peta: false}">
-                <img src="{{ asset('assets/peta.jpg') }}" alt="" class="w-full h-full">
-                <div @click="peta =! peta" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
-                    <a class="text-sm select-none">i</a>
-                </div>
-                <div class="absolute inset-x-0 bottom-0 h-22 bg-gray-700 opacity-80" x-show="peta">
-                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                        Gambar 4. Salah satu kawasan masif
-                            ilalang di TN. Way Kambas.
-                            Konsistensi penghutanan kembali serta
-                            penanggulangan kebakaran yang
-                            memadai menjadi kunci keberhasilan
-                            restorasi kawasan agar kembali seperti
-                            sedia kala. Didigitasi dengan Google Earth Pro oleh Timer Manurung. 2013
-                    </div>
-                </div>
-            </div>
+        <div class="max-w-4xl mx-auto flex flex-col px-4 mt-4 ">
+            <img src="{{ asset('assets/peta.jpg') }}" alt="" class="w-full h-full">
+            <p class="mt-1 text-xs">Gambar 4. Salah satu kawasan masif
+                ilalang di TN. Way Kambas.
+                Konsistensi penghutanan kembali serta
+                penanggulangan kebakaran yang
+                memadai menjadi kunci keberhasilan
+                restorasi kawasan agar kembali seperti
+                sedia kala. Didigitasi dengan Google Earth Pro oleh Timer Manurung. 2013</p>
+
         </div>
-        <div class="max-w-7xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
+        <div class="max-w-4xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
             <div class="sm:w-8/12 w-full">
                 <p class="mt-4">
                     <i>Ketiga</i>, kecepatan pertumbuhan ilalang yang melebihi pertumbuhan
@@ -401,26 +378,18 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-col px-4 mt-4 ">
-            <div class="relative" x-data="{ilalang2: false}">
-                <img src="{{ asset('assets/ilalang-2.jpg') }}" alt="" class="w-full h-full">
-                <div @click="ilalang2 =! ilalang2" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
-                    <a class="text-sm select-none">i</a>
-                </div>
-                <div class="absolute inset-x-0 bottom-0 h-22 bg-gray-700 opacity-80" x-show="ilalang2">
-                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                        Gambar 4. Salah satu kawasan masif
+        <div class="max-w-4xl mx-auto flex flex-col px-4 mt-4 ">
+            <img src="{{ asset('assets/ilalang-2.jpg') }}" alt="" class="w-full h-full">
+            <p class="text-xs mt-1">
+                Gambar 5. Salah satu kawasan masif
                             ilalang di TN. Way Kambas.
                             Konsistensi penghutanan kembali serta
                             penanggulangan kebakaran yang
                             memadai menjadi kunci keberhasilan
                             restorasi kawasan agar kembali seperti
-                            sedia kala. Didigitasi dengan Google Earth Pro oleh Timer Manurung. 2013
-                    </div>
-                </div>
-            </div>
+                            sedia kala. Didigitasi dengan Google Earth Pro oleh Timer Manurung. 2013</p>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
+        <div class="max-w-4xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
             <div class="sm:w-8/12 w-full">
                 <p class="mt-4">
                     Restorasi ini didesain untuk senantiasa sinergis dengan program
@@ -430,22 +399,72 @@
                     menjadi model dalam penyusunan <i>grand design </i> restorasi ekosistem
                     di seluruh Way Kambas.
                 </p>
-                <div class="relative mt-4" x-data="{ilalang3: false}">
-                    <img src="{{ asset('assets/ilalang-3.jpg') }}" alt="" class="w-full h-full">
-                    <div @click="ilalang3 =! ilalang3" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
-                        <a class="text-sm select-none">i</a>
-                    </div>
-                    <div class="absolute inset-x-0 bottom-0 h-22 bg-gray-700 opacity-80" x-show="ilalang3">
-                        <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                            Gambar 5. Hangusnya bagian atas
+                <div >
+                    <img src="{{ asset('assets/ilalang-3.jpg') }}" alt="" class="w-full h-full mt-4">
+                        <p class="text-xs mt-1">
+                            Gambar 6. Hangusnya bagian atas
                             ilalang tak membuat rumputrumputan ini seutuhnya mati. ketika
                             kebakaran reda, tunas-tunas baru
                             segera tumbuh yang memancing
                             kedatangan satwa liar. @ Wito Dwi Prawiro / SILVAGAMA
-                        </div>
-                    </div>
-                </div>
+                        </p>
 
+                </div>
+                <h1 class="font-bold mt-12">RAWA KADUT</h1>
+                <p class="mt-4">
+                    Di dekat penghujung punggungan beralur kecil itu, tiba-tiba ilalang
+                    tumbuh menggila, lebat dengan balutan semak-semak berduri.
+                    Ranting-rantingnya yang kaku menjuntai segera mencakar wajah
+                    dan tangan kami. Daun-daun ilalang membelit roda. Hendra,
+                    penduduk Way Bungur yang menjadi pekerja restorasi Yayasan
+                    Silvagama pun harus turun tangan menebas semak-semak dengan
+                    parangnya. Empat motor yang kami tumpangi pun berjalan terseokseok menerobos lebatnya ilalang.
+                </p>
+                <p class="mt-4">
+                    Tetapi setelah lepas dari hadangan rumput raksasa itu dan mendaki
+                    punggungan bukit kecil, ada oase lain yang menghibur. Sungai kecil
+                    mengalir dengan tenang di balik kerimbunan pohon. Bening airnya
+                    dipenuhi ikan kecil dan ikan gabus yang berenang bebas.
+                    Masyarakat setempat menyebutnya sebagai Rawa Kadut.
+                </p>
+                <div class="mt-4">
+                    <img src="{{ asset('assets/kotoran.jpg') }}" alt="" class="w-full h-full">
+                    <p class="text-xs mt-1">
+                        Gambar 7. Kotoran-kotoran gajah yang
+                            berserak di tepian Sungai kadut,
+                            menandakan masih sehatnya hidupan liar
+                            di sekitar areal restorasi. @ Koen Setyawan / SILVAGAMA
+                    </p>
+
+                </div>
+                <p class="mt-4">
+                    Sungai itu meliuk seperti huruf U di antara padang ilalang. Dibatasi
+                    kanan kirinya dengan pohon-pohon besar. Sisanya, ilalang tumbuh
+                    tanpa ampun.
+                </p>
+                <p class="mt-4">
+                    Kami lihat peta, Rawa Kadut terletak di tengah hamparan ilalang. Di
+                    sinilah kami akan mendirikan pos. Pos Rawa Kadut, itulah
+                    namanya.
+                </p>
+                <p class="mt-4">
+                    <i>“Lokasinya dilindungi aliran sungai bervegetasi rapat. Hanya di
+                    bagian ujung lekukan sungai itu yang terbuka. Kita tinggal menarik
+                    garis lurus yang panjangnya sekitar setengah kilometer dan
+                    membuatnya jadi sekat bakar,”</i> kata Wito Dwi Prawiro,
+                    Koordinator Restorasi Silvagama.
+                </p>
+                <p class="mt-4">
+                    Menarik, karena pemilihan Rawa Kadut bukan tanpa alasan.
+                    Kegiatan restorasi yang dimulai di tengah hamparan ilalang,
+                    meskipun relatif jauh dari pemukiman dan atau pos pengelolaan,
+                    diharapkan memudahkan arah dan perluasan restorasi berikutnya.
+                    Selain itu, ada kolam air di dalam plot yang dipilih tersebut. Satu
+                    agak kecil, sedang satunya lebih besar. Keduanya bisa menjadi
+                    sumber air untuk menyiram tanaman. Bisa pula untuk memadamkan
+                    api apabila terjadi kebakaran. Tak hanya itu, lokasinya yang jauh ke Utara Resort Bungur diharapkan sebagai titik identifikasi penerobos
+                    taman nasional dari arah Utara.
+                </p>
             </div>
             <div class="w-4/12 sm:block hidden text-sm">
                 <div id="10"  :class="open==10 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
@@ -505,17 +524,45 @@
                     sumberdaya alam dan lingkungan.
                 </p>
                 </div>
+                <div id="13"  :class="open==13 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
+                    <p class="mt-4">
+                        <a href="#id13"><sup  class="font-bold rounded border-r border-l border-black px-1">13</sup></a> Program bersama ini terdiri atas 4
+                        komponen, yang masing-masing
+                        adalah Komponen 1 (Reforestasi
+                        tematik (terutama pakan gajah), dalkarhut dan pengamanan suksesi
+                        alami), Komponen 2 (Pemantauan dan
+                        Perlindungan distribusi populasi dan
+                        kondisi sumber daya vital harimau,
+                        badak, gajah, tapir, beruang dan
+                        mentok rimba), Komponen 3
+                        (
+                        Mengembangkan model
+                        pengelolaan ekowisata minat khusus),
+                        Komponen 4 (Pengembangan
+                        ekonomi kreatif dan penyadartahuan
+                        sebagai dukungan penanganan
+                        konflik satwa-manusia).
+                    </p>
+                    </div>
+                    <div id="14"  :class="open==14 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
+                        <p  class="mt-4">
+                            <a href="#id14"><sup  class="font-bold rounded border-r border-l border-black px-1">14</sup></a>  Konsorsium ini terdiri atas ALeRT,
+                            Universitas Lampung (UNILA),
+                            Program Konser vasi Harimau
+                            Sumatera (PKHS), Forum Rembug
+                            Desa Penyangga (FRDP) Way
+                            Kambas, Sajogyo Institute (SAINS),
+                            Yayasan SILVAGAMA, Saka Wana
+                            Bakti Way Kambas, dan Save
+                            Indonesia Endangered Species (SIES).
+                        </p>
+                        </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-col px-4 mt-4 ">
-            <div class="relative" x-data="{hutan: false}">
+        <div class="max-w-4xl mx-auto flex flex-col px-4 mt-4 ">
                 <img src="{{ asset('assets/hutan.jpg') }}" alt="" class="w-full h-full">
-                <div @click="hutan =! hutan" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
-                    <a class="text-sm select-none">i</a>
-                </div>
-                <div class="absolute inset-x-0 bottom-0 h-22 bg-gray-700 opacity-80" x-show="hutan">
-                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                        Gambar 5. Jembatan kecil yang kami
+               <p class="text-xs mt-1">
+                Gambar 8. Jembatan kecil yang kami
                         bangun mengantarkan kami melintasi
                         Rawa Kadut. Meski dalamnya hanya 30 cm.
                         Banyaknya kotoran gajah yang kami
@@ -525,78 +572,40 @@
                         Kelak, kami bermimpi, setelah lelah
                         merestorasi kami bisa menikmati
                         pemandangan gajah yang minum di sungai. @ Koen Setyawan / SILVAGAMA
-                    </div>
-                </div>
+               </p>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
+        <div class="max-w-4xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
             <div class="sm:w-8/12 w-full">
-                <h1 class="font-bold">RAWA KADUT</h1>
                 <p class="mt-4">
-                    Di dekat penghujung punggungan beralur kecil itu, tiba-tiba ilalang
-                    tumbuh menggila, lebat dengan balutan semak-semak berduri.
-                    Ranting-rantingnya yang kaku menjuntai segera mencakar wajah
-                    dan tangan kami. Daun-daun ilalang membelit roda. Hendra,
-                    penduduk Way Bungur yang menjadi pekerja restorasi Yayasan
-                    Silvagama pun harus turun tangan menebas semak-semak dengan
-                    parangnya. Empat motor yang kami tumpangi pun berjalan terseokseok menerobos lebatnya ilalang.
+                    Batas terluar plot restorasi pun kami petakan. Desain penanaman
+                    yang kami rancang berbentuk lapisan berselang-seling 30 meter
+                    antara bagian yang ditanami dan yang dibiarkan ditumbuhi alangalang segera disesuaikan dengan bentang alam (landscape) aslinya.
+                    Pos ini kelak akan akan dihuni secara bergilir oleh petugas yang
+                    terdiri atas polhut dan staf Silvagama berikut masyarakat lokal.
+                    Juga akan dilengkapi dengan fasilitas pembibitan tanaman, tandon
+                    air, instalasi pengairan untuk pemeliharaan sekaligus pemadaman
+                    kebakaran, listrik tepat guna, dan berbagai kebutuhan penunjang
+                    lainnya.
                 </p>
-                <p class="mt-4">
-                    Tetapi setelah lepas dari hadangan rumput raksasa itu dan mendaki
-                    punggungan bukit kecil, ada oase lain yang menghibur. Sungai kecil
-                    mengalir dengan tenang di balik kerimbunan pohon. Bening airnya
-                    dipenuhi ikan kecil dan ikan gabus yang berenang bebas.
-                    Masyarakat setempat menyebutnya sebagai Rawa Kadut.
-                </p>
-                <div class="relative mt-4" x-data="{kotoran: false}">
-                    <img src="{{ asset('assets/kotoran.jpg') }}" alt="" class="w-full h-full">
-                    <div @click="kotoran =! kotoran" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
-                        <a class="text-sm select-none">i</a>
-                    </div>
-                    <div class="absolute inset-x-0 bottom-0 h-22 bg-gray-700 opacity-80" x-show="kotoran">
-                        <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                            Gambar 7. Kotoran-kotoran gajah yang
-                            berserak di tepian Sungai kadut,
-                            menandakan masih sehatnya hidupan liar
-                            di sekitar areal restorasi. @ Koen Setyawan / SILVAGAMA
-                        </div>
-                    </div>
+                <div class=" mt-4 ">
+                        <img src="{{ asset('assets/tanaman.jpg') }}" alt="" class="w-full">
+                        <p class="mt-1 text-xs">
+                            Gambar 9. Tanaman reforestasi yang mati
+                                meranggas karena terbakar di SPTN II Bungur,
+                                Way Kambas pada Oktober 2013. Kebakaran yang
+                                terjadi hampir setiap tahun seperti inilah salah satu
+                                musuh utama restorasi. Diperlukan pengawasan
+                                dan perlindungan yang efektif agar tanaman leluasa tumbuh. @ Wito Dwi Prawiro / SILVAGAMA
+                        </p>
+
+
+
                 </div>
             </div>
             <div class="w-4/12 sm:block hidden text-sm">
-                <div id="13"  :class="open==13 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p class="mt-4">
-                    <a href="#id13"><sup  class="font-bold rounded border-r border-l border-black px-1">13</sup></a> Program bersama ini terdiri atas 4
-                    komponen, yang masing-masing
-                    adalah Komponen 1 (Reforestasi
-                    tematik (terutama pakan gajah), dalkarhut dan pengamanan suksesi
-                    alami), Komponen 2 (Pemantauan dan
-                    Perlindungan distribusi populasi dan
-                    kondisi sumber daya vital harimau,
-                    badak, gajah, tapir, beruang dan
-                    mentok rimba), Komponen 3
-                    (
-                    Mengembangkan model
-                    pengelolaan ekowisata minat khusus),
-                    Komponen 4 (Pengembangan
-                    ekonomi kreatif dan penyadartahuan
-                    sebagai dukungan penanganan
-                    konflik satwa-manusia).
-                </p>
-                </div>
-                <div id="14"  :class="open==14 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p  class="mt-4">
-                    <a href="#id14"><sup  class="font-bold rounded border-r border-l border-black px-1">14</sup></a>  Konsorsium ini terdiri atas ALeRT,
-                    Universitas Lampung (UNILA),
-                    Program Konser vasi Harimau
-                    Sumatera (PKHS), Forum Rembug
-                    Desa Penyangga (FRDP) Way
-                    Kambas, Sajogyo Institute (SAINS),
-                    Yayasan SILVAGAMA, Saka Wana
-                    Bakti Way Kambas, dan Save
-                    Indonesia Endangered Species (SIES).
-                </p>
-                </div>
+
+
                 <div id="15"  :class="open==15 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
                 <p  class="mt-4">
                     <a href="#id15"><sup  class="font-bold rounded border-r border-l border-black px-1">15</sup></a>  TFCA-Sumatera merupakan
@@ -640,66 +649,17 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-col px-4 mt-4 ">
-            <div class="relative" x-data="{tanaman: false}">
-                <img src="{{ asset('assets/tanaman.jpg') }}" alt="" class="w-full">
-                <div @click="tanaman =! tanaman" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
-                    <a class="text-sm select-none">i</a>
-                </div>
-                <div class="absolute inset-x-0 bottom-0 h-22 bg-gray-700 opacity-80" x-show="tanaman">
-                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                        Gambar 8. Tanaman reforestasi yang mati
-                        meranggas karena terbakar di SPTN II Bungur,
-                        Way Kambas pada Oktober 2013. Kebakaran yang
-                        terjadi hampir setiap tahun seperti inilah salah satu
-                        musuh utama restorasi. Diperlukan pengawasan
-                        dan perlindungan yang efektif agar tanaman leluasa tumbuh. @ Wito Dwi Prawiro / SILVAGAMA
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
+
+        <div class="max-w-4xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
             <div class="sm:w-8/12 w-full">
-                <p class="mt-4">
-                    Sungai itu meliuk seperti huruf U di antara padang ilalang. Dibatasi
-                    kanan kirinya dengan pohon-pohon besar. Sisanya, ilalang tumbuh
-                    tanpa ampun.
-                </p>
-                <p class="mt-4">
-                    Kami lihat peta, Rawa Kadut terletak di tengah hamparan ilalang. Di
-                    sinilah kami akan mendirikan pos. Pos Rawa Kadut, itulah
-                    namanya.
-                </p>
-                <p class="mt-4">
-                    <i>“Lokasinya dilindungi aliran sungai bervegetasi rapat. Hanya di
-                    bagian ujung lekukan sungai itu yang terbuka. Kita tinggal menarik
-                    garis lurus yang panjangnya sekitar setengah kilometer dan
-                    membuatnya jadi sekat bakar,”</i> kata Wito Dwi Prawiro,
-                    Koordinator Restorasi Silvagama.
-                </p>
-                <p class="mt-4">
-                    Menarik, karena pemilihan Rawa Kadut bukan tanpa alasan.
-                    Kegiatan restorasi yang dimulai di tengah hamparan ilalang,
-                    meskipun relatif jauh dari pemukiman dan atau pos pengelolaan,
-                    diharapkan memudahkan arah dan perluasan restorasi berikutnya.
-                    Selain itu, ada kolam air di dalam plot yang dipilih tersebut. Satu
-                    agak kecil, sedang satunya lebih besar. Keduanya bisa menjadi
-                    sumber air untuk menyiram tanaman. Bisa pula untuk memadamkan
-                    api apabila terjadi kebakaran. Tak hanya itu, lokasinya yang jauh ke Utara Resort Bungur diharapkan sebagai titik identifikasi penerobos
-                    taman nasional dari arah Utara.
-                </p>
+
             </div>
             <div class="w-4/12 sm:block hidden text-sm"></div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-col px-4 mt-4 ">
-            <div class="relative" x-data="{kabut: false}">
+        <div class="max-w-4xl mx-auto flex flex-col px-4 mt-4 ">
                 <img src="{{ asset('assets/kabut.jpg') }}" alt="" class="w-full h-full">
-                <div @click="kabut =! kabut" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
-                    <a class="text-sm select-none">i</a>
-                </div>
-                <div class="absolute inset-x-0 bottom-0 h-22 bg-gray-700 opacity-80" x-show="kabut">
-                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm">
-                        Gambar 9. Pagi menyapa restorasi ALeRT di
+                <p class="mt-1 text-xs">
+                        Gambar 10. Pagi menyapa restorasi ALeRT di
                         SPTN II Bungur, Way Kambas. Pepohonan mulai
                         menghijau. Jika terhindar dari kebakaran, karena
                         sebagian telah terbakar pada September 2012,
@@ -707,23 +667,11 @@
                         Kambas sebagai penyangga hidupan liar atau
                         alami (wildlife) dan menjamin dukungan ekologis
                         bagi wilayah sekitarnya. @ Koen Setyawan / SILVAGAMA
-                    </div>
-                </div>
+                    </p>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify mb-12">
+        <div class="max-w-4xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify mb-12">
             <div class="sm:w-8/12 w-full">
-                <p class="mt-4">
-                    Batas terluar plot restorasi pun kami petakan. Desain penanaman
-                    yang kami rancang berbentuk lapisan berselang-seling 30 meter
-                    antara bagian yang ditanami dan yang dibiarkan ditumbuhi alangalang segera disesuaikan dengan bentang alam (landscape) aslinya.
-                    Pos ini kelak akan akan dihuni secara bergilir oleh petugas yang
-                    terdiri atas polhut dan staf Silvagama berikut masyarakat lokal.
-                    Juga akan dilengkapi dengan fasilitas pembibitan tanaman, tandon
-                    air, instalasi pengairan untuk pemeliharaan sekaligus pemadaman
-                    kebakaran, listrik tepat guna, dan berbagai kebutuhan penunjang
-                    lainnya.
-                </p>
                 <p class="mt-4">
                     Betapapun perlu usaha keras sebelum semuanya terwujud.
                     Mencapainya, kami harus tersuruk-suruk menaklukkan kelebatan
@@ -733,7 +681,7 @@
                 <p class="mt-4">
                     <i>“Jangan pernah menyerah sebelum mencobanya,”</i> seloroh Hendra.
                     Bernada kelakar memang dia, tapi tepat menggambarkan tekad
-                    kami. Di Rawa Kadut harapan kami menggumpal.
+                    kami. Di Rawa Kadut harapan kami menggumpal. <span class="bg-red-500 h-3 w-3 inline-flex"></span>
                 </p>
 
             </div>

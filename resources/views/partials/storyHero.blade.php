@@ -48,9 +48,13 @@
                 </div>
             </div>
         </div>
-        <div class="sm:text-7xl text-5xl text-center mt-72 text-white max-w-5xl mx-auto">
-            <h1 class="font-bold">{{ $text }}</h1>
+        <div class="flex h-full items-center" >
+            <div class=" text-center  text-white max-w-5xl mx-auto flex flex-col">
+                <h1 class=" sm:text-7xl text-5xl font-bold inline-flex justify-center">{{ $text }}</h1>
+                <a class="text-base">November 2013</a>
+            </div>
         </div>
+
         <div @click="hero =! hero" class=" z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-80 bottom-6 right-6 h-5 w-5  text-black flex justify-center items-center">
             <a class="text-sm select-none">i</a>
         </div>
