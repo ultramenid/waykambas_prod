@@ -38,10 +38,10 @@ use Illuminate\Support\Facades\URL;
 
 // URL::forceScheme('https');
 
-Route::redirect('/', '/en');
+// Route::redirect('/', '/en');
 
-// frontend
-Route::group(['prefix' => '{lang}'], function () {
+// // frontend
+// Route::group(['prefix' => '{lang}'], function () {
 
     Route::get('/', [IndexController::class, 'index'])->name('index');
     Route::get('/whowheare', [WhowheareController::class, 'index'])->name('whoweare');
@@ -59,7 +59,7 @@ Route::group(['prefix' => '{lang}'], function () {
     Route::get('/Waykambas_tenggelam_dalam_balutan_ilalang', [StoryIlalangController::class, 'index'])->name('Waykambas_tenggelam_dalam_balutan_ilalang');
 
 
-});
+// });
 
 
 //backend

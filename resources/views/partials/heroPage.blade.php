@@ -4,13 +4,13 @@
     <div class="bg-black py-6" >
         <div class="max-w-7xl px-4 py-3  mx-auto relative ">
             <!-- bahasa -->
-            <div class="sm:flex hidden justify-end">
+            {{-- <div class="sm:flex hidden justify-end">
                 <div class="flex space-x-1 text-xs text-gray-400">
                     <a href="{{ route(Route::currentRouteName(), 'id') }}" class="cursor-pointer @if(App::getLocale() == 'id') text-white font-bold @endif">Indonesia</a>
                     <span class="border-r border-green-600"></span>
                     <a href="{{ route(Route::currentRouteName(), 'en') }}" class="cursor-pointer @if(App::getLocale() == 'en') text-white font-bold @endif">English</a>
                 </div>
-            </div>
+            </div> --}}
             <!-- nav -->
             <div class=" justify-between items-center sm:flex hidden">
                 <div class="flex space-x-4 items-center mb-2">
@@ -33,7 +33,7 @@
 
                     <a href="#" class="text-white">Kebakaran</a>
 
-                    <a href="#" class="text-white">Story</a>
+                    <a href="{{ route('Waykambas_tenggelam_dalam_balutan_ilalang', app()->getlocale() )}}" class="text-white">Story</a>
                     <a href="{{ route('diary', app()->getlocale() )}}" class="text-white">Diary</a>
                 </div>
                 <div class="flex space-x-4 items-center">
