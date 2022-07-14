@@ -23,7 +23,7 @@
                             <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="" class="object-cover object-top w-full h-72">
                         </div>
                         <div class="mt-2">
-                            <a class=" font-bold">{{$list->title}}</a> <a class="text-xs mt-1">{{ $list->imgDesc}}</a>
+                            <a class=" font-bold">{{$list->title}}</a> <a class="">{{ $list->imgDesc}}</a>
                         </div>
                     </div>
                     @endforeach
