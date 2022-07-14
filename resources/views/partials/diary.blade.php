@@ -1,6 +1,6 @@
 <!-- diary -->
 <div class="max-w-5xl py-6 mx-auto px-4">
-    <h1 class="text-5xl text-gray-500  py-12">Green Diary</h1>
+    <a href="{{ route('diary', app()->getlocale() )}}" class="text-5xl text-gray-500  py-12">Green Diary</a>
     <div class=" border-b border-t border-gray-400 py-8">
 
         <!-- item 1 -->

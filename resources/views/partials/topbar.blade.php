@@ -49,7 +49,7 @@
                     <p class="border-b border-gray-300"></p>
                 </div>
                 <div class=" px-6">
-                    <a href="#"class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">Diary<a>
+                    <a href="{{ route('diary', app()->getlocale() )}}"class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">Diary<a>
                     <p class="border-b border-gray-300"></p>
                 </div>
                 <div class="px-6 flex space-x-2 text-gray-300 text-sm  bottom-10 fixed z-30">
