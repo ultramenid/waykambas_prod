@@ -21,16 +21,9 @@
                         {{-- image --}}
                         <div class="relative mt-4">
                             <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="" class="object-cover object-top w-full h-72">
-                            <div @click="item2=!item2" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-2 right-3 h-4 w-4  text-black flex justify-center items-center">
-                                <a class="text-sm select-none">i</a>
-                            </div>
-                            <div class="absolute inset-x-0 bottom-0 h-full bg-gray-700 opacity-80 overflow-y-auto" x-show="item2">
-                                <div class=" mx-auto text-white flex items-center py-2 px-4 text-xs whitespace-pre-line" >
-                                    {{ $list->imgDesc}}
-                                </div>
-                            </div>
                         </div>
-                        <p class="mt-2 ">{{$list->title}}</p>
+                        <p class="mt-2 font-bold">{{$list->title}}</p>
+                        <p class="text-xs mt-1">{{ $list->imgDesc}}</p>
                     </div>
                     @endforeach
 
