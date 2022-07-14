@@ -82,7 +82,7 @@
             <div x-show="tabs==='english'" x-cloak style="display: none !important">
                 <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6" x-data="{count1:0}">
                     <h1 class="text-2xl font-semibold mt-4  text-newbg-newgray-900 dark:text-gray-300 mb-6">Image Description</h1>
-                    <textarea maxlength="160" x-ref="countme1" x-on:keyup="count1 = $refs.countme1.value.length"  rows="6"  wire:model.defer='imgDescEN' required class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20" placeholder="Description. . ."></textarea>
+                    <textarea maxlength="500" x-ref="countme1" x-on:keyup="count1 = $refs.countme1.value.length"  rows="6"  wire:model.defer='imgDescEN' required class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20" placeholder="Description. . ."></textarea>
                     <div class="flex justify-end text-newgray-700 dark:text-gray-500  italic text-xs">
                         <span x-html="count1"></span> / <span  x-html="$refs.countme1.maxLength"></span>
                       </div>
@@ -102,7 +102,7 @@
             <div x-show="tabs==='indonesia'" x-cloak style="display: none !important">
                 <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6" x-data="{count1:0}">
                     <h1 class="text-2xl font-semibold mt-4  text-newbg-newgray-900 dark:text-gray-300 mb-6">Image Description</h1>
-                    <textarea maxlength="160" x-ref="countme1" x-on:keyup="count1 = $refs.countme1.value.length"  rows="6"  wire:model.defer='imgDescID' required class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20" placeholder="Description. . ."></textarea>
+                    <textarea maxlength="500" x-ref="countme1" x-on:keyup="count1 = $refs.countme1.value.length"  rows="6"  wire:model.defer='imgDescID' required class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20" placeholder="Description. . ."></textarea>
                     <div class="flex justify-end text-newgray-700 dark:text-gray-500  italic text-xs">
                         <span x-html="count1"></span> / <span  x-html="$refs.countme1.maxLength"></span>
                       </div>
