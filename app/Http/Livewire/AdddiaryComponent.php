@@ -84,8 +84,8 @@ class AdddiaryComponent extends Component
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
-        }elseif(strlen($this->imgDescEN) > 500){
-            $message = 'Image description  max limit 500 character';
+        }elseif(strlen($this->imgDescEN) > 155){
+            $message = 'Image description  max limit 155 character';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
@@ -94,13 +94,13 @@ class AdddiaryComponent extends Component
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
-        }elseif(strlen($this->imgDescID) > 500){
-            $message = 'Image description  max limit 500 character';
+        }elseif(strlen($this->imgDescID) > 155){
+            $message = 'Image description  max limit 155 character';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
-        }elseif(strlen($this->titleEN) > 120){
-            $message = 'Title english max limit 120 character';
+        }elseif(strlen($this->titleEN) > 60){
+            $message = 'Title english max limit 60 character';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
@@ -115,7 +115,7 @@ class AdddiaryComponent extends Component
             $this->emit('toast',$message, $type);
             return;
         }elseif(strlen($this->titleID) > 120){
-            $message = 'Title indonesia max limit 120 character';
+            $message = 'Title indonesia max limit 60 character';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
