@@ -14,9 +14,9 @@
                 <div @click="item1=!item1" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-4 right-6 h-5 w-5  text-black flex justify-center items-center">
                     <a class="text-sm select-none">i</a>
                 </div>
-                <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-700 opacity-80" x-show="item1">
-                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm whitespace-pre-line">
-                        {{$diary[0]->imgDesc}}
+                <div class="absolute inset-x-0 bottom-0 h-full bg-gray-700 opacity-80 overflow-y-auto" x-show="item2">
+                    <div class=" mx-auto text-white flex items-center py-2 px-4 text-xs whitespace-pre-line" >
+                        {{ $diary[0]->imgDesc}}
                     </div>
                 </div>
             </div>
@@ -31,8 +31,8 @@
                 <div @click="item2=!item2" class="z-20 cursor-pointer absolute rounded-full bg-gray-100 opacity-90 bottom-4 right-6 h-5 w-5  text-black flex justify-center items-center">
                     <a class="text-sm select-none">i</a>
                 </div>
-                <div class="absolute inset-x-0 bottom-0 h-16 bg-gray-700 opacity-80" x-show="item2">
-                    <div class=" mx-auto text-white flex items-center py-2 px-12 text-sm whitespace-pre-line">
+                <div class="absolute inset-x-0 bottom-0 h-full bg-gray-700 opacity-80 overflow-y-auto" x-show="item2">
+                    <div class=" mx-auto text-white flex items-center py-2 px-4 text-xs whitespace-pre-line" >
                         {{ $diary[1]->imgDesc }}
                     </div>
                 </div>
