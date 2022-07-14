@@ -10,7 +10,15 @@
     @include('partials.storyHero')
 
     <section x-data="{open:0, open2:0}">
+        <div class="sm:hidden block">
+            <img src="{{ asset('assets/'.$imageHero.'')}}" alt="{{$title}}" class="w-full h-full">
+        </div>
+        <div class="px-4 mt-4 text-center sm:hidden block">
+            <h1 class="text-2xl font-bold ">{{ $text }}</h1>
+            <a class="text-base">November 2013</a>
+        </div>
         <div class="max-w-4xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify"  >
+
             <div class="sm:w-8/12 w-full">
                 <p>Motor yang aku tumpangi melaju kencang meninggalkan
                     Camp ALeRT di Bungur, kawasan hutan<sup id="id1"  class="font-bold rounded border-r border-l border-black px-1"><a href="#1" @click="open=1, open2= 1, setTimeout(() => open = 0, 10000)" >1</a></sup> Taman Nasional<sup id="id2" class="font-bold rounded border-r border-l border-black px-1"><a href="#2" @click="open=2 , open2= 2, setTimeout(() => open = 0, 10000)">2</a></sup>

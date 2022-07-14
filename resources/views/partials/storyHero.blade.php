@@ -1,12 +1,6 @@
 <!-- hero -->
-<section class="relative" x-data="{hero: false}">
-    <div class=" py-6" style="
-        background-image: url('{{ asset('assets/'.$imageHero.'')}}');
-        background-size: cover;
-        background-position: center;
-        background-color: transparent;
-        height: 70vh;
-        background-blend-mode:multiply;">
+<section class="relative sm:block hidden" x-data="{hero: false}">
+    <div class=" py-6 storyhero" >
 
         <!-- nav -->
         <div class="max-w-7xl px-4 py-3  mx-auto relative ">
@@ -68,6 +62,9 @@
                 restorasi di Rawa Kadut. @ Koen Setyawan / SILVAGAMA
             </div>
         </div>
+    </div>
+    <div class="">
+
     </div>
 </section>
 {{-- <header id="up" class="bg-center bg-fixed bg-no-repeat  bg-cover relative" style="height: 70vh; background-image: url('{{ asset('assets/'.$imageHero.'')}}');">
