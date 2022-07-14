@@ -12,15 +12,15 @@
         @foreach ($diary as $item)
             <section class="flex sm:flex-row flex-col mb-12">
                 <div class="sm:w-2/12 w-full">
-                    <h1 class="lg:text-2xl md:text-1xl text-xl font-bold mb-6">{{ date("Y M d", strtotime($item->publishdate))}}</h1>
+                    <h1 class="lg:text-2xl md:text-1xl text-xl font-bold mb-6">{{ date("Y m d", strtotime($item->publishdate))}}</h1>
                 </div>
                 <div class="sm:w-10/12 w-full flex flex-wrap border-t border-gray-400 py-4">
                     {{-- loop here --}}
                     @foreach (getContentDiary($item->publishdate) as $list)
                     <div class="sm:w-5/12 w-full sm:mr-8 mr-0 mb-4 " x-data="{item2:false}">
                         {{-- image --}}
-                        <a href="{{asset('storage/files/photos/'.$list->img)}}" data-title="{{$list->title}}"
-                            data-description="{{ $list->imgDesc}}" class="mt-4 object-cover object-top w-full h-72 glightbox">
+                        <a href="{{asset('storage/files/photos/'.$list->img)}}" data-title="{{ date("Y F d", strtotime($list->publishdate))}}"
+                            data-description="<b>{{$list->title}}</b> {{ $list->imgDesc}}" class="mt-4 object-cover object-top w-full h-72 glightbox">
                             <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="{{$list->title}}" />
                         </a>
                         <div class="mt-2">

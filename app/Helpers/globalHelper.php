@@ -14,8 +14,8 @@ function getContentDiary($publishdate){
 
  function getSelectDiary(){
     if (App::getLocale() == 'id') {
-        return 'id, titleID as title, slugID as slug, imgDescID as imgDesc, img';
+        return 'id, titleID as title, slugID as slug, imgDescID as imgDesc, img, publishdate';
     }else{
-        return 'id, titleEN as title, slugEN as slug, imgDescEN as imgDesc, img';
+        return 'id, titleEN as title, slugEN as slug, imgDescEN as imgDesc, img, publishdate';
     }
 }
