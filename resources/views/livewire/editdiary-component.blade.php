@@ -103,14 +103,14 @@
             <div x-show="tabs==='indonesia'" x-cloak style="display: none !important">
                 <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6" x-data="{count1:{{strlen($imgDescID)}}}">
                     <h1 class="text-2xl font-semibold mt-4  text-newbg-newgray-900 dark:text-gray-300 mb-6">Image Description</h1>
-                    <textarea style="white-space: pre-wrap;" maxlength="500" x-ref="countme1" x-on:keyup="count1 = $refs.countme1.value.length"  rows="6"  wire:model.defer='imgDescID' required class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20" placeholder="Description. . ."></textarea>
+                    <textarea style="white-space: pre-wrap;" maxlength="155" x-ref="countme1" x-on:keyup="count1 = $refs.countme1.value.length"  rows="6"  wire:model.defer='imgDescID' required class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20" placeholder="Description. . ."></textarea>
                     <div class="flex justify-end text-newgray-700 dark:text-gray-500  italic text-xs">
                         <span x-html="count1"></span> / <span  x-html="$refs.countme1.maxLength"></span>
                       </div>
                 </div>
                 <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6" x-data="{count:{{strlen($titleID)}}}">
                     <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4">Title</h1>
-                    <input maxlength="120" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" type="text" class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20"  wire:model.defer='titleID' placeholder="Title. . . ">
+                    <input maxlength="60" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" type="text" class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20"  wire:model.defer='titleID' placeholder="Title. . . ">
                     <div class="flex justify-end text-newgray-700 dark:text-gray-500  italic text-xs mt-2">
                         <span x-html="count"></span> / <span  x-html="$refs.countme.maxLength"></span>
                       </div>
