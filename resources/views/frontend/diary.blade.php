@@ -19,7 +19,8 @@
                     @foreach (getContentDiary($item->publishdate) as $list)
                     <div class="sm:w-5/12 w-full sm:mr-8 mr-0 mb-4 " x-data="{item2:false}">
                         {{-- image --}}
-                        <a href="{{asset('storage/files/photos/'.$list->img)}}" class="mt-4 object-cover object-top w-full h-72 glightbox">
+                        <a href="{{asset('storage/files/photos/'.$list->img)}}" data-title="{{$list->title}}"
+                            data-description="{{ $list->imgDesc}}" class="mt-4 object-cover object-top w-full h-72 glightbox">
                             <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="{{$list->title}}" />
                         </a>
                         <div class="mt-2">
