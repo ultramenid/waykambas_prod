@@ -12,7 +12,9 @@ class SiteplanController extends Controller
         if (App::getLocale() == 'id') {
             return 'id, textsiteplanID as textsiteplan';
         }else{
-            return 'id, textsiteplanEN as textsiteplan';
+            return 'id, textsiteplanID as textsiteplan';
+
+            // return 'id, textsiteplanEN as textsiteplan';
         }
     }
 

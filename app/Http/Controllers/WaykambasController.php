@@ -12,7 +12,9 @@ class WaykambasController extends Controller
         if (App::getLocale() == 'id') {
             return 'id, textwaykambasID as textwaykambas';
         }else{
-            return 'id, textwaykambasEN as textwaykambas';
+            return 'id, textwaykambasID as textwaykambas';
+
+            // return 'id, textwaykambasEN as textwaykambas';
         }
     }
 
@@ -26,7 +28,9 @@ class WaykambasController extends Controller
         if (App::getLocale() == 'id') {
             return 'Sekilas Way Kambas';
         }else{
-            return 'Way Kambas at a glance';
+            return 'Sekilas Way Kambas';
+
+            // return 'Way Kambas at a glance';
         }
     }
     public function index(){

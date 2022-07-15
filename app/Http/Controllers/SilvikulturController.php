@@ -12,7 +12,9 @@ class SilvikulturController extends Controller
         if (App::getLocale() == 'id') {
             return 'id, textsilvikulturID as textsilvikultur';
         }else{
-            return 'id, textsilvikulturEN as textsilvikultur';
+            return 'id, textsilvikulturID as textsilvikultur';
+
+            // return 'id, textsilvikulturEN as textsilvikultur';
         }
     }
 

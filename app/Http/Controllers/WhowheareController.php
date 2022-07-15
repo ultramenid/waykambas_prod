@@ -12,14 +12,18 @@ class WhowheareController extends Controller
         if (App::getLocale() == 'id') {
             return 'Tentang kami';
         }else{
-            return 'Who we are';
+            // return 'Who we are';
+            return 'Tentang kami';
+
         }
     }
     public function getSelect(){
         if (App::getLocale() == 'id') {
             return 'id, textwhoweareID as textwhoweare';
         }else{
-            return 'id, textwhoweareEN as textwhoweare';
+            return 'id, textwhoweareID as textwhoweare';
+
+            // return 'id, textwhoweareEN as textwhoweare';
         }
     }
 

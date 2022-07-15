@@ -13,7 +13,9 @@ class RawakadutController extends Controller
         if (App::getLocale() == 'id') {
             return 'id, textrawakadutID as textrawakadut';
         }else{
-            return 'id, textrawakadutEN as textrawakadut';
+            return 'id, textrawakadutID as textrawakadut';
+
+            // return 'id, textrawakadutEN as textrawakadut';
         }
     }
 

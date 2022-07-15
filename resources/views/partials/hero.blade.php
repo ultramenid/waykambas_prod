@@ -56,12 +56,8 @@
 
             <div class="relative " style="height: 30vh">
                 <div class="absolute inset-x-0 sm:bottom-14 bottom-0 h-16 px-8 max-w-xl">
-                    <p class="text-white text-2xl">
-                        Auriga activity in Way Kambas National
-                        Park to restoring greenery to the park
-                        as well as re-creating a home for the
-                        endangered wildlife that lost their habitat
-                        due to illegal logging and annual forest fire.
+                    <p class="text-white text-2xl italic">
+                        "Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak."
                     </p>
                 </div>
             </div>

@@ -12,7 +12,9 @@ class AZrestorationController extends Controller
         if (App::getLocale() == 'id') {
             return 'id, azID as az, titleID as title';
         }else{
-            return 'id, azEN as az, titleEN as title';
+            return 'id, azID as az, titleID as title';
+
+            // return 'id, azEN as az, titleEN as title';
         }
     }
     public function getAz(){
