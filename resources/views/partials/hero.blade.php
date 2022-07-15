@@ -44,7 +44,7 @@
                     </div> --}}
                     <a href="{{ route('azrestoration', app()->getlocale() )}}" class="text-white">A-Z Restoration</a>
 
-                    <a href="#" class="text-white">Kebakaran</a>
+                    {{-- <a href="#" class="text-white">Kebakaran</a> --}}
 
                     <a href="{{ route('Waykambas_tenggelam_dalam_balutan_ilalang', app()->getlocale() )}}" class="text-white">Story</a>
                     <a href="{{ route('diary', app()->getlocale() )}}" class="text-white">Diary</a>

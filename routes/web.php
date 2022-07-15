@@ -44,9 +44,9 @@ Route::redirect('/', '/id');
 Route::group(['prefix' => '{lang}'], function () {
 
     Route::get('/', [IndexController::class, 'index'])->name('index');
-    Route::get('/whowheare', [WhowheareController::class, 'index'])->name('whoweare');
-    Route::get('/waykambas', [WaykambasController::class, 'index'])->name('waykambas');
-    Route::get('/rawakadut', [RawakadutController::class, 'index'])->name('rawakadut');
+    Route::get('/about/tentangkami', [WhowheareController::class, 'index'])->name('whoweare');
+    Route::get('/about/waykambas', [WaykambasController::class, 'index'])->name('waykambas');
+    Route::get('/about/rawakadut', [RawakadutController::class, 'index'])->name('rawakadut');
     Route::get('/azrestoration', [AZrestorationController::class, 'index'])->name('azrestoration');
     Route::get('/diary', [DiaryController::class, 'index'])->name('diary');
 
