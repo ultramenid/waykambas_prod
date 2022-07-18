@@ -22,6 +22,6 @@
             <a href="#" class="text-white">Story</a>
             <a href="#" class="text-white">Diary</a>
         </div>
-        <p class="text-white text-sm mt-1 max-w-xl"> Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.</p>
+        <p class="text-white text-sm mt-1 max-w-xl italic"> Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.</p>
     </div>
 </div>
