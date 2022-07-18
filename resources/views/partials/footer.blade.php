@@ -19,14 +19,9 @@
 
             <a href="#" class="text-white">A-Z Restoration</a>
 
-            <a href="#" class="text-white">Kebakaran</a>
-
             <a href="#" class="text-white">Story</a>
             <a href="#" class="text-white">Diary</a>
         </div>
-        <p class="text-white text-xl mt-12 max-w-xl">Auriga activity in Way Kambas National Park to restoring
-            greenery to the park as well as re-creating a home for the
-            endangered wildlife that lost their habitat due to illegal
-            logging and annual forest fire.</p>
+        <p class="text-white text-sm mt-1 max-w-xl"> Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.</p>
     </div>
 </div>
