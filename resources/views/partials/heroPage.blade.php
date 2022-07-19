@@ -1,7 +1,7 @@
 <!-- hero -->
 <div class="relative " x-data="{hero: false}">
     <!-- image -->
-    <div class="bg-black py-6" >
+    <div class="bg-green-diary py-6" >
         <div class="max-w-7xl px-4 py-3  mx-auto relative ">
             <!-- bahasa -->
             {{-- <div class="sm:flex hidden justify-end">

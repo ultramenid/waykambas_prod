@@ -51,6 +51,16 @@
             background-blend-mode:multiply;
 }
 
+.bg-green-diary{
+    background-image: url('/img/greendiary.jpeg');
+            background-repeat: no-repat;
+            background-size: cover;
+            height: 50vh;
+            background-position: center;
+            background-color: transparent;
+            background-blend-mode:multiply;
+}
+
 @media screen and (max-width: 420px) {
     .storyhero {
         height: 100%;
