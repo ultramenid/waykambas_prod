@@ -12,7 +12,7 @@ use Illuminate\Support\Str;
 class EditdiaryComponent extends Component
 {
     use WithFileUploads;
-    public $idDiary;
+    public $idDiary, $filetypeupload = 1;
     public $urlfiles = [];
     public $uphoto, $imgDescEN,$imgDescID, $publishdate, $titleID, $titleEN, $photo, $isactive;
 
@@ -32,28 +32,20 @@ class EditdiaryComponent extends Component
         $file = $this->photo->store('public/files/photos');
         $foto = $this->photo->hashName();
 
-        $manager = new ImageManager();
 
-        // https://image.intervention.io/v2/api/fit
-        //crop the best fitting 1:1 ratio (200x200) and resize to 200x200 pixel
-        $image = $manager->make('storage/files/photos/'.$foto)->fit(600, 360);
-        $image->save('storage/files/photos/thumbnail/'.$foto);
         return $foto;
     }
 
     public function updatedPhoto($photo){
         $extension = pathinfo($photo->getFilename(), PATHINFO_EXTENSION);
-        if (!in_array($extension, ['png', 'jpeg', 'bmp', 'gif','jpg','webp'])) {
+        if (!in_array($extension, ['png', 'jpeg', 'bmp', 'gif','jpg','webp','mp4', 'avi', '3gp', 'mov', 'm4a'])) {
            $this->reset('photo');
            $message = 'Files not supported';
            $type = 'error'; //error, success
            $this->emit('toast',$message, $type);
-        }elseif($photo->getSize() > 8097152){
-           $this->reset('photo');
-           $message = 'Files must not be greater than 8MB';
-           $type = 'error'; //error, success
-           $this->emit('toast',$message, $type);
-        }
+        }elseif (in_array($extension, ['mp4', 'avi', '3gp', 'mov', 'm4a'])) {
+            $this->filetypeupload = 2;
+         }
     }
 
     public function storediary(){

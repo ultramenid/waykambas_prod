@@ -8,10 +8,11 @@ use Livewire\Component;
 use Intervention\Image\ImageManager;
 use Livewire\WithFileUploads;
 use Illuminate\Support\Str;
-
+use Livewire\WithPagination;
 
 class CmsDiariComponent extends Component
 {
+    use WithPagination;
     public $deleteName, $deleteID, $deleter;
     public $dataField = 'titleEN', $dataOrder = 'asc', $paginate = 10, $search = '';
 

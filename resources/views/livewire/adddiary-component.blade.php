@@ -67,10 +67,14 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-400 mx-auto" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" />
                           </svg>
+                        @elseif($filetypeupload = 2)
+                            <video class=" mx-auto sm:h-96 h-full w-full rounded " controls>
+                                <source src="{{$photo->temporaryUrl()}}" type="video/mp4">
+                            </video>
                         @else
-                            <img src="{{$photo->temporaryUrl()}}" alt="" class=" mx-auto sm:h-96 h-full w-full rounded ">
+                        <img src="{{$photo->temporaryUrl()}}" alt="" class=" mx-auto sm:h-96 h-full w-full rounded ">
                         @endif
-                        <input type='file' class="hidden" wire:model='photo' accept="image/*" />
+                        <input type='file' class="hidden" wire:model='photo' accept="image/*, video/*" />
                         <p wire:loading.remove wire:target="photo" class="text-xs text-center text-gray-400 mt-2">Clik to upload image</p>
                         <p wire:loading wire:target="photo" class="text-xs text-center text-gray-400">Uploding. . . . . </p>
                     </label>

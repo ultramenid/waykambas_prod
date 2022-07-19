@@ -65,12 +65,24 @@
                     <label class="cursor-pointer">
                         @if ($uphoto)
                             @if ($photo)
-                                <img src="{{$photo->temporaryUrl()}}" alt="" class=" mx-auto w-full rounded ">
+                                @if($filetypeupload = 2)
+                                    <video class=" mx-auto sm:h-96 h-full w-full rounded " controls>
+                                        <source src="{{$photo->temporaryUrl()}}" type="video/mp4">
+                                    </video>
+                                @else
+                                    <img src="{{$photo->temporaryUrl()}}" alt="" class=" mx-auto sm:h-96 h-full w-full rounded ">
+                                @endif
                             @else
-                                <img src="{{ asset('/storage/files/photos/'.$uphoto) }}" alt="" class=" mx-auto w-full rounded ">
+                                @if (in_array(pathinfo(asset('storage/files/photos/'.$uphoto), PATHINFO_EXTENSION),['mp4', 'avi', '3gp', 'mov', 'm4a']))
+                                    <video class="spect-w-16 aspect-h-9  sm:block hidden bg-cover bg-center" controls>
+                                        <source src="{{asset('storage/files/photos/'.$uphoto)}}" type="video/mp4" >
+                                    </video>
+                                @else
+                                <img src="{{asset('storage/files/photos/'.$uphoto)}}" alt="" class="spect-w-16 aspect-h-9  sm:block hidden bg-cover bg-center">
+                                @endif
                             @endif
                         @endif
-                        <input type='file' class="hidden" wire:model='photo' accept="image/*" />
+                        <input type='file' class="hidden" wire:model='photo' accept="image/*, video/*" />
                         <p wire:loading.remove wire:target="photo" class="text-xs text-center text-gray-400 mt-2">Clik to upload image</p>
                         <p wire:loading wire:target="photo" class="text-xs text-center text-gray-400">Uploding. . . . . </p>
                     </label>

@@ -57,7 +57,13 @@
 
                             <td class=" py-4 break-words text-sm font-bold text-newgray-700 dark:text-gray-300  ">
                                 <div class="px-4 items-center flex ">
-                                    <img src="{{ asset('/storage/files/photos/thumbnail/'.$item->img) }}" alt="" class="spect-w-16 aspect-h-9  sm:block hidden bg-cover bg-center">
+                                    @if (in_array(pathinfo(asset('storage/files/photos/'.$item->img), PATHINFO_EXTENSION),['mp4', 'avi', '3gp', 'mov', 'm4a']))
+                                        <video class="spect-w-16 aspect-h-9  sm:block hidden bg-cover bg-center" controls>
+                                            <source src="{{asset('storage/files/photos/'.$item->img)}}" type="video/mp4" >
+                                        </video>
+                                    @else
+                                    <img src="{{asset('storage/files/photos/'.$item->img)}}" alt="" class="spect-w-16 aspect-h-9  sm:block hidden bg-cover bg-center">
+                                    @endif
                                 </div>
 
                             </td>
