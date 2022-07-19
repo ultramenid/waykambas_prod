@@ -9,6 +9,7 @@
     @include('partials.heroPage')
      <!-- content -->
      <div class=" max-w-7xl mx-auto py-12 px-4">
+
         @foreach ($diary as $item)
             <section class="flex sm:flex-row flex-col mb-12">
                 <div class="sm:w-2/12 w-full">

@@ -37,6 +37,8 @@ class WaykambasController extends Controller
         $text = $this->geth1();
         $content = $this->getwaykambas();
         $title = 'About - Way kambas';
-        return view('frontend.waykambas', compact('title', 'content', 'text'));
+        $nav = 'about';
+        $cssbackground = 'bg-waykambas';
+        return view('frontend.waykambas', compact('title', 'content', 'text','nav', 'cssbackground'));
     }
 }

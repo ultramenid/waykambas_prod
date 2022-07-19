@@ -25,7 +25,9 @@ class DiaryController extends Controller
     public function index(){
         $title = 'Diary - Way Kambas';
         $text = 'Green Diary';
+        $nav = 'diary';
         $diary = $this->getDiary();
-        return view('frontend.diary', compact('title','text', 'diary'));
+        $cssbackground = 'bg-green-diary';
+        return view('frontend.diary', compact('title','text', 'diary', 'cssbackground','nav'));
     }
 }

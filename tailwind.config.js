@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: [
     "./resources/**/*.blade.php",
@@ -28,6 +29,10 @@ module.exports = {
                 // '800': '#252f3f',
                 // '900': '#161e2e',
               },
+        },
+        fontFamily: {
+            'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
+            'notoserif' : ['Noto Serif']
         },
     },
   },

@@ -26,6 +26,8 @@ class AZrestorationController extends Controller
         $title = 'A-Z Restoration - Way Kambas';
         $text = 'A-Z Restoration';
         $content = $this->getAz();
-        return view('frontend.azrestoration', compact('title', 'text', 'content'));
+        $cssbackground = 'bg-az';
+        $nav = 'az';
+        return view('frontend.azrestoration', compact('title', 'text', 'content','cssbackground','nav'));
     }
 }

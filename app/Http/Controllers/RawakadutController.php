@@ -29,6 +29,8 @@ class RawakadutController extends Controller
         $text = 'Rawa Kadut';
         $content = $this->getrawakadut();
         $title = 'Rawa Kadut - Way kambas';
-        return view('frontend.rawakadut', compact('title', 'content', 'text'));
+        $nav = 'about';
+        $cssbackground = 'bg-restorasi';
+        return view('frontend.rawakadut', compact('title', 'content', 'text', 'nav', 'cssbackground'));
     }
 }

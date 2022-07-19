@@ -10,6 +10,7 @@ class StoryIlalangController extends Controller
         $title = 'Waykambas Tenggelam Dalam Balutan Ilalang - Feature Story';
         $text = 'Waykambas Tenggelam Dalam Balutan Ilalang';
         $imageHero = 'ilalang.jpg';
-        return view('frontend.ilalang', compact('title','text', 'imageHero'));
+        $nav = 'story';
+        return view('frontend.ilalang', compact('title','text', 'imageHero','nav'));
     }
 }

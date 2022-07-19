@@ -24,17 +24,18 @@
                                 </svg>
                             </a>
                         <div class="absolute mt-8 z-20 bg-white px-2 py-2 flex flex-col space-y-2" x-show="pages" x-cloak style="display: none !important">
-                            <a href="{{ route('whoweare', app()->getlocale() )}}" class="text-sm mr-6">Who We Are</a>
+                            <a href="{{ route('whoweare', app()->getlocale() )}}" class="text-sm mr-6">Siapa Kami</a>
                             <a href="{{ route('waykambas', app()->getlocale() )}}" class="text-sm mr-6">Way Kambas</a>
                             <a href="{{ route('rawakadut', app()->getlocale() )}}" class="text-sm mr-6">Restorasi Kadut</a>
                         </div>
                     </div>
 
-                    <a href="{{ route('azrestoration', app()->getlocale() )}}" class="text-white">A-Z Restoration</a>
+                        <a href="{{ route('azrestoration', app()->getlocale() )}}" class="text-white">A-Z Restoration</a>
 
                     {{-- <a href="#" class="text-white">Kebakaran</a> --}}
-
-                    <a href="{{ route('Waykambas_tenggelam_dalam_balutan_ilalang', app()->getlocale() )}}" class="text-white">Story</a>
+                    <div class="@if ($nav === 'story') border-b border-white @endif">
+                        <a href="{{ route('Waykambas_tenggelam_dalam_balutan_ilalang', app()->getlocale() )}}" class="text-white">Story</a>
+                    </div>
                     <a href="{{ route('diary', app()->getlocale() )}}" class="text-white">Diary</a>
                 </div>
                 <div class="flex space-x-4 items-center">
