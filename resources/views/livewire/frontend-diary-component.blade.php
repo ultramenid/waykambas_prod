@@ -1,4 +1,9 @@
 <div>
+    <div class="flex justify-end">
+        <div class="flex justif-between">
+
+        </div>
+    </div>
     @foreach ($diaries as $item)
             <section class="flex sm:flex-row flex-col mb-12">
                 <div class="sm:w-2/12 w-full">
@@ -12,11 +17,11 @@
                         <a href="{{asset('storage/files/photos/'.$list->img)}}" data-title="{{ date("Y F d", strtotime($list->publishdate))}}"
                             data-description="<b>{{$list->title}}</b> {{ $list->imgDesc}}" class="mt-4 object-cover object-top w-full h-72 glightbox">
                             @if (in_array(pathinfo(asset('storage/files/photos/'.$list->img), PATHINFO_EXTENSION),['mp4', 'avi', '3gp', 'mov', 'm4a']))
-                                        <video class="spect-w-16 aspect-h-9  sm:block hidden bg-cover bg-center" controls>
+                                        <video class="spect-w-16 aspect-h-9   bg-cover bg-center" controls>
                                             <source src="{{asset('storage/files/photos/'.$list->img)}}" type="video/mp4" >
                                         </video>
                                     @else
-                                    <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="" class="spect-w-16 aspect-h-9  sm:block hidden bg-cover bg-center">
+                                    <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="" class="spect-w-16 aspect-h-9   bg-cover bg-center">
                                     @endif
                         </a>
                         <div class="mt-2">
