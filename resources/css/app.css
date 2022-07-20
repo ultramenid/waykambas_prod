@@ -125,4 +125,9 @@
         width: 100%;
         background-image: url('/img/tentang-kami.jpg');
     }
+    .bg-green-diary{
+        height: 30vh;
+        width: 100%;
+        background-image: url('/img/greendiary.jpeg');
+    }
 }

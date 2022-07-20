@@ -1,0 +1,43 @@
+<div>
+    @foreach ($diaries as $item)
+            <section class="flex sm:flex-row flex-col mb-12">
+                <div class="sm:w-2/12 w-full">
+                    <h1 class="lg:text-2xl md:text-1xl text-xl font-bold mb-6">{{ date("Y F d", strtotime($item->publishdate))}}</h1>
+                </div>
+                <div class="sm:w-10/12 w-full flex flex-wrap border-t border-gray-400 py-4">
+                    {{-- loop here --}}
+                    @foreach (getContentDiary($item->publishdate) as $list)
+                    <div class="sm:w-5/12 w-full sm:mr-8 mr-0 mb-4 " x-data="{item2:false}">
+                        {{-- image --}}
+                        <a href="{{asset('storage/files/photos/'.$list->img)}}" data-title="{{ date("Y F d", strtotime($list->publishdate))}}"
+                            data-description="<b>{{$list->title}}</b> {{ $list->imgDesc}}" class="mt-4 object-cover object-top w-full h-72 glightbox">
+                            @if (in_array(pathinfo(asset('storage/files/photos/'.$list->img), PATHINFO_EXTENSION),['mp4', 'avi', '3gp', 'mov', 'm4a']))
+                                        <video class="spect-w-16 aspect-h-9  sm:block hidden bg-cover bg-center" controls>
+                                            <source src="{{asset('storage/files/photos/'.$list->img)}}" type="video/mp4" >
+                                        </video>
+                                    @else
+                                    <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="" class="spect-w-16 aspect-h-9  sm:block hidden bg-cover bg-center">
+                                    @endif
+                        </a>
+                        <div class="mt-2">
+                            <a class=" font-bold">{{ Str::limit($list->title, 60) }}  </a> <a class="">{{ Str::limit($list->imgDesc, 155) }} </a>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </section>
+        @endforeach
+        @if ($diaries->hasMorePages())
+            <div class="text-center mt-12">
+                <button class="bg-black text-white py-2 px-4" wire:click="getMore" wire:loading.remove>
+                    Load More
+                </button>
+                <button wire:loading wire:target='getMore'>
+                    <svg class="animate-spin mx-auto h-6 w-6 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                </button>
+            </div>
+        @endif
+</div>
