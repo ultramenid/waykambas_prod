@@ -16,34 +16,7 @@
                     <img src="{{ asset('assets/ilalang.jpg') }}" alt="" class="object-cover  aspect-video sm:h-screen h-full w-full">
                     <a href="{{ route('Waykambas_tenggelam_dalam_balutan_ilalang', app()->getlocale() )}}" class="absolute sm:px-32 px-4 sm:py-0 py-4  max-w-3xl sm:text-3xl text-white text-xl font-semibold text-left hover:underline">Way Kambas Tenggelam Dalam Balutan Ilalang</a>
                 </div>
-                <div class="swiper-slide flex items-center  " style="--tw-bg-opacity: 1;
-                background-color: rgb(245 245 244 / var(--tw-bg-opacity)) !important; ">
-                    <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2077&q=80" alt="" class="object-cover aspect-video sm:h-screen h-full w-full">
-                    <p class="absolute sm:px-32 px-4 sm:py-0 py-4  max-w-3xl sm:text-3xl text-white text-xl font-semibold text-left">Auriga activity in Way Kambas
-                        National Park to restoring
-                        greenery to the park fire.</p>
-                </div>
-                <div class="swiper-slide flex items-center " style="--tw-bg-opacity: 1;
-                background-color: rgb(245 245 244 / var(--tw-bg-opacity)) !important; ">
-                    <img src="https://images.unsplash.com/photo-1521651201144-634f700b36ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="object-cover aspect-video sm:h-screen h-full w-full">
-                    <p class="absolute sm:px-32 px-4 sm:py-0 py-4  max-w-3xl sm:text-3xl text-white text-xl font-semibold text-left">Auriga activity in Way Kambas
-                        National Park to restoring
-                        greenery to the park fire.</p>
-                </div>
-                <div class="swiper-slide flex items-center " style="--tw-bg-opacity: 1;
-                background-color: rgb(245 245 244 / var(--tw-bg-opacity)) !important; ">
-                    <img src="https://images.unsplash.com/photo-1563994798145-aac79dece602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80" alt="" class="object-cover aspect-video sm:h-screen h-full w-full">
-                    <p class="absolute sm:px-32 px-4 sm:py-0 py-4  max-w-3xl sm:text-3xl text-white text-xl font-semibold text-left">Auriga activity in Way Kambas
-                        National Park to restoring
-                        greenery to the park fire.</p>
-                </div>
-                <div class="swiper-slide flex items-center " style="--tw-bg-opacity: 1;
-                background-color: rgb(245 245 244 / var(--tw-bg-opacity)) !important; ">
-                    <img src="https://images.unsplash.com/photo-1582292060813-09aef839c627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="object-cover aspect-video sm:h-screen h-full w-full">
-                    <p class="absolute sm:px-32 px-4 sm:py-0 py-4  max-w-3xl sm:text-3xl text-white text-xl font-semibold text-left">Auriga activity in Way Kambas
-                        National Park to restoring
-                        greenery to the park fire.</p>
-                </div>
+
             </div>
 
 

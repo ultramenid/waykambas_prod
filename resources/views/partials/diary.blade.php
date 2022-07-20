@@ -1,7 +1,7 @@
 <!-- diary -->
-<div class="max-w-5xl py-6 mx-auto px-4">
-    <a href="{{ route('diary', app()->getlocale() )}}" class="text-5xl text-gray-500  py-12">Green Diary</a>
-    <div class=" border-b border-t border-gray-400 py-8">
+<div class="max-w-7xl py-6 mx-auto px-4">
+    <a href="{{ route('diary', app()->getlocale() )}}" class="sm:text-5xl text-2xl font-bold text-gray-500 px-4 py-12">Green Diary</a>
+    <div class=" border-b border-t border-gray-400 py-4 mt-8">
 
         <!-- item 1 -->
         <div x-data="{ item1: false }" class="sm:py-8 py-2 flex sm:flex-row flex-col sm:space-x-6 space-x-0 space-y-6 sm:space-y-0 items-center mx-auto max-w-5xl">

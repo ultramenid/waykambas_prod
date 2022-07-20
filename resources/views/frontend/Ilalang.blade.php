@@ -1164,7 +1164,24 @@
                     Kambas.
                 </p>
             </div>
+
+
+
+            <div x-data="{ open: false }" @scroll.window="open = (window.pageYOffset > 50) ? true : false" >
+                <div class="fixed z-40 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                  })">
+                    <div class="sm:px-4 px-2 sm:py-4 py-2 border border-white bg-black rounded-full bgrmi flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                          </svg>
+                    </div>
+                </div>
+            </div>
     </section>
+
     @include('partials.footer')
 @endsection
 

@@ -45,7 +45,7 @@
     background-image: url('/img/hero5.jpeg');
             background-repeat: no-repat;
             background-size: cover;
-            height: 80vh;
+            height: 60vh;
             background-position: center;
             background-color: transparent;
             background-blend-mode:multiply;
@@ -55,7 +55,7 @@
     background-image: url('/img/greendiary.jpeg');
             background-repeat: no-repat;
             background-size: cover;
-            height: 50vh;
+            height: 60vh;
             background-position: center;
             background-color: transparent;
             background-blend-mode:multiply;
@@ -64,7 +64,7 @@
     background-image: url('/img/siapanich.jpg');
             background-repeat: no-repat;
             background-size: cover;
-            height: 50vh;
+            height: 60vh;
             background-position: center;
             background-color: transparent;
             background-blend-mode:multiply;
@@ -73,7 +73,7 @@
     background-image: url('/img/tentang-kami.jpg');
             background-repeat: no-repat;
             background-size: cover;
-            height: 50vh;
+            height: 60vh;
             background-position: center;
             background-color: transparent;
             background-blend-mode:multiply;
@@ -82,7 +82,7 @@
     background-image: url('/img/restorasi.jpeg');
             background-repeat: no-repat;
             background-size: cover;
-            height: 50vh;
+            height: 60vh;
             background-position: center;
             background-color: transparent;
             background-blend-mode:multiply;
@@ -91,7 +91,7 @@
     background-image: url('/img/waykambasgajah.jpeg');
             background-repeat: no-repat;
             background-size: cover;
-            height: 50vh;
+            height: 60vh;
             background-position: center;
             background-color: transparent;
             background-blend-mode:multiply;
@@ -100,9 +100,29 @@
     .storyhero {
         height: 100%;
         background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
         background-image: url('/assets/ilalang.jpg');
+    }
+    .bg-tentangkami{
+        height: 30vh;
+        width: 100%;
+        background-image: url('/img/siapanich.jpg');
+    }
+    .bg-waykambas{
+        height: 30vh;
+        width: 100%;
+        background-image: url('/img/waykambasgajah1.jpeg');
+    }
+    .bg-restorasi{
+        height: 30vh;
+        width: 100%;
+        background-image: url('/img/restorasi.jpeg');
+    }
+    .bg-az{
+        height: 30vh;
+        width: 100%;
+        background-image: url('/img/tentang-kami.jpg');
     }
 }
