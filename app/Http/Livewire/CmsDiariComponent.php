@@ -14,7 +14,7 @@ class CmsDiariComponent extends Component
 {
     use WithPagination;
     public $deleteName, $deleteID, $deleter;
-    public $dataField = 'titleEN', $dataOrder = 'asc', $paginate = 10, $search = '';
+    public $dataField = 'titleEN', $dataOrder = 'asc', $paginate = 7, $search = '';
 
     public function sortingField($field){
         $this->dataField = $field;
@@ -31,6 +31,10 @@ class CmsDiariComponent extends Component
         } catch (\Throwable $th) {
             return [];
         }
+    }
+    // refresh page on search
+    public function updatedSearch(){
+        $this->resetPage();
     }
     public function closeDelete(){
         $this->deleter = false;

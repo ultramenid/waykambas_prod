@@ -17,7 +17,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/airbnb.css">
     @livewireStyles
     <script src="{{ asset('js/app.js') }}" defer ></script>
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     @livewireScripts
 </head>
 <body class="font-sans">

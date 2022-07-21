@@ -27,8 +27,8 @@ return new class extends Migration
     public function down()
     {
         Schema::table('greendiary', function (Blueprint $table) {
-            $table->string('kronologi')->change();
-            $table->string('perkembangankasus')->change();
+            $table->string('imgDescEN')->change();
+            $table->string('imgDescEN')->change();
         });
     }
 };

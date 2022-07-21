@@ -12,7 +12,7 @@ use Illuminate\Support\Str;
 class EditdiaryComponent extends Component
 {
     use WithFileUploads;
-    public $idDiary, $filetypeupload = 1;
+    public $idDiary, $filetypeupload ;
     public $urlfiles = [];
     public $uphoto, $imgDescEN,$imgDescID, $publishdate, $titleID, $titleEN, $photo, $isactive;
 
@@ -38,14 +38,14 @@ class EditdiaryComponent extends Component
 
     public function updatedPhoto($photo){
         $extension = pathinfo($photo->getFilename(), PATHINFO_EXTENSION);
-        if (!in_array($extension, ['png', 'jpeg', 'bmp', 'gif','jpg','webp','mp4', 'avi', '3gp', 'mov', 'm4a'])) {
+        if (in_array($extension, ['mp4', 'avi', '3gp', 'mov', 'm4a'])) {
+            $this->filetypeupload = true;
+        }elseif (!in_array($extension, ['png', 'jpeg', 'bmp', 'gif','jpg','webp','mp4', 'avi', '3gp', 'mov', 'm4a'])) {
            $this->reset('photo');
            $message = 'Files not supported';
            $type = 'error'; //error, success
            $this->emit('toast',$message, $type);
-        }elseif (in_array($extension, ['mp4', 'avi', '3gp', 'mov', 'm4a'])) {
-            $this->filetypeupload = 2;
-         }
+        }
     }
 
     public function storediary(){

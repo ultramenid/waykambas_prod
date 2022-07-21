@@ -65,7 +65,7 @@
                     <label class="cursor-pointer">
                         @if ($uphoto)
                             @if ($photo)
-                                @if($filetypeupload = 2)
+                                @if($filetypeupload)
                                     <video class=" mx-auto sm:h-96 h-full w-full rounded " controls>
                                         <source src="{{$photo->temporaryUrl()}}" type="video/mp4">
                                     </video>

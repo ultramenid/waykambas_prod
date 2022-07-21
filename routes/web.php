@@ -49,6 +49,7 @@ Route::group(['prefix' => '{lang}'], function () {
     Route::get('/about/rawakadut', [RawakadutController::class, 'index'])->name('rawakadut');
     Route::get('/azrestoration', [AZrestorationController::class, 'index'])->name('azrestoration');
     Route::get('/diary', [DiaryController::class, 'index'])->name('diary');
+    Route::get('/greendiary/{slug}', [DiaryController::class, 'detail'])->name('diarycontent');
 
     // Route::get('/siteplan', [SiteplanController::class, 'index'])->name('siteplan');
     // Route::get('/silvikultur', [SilvikulturController::class, 'index'])->name('silvikultur');

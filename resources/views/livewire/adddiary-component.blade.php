@@ -63,16 +63,19 @@
                 <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-6">Image </h1>
                 <div class="flex items-center justify-center px-2 py-2 border border-dashed border-gray-400 rounded">
                     <label class="cursor-pointer">
-                        @if (! $photo )
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-400 mx-auto" viewBox="0 0 20 20" fill="currentColor">
+                        @if (!$photo)
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-400 mx-auto" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" />
                           </svg>
-                        @elseif($filetypeupload = 2)
+                        @else
+                            @if ($filetypeupload)
                             <video class=" mx-auto sm:h-96 h-full w-full rounded " controls>
                                 <source src="{{$photo->temporaryUrl()}}" type="video/mp4">
                             </video>
-                        @else
-                        <img src="{{$photo->temporaryUrl()}}" alt="" class=" mx-auto sm:h-96 h-full w-full rounded ">
+                                    @else
+                                <img src="{{$photo->temporaryUrl()}}" alt="" class=" mx-auto sm:h-96 h-full w-full rounded ">
+
+                            @endif
                         @endif
                         <input type='file' class="hidden" wire:model='photo' accept="image/*, video/*" />
                         <p wire:loading.remove wire:target="photo" class="text-xs text-center text-gray-400 mt-2">Clik to upload image</p>

@@ -10,18 +10,6 @@ use Illuminate\Support\Facades\DB;
 class DiaryController extends Controller
 {
 
-    // public function getDiary(){
-    //     return DB::table('greendiary')
-    //     ->select('publishdate')
-    //     ->distinct('publishdate')
-    //     ->where('publishdate' , '<=', Carbon::now('Asia/Jakarta'))
-    //     ->where('isActive', 1)
-    //     ->limit(5)
-    //     ->orderBy('publishdate', 'desc')
-    //     ->get();
-
-    // }
-
     public function index(){
         $title = 'Diary - Way Kambas';
         $text = 'Green Diary';
@@ -29,5 +17,11 @@ class DiaryController extends Controller
         // $diary = $this->getDiary();
         $cssbackground = 'bg-green-diary';
         return view('frontend.diary', compact('title','text', 'cssbackground','nav'));
+    }
+    public function detail($lang, $slug){
+        $data = DB::table('greendiary')->where('slugID', $slug)->first();
+        $title = $data->titleID.' - Way Kambas';
+        $nav = 'diary';
+        return view('frontend.contentdiary', compact('title', 'nav' , 'data'));
     }
 }
