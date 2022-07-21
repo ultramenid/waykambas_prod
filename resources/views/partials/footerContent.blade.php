@@ -1,5 +1,5 @@
 <!-- footer -->
-<div class="bg-black py-12  fixed bottom-0 w-full">
+<div class="bg-black py-12  static bottom-0 w-full">
     <div class=" max-w-7xl px-4 mx-auto ">
         <div class="sm:flex hidden space-x-4 items-center mb-2 ">
             <h1 class="text-4xl font-bold text-white mr-6"> <a href="index.html">Rawa Kadut</a> </h1>
