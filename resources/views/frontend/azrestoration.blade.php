@@ -14,7 +14,11 @@
                     <div class="<?php if($item->id == 1){ echo 'border-t border-b ';}else{ echo'border-b'; } ?>  cursor-pointer  py-4 px-4 font-bold"
                         style="border-color: #000000"
                         x-data="{ icon:false}"
-                        @click="open = '{{$item->id}}'"
+                        @click="open = '{{$item->id}}', window.scrollTo({
+                            top: 700,
+                            left: 0,
+                            behavior: 'smooth'
+                          })"
                         @mouseover="icon=true"
                         @mouseover.away="icon=false"
                         :class="{ 'bg-gray-100' : open === '{{$item->id}}' }"
