@@ -34,4 +34,8 @@ class IndexController extends Controller
         $diary = $this->getDiary();
         return view('frontend.index', compact('title', 'diary'));
     }
+
+    public function sitemap(){
+        return response()->view('frontend.sitemap')->header('Content-Type', 'text/xml');
+    }
 }
