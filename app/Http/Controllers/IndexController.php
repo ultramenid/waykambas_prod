@@ -24,7 +24,7 @@ class IndexController extends Controller
         ->selectRaw($this->getSelectDiary())
         ->where('publishdate' , '<=', Carbon::now('Asia/Jakarta'))
         ->where('isActive', 1)
-        ->Limit(2)
+        ->Limit(4)
         ->orderBy('publishdate', 'desc')
         ->get();
 

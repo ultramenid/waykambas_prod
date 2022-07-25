@@ -7,9 +7,40 @@
 @section('content')
     @include('partials.topbar')
     @include('partials.hero')
-    @include('partials.event')
-    @include('partials.diary')
-    @include('partials.slider')
+    {{-- diary --}}
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <a href="{{route('diary', app()->getlocale() )}}" class="font-black text-black text-5xl ">Green Diary</a>
+        <div class="flex flex-wrap  py-6">
+            @foreach ($diary as $list)
+                <div class="sm:w-5/12 w-full sm:mr-8 mr-0 mb-4 " x-data="{item2:false}">
+                    {{-- image --}}
+                    <a href="{{ route('diarycontent', [app()->getLocale(),  $list->slug]) }}">
+                        @if (in_array(pathinfo(asset('storage/files/photos/'.$list->img), PATHINFO_EXTENSION),['mp4', 'avi', '3gp', 'mov', 'm4a']))
+                                    <video class="spect-w-16 aspect-h-9   bg-cover bg-center" controls>
+                                        <source src="{{asset('storage/files/photos/'.$list->img)}}" type="video/mp4" >
+                                    </video>
+                                @else
+                                <img src="{{asset('storage/files/photos/'.$list->img)}}" alt="" class="spect-w-16 aspect-h-9   bg-cover bg-center">
+                        @endif
+                    </a>
+                    <div class="mt-2">
+                        <a href="{{ route('diarycontent', [app()->getLocale(),  $list->slug]) }}" class=" font-bold">{{ Str::limit($list->title, 60) }}  </a> <a class="">{{ Str::limit($list->imgDesc, 155) }} </a>
+                    </div>
+
+                </div>
+            @endforeach
+
+        </div>
+    </section>
+
+    {{-- story --}}
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <a class="font-black text-black text-5xl ">Feature Story</a>
+        <div class="relative">
+            <img src="{{ asset('assets/ilalang.jpg') }}" alt="" class="w-full h-full mt-4 relative">
+            <a href="{{ route('Waykambas_tenggelam_dalam_balutan_ilalang', app()->getlocale() )}}" class="absolute bottom-32 px-6 max-w-3xl sm:text-3xl text-white text-xl font-semibold text-left hover:underline">Way Kambas Tenggelam Dalam Balutan Ilalang</a>
+        </div>
+    </section>
     @include('partials.footer')
 @endsection
 
