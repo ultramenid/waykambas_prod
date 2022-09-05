@@ -10,9 +10,9 @@
     {{-- diary --}}
     <section class="max-w-7xl mx-auto px-4 py-12">
         <a href="{{route('diary', app()->getlocale() )}}" class="font-black text-black text-5xl ">Green Diary</a>
-        <div class="flex flex-wrap  py-6">
+        <div class="sm:col-span-3 col-span-1 grid sm:grid-cols-2 grid-cols-1 grid-flow-row gap-6 py-6">
             @foreach ($diary as $list)
-                <div class="sm:w-5/12 w-full sm:mr-8 mr-0 mb-4 " x-data="{item2:false}">
+                <div class="w-full sm:mr-8 mr-0 mb-4 " x-data="{item2:false}">
                     {{-- image --}}
                     <a href="{{ route('diarycontent', [app()->getLocale(),  $list->slug]) }}">
                         @if (in_array(pathinfo(asset('storage/files/photos/'.$list->img), PATHINFO_EXTENSION),['mp4', 'avi', '3gp', 'mov', 'm4a']))
