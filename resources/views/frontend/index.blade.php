@@ -38,7 +38,7 @@
         <a class="font-black text-black text-5xl ">Feature Story</a>
         <div class="relative">
             <img src="{{ asset('assets/ilalang.jpg') }}" alt="" class="w-full h-full mt-4 relative">
-            <a href="{{ route('Waykambas_tenggelam_dalam_balutan_ilalang', app()->getlocale() )}}" class="absolute bottom-32 px-6 max-w-3xl sm:text-3xl text-white text-xl font-semibold text-left hover:underline">Way Kambas Tenggelam Dalam Balutan Ilalang</a>
+            <a href="{{ route('Waykambas_tenggelam_dalam_balutan_ilalang', app()->getlocale() )}}" class="absolute sm:bottom-32 bottom-5 px-6 max-w-3xl sm:text-3xl text-white text-xl font-semibold text-left hover:underline">Way Kambas Tenggelam Dalam Balutan Ilalang</a>
         </div>
     </section>
     @include('partials.footer')
