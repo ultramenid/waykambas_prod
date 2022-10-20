@@ -80,7 +80,7 @@
                                                 <span class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-white  dark:text-gray-700 bg-black dark:bg-white border border-black dark:border-gray-800 cursor-default leading-5">{{ $page }}</span>
                                             </span>
                                         @else
-                                            <button x-on:click.document="window.scrollTo(0, 0)" wire:click="gotoPage({{ $page }})" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 dark:text-gray-200 dark:border-gray-800 bg-white dark:bg-opacity-20 border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150" aria-label="{{ __('Go to page :page', ['page' => $page]) }}">
+                                            <button  wire:click="gotoPage({{ $page }})" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 dark:text-gray-200 dark:border-gray-800 bg-white dark:bg-opacity-20 border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150" aria-label="{{ __('Go to page :page', ['page' => $page]) }}">
                                                 {{ $page }}
                                             </button>
 
