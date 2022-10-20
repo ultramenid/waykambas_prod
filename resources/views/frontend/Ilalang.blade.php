@@ -46,7 +46,7 @@
                 </p>
             </div>
             <div class="w-4/12 sm:block hidden text-sm" >
-                <div id="1" :class="open==1 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" ><p ><a href="#id1"><sup  class="font-bold rounded border-r border-l border-black px-1">1</sup></a> Kawasan hutan adalah wilayah
+                <div id="1" :class="open==1 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" ><p class="text-dark-blue"><a href="#id1" ><sup  class="font-bold rounded border-r border-l border-black px-1">1</sup></a> Kawasan hutan adalah wilayah
                     tertentu yang ditunjuk dan atau
                     ditetapkan oleh pemerintah untuk
                     dipertahankan keberadaannya
@@ -62,7 +62,7 @@
                     dikukuhkan atau ditetapkan.</p>
                 </div>
                 <div id="2" :class="open==2 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                    <p class="mt-4">
+                    <p class="mt-4 text-dark-blue">
                             <a href="#id2"><sup  class="font-bold rounded border-r border-l border-black px-1">2</sup></a> Taman nasional adalah kawasan
                             pelesatarian alam yang mempunyai
                             ekosistem asli, dikelola dengan sistem
@@ -73,7 +73,7 @@
                     </p>
                 </div>
                 <div id="3" :class="open==3 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                    <p class="mt-4" >
+                    <p class="mt-4 text-dark-blue" >
                         <a href="#id3"><sup  class="font-bold rounded border-r border-l border-black px-1">3</sup></a> Taman Nasional Way Kambas
                         (TNWK) merupakan kawasan hutan
                         konservasi yang ditunjuk melalui Surat
@@ -101,7 +101,7 @@
         </div>
         <div class="max-w-4xl mx-auto flex flex-row px-4 mt-4 space-x-12 text-justify">
             <div class="sm:w-8/12 w-full">
-                <p class="mt-4">tepi taman nasional berbatas langsung dengan pemukiman
+                <p class="mt-4 ">tepi taman nasional berbatas langsung dengan pemukiman
                     penduduk<sup id="id6" class="font-bold rounded border-r border-l border-black px-1"><a href="#6" @click="open=6, open2= 6, setTimeout(() => open = 0, 10000)">6</a></sup> sehingga begitu gajah keluar taman nasional, ia langsung
                     memasuki kawasan budidaya masyarakat.</p>
                 <p class="mt-4">
@@ -144,7 +144,7 @@
             </div>
             <div class="w-4/12 sm:block hidden text-sm">
                 <div  :class="open==3 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p class="mt-4">Bila melihat luasnya, terkesan TNWK
+                <p class="mt-4 text-dark-blue">Bila melihat luasnya, terkesan TNWK
                     bukanlah prioritas penting konservasi.
                     Namun, tidak demikian halnya bila
                     melihat secara menyeluruh Pulau
@@ -155,7 +155,7 @@
                     terhadap hutan dataran rendah di Sumatera. Dan, Way Kambas adalah
                     salah satu hutan dataran rendah
                     terluas yang tersisa di Sumatera.</p>
-                <p class="mt-4">
+                <p class="mt-4 text-dark-blue">
                     Keragaman hayati hutan dataran
                     rendah jelas sedemikian tinggi,
                     termasuk floranya. Demikian halnya
@@ -172,7 +172,7 @@
                     di Way Kambas, yakni mentok rimba
                     (<i>Asrcornis scutulata</i>).
                 </p>
-                <p class="mt-4">
+                <p class="mt-4 text-dark-blue">
                     Letaknya yang terisolir terpisah dari
                     kawasan budidaya serta berbatas
                     langsung dengan laut membuatnya
@@ -251,7 +251,7 @@
             </div>
             <div class="w-4/12 sm:block hidden text-sm">
                 <div  :class="open==3 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p class="mt-4">
+                <p class="mt-4 text-dark-blue">
                     Wilayah pengelolaan Taman
                     Nasional Way Kambas dibagi menjadi beberapa SPTN (Seksi
                     Pengelolaan Taman Nasional).
@@ -260,7 +260,7 @@
                 </p>
                 </div>
                 <div id="4" :class="open==4 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p  class="mt-4"><a href="#id4"><sup  class="font-bold rounded border-r border-l border-black px-1">4</sup> </a>Kawasan hutan di Propinsi Lampung
+                <p  class="mt-4 text-dark-blue"><a href="#id4"><sup  class="font-bold rounded border-r border-l border-black px-1">4</sup> </a>Kawasan hutan di Propinsi Lampung
                     telah ditunjuk sejak zaman Kolonial
                     Belanda. Akan tetapi dari tahun ke
                     tahun luasnya kian menyusut. Pada
@@ -283,7 +283,7 @@
                 </p>
                 </div>
                 <div id="5" :class="open==5 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p  class="mt-4"><a href="#id5"><sup  class="font-bold rounded border-r border-l border-black px-1">5</sup></a>
+                <p  class="mt-4 text-dark-blue"><a href="#id5"><sup  class="font-bold rounded border-r border-l border-black px-1">5</sup></a>
                     Setiap tahun selalu ada konflik
                     penduduk dengan gajah di sekitar
                     Way Kambas. Sebagai gambaran
@@ -345,7 +345,7 @@
             </div>
             <div class="w-4/12 sm:block hidden text-sm">
                 <div id="6"  :class="open==6 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p  class="mt-4"><a href="#id6"><sup  class="font-bold rounded border-r border-l border-black px-1">6</sup> </a>Terdapat 36 desa yang berbatasan
+                <p  class="mt-4 text-dark-blue"><a href="#id6"><sup  class="font-bold rounded border-r border-l border-black px-1">6</sup> </a>Terdapat 36 desa yang berbatasan
                     langsung dengan Taman Nasional
                     Way Kambas. Jumlah ini sangat
                     mungkin bertambah mengingat
@@ -355,14 +355,14 @@
                 </p>
                 </div>
                 <div id="7"  :class="open==7 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p  class="mt-4">
+                <p  class="mt-4 text-dark-blue">
                     <a href="#id7"><sup  class="font-bold rounded border-r border-l border-black px-1">7</sup></a>  Polisi Hutan. Satuan pengamanan
                     kawasan di dalam organisasi kerja
                     Balai Taman Nasional Way Kambas.
                 </p>
                 </div>
                 <div id="8"  :class="open==8 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p class="mt-4">
+                <p class="mt-4 text-dark-blue">
                     <a href="#id8"><sup  class="font-bold rounded border-r border-l border-black px-1">8</sup></a>  Singkatan dari Hak Pengusahaan
                     Hutan. HPH merupakan konsesi
                     pemanenan kayu (<i>logging</i>) dalam
@@ -373,7 +373,7 @@
                 </p>
                 </div>
                 <div id="9"  :class="open==9 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p  class="mt-4">
+                <p  class="mt-4 text-dark-blue">
                     <a href="#id9"><sup  class="font-bold rounded border-r border-l border-black px-1">9</sup></a>  Digitasi cepat Yayasan Silvagama
                     mencatat eksisnya hamparan ilalang
                     masif seluas 40.780 hektar di Resort
@@ -476,7 +476,7 @@
             </div>
             <div class="w-4/12 sm:block hidden text-sm">
                 <div id="10"  :class="open==10 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p  class="mt-4">
+                <p  class="mt-4 text-dark-blue">
                     <a href="#id10"><sup  class="font-bold rounded border-r border-l border-black px-1">10</sup></a> Menurut data base Balai Taman
                     Nasional Way Kambas, kebakaran
                     selalu terjadi hampir setiap tahun,
@@ -486,10 +486,10 @@
                     tentulah terjadi pada 1997/1998.
                 </p>
                 <img src="{{ asset('assets/grafik.png') }}" alt="" class="w-full mt-4">
-                <p>Grafik kebakaran hutan di TN Way Kambas</p>
+                <p class="text-dark-blue">Grafik kebakaran hutan di TN Way Kambas</p>
                 </div>
                 <div id="11"  :class="open==11 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p class="mt-4">
+                <p class="mt-4 text-dark-blue">
                     <a href="#id11"><sup  class="font-bold rounded border-r border-l border-black px-1">11</sup></a> Selain Gerakan Rehabilitasi Hutan
                     dan Lahan (GERHAN) setiap tahun
                     menanami padang ilalang dengan berbagai jenis tanaman. Organisasi
@@ -499,7 +499,7 @@
                 </p>
                 </div>
                 <div id="12"  :class="open==12 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p  class="mt-4">
+                <p  class="mt-4 text-dark-blue">
                     <a href="#id12"><sup  class="font-bold rounded border-r border-l border-black px-1">12</sup></a> Organisasi non pemerintah yang
                     bergerak di bidang pelestarian
                     sumberdaya alam. Didirikan pada
@@ -533,7 +533,7 @@
                 </p>
                 </div>
                 <div id="13"  :class="open==13 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                    <p class="mt-4">
+                    <p class="mt-4 text-dark-blue">
                         <a href="#id13"><sup  class="font-bold rounded border-r border-l border-black px-1">13</sup></a> Program bersama ini terdiri atas 4
                         komponen, yang masing-masing
                         adalah Komponen 1 (Reforestasi
@@ -553,7 +553,7 @@
                     </p>
                     </div>
                     <div id="14"  :class="open==14 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                        <p  class="mt-4">
+                        <p  class="mt-4 text-dark-blue">
                             <a href="#id14"><sup  class="font-bold rounded border-r border-l border-black px-1">14</sup></a>  Konsorsium ini terdiri atas ALeRT,
                             Universitas Lampung (UNILA),
                             Program Konser vasi Harimau
@@ -620,7 +620,7 @@
 
 
                 <div id="15"  :class="open==15 ? ' animate-pulse border border-green-500 px-2 py-2' : ''" >
-                <p  class="mt-4">
+                <p  class="mt-4 text-dark-blue">
                     <a href="#id15"><sup  class="font-bold rounded border-r border-l border-black px-1">15</sup></a>  TFCA-Sumatera merupakan
                     program skema pengalihan utang
                     untuk lingkungan (Debt for-Nature
