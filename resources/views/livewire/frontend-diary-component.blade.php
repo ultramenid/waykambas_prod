@@ -35,7 +35,6 @@
                 </div>
             </section>
     @endforeach
-    @if ($diaries)
     {{ $diaries->links('livewire.pagination') }}
-    @endif
+
 </div>

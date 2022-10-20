@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/airbnb.css">
     @livewireStyles
+    @livewireScripts
     <script src="{{ asset('js/app.js') }}" defer ></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -27,7 +28,7 @@
 
     gtag('config', 'G-XN84PYKBEZ');
     </script>
-    @livewireScripts
+
 </head>
 <body class="font-sans">
 
@@ -35,4 +36,13 @@
 
     @stack('scripts')
 </body>
+<script>
+    Livewire.on('gotoTop', () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behaviour: 'smooth'
+        })
+    })
+</script>
 </html>
