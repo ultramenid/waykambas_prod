@@ -13,6 +13,14 @@ class FrontendDiaryComponent extends Component
     public $paginate = 7, $start, $end;
     use WithPagination;
 
+    public function updatedStart(){
+        $this->resetPage();
+    }
+
+    public function updatedEnd(){
+        $this->resetPage();
+    }
+
     public function getContenteksternal(){
         if ($this->start and $this->end){
             return DB::table('greendiary')
