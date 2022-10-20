@@ -10,8 +10,8 @@ use Livewire\WithPagination;
 
 class FrontendDiaryComponent extends Component
 {
-    public $listdata = 5, $start, $end;
-    // use WithPagination;
+    public $paginate = 7, $start, $end;
+    use WithPagination;
 
     public function getContenteksternal(){
         if ($this->start and $this->end){
@@ -22,7 +22,7 @@ class FrontendDiaryComponent extends Component
             ->where('publishdate' , '<=', Carbon::now('Asia/Jakarta'))
             ->where('isActive', 1)
             ->orderBy('publishdate', 'desc')
-            ->cursorPaginate($this->listdata);
+            ->paginate($this->paginate);
         }else{
             return DB::table('greendiary')
             ->select('publishdate')
@@ -30,15 +30,11 @@ class FrontendDiaryComponent extends Component
             ->where('publishdate' , '<=', Carbon::now('Asia/Jakarta'))
             ->where('isActive', 1)
             ->orderBy('publishdate', 'desc')
-            ->cursorPaginate($this->listdata);
+            ->paginate($this->paginate);
         }
 
     }
 
-
-    public function getMore(){
-         $this->listdata += 5;
-    }
 
     public function render()
     {
