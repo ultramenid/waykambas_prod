@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .h-slider {
+        height: 35rem;
+    }
+  }
 
 .dark .selection-bg ::selection {
         background-color: #f81ce5;
@@ -16,9 +21,7 @@
 }
 
 
-.h-slider {
-    height: 35rem;
-}
+
 
 .h70{
     height: 70vh;
@@ -107,6 +110,9 @@
             background-blend-mode:multiply;
 }
 @media screen and (max-width: 420px) {
+    .h-slider {
+        height: 35rem;
+    }
     .storyhero {
         height: 100%;
         background-position: center;

@@ -107,10 +107,7 @@
             </div>
             <div class="py-6 ">
                 <div class="w-full flex sm:flex-row flex-col justify-between px-4 mt-4   sm:space-x-4 space-x-0 text-justify text-sm">
-                    <div class="sm:w-6/12 w-full">
-                        <img src="{{asset('assets/3.png')}}" alt="" class="sm:h-screen h-full object-cover">
-                        <p class="text-sm mt-1 italic">Menjulang di tengah padang, pohon ini menunjukkan hutan pernah menyelimuti kawasan Rawa Kadut. Kini, perlu usaha keras untuk memulihkan kembali hutan yang telah sirna. AGUS PRIJONO</p>
-                    </div>
+
                     <div class="flex sm:flex-row flex-col  sm:space-x-4 space-x-0 sm:w-6/12 w-full h-full">
 
                         <div class="h-full  sm:px-4 px-0 border-black">
@@ -140,6 +137,11 @@
                                 pandangan 360 derajat, ilalang menguasai bentang alam. </p>
 
                         </div>
+                    </div>
+
+                    <div class="sm:w-6/12 w-full">
+                        <img src="{{asset('assets/3.png')}}" alt="" class="sm:h-screen h-full object-cover">
+                        <p class="text-sm mt-1 italic">Menjulang di tengah padang, pohon ini menunjukkan hutan pernah menyelimuti kawasan Rawa Kadut. Kini, perlu usaha keras untuk memulihkan kembali hutan yang telah sirna. AGUS PRIJONO</p>
                     </div>
                 </div>
             </div>

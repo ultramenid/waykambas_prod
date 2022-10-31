@@ -2,13 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AducepatdirawakadutController extends Controller
 {
+    public function getStory(){
+            return DB::table('featurestory')
+            ->where('slug', 'Adu_cepat_di_Rawa_Kadut')
+            ->first();
+    }
     public function index(){
-        $title = 'Adu Cepat di Rawa Kadut - Feature Story';
-        $text = 'Adu Cepat di Rawa Kadut';
+        $title = $this->getStory()->titleID. ' - Feature Story';
+        $text = $this->getStory()->titleID;
         $imageHero = 'aducepat.png';
         $nav = 'story';
         $imgdesc = 'DIKEPUNG ILALANG
@@ -19,7 +26,7 @@ class AducepatdirawakadutController extends Controller
         membuka ruang tumbuh. Hidup terasa
         berat bagi bibit ini lantaran harus bersaing
         dengan jutaan ilalang.AGUS PRIJONO';
-        $publish = '22 Oktober 2020';
+        $publish = date("F Y", strtotime($this->getStory()->publishdate)) ;
         return view('frontend.aducepat', compact('title','text', 'imageHero','nav', 'imgdesc', 'publish'));
     }
 }

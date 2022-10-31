@@ -75,7 +75,7 @@
                      <!-- Slides -->
                     <div x-ref="slider" class="swiper-slide">
                         <div class="relative">
-                            <img src="{{asset('storage/files/photos/'.$item->img)}}" alt="" class="w-full h-slider mt-4 relative object-cover">
+                            <img src="{{asset('storage/files/photos/'.$item->img)}}" alt="" class="w-full sm:h-slider h-44 mt-4 relative object-cover">
                             <a href="{{ route($item->slug, app()->getlocale() )}}" class="absolute sm:bottom-32 bottom-5 px-6 max-w-3xl sm:text-3xl text-white text-xl font-semibold text-left hover:underline">{{$item->titleID}}</a>
                         </div>
                     </div>
