@@ -88,7 +88,7 @@
         </div>
         <div class="px-4 mt-4 text-center sm:hidden block">
             <h1 class="text-2xl font-bold ">{{ $text }}</h1>
-            <a class="text-base">November 2013</a>
+            <p class="">Disalin sepenuhnya dari: <br> <a href="https://auriga.or.id/resource/reference/ekuilibrium_konservasi_menjaga_keseimbangan_di_taman_nasional_way_kambas.pdf" class="underline">Ekuilibrium Konservasi: Menjaga Keseimbangan di Taman Nasional Way Kambas</a> (<a href="https://tfcasumatera.org/" class="underline">TFCA Sumatera</a>, 2017)</p>
         </div>
         <div class="max-w-6xl mx-auto "  >
             <div class="w-full py-8 flex justify-center">
