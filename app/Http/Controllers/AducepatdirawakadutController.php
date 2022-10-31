@@ -27,7 +27,7 @@ class AducepatdirawakadutController extends Controller
         membuka ruang tumbuh. Hidup terasa
         berat bagi bibit ini lantaran harus bersaing
         dengan jutaan ilalang.AGUS PRIJONO';
-        $ogimage = 'ogaducepat300.jpg';
+        $ogimage = 'ogaducepat3150.jpeg';
         $publish = date("F Y", strtotime($this->getStory()->publishdate)) ;
         return view('frontend.aducepat', compact('title','text', 'imageHero','nav', 'imgdesc', 'publish', 'desc','ogimage'));
     }
