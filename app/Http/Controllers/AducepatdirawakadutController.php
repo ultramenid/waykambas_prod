@@ -18,6 +18,7 @@ class AducepatdirawakadutController extends Controller
         $text = $this->getStory()->titleID;
         $imageHero = 'aducepat.png';
         $nav = 'story';
+        $desc = 'Hutan ditumbuhkan kembali di hamparan ilalang Way Kambas. Namun, pemulihan ekosistem ini sungguh tidak mudah.';
         $imgdesc = 'DIKEPUNG ILALANG
         Ribuan bibit reforestasi terbenam dalam
         lautan alang-alang. Pertumbuhan bibit
@@ -27,6 +28,6 @@ class AducepatdirawakadutController extends Controller
         berat bagi bibit ini lantaran harus bersaing
         dengan jutaan ilalang.AGUS PRIJONO';
         $publish = date("F Y", strtotime($this->getStory()->publishdate)) ;
-        return view('frontend.aducepat', compact('title','text', 'imageHero','nav', 'imgdesc', 'publish'));
+        return view('frontend.aducepat', compact('title','text', 'imageHero','nav', 'imgdesc', 'publish', 'desc'));
     }
 }

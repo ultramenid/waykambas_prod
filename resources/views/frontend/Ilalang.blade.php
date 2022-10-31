@@ -1,7 +1,7 @@
 @extends('layouts.index')
 
 @section('meta')
-    @include('partials.indexMeta')
+    @include('partials.metaStory')
 @endsection
 
 @section('content')
