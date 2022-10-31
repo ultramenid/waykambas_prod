@@ -36,7 +36,7 @@
 
                 {{-- <a href="#" class="text-white">Kebakaran</a> --}}
 
-                <a href="{{ route('Waykambas_tenggelam_dalam_balutan_ilalang', app()->getlocale() )}}" class="text-white">Story</a>
+                <a href="{{ route('story', app()->getlocale() )}}" class="text-white">Story</a>
                 <a href="{{ route('diary', app()->getlocale() )}}" class="text-white">Diary</a>
             </div>
             <div class="flex space-x-4 items-center">

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdddiaryController;
+use App\Http\Controllers\AducepatdirawakadutController;
 use App\Http\Controllers\AZrestorationController;
 use App\Http\Controllers\CmsAzController;
 use App\Http\Controllers\CmsDiaryController;
@@ -18,6 +19,7 @@ use App\Http\Controllers\RawakadutController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\SilvikulturController;
 use App\Http\Controllers\SiteplanController;
+use App\Http\Controllers\StoryController;
 use App\Http\Controllers\StoryIlalangController;
 use App\Http\Controllers\WaykambasController;
 use App\Http\Controllers\WhowheareController;
@@ -51,6 +53,7 @@ Route::group(['prefix' => '{lang}'], function () {
     Route::get('/diary', [DiaryController::class, 'index'])->name('diary');
     Route::get('/greendiary/{slug}', [DiaryController::class, 'detail'])->name('diarycontent');
     Route::get('/sitemap.xml', [IndexController::class, 'sitemap'])->name('sitemap');
+    Route::get('/stories', [StoryController::class, 'index'])->name('story');
 
     // Route::get('/siteplan', [SiteplanController::class, 'index'])->name('siteplan');
     // Route::get('/silvikultur', [SilvikulturController::class, 'index'])->name('silvikultur');
@@ -59,6 +62,7 @@ Route::group(['prefix' => '{lang}'], function () {
 
     // story
     Route::get('/Waykambas_tenggelam_dalam_balutan_ilalang', [StoryIlalangController::class, 'index'])->name('Waykambas_tenggelam_dalam_balutan_ilalang');
+    Route::get('/Adu_cepat_di_Rawa_Kadut', [AducepatdirawakadutController::class, 'index'])->name('Adu_cepat_di_Rawa_Kadut');
 
 
 });

@@ -29,10 +29,20 @@ class IndexController extends Controller
         ->get();
 
     }
+
+    public function getStory(){
+        return DB::table('featurestory')
+        ->where('publishdate' , '<=', Carbon::now('Asia/Jakarta'))
+        ->where('isActive', 1)
+        ->Limit(5)
+        ->orderBy('publishdate', 'desc')
+        ->get();
+    }
     public function index(){
         $title = 'Index - Way kambas';
         $diary = $this->getDiary();
-        return view('frontend.index', compact('title', 'diary'));
+        $story = $this->getStory();
+        return view('frontend.index', compact('title', 'diary', 'story'));
     }
 
     public function sitemap(){

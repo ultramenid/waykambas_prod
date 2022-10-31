@@ -1,6 +1,6 @@
 <!-- hero -->
 <section class="relative sm:block hidden" x-data="{hero: false}">
-    <div class=" py-6 storyhero" >
+    <div class=" py-6 {{$css}}" >
 
         <!-- nav -->
         <div class="max-w-7xl px-4 py-3  mx-auto relative ">
@@ -34,7 +34,7 @@
 
                     {{-- <a href="#" class="text-white">Kebakaran</a> --}}
                     <div class="@if ($nav === 'story') border-b border-white @endif">
-                        <a href="{{ route('Waykambas_tenggelam_dalam_balutan_ilalang', app()->getlocale() )}}" class="text-white">Story</a>
+                        <a href="{{ route('story', app()->getlocale() )}}" class="text-white">Story</a>
                     </div>
                     <a href="{{ route('diary', app()->getlocale() )}}" class="text-white">Diary</a>
                 </div>
@@ -46,7 +46,7 @@
         <div class="flex h-full items-center" >
             <div class=" text-center  text-white max-w-5xl mx-auto flex flex-col">
                 <h1 class=" sm:text-7xl text-5xl font-bold inline-flex justify-center">{{ $text }}</h1>
-                <a class="text-base">November 2013</a>
+                <a class="text-base">{{$publish}}</a>
             </div>
         </div>
 
@@ -55,12 +55,7 @@
         </div>
         <div class="absolute inset-x-0 bottom-0 h-22 bg-gray-600 opacity-70" x-show="hero">
             <div class="max-w-7xl mx-auto text-white flex items-center py-2 px-12 sm:text-normal text-sm">
-                Gambar 1. Belantara ilalang di Way
-                Kambas. Tak ada jalan setapak,
-                semua tertutup ilalang. Medan berat
-                seperti inilah yang kami taklukkan
-                untuk menemukan titik awal
-                restorasi di Rawa Kadut. @ Koen Setyawan / SILVAGAMA
+                {{$imgdesc}}
             </div>
         </div>
     </div>

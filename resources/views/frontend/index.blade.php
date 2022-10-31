@@ -35,39 +35,61 @@
 
     {{-- story --}}
     <section class="max-w-7xl mx-auto px-4 py-12">
-        <a class="font-black text-black text-5xl ">Feature Story</a>
-        <div class="relative">
-            <img src="{{ asset('assets/ilalang.jpg') }}" alt="" class="w-full h-full mt-4 relative">
-            <a href="{{ route('Waykambas_tenggelam_dalam_balutan_ilalang', app()->getlocale() )}}" class="absolute sm:bottom-32 bottom-5 px-6 max-w-3xl sm:text-3xl text-white text-xl font-semibold text-left hover:underline">Way Kambas Tenggelam Dalam Balutan Ilalang</a>
+        <a href="{{ route('story', app()->getlocale() )}}" class="font-black text-black text-5xl ">Feature Story</a>
+    <div x-data="{swiper: null}"
+        x-init="swiper = new Swiper($refs.container, {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: $refs.next,
+                prevEl: $refs.pref,
+              },
+            breakpoints: {
+                640: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                },
+                768: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                },
+                1024: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                },
+            },
+            })"
+        class="relative w-full mx-auto py-4"
+        >
+        <div class="absolute inset-y-0 left-0 z-10 flex items-center">
+            <button @click="swiper.slidePrev()" x-ref="pref"
+                    class="bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+            <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            </button>
         </div>
-    </section>
+
+        <div class="swiper-container" x-ref="container">
+            <div class="swiper-wrapper">
+                @foreach ($story as $item)
+                     <!-- Slides -->
+                    <div x-ref="slider" class="swiper-slide">
+                        <div class="relative">
+                            <img src="{{asset('storage/files/photos/'.$item->img)}}" alt="" class="w-full h-slider mt-4 relative object-cover">
+                            <a href="{{ route($item->slug, app()->getlocale() )}}" class="absolute sm:bottom-32 bottom-5 px-6 max-w-3xl sm:text-3xl text-white text-xl font-semibold text-left hover:underline">{{$item->titleID}}</a>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+
+        <div class="absolute inset-y-0 right-0 z-10 flex items-center">
+            <button @click="swiper.slideNext()" x-ref="next"
+                    class="bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+            <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </button>
+        </div>
+    </div>
+</section>
     @include('partials.footer')
 @endsection
-
-@push('scripts')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-<script>
-   // Swiper: Slider
-    new Swiper('.swiper-container', {
-        nextButton: '#next',
-        prevButton: '#prev',
-        slidesPerView: 1,
-        centeredSlides: true,
-        spaceBetween: 20,
-        loop: true,
-        loopedSlides: 5,
-        watchSlidesVisibility: true,
-        breakpoints: {
-
-            1028: {
-                slidesPerView:1,
-                spaceBetween: 10,
-            },
-            480: {
-                slidesPerView:1,
-                spaceBetween: 10,
-            }
-        }
-    });
-</script>
-@endpush

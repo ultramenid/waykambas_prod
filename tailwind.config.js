@@ -31,8 +31,9 @@ module.exports = {
               },
         },
         fontFamily: {
-            'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
-            'notoserif' : ['Noto Serif']
+            'sans': ['Lora', ...defaultTheme.fontFamily.sans],
+            'notoserif' : ['Noto Serif'],
+            'caption' : ['Source Code Pro']
         },
     },
   },

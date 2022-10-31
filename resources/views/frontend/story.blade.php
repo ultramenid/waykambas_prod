@@ -6,8 +6,13 @@
 
 @section('content')
     @include('partials.topbar')
+    @include('partials.heroPage')
 
+    <!-- content -->
+    <div class=" max-w-5xl mx-auto py-4 px-4 h-screen">
+        <livewire:frontend-story-component />
 
+    </div>
 
 
     @include('partials.footer')

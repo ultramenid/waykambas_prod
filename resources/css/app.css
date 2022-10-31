@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  }
-  .swiper-slide {
-    opacity: .25;
-  }
-  .swiper-slide-visible {
-    opacity: 1;
-  }
-  .selection-bg ::selection {
-    background-color: #79ffe1;
-}
 
 .dark .selection-bg ::selection {
         background-color: #f81ce5;
@@ -25,16 +11,21 @@
     color: #4059AD;
 }
 
-
 .swiper-button-disabled{
     display:none;
 }
 
 
+.h-slider {
+    height: 35rem;
+}
+
 .h70{
     height: 70vh;
 }
-
+.new-font{
+    font-size: 1.1rem!important
+}
 .storyhero{
     background-image: url('/assets/ilalang.jpg');
         background-size: cover;
@@ -43,8 +34,25 @@
         height: 70vh;
         background-blend-mode:multiply;
 }
+.storyaducepat{
+    background-image: url('/assets/aducepat.png');
+        background-size: cover;
+        background-position: center;
+        background-color: transparent;
+        height: 100vh;
+        background-blend-mode:multiply;
+}
 .bg-hero-waykambas{
     background-image: url('/img/hero5.jpeg');
+            background-repeat: no-repat;
+            background-size: cover;
+            height: 60vh;
+            background-position: center;
+            background-color: transparent;
+            background-blend-mode:multiply;
+}
+.bg-story-css{
+    background-image: url('/img/herostory1.jpg');
             background-repeat: no-repat;
             background-size: cover;
             height: 60vh;
@@ -106,6 +114,11 @@
         background-size: cover;
         width: 100%;
         background-image: url('/assets/ilalang.jpg');
+    }
+    .bg-story-css{
+        background-image: url('/img/herostory1.jpg');
+        height: 30vh;
+        width: 100%;
     }
     .bg-tentangkami{
         height: 30vh;
