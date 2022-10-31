@@ -22,14 +22,14 @@
 <meta name="twitter:creator" content="@AURIGA_ID">
 <meta name="twitter:url" content="{{url()->full()}}" />
 <!-- Twitter summary card with large image must be at least 280x150px -->
-{{-- <meta name="twitter:image"  content="{{asset('assets/way kambas.jpg')}}"> --}}
+<meta name="twitter:image"  content="{{asset('assets/').$ogimage}}">
 
 <!-- Open Graph data -->
 <meta property="og:title" content="{{$title}}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{url()->full()}}" />
 <!-- Facebook image must be at least 600x315px -->
-{{-- <meta property="og:image" content="{{asset('assets/way kambas.jpg')}}" /> --}}
+<meta property="og:image" content="{{asset('assets/').$ogimage}}" />
 <meta property="og:description" content="{{$desc}}" />
 <meta property="og:site_name" content="{{$title}}" />
 <meta property="article:tag" content="way kambas, Auriga Nusantara, waykambas, way kambas, rawa kadut, way kambas Transparency Platform, waykambas indonesia" />
