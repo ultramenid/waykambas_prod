@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@AURIGA_ID">
 <meta name="twitter:title" content="{{$title}}">
-<meta name="twitter:description" content="Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.">
+<meta name="twitter:description" content="{{$desc}}">
 <meta name="twitter:creator" content="@AURIGA_ID">
 <meta name="twitter:url" content="{{url()->full()}}" />
 <!-- Twitter summary card with large image must be at least 280x150px -->
@@ -30,7 +30,7 @@
 <meta property="og:url" content="{{url()->full()}}" />
 <!-- Facebook image must be at least 600x315px -->
 {{-- <meta property="og:image" content="{{asset('assets/way kambas.jpg')}}" /> --}}
-<meta property="og:description" content="Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak." />
+<meta property="og:description" content="{{$desc}}" />
 <meta property="og:site_name" content="{{$title}}" />
 <meta property="article:tag" content="way kambas, Auriga Nusantara, waykambas, way kambas, rawa kadut, way kambas Transparency Platform, waykambas indonesia" />
 
