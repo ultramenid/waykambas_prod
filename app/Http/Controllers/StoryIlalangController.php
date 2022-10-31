@@ -13,7 +13,7 @@ class StoryIlalangController extends Controller
         ->first();
 }
     public function index(){
-        $title = $this->getStory()->titleID. ' - Feature Story';
+        $title = $this->getStory()->titleID;
         $text = $this->getStory()->titleID;
         $imageHero = 'ilalang.jpg';
         $nav = 'story';

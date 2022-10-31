@@ -14,7 +14,7 @@ class AducepatdirawakadutController extends Controller
             ->first();
     }
     public function index(){
-        $title = $this->getStory()->titleID. ' - Feature Story';
+        $title = $this->getStory()->titleID;
         $text = $this->getStory()->titleID;
         $imageHero = 'aducepat.png';
         $nav = 'story';
