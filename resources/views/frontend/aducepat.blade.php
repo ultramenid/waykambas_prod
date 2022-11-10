@@ -151,7 +151,7 @@
                     <div class="relative">
                         <img src="{{asset('assets/4.png')}}" alt="" class=" w-full relative">
 
-                            <p class="absolute bottom-3 right-0 text-white sm:text-sm text-xs px-4 text-left sm:w-6/12">Untuk menjangkau areal penghutanan kembali, tim harus menyeberangi sungai di perbatasan taman nasional. Tempat penyeberangan ini akan terputus bila air sungai meluap. Lokasi yang terpencil mempersulit akses menuju areal reforestasi. AGUS PRIJONO </p>
+                            <p class="sm:absolute  bottom-3 right-0 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-6/12 sm:not-italic italic">Untuk menjangkau areal penghutanan kembali, tim harus menyeberangi sungai di perbatasan taman nasional. Tempat penyeberangan ini akan terputus bila air sungai meluap. Lokasi yang terpencil mempersulit akses menuju areal reforestasi. AGUS PRIJONO </p>
 
                     </div>
                     <div class="mt-4 max-w-2xl mx-auto w-full h-full">
@@ -190,7 +190,7 @@
                     <div class="relative mt-4">
                         <img src="{{asset('assets/6.png')}}" alt="" class=" w-full relative">
 
-                            <p class="absolute bottom-3 right-0 text-white sm:text-sm text-xs px-4 text-left sm:w-6/12">Pondok kerja di lapangan untuk menjaga, merawat, dan memastikan bibit tanaman dapat tumbuh secara normal. Aktivitas di pondok kerja juga untuk mencegah pemburu liar masuk taman nasional. Sayangnya, upaya pencegahan itu tak selalu berhasil. Pemburu tetap saja membakar lahan untuk memburu satwa liar. AGUS PRIJONO </p>
+                            <p class="sm:absolute  bottom-3 right-0 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-6/12 sm:not-italic italic">Pondok kerja di lapangan untuk menjaga, merawat, dan memastikan bibit tanaman dapat tumbuh secara normal. Aktivitas di pondok kerja juga untuk mencegah pemburu liar masuk taman nasional. Sayangnya, upaya pencegahan itu tak selalu berhasil. Pemburu tetap saja membakar lahan untuk memburu satwa liar. AGUS PRIJONO </p>
 
                     </div>
                     <div class="mt-4 max-w-2xl mx-auto w-full h-full">
@@ -274,7 +274,7 @@
                 <div class="w-full px-4 mt-4 text-justify text-sm">
                     <div class="relative">
                         <img src="{{asset('assets/7.png')}}" alt="" class=" w-full relative">
-                        <p class="absolute bottom-3 right-0 text-white sm:text-sm text-xs text-left sm:w-6/12 px-4"><a class="font-bold">PONDOK KERJA</a><br>
+                        <p class="sm:absolute  bottom-3 right-0 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-6/12 sm:not-italic italic"><a class="font-bold">PONDOK KERJA</a><br>
                                 Di pondok ini, anggota tim reforestasi menginap dan beristirahat selama menjalankan tugasnya. Lantaran jauh dari peradaban, pondok kerja dilengkapi dengan kamar tidur di loteng, dapur sederhana, kamar mandi, dan sumur. Semua fasilitas tersebut jauh dari kemewahan. AGUS PRIJONO
                         </p>
                     </div>
@@ -415,7 +415,7 @@
             <div class="py-6 w-full  text-justify text-sm px-4">
                     <div class="w-full relative">
                         <img src="{{asset('assets/10.png')}}" alt="" class=" w-full relative">
-                            <p class="sm:text-sm text-xs text-white sm:w-6/12 w-full absolute bottom-4 left-0 px-4">Tak mengenal waktu dan musim, tim reforestasi rutin membabati
+                            <p class="sm:absolute  bottom-3 left-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-6/12 sm:not-italic italic">Tak mengenal waktu dan musim, tim reforestasi rutin membabati
                                 rumput di areal sekat bakar. Pengalaman musnahnya tanaman
                                 karena kebakaran hutan menuntut tim untuk selalu memangkasi
                                 rumput di sekat bakar. Rumput kering amat sulit dipangkas: alot,
@@ -457,7 +457,7 @@
                     </div>
                     <div class="w-full relative">
                         <img src="{{asset('assets/8.png')}}" alt="" class=" w-full relative mt-4">
-                            <p class="sm:text-sm text-xs text-white sm:w-6/12 w-full absolute bottom-4 left-0 px-4">Sekali ilalang terbakar, api akan mengamuk ke segala arah.
+                            <p class="sm:absolute  bottom-3 left-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-6/12 sm:not-italic italic">Sekali ilalang terbakar, api akan mengamuk ke segala arah.
                                 Kebakaran telah melumat bibit penghutanan kembali pada 2014.
                                 Embusan angin mempersulit usaha memutus menjalarnya api. AGUS PRIJONO </p>
 
@@ -512,7 +512,7 @@
                 <div class="w-full  justify-between px-4 mt-4   text-justify text-sm">
                     <div class=" w-full relative">
                         <img src="{{asset('assets/13.png')}}" alt="" class=" w-full relative">
-                        <p class="absolute bottom-4 left-0 sm:text-sm text-xs px-4 text-white sm:w-6/12 w-full">Untuk membantu pertumbuhan, tim membersihkan ilalang di
+                        <p class="sm:absolute  bottom-3 left-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-6/12 sm:not-italic italic">Untuk membantu pertumbuhan, tim membersihkan ilalang di
                             sekitar tanaman muda. Penyiangan akan memberikan ruang
                             tumbuh bagi bibit yang masih rentan dalam bersaing dengan
                             ilalang.  AGUS PRIJONO </p>
@@ -567,9 +567,8 @@
             </div>
             <div class=" h-full px-4 relative py-6 ">
                 <img src="{{asset('assets/14.png')}}" alt="" class="w-full bg-cover relative">
-
-                <div class="absolute sm:w-3/12 w-10/12 sm:bottom-16 bottom-6 right-5  ">
-                    <p class="text-white sm:text-sm text-xs"><a class="font-bold">TANPA AMPUN </a> <br> Perlu waktu lama untuk mengurangi luasnya
+                <div class="sm:absolute  bottom-16 right-6 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-3/12 sm:not-italic italic">
+                    <p class=" sm:text-sm text-xs"><a class="font-bold">TANPA AMPUN </a> <br> Perlu waktu lama untuk mengurangi luasnya
                         padang ilalang. Upaya penghutanan
                         kembali tidak hanya menyangkut persoalan
                         teknis tanam-menanam. Tantangan justru
@@ -583,8 +582,8 @@
             <div class=" h-full px-4 relative py-6 ">
                 <img src="{{asset('assets/15.png')}}" alt="" class="w-full bg-cover relative">
 
-                <div class="absolute sm:w-3/12 w-10/12 sm:bottom-16 bottom-6 left-10  ">
-                    <p class="text-white sm:text-sm text-xs"><a class="font-bold">BIBIT NAN RENTAN </a> <br> Masa depan kawasan ini tergantung pada
+                <div class="sm:absolute  bottom-16 left-10 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-3/12 sm:not-italic italic">
+                    <p class=" sm:text-sm text-xs"><a class="font-bold">BIBIT NAN RENTAN </a> <br> Masa depan kawasan ini tergantung pada
                         ribuan bibit tanaman reforestasi. Namun,
                         jumlah dalam bilangan 'ribuan' bagaikan
                         setetes air di samudra ilalang. Tahuntahun awal adalah masa yang menentukan
