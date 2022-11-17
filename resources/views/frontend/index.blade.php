@@ -16,7 +16,7 @@
                     {{-- image --}}
                     <a href="{{ route('diarycontent', [app()->getLocale(),  $list->slug]) }}">
                         @if (in_array(pathinfo(asset('storage/files/photos/'.$list->img), PATHINFO_EXTENSION),['mp4', 'avi', '3gp', 'mov', 'm4a']))
-                                    <video class="spect-w-16 aspect-h-9   bg-cover bg-center" controls id="video">
+                                    <video class="spect-w-16 aspect-h-9   bg-cover bg-center video-bg" controls >
                                         <source src="{{asset('storage/files/photos/'.$list->img)}}" type="video/mp4" >
                                     </video>
                                 @else

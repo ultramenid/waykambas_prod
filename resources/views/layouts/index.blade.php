@@ -55,7 +55,7 @@
     }
 
     // init event handler
-    const videos = document.getElementById("video")
+    const videos = document.getElementsByClassName("video-bg")
     for (let i = 0; i < videos.length; i++) {
     videos[i].addEventListener("play", onPlay)
     }
