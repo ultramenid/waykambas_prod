@@ -19,9 +19,13 @@ class DiaryController extends Controller
         return view('frontend.diary', compact('title','text', 'cssbackground','nav'));
     }
     public function detail($lang, $slug){
-        $data = DB::table('greendiary')->where('slugID', $slug)->first();
-        $title = $data->titleID.' - Way Kambas';
-        $nav = 'diary';
-        return view('frontend.contentdiary', compact('title', 'nav' , 'data'));
+        try {
+            $data = DB::table('greendiary')->where('slugID', $slug)->first();
+            $title = $data->titleID.' - Way Kambas';
+            $nav = 'diary';
+            return view('frontend.contentdiary', compact('title', 'nav' , 'data'));
+        } catch (\Throwable $th) {
+            return abort(404);
+        }
     }
 }

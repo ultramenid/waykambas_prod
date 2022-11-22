@@ -65,7 +65,7 @@
             </div>
             <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6" x-data="{count1:0}">
                 <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-6">Image </h1>
-                <div class="flex items-center justify-center px-2 py-2 border border-dashed border-gray-400 rounded">
+                <div class="flex items-center justify-center px-2 py-2 border border-dashed border-gray-400 rounded" x-data="{ isUploading: false, progress: 0 }" x-on:livewire-upload-start="isUploading = true" x-on:livewire-upload-finish="isUploading = false; progress = 5" x-on:livewire-upload-error="isUploading = false" x-on:livewire-upload-progress="progress = $event.detail.progress">
                     <label class="cursor-pointer">
                         @if (! $photo )
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-400 mx-auto" viewBox="0 0 20 20" fill="currentColor">
@@ -76,7 +76,10 @@
                         @endif
                         <input type='file' class="hidden" wire:model='photo' accept="image/*" />
                         <p wire:loading.remove wire:target="photo" class="text-xs text-center text-gray-400 mt-2">Clik to upload image</p>
-                        <p wire:loading wire:target="photo" class="text-xs text-center text-gray-400">Uploding. . . . . </p>
+                        {{-- <p wire:loading wire:target="photo" class="text-xs text-center text-gray-400">Uploding. . . . . </p> --}}
+                        <div x-show.transition="isUploading" class="progress progress-sm mt-2 rounded flex justify-center">
+                            <span class="text-xs text-white" x-text="'Uploading ' + progress + '%'"></span>
+                    </div>
                     </label>
                 </div>
 

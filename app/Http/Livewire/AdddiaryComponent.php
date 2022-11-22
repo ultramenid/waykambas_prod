@@ -15,7 +15,7 @@ class AdddiaryComponent extends Component
     use WithFileUploads;
     public $tags = [], $urlfiles = [], $filetypeupload;
     public $photo, $imgDescEN,$imgDescID, $publishdate, $titleID, $titleEN;
-    public $mediafile, $urlfile, $isactive = 1;
+    public $mediafile, $urlfile, $isactive = 1, $proses = 0;
 
     public function uploadImage(){
         $file = $this->photo->store('public/files/photos');
