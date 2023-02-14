@@ -77,7 +77,7 @@
 
                             @endif
                         @endif
-                        <input type='file' class="hidden" wire:model='photo' accept="image/*, video/*" />
+                        <input type='file' class="hidden" wire:model='photo' accept="image/*, video/*"  multiple/>
                         <p wire:loading.remove wire:target="photo" class="text-xs text-center text-gray-400 mt-2">Clik to upload image</p>
                         {{-- <p wire:loading wire:target="photo" class="text-xs text-center text-gray-400" id="proses"></p> --}}
                         <div x-show.transition="isUploading" class="progress progress-sm mt-2 rounded flex justify-center">
