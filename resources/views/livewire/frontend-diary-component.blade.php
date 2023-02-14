@@ -15,7 +15,7 @@
                 <div class="sm:col-span-3 col-span-1 grid sm:grid-cols-2 grid-cols-1 grid-flow-row gap-6 border-t border-gray-400 py-4">
                     {{-- loop here --}}
                     @foreach (getContentDiary($item->publishdate) as $list)
-                    <div class="w-full sm:mr-8 mr-0 mb-4 " x-data="{item2:false}">
+                    <div class="w-full sm:mr-8 mr-0 mb-4 h-80" x-data="{item2:false}">
                         {{-- image --}}
                         <a href="{{ route('diarycontent', [app()->getLocale(),  $list->slug]) }}">
                             @if (in_array(pathinfo(asset('storage/files/photos/'.$list->img), PATHINFO_EXTENSION),['mp4', 'avi', '3gp', 'mov', 'm4a']))
