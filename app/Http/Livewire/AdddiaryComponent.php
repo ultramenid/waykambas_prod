@@ -18,6 +18,7 @@ class AdddiaryComponent extends Component
     public $mediafile, $urlfile, $isactive = 1, $proses = 0;
 
     public function uploadImage(){
+
         $file = $this->photo->store('public/files/photos');
         $foto = $this->photo->hashName();
 
