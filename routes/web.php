@@ -10,6 +10,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DiaryController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MatikanAPiController;
 use App\Http\Controllers\PageRawakadutController;
 use App\Http\Controllers\PageSilvikulturController;
 use App\Http\Controllers\PageSiteplanController;
@@ -63,7 +64,7 @@ Route::group(['prefix' => '{lang}'], function () {
     // story
     Route::get('/Waykambas_tenggelam_dalam_balutan_ilalang', [StoryIlalangController::class, 'index'])->name('Waykambas_tenggelam_dalam_balutan_ilalang');
     Route::get('/Adu_cepat_di_Rawa_Kadut', [AducepatdirawakadutController::class, 'index'])->name('Adu_cepat_di_Rawa_Kadut');
-
+    Route::get('/Matikan_api_menjaga_puspa', [MatikanAPiController::class, 'index'])->name('Matikan_api_menjaga_puspa');
 
 });
 

@@ -37,6 +37,14 @@
         height: 70vh;
         background-blend-mode:multiply;
 }
+.storymatikanapi{
+    background-image: url('/assets/matikanapimenjagapuspa.png');
+        background-size: cover;
+        background-position: center;
+        background-color: transparent;
+        height: 100vh;
+        background-blend-mode:multiply;
+}
 .storyaducepat{
     background-image: url('/assets/aducepat.png');
         background-size: cover;
