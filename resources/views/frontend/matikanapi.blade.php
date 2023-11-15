@@ -137,8 +137,9 @@
 
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 py-4 mb-12">
-        <p id="reference" class="text-sm flex items-center gap-2"><span class="text-red-800 text-2xl">*</span> Diterbitkan <a href="https://auriga.or.id/resource/reference/matikan-api-menjaga-puspa.pdf" class="underline font-bold">Majalah Tempo edisi 3 Januari 2016</a>. Ditulis ulang sebagaimana aslinya.</p>
+    <div class="max-w-3xl mx-auto px-4 py-4 mb-12 flex items-center gap-2">
+        <span class="text-red-800 text-2xl">*</span>
+        <p id="reference" class="text-sm"> Diterbitkan <a href="https://auriga.or.id/resource/reference/matikan-api-menjaga-puspa.pdf" class="underline font-bold">Majalah Tempo edisi 3 Januari 2016</a>. Ditulis ulang sebagaimana aslinya.</p>
     </div>
 
     @include('partials.footer')
