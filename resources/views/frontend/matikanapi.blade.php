@@ -55,7 +55,7 @@
         </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 py-4 border-b">
+    <div class="max-w-7xl mx-auto px-4 py-4 border-b new-font">
         <div class="flex sm:flex-row flex-col-reverse items-center w-full gap-10">
             <div class="sm:w-8/12 w-full">
                 <img src="{{ asset('assets/herofajar.png') }}" alt="Matikan api menjaga puspa">
@@ -70,53 +70,53 @@
             </div>
         </div>
     </div>
-    <div class="max-w-3xl mx-auto px-4 py-4 ">
-        <p class=""><a class="font-bold sm:text-8xl text-2xl">A</a> sap mengepul di arah reforestasl Rawa  Kadut, Taman Naslonal Way Kambas, Lampung, 9 Agustus 2015. Saat ltu, jarum Jam menunjuk angka sembilan. Fajar Sandhika, Koordinator Komponen Reforestasl Yayasan Silvagama, dan Arum Mutasim, yang sedang berada dl pondok, bergegas mengecek ke lokasi titik api. Dengan sepeda motor, mereka menyusuri jalan setapak yang membuJur di sela sela rimbunnya ilalang.</p>
-        <p class="mt-4">Sesampai mereka di lokasi, analisls sementara dilakukan: api bergerak ke arah barat, diperkirakan akan melewati daerah di seberang Sungai Kadut yang berada di belakang pondok. Lantaran angin belum terlalu besar, rambatan api ditaksir mencapai kawasan belakang pondok selepas pukul 12.00. Anallsis kelar, Fajar dan Arum segera menggeber kembali sepeda motor menuju pondok. </p>
-        <p class="mt-4">“Sesampai di pondok, kami bagi tugas,"kata Fajar menceritakan kembali peristiwa itu kepada <i>Tempo</i> di pondok Rawa Kadut, awal Desember lalu. Tiga orang diminta menghadang api di daerah belakang pondok dengan memanfaatkan jalur atau jalan logistik sebagai sekat bakar. Adapun fajar dan arum akan ke kampung terdekat, Bungur, untuk mencari tambahan tenaga, plus berkoordinasi dengan petugas di Seksii Pengelolaan Taman Nasional (SPTN) II Bungur. </p>
-        <p class="mt-4">Setelah mengatur strategi, Fajar dan Arum kembali memacu sepeda motor melewati jalan setapak dan berkelok-kelok di antara padang ilalang sepanjang sekitar 12 kilometer. Ini masih ditambah dengan menerobos rimbunnya hutan sekitar satu kilometer. Sebelum sampai ke Desa Bungur, keduanya harus menyeberangi Sungai Sukadana dengan sampan-tepatnya papan kayu yang dijejerkan-dan menelusuri tanggul. Sesampal di kampung, keduanya berhasil mendapat tambahan tenaga tiga orang.</p>
-        <p class="mt-4">Dalam perjalanan mereka ke pondok, didapati api hanya berjarak kurang dari empat kilometer dari pondok Restorasi Mataram-pondok milik Aliansi Lestari RImba Terpadu (AleRT). Itu berarti api telah bergerak kira-kira tujuh kilometer dari titik pertama yang disurvei Fajar dan Arum, dalam waktu kurang dari tiga jam.</p>
+    <div class="max-w-2xl mx-auto px-4 py-4 new-font">
+        <p class="leading-relaxed "><a class="font-bold sm:text-8xl text-2xl">A</a> sap mengepul di arah reforestasl Rawa  Kadut, Taman Naslonal Way Kambas, Lampung, 9 Agustus 2015. Saat ltu, jarum Jam menunjuk angka sembilan. Fajar Sandhika, Koordinator Komponen Reforestasl Yayasan Silvagama, dan Arum Mutasim, yang sedang berada dl pondok, bergegas mengecek ke lokasi titik api. Dengan sepeda motor, mereka menyusuri jalan setapak yang membuJur di sela sela rimbunnya ilalang.</p>
+        <p class="mt-4 leading-relaxed ">Sesampai mereka di lokasi, analisls sementara dilakukan: api bergerak ke arah barat, diperkirakan akan melewati daerah di seberang Sungai Kadut yang berada di belakang pondok. Lantaran angin belum terlalu besar, rambatan api ditaksir mencapai kawasan belakang pondok selepas pukul 12.00. Anallsis kelar, Fajar dan Arum segera menggeber kembali sepeda motor menuju pondok. </p>
+        <p class="mt-4 leading-relaxed ">“Sesampai di pondok, kami bagi tugas,"kata Fajar menceritakan kembali peristiwa itu kepada <i>Tempo</i> di pondok Rawa Kadut, awal Desember lalu. Tiga orang diminta menghadang api di daerah belakang pondok dengan memanfaatkan jalur atau jalan logistik sebagai sekat bakar. Adapun fajar dan arum akan ke kampung terdekat, Bungur, untuk mencari tambahan tenaga, plus berkoordinasi dengan petugas di Seksii Pengelolaan Taman Nasional (SPTN) II Bungur. </p>
+        <p class="mt-4 leading-relaxed ">Setelah mengatur strategi, Fajar dan Arum kembali memacu sepeda motor melewati jalan setapak dan berkelok-kelok di antara padang ilalang sepanjang sekitar 12 kilometer. Ini masih ditambah dengan menerobos rimbunnya hutan sekitar satu kilometer. Sebelum sampai ke Desa Bungur, keduanya harus menyeberangi Sungai Sukadana dengan sampan-tepatnya papan kayu yang dijejerkan-dan menelusuri tanggul. Sesampal di kampung, keduanya berhasil mendapat tambahan tenaga tiga orang.</p>
+        <p class="mt-4 leading-relaxed ">Dalam perjalanan mereka ke pondok, didapati api hanya berjarak kurang dari empat kilometer dari pondok Restorasi Mataram-pondok milik Aliansi Lestari RImba Terpadu (AleRT). Itu berarti api telah bergerak kira-kira tujuh kilometer dari titik pertama yang disurvei Fajar dan Arum, dalam waktu kurang dari tiga jam.</p>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 py-4 ">
-        <p class="italic text-xl tracking-wider	 ">"Fajar dan tim sangat membantu. Kalau terjadi kebakaran, informasi pertama yang kami terima malah dari teman-teman itu. Keberhasilan melindungi area yang mereka tanami sangat membantu reforestasi di Way Kambas."</p>
+    <div class="max-w-xl mx-auto px-4 py-4 new-font">
+        <p class="italic  tracking-wider	 text-right">"Fajar dan tim sangat membantu. Kalau terjadi kebakaran, informasi pertama yang kami terima malah dari teman-teman itu. Keberhasilan melindungi area yang mereka tanami sangat membantu reforestasi di Way Kambas."</p>
     </div>
-    <div class="max-w-3xl mx-auto px-4 mb-4">
+    <div class="max-w-xl mx-auto px-4 mb-4 new-font">
         <div class="flex justify-end w-full">
             <p class="sm:w-6/12 w-11/12 text-right text-xs"><a class="text-red-700">Suharno</a>, Polisi Hutan Pelaksana Lanjutan, Koordinator Pemadam Kebakaran Taman Nasional Way Kambas.</p>
         </div>
     </div>
-    <div class="max-w-3xl mx-auto px-4 py-4">
+    <div class="max-w-2xl mx-auto px-4 py-4 new-font">
         <p>Tim segera berjibaku dengan senjata tangki semprotan air dan gebyok dari ranting pohon. Akhirnya, si jago merah bisa ditundukkan pada pukul 17.15. Mereka juga berhasil memadamkan api yang membakar lahan reforestasi seluas 2,5 hektare. Ketika mereka sedang leyeh-leyeh di pondok, sekitar pukul 20.45, eh, terlihat lagi ada api di arah timur pondok. Tim kembali bergerak dan tiga perempat jam kemudian api padam. Semua lega.</p>
-        <p class="mt-4">Selama Agustus-Oktober, pekerjaan tambahan itulah yang terus dilakukan Fajar dan kawan-kawannya dari Yayasan Silvagama. Mereka menjaga kawasan, memadamkan agni jika terjadi kebakaran, dan menahan agar api tak tambah meluas. Tugas utama Fajar yang sebenarnya adalah melakukan penghutanan kembali (reforestasi).</p>
-        <p class="mt-4">Yayasan  Sllvagama  adalah  organisasi non-pemerlntah yang bergerak di bidang pelestarian sumber daya alam. Berdiri  pada 12 November 2009,  organisasi Ini  bertujuan mengupayakan terwujudnya kelestarlan sumber daya alam. Di Taman Nasional Way Kambas, Silvagama tergabung dalam Konsorsiun ALeRT dengan melakukan reforestasi. Konsorsium mendapat dana dari Tropical Forest Conservatlon Action for Sumatera (TFCA-Sumatera).</p>
-        <p class="mt-4">Silvagama mengelola area reforestasl sekitar 100 hektare Rawa Kadut dengan masa penanaman tiga tahun. Wilayah ini masuk SPTN II Bungur, Way Kambas. Penanaman pertama dilakukan pada Februari 2014 sebanyak 9.200 barang, dan ditargetkan hingga tahun ketiga sudah dilaksanakan 31.200 pohon. Jenis tanamannya adalah mentru atau puspa, sungkai <i>peronema sp</i>.), dan jambon (<i>Eugenia sp.</i>), yang dikenal tahan  api. Jika terlalap sijago merah, batangnya di atas tanah memang bakal menghitam, tapi akarnya bertahan dan segera menumbuhkan cabang-cabang baru nan hijau. Itulah yang <i>Tempo</i> lihat di Rawa Kadut.</p>
-        <img src="{{ asset('assets/fajar1.png') }}" alt="Fajar Sandhika" class="mt-4">
+        <p class="mt-4 leading-relaxed ">Selama Agustus-Oktober, pekerjaan tambahan itulah yang terus dilakukan Fajar dan kawan-kawannya dari Yayasan Silvagama. Mereka menjaga kawasan, memadamkan agni jika terjadi kebakaran, dan menahan agar api tak tambah meluas. Tugas utama Fajar yang sebenarnya adalah melakukan penghutanan kembali (reforestasi).</p>
+        <p class="mt-4 leading-relaxed ">Yayasan  Sllvagama  adalah  organisasi non-pemerlntah yang bergerak di bidang pelestarian sumber daya alam. Berdiri  pada 12 November 2009,  organisasi Ini  bertujuan mengupayakan terwujudnya kelestarlan sumber daya alam. Di Taman Nasional Way Kambas, Silvagama tergabung dalam Konsorsiun ALeRT dengan melakukan reforestasi. Konsorsium mendapat dana dari Tropical Forest Conservatlon Action for Sumatera (TFCA-Sumatera).</p>
+        <p class="mt-4 leading-relaxed ">Silvagama mengelola area reforestasl sekitar 100 hektare Rawa Kadut dengan masa penanaman tiga tahun. Wilayah ini masuk SPTN II Bungur, Way Kambas. Penanaman pertama dilakukan pada Februari 2014 sebanyak 9.200 barang, dan ditargetkan hingga tahun ketiga sudah dilaksanakan 31.200 pohon. Jenis tanamannya adalah mentru atau puspa, sungkai <i>peronema sp</i>.), dan jambon (<i>Eugenia sp.</i>), yang dikenal tahan  api. Jika terlalap sijago merah, batangnya di atas tanah memang bakal menghitam, tapi akarnya bertahan dan segera menumbuhkan cabang-cabang baru nan hijau. Itulah yang <i>Tempo</i> lihat di Rawa Kadut.</p>
+        <img src="{{ asset('assets/fajar1.png') }}" alt="Fajar Sandhika" class="mt-4 leading-relaxed ">
 
         <div class="flex justify-end w-full">
             <p class="sm:w-6/12 w-11/12 text-right text-xs">Anggota tim Fajar saat memadamkan api di Rawa Kadut, Taman Nasional Way Kambas, Lampung, 9 Agustus 2015</p>
         </div>
 
-        <p class="mt-4">"Tanaman kami edisi pertama sempat dilalap api tahun lalu," ujar Timer Manurung, pendiri  Silvagama-kini  bernama Auriga Nusantara. Kebakaran memang biasa terjadi di kawasan ini. Salah satu penyebabnya adalah pembakaran oleh orang tak bertanggung jawab agar ilalang hijau tumbuh pasca·kebakaran dan memancing satwa keluar sehingga gampang diburu. Timer pun mengirim Fajar untuk melakukan penanaman kembali, plus tugas baru: menghalau api jika ada kebakaran. Fajar bertugas sejak November 2014.</p>
-        <p class="mt-4">Saat tiba di lokasi, Fajar tak menunggu datangnya kebakaran.  Dia bersama timnya segera  membuat  sekat bakar sepanjang satu kilometer dengan lebar 30 meter di Rawa Kadut, Desember 2014. Sekat bakar adalah lahan yang dibersihkan dari berbagai tanaman sehingga menghambat laju api Jika terjadi  kebakaran. "Saya tak mau api menghanguskan lagi hampir semua tanaman kami seperti tahun lalu."</p>
-        <p class="mt-4">Sekat bakar inilah yang bermanfaat ketika sumber daya mereka terbatas saat api menyerbu. Itu misalnya terjadi pada 3-4 0ktober Lalu, ketika kebakaran kembali melanda kawasan Rawa Kadut, sejak pukultiga sore. Fajar, Arum, dan tim berusaha memadamkannya. Namun, lantaran api begitu besar, plus menimbang kemampuan personel dan alat, diputuskan menahan api dijalur sekat bakar agar api tak memasuki area reforestasi. Hari itu, tim bekerja hingga pukul dua dini hari.Sekitar pukul 10.00, api kembali terlihat di sisi barat pondok, tapi dapat segera dipadamkan.</p>
-        <p class="mt-4">"Kerja dengan Fajar enak-enak saja, koordinasi bagus," kata Arum, pekerja yang selama ini menjadi penghubung Fajar dengan warga Bungur. Ihwal ini diakui pula oleh Suharno, Polisi Hutan Pelaksana Lanjutan selaku Koordinator Pemadam Kebakaran Taman Naslonal Way Kambas; Rama Budhiana, Koordinator Program TFCA-Sumatera Konsorslum AleRT; dan Mukhlisin, Kepala Seksi Wilayah II Way Bungur.</p>
+        <p class="mt-4 leading-relaxed ">"Tanaman kami edisi pertama sempat dilalap api tahun lalu," ujar Timer Manurung, pendiri  Silvagama-kini  bernama Auriga Nusantara. Kebakaran memang biasa terjadi di kawasan ini. Salah satu penyebabnya adalah pembakaran oleh orang tak bertanggung jawab agar ilalang hijau tumbuh pasca·kebakaran dan memancing satwa keluar sehingga gampang diburu. Timer pun mengirim Fajar untuk melakukan penanaman kembali, plus tugas baru: menghalau api jika ada kebakaran. Fajar bertugas sejak November 2014.</p>
+        <p class="mt-4 leading-relaxed ">Saat tiba di lokasi, Fajar tak menunggu datangnya kebakaran.  Dia bersama timnya segera  membuat  sekat bakar sepanjang satu kilometer dengan lebar 30 meter di Rawa Kadut, Desember 2014. Sekat bakar adalah lahan yang dibersihkan dari berbagai tanaman sehingga menghambat laju api Jika terjadi  kebakaran. "Saya tak mau api menghanguskan lagi hampir semua tanaman kami seperti tahun lalu."</p>
+        <p class="mt-4 leading-relaxed ">Sekat bakar inilah yang bermanfaat ketika sumber daya mereka terbatas saat api menyerbu. Itu misalnya terjadi pada 3-4 0ktober Lalu, ketika kebakaran kembali melanda kawasan Rawa Kadut, sejak pukultiga sore. Fajar, Arum, dan tim berusaha memadamkannya. Namun, lantaran api begitu besar, plus menimbang kemampuan personel dan alat, diputuskan menahan api dijalur sekat bakar agar api tak memasuki area reforestasi. Hari itu, tim bekerja hingga pukul dua dini hari.Sekitar pukul 10.00, api kembali terlihat di sisi barat pondok, tapi dapat segera dipadamkan.</p>
+        <p class="mt-4 leading-relaxed ">"Kerja dengan Fajar enak-enak saja, koordinasi bagus," kata Arum, pekerja yang selama ini menjadi penghubung Fajar dengan warga Bungur. Ihwal ini diakui pula oleh Suharno, Polisi Hutan Pelaksana Lanjutan selaku Koordinator Pemadam Kebakaran Taman Naslonal Way Kambas; Rama Budhiana, Koordinator Program TFCA-Sumatera Konsorslum AleRT; dan Mukhlisin, Kepala Seksi Wilayah II Way Bungur.</p>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 py-4  ">
-        <p class="text-xl tracking-wider	 italic ">"Pelaksanaan program bagus, dan dia juga selalu ada di tempat saat terjadi kebakaran. Koordinasi dengan masyarakat dan petugas atau polisi hutan di lapangan juga oke, bahkan Kepala SPTN II pun bisa dia 'pegang'"</p>
+    <div class="max-w-xl mx-auto px-4 py-4  new-font">
+        <p class=" tracking-wider	 italic  text-right">"Pelaksanaan program bagus, dan dia juga selalu ada di tempat saat terjadi kebakaran. Koordinasi dengan masyarakat dan petugas atau polisi hutan di lapangan juga oke, bahkan Kepala SPTN II pun bisa dia 'pegang'"</p>
     </div>
-    <div class="max-w-3xl mx-auto px-4 mb-4">
+    <div class="max-w-2xl mx-auto px-4 mb-4 new-font">
         <div class="flex justify-end w-full">
             <p class="sm:w-6/12 w-11/12 text-right text-xs"><a class="text-red-700">Rama Budiana</a>, Koordinator Program TFCA-Sumatera Konsorsium AleRT.</p>
         </div>
     </div>
-    <div class="max-w-3xl mx-auto px-4 mb-4">
+    <div class="max-w-2xl mx-auto px-4 mb-4 new-font">
         <p>"Tiap  pekan  ada empat-lima orang kami bersama mereka (Fajar cs) menjaga keamanan dan menangani masalah jika ada kebakaran," ujar Mukhlisin, "Keberadaan Fajar dan tim sangat membantu." Total lahan yang terbakar di Way Bungur pada Agustus lalu sekitar 1.500 hektare, sedangkan pada Oktober mencapai 2.000 hektare. Selain sukses memadamkan api, gerak cepat Fajar dan kawan-kawan berhasil menyelamatkan sekitar 20 ribu tanaman puspa, sungkai, dan jambon yang ditanam Silvagama di jalur tanam seluas 22,8 hektare. ***</p>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 py-4 border-t-4 border-b-4 border-black mt-12 ">
-        <a class="mt-4 text-3xl">Fajar Sandhika Negara Simanjuntak</a>
+    <div class="max-w-2xl mx-auto px-4 py-4 border-t-4 border-b-4 border-black mt-12  new-font">
+        <a class="mt-4 leading-relaxed  text-3xl">Fajar Sandhika Negara Simanjuntak</a>
         <p class="font-thin mb-6">Tempat dan tanggal lahir: Pandeglang, 22 Februari 1986</p>
 
         <a class=" text-2xl">Pendidikan:</a>
@@ -137,7 +137,7 @@
 
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 py-4 mb-12 flex items-center gap-2">
+    <div class="max-w-2xl mx-auto px-4 py-4 mb-12 flex items-center gap-2">
         <span class="text-red-800 text-2xl">*</span>
         <p id="reference" class="text-sm"> Diterbitkan <a href="https://auriga.or.id/resource/reference/matikan-api-menjaga-puspa.pdf" class="underline font-bold">Majalah Tempo edisi 3 Januari 2016</a>. Ditulis ulang sebagaimana aslinya.</p>
     </div>
