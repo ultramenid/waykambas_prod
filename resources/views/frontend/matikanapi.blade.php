@@ -63,7 +63,9 @@
             <div class="sm:w-4/12 w-full">
                 <a class="font-bold text-sm">Edisi Khusus Tokoh Tempo 2015</a>
                 <h2 class="sm:text-2xl text-xl text-red-800 mb-12">FAJAR SANDHIKA NEGARA SIMANJUNTAK</h2>
-                <a class="sm:text-8xl text-6xl">Matikan Api Menjaga Puspa</a>
+                <div class="h-full relative">
+                    <a class="sm:text-8xl text-6xl">Matikan Api Menjaga Puspa</a><a href="#reference" class="text-red-800 hover:underline text-2xl top absolute mt-5">*</a>
+                </div>
                 <p class="mt-12">Fajar Sandhikan dan timnya melawan api yang melahap ladang ilalang di Rawa Kadut, Taman Nasional Way Kambas, Lampung. Hasil kerja mereka berhasil menyelamatkan program reforestasi 100 hectare dengan sekitar 20 ribu pohon.</p>
             </div>
         </div>
@@ -76,8 +78,8 @@
         <p class="mt-4">Dalam perjalanan mereka ke pondok, didapati api hanya berjarak kurang dari empat kilometer dari pondok Restorasi Mataram-pondok milik Aliansi Lestari RImba Terpadu (AleRT). Itu berarti api telah bergerak kira-kira tujuh kilometer dari titik pertama yang disurvei Fajar dan Arum, dalam waktu kurang dari tiga jam.</p>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 py-6 bg-black mt-6">
-        <p class="text-white ">"Fajar dan tim sangat membantu. Kalau terjadi kebakaran, informasi pertama yang kami terima malah dari teman-teman itu. Keberhasilan melindungi area yang mereka tanami sangat membantu reforestasi di Way Kambas."</p>
+    <div class="max-w-3xl mx-auto px-4 py-4 ">
+        <p class="italic text-xl tracking-wider	 ">"Fajar dan tim sangat membantu. Kalau terjadi kebakaran, informasi pertama yang kami terima malah dari teman-teman itu. Keberhasilan melindungi area yang mereka tanami sangat membantu reforestasi di Way Kambas."</p>
     </div>
     <div class="max-w-3xl mx-auto px-4 mb-4">
         <div class="flex justify-end w-full">
@@ -101,8 +103,8 @@
         <p class="mt-4">"Kerja dengan Fajar enak-enak saja, koordinasi bagus," kata Arum, pekerja yang selama ini menjadi penghubung Fajar dengan warga Bungur. Ihwal ini diakui pula oleh Suharno, Polisi Hutan Pelaksana Lanjutan selaku Koordinator Pemadam Kebakaran Taman Naslonal Way Kambas; Rama Budhiana, Koordinator Program TFCA-Sumatera Konsorslum AleRT; dan Mukhlisin, Kepala Seksi Wilayah II Way Bungur.</p>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 py-6 bg-black mt-6">
-        <p class="text-white ">"Pelaksanaan program bagus, dan dia juga selalu ada di tempat saat terjadi kebakaran. Koordinasi dengan masyarakat dan petugas atau polisi hutan di lapangan juga oke, bahkan Kepala SPTN II pun bisa dia 'pegang'"</p>
+    <div class="max-w-3xl mx-auto px-4 py-4  ">
+        <p class="text-xl tracking-wider	 italic ">"Pelaksanaan program bagus, dan dia juga selalu ada di tempat saat terjadi kebakaran. Koordinasi dengan masyarakat dan petugas atau polisi hutan di lapangan juga oke, bahkan Kepala SPTN II pun bisa dia 'pegang'"</p>
     </div>
     <div class="max-w-3xl mx-auto px-4 mb-4">
         <div class="flex justify-end w-full">
@@ -113,7 +115,7 @@
         <p>"Tiap  pekan  ada empat-lima orang kami bersama mereka (Fajar cs) menjaga keamanan dan menangani masalah jika ada kebakaran," ujar Mukhlisin, "Keberadaan Fajar dan tim sangat membantu." Total lahan yang terbakar di Way Bungur pada Agustus lalu sekitar 1.500 hektare, sedangkan pada Oktober mencapai 2.000 hektare. Selain sukses memadamkan api, gerak cepat Fajar dan kawan-kawan berhasil menyelamatkan sekitar 20 ribu tanaman puspa, sungkai, dan jambon yang ditanam Silvagama di jalur tanam seluas 22,8 hektare. ***</p>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 py-4 border-t-4 border-b-4 border-black mt-12 mb-12">
+    <div class="max-w-3xl mx-auto px-4 py-4 border-t-4 border-b-4 border-black mt-12 ">
         <a class="mt-4 text-3xl">Fajar Sandhika Negara Simanjuntak</a>
         <p class="font-thin mb-6">Tempat dan tanggal lahir: Pandeglang, 22 Februari 1986</p>
 
@@ -133,6 +135,10 @@
             <li class="ml-4">Yayasan Auriga Nusantara (sebelumnya Yayasan Silvagama), 2011-sekarang</li>
         </ul>
 
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-4 mb-12">
+        <p id="reference" class="text-sm flex items-center gap-2"><span class="text-red-800 text-2xl">*</span> Diterbitkan <a href="https://auriga.or.id/resource/reference/matikan-api-menjaga-puspa.pdf" class="underline font-bold">Majalah Tempo edisi 3 Januari 2016</a>. Ditulis ulang sebagaimana aslinya.</p>
     </div>
 
     @include('partials.footer')
