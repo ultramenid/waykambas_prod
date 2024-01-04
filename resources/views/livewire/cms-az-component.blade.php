@@ -23,7 +23,7 @@
                 <table class="w-full divide-y divide-gray-200 dark:divide-gray-800 rounded-lg  ">
                     <thead >
                         <tr >
-                            <th wire:click='sortingField("titleEN")' class="px-6 py-4 bg-gray-50 dark:bg-opacity-10  dark:text-white text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer sm:w-4/12 w-11/12">
+                            <th wire:click='sortingField("titleID")' class="px-6 py-4 bg-gray-50 dark:bg-opacity-10  dark:text-white text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer sm:w-4/12 w-11/12">
                                <div class="flex space-x-1">
                                    <a>Title</a>
                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 my-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -40,7 +40,7 @@
                         @forelse ($az as $item)
                         <tr>
                             <td class="px-6 py-4 break-words text-sm font-bold text-newgray-700 dark:text-gray-300">
-                                <a href="{{ url('/cms/cmsaz/'.$item->id) }}">{{ $item->titleEN }}</a>
+                                <a href="{{ url('/cms/cmsaz/'.$item->id) }}">{{ $item->titleID }}</a>
                             </td>
 
 

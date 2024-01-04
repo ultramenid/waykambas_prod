@@ -24,7 +24,7 @@ class AZrestorationController extends Controller
     }
     public function index(){
         $title = 'A-Z Restoration - Way Kambas';
-        $text = 'A-Z Restoration';
+        $text = 'A to Z Restorasi Kadut';
         $content = $this->getAz();
         $cssbackground = 'bg-az';
         $nav = 'az';

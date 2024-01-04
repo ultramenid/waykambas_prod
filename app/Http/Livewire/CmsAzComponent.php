@@ -8,13 +8,13 @@ use Livewire\Component;
 class CmsAzComponent extends Component
 {
     public $deleteName, $deleteID, $deleter;
-    public $dataField = 'titleEN', $dataOrder = 'asc', $paginate = 10, $search = '';
+    public $dataField = 'titleID', $dataOrder = 'asc', $paginate = 10, $search = '';
     public function getAz(){
         $sc = '%' . $this->search . '%';
         try {
             return  DB::table('azrestoration')
-                        ->select('id', 'titleEN')
-                        ->where('titleEN', 'like', $sc)
+                        ->select('id', 'titleID')
+                        ->where('titleID', 'like', $sc)
                         ->orderBy($this->dataField, $this->dataOrder)
                         ->paginate($this->paginate);
         } catch (\Throwable $th) {
@@ -25,7 +25,7 @@ class CmsAzComponent extends Component
 
         //load data to delete function
         $dataDelete = DB::table('azrestoration')->where('id', $id)->first();
-        $this->deleteName = $dataDelete->titleEN;
+        $this->deleteName = $dataDelete->titleID;
         $this->deleteID = $dataDelete->id;
 
         $this->deleter = true;

@@ -31,7 +31,7 @@
                 </div>
             </div> --}}
             <div class="@if ($nav === 'az') border-b border-white @endif">
-                <a href="{{ route('azrestoration', app()->getlocale() )}}" class="text-white">A-Z Restoration</a>
+                <a href="{{ route('azrestoration', app()->getlocale() )}}" class="text-white">A to Z Restorasi Kadut</a>
             </div>
             {{-- <a href="#" class="text-white">Kebakaran</a> --}}
 

@@ -21,7 +21,7 @@
     @livewireScripts
 
 </head>
-<body class="selection-bg dark:selection-bg bg-gray-100 dark:bg-newgray-900 font-sans">
+<body class="selection-bg dark:selection-bg bg-gray-100 dark:bg-newgray-900 new-font">
 
     @yield('content')
 

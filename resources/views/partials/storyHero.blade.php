@@ -30,7 +30,7 @@
                         </div>
                     </div>
 
-                        <a href="{{ route('azrestoration', app()->getlocale() )}}" class="text-white">A-Z Restoration</a>
+                        <a href="{{ route('azrestoration', app()->getlocale() )}}" class="text-white">A to Z Restorasi Kadut</a>
 
                     {{-- <a href="#" class="text-white">Kebakaran</a> --}}
                     <div class="@if ($nav === 'story') border-b border-white @endif">

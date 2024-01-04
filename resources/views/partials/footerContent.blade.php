@@ -17,7 +17,7 @@
                 </div>
             </div>
 
-            <a href="#" class="text-white">A-Z Restoration</a>
+            <a href="#" class="text-white">A to Z Restorasi Kadut</a>
 
             <a href="#" class="text-white">Story</a>
             <a href="#" class="text-white">Diary</a>
