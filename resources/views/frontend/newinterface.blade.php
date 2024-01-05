@@ -151,17 +151,17 @@
     <div class="max-w-5xl mx-auto px-4 -mt-40">
         <div class="flex sm:flex-row flex-col items-center border border-gray-400 bg-white ">
             <div class="sm:w-6/12 w-full flex flex-col sm:gap-12 gap-4 justify-center items-center sm:px-12 px-4 py-4">
-                <h1 class="text-3xl text-center font-bold">Adu Cepat di Rawa Kadut</h1>
-                <p class="text-center sm:text-base text-sm">Pengisian media tanam kedalam polybag kali ini mendapatkan 3400 polybag sudah terisi, dan selanjutnya dilakukan pembibitan di media tanam yang disiapkan.</p>
+                <h1 class="text-3xl text-center font-bold">{{$story[0]->titleID}}</h1>
+                <p class="text-center sm:text-base text-sm">{{$story[0]->imgDescID}}</p>
             </div>
-            <img src="{{ asset('img/hero5.jpeg') }}" alt="" class="sm:w-6/12 w-full sm:h-96 h-full object-cover object-center">
+            <img src="{{ asset('storage/files/photos/'.$story[0]->img) }}" alt="" class="sm:w-6/12 w-full sm:h-96 h-full object-cover object-center">
         </div>
         <div class="flex sm:flex-row flex-col items-center border border-gray-400 bg-white  mt-4">
-            <img src="{{ asset('img/hero5.jpeg') }}" alt="" class="sm:w-6/12 w-full sm:h-96 h-full object-cover object-center">
+            <img src="{{ asset('storage/files/photos/'.$story[1]->img) }}" alt="" class="sm:w-6/12 w-full sm:h-96 h-full object-cover object-center">
 
             <div class="sm:w-6/12 w-full flex flex-col sm:gap-12 gap-4 justify-center items-center sm:px-12 px-4 py-4">
-                <h1 class="text-3xl text-center font-bold">Adu Cepat di Rawa Kadut</h1>
-                <p class="text-center sm:text-base text-sm">Pengisian media tanam kedalam polybag kali ini mendapatkan 3400 polybag sudah terisi, dan selanjutnya dilakukan pembibitan di media tanam yang disiapkan.</p>
+                <h1 class="text-3xl text-center font-bold">{{$story[1]->titleID}}</h1>
+                <p class="text-center sm:text-base text-sm">{{$story[1]->imgDescID}}</p>
             </div>
         </div>
 
