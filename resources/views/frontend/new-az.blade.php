@@ -5,7 +5,7 @@
     @include('partials.topbar')
     @include('partials.new-navbar')
         <div class="max-w-3xl mx-auto py-3 px-4 border-b-2 border-green-600 mt-12" id="konteks">
-            <h1 class="text-green-600 font-bold text-3xl font-satunya">KONTEKS</h1>
+            <h1 class="text-green-600 font-bold text-3xl font-satunya">Konteks</h1>
         </div>
         <div class="max-w-3xl mx-auto mt-12" x-data="{ open: '' }">
             @if ($konteks)
