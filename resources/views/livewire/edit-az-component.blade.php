@@ -25,7 +25,7 @@
                     <option value="">...</option>
                     <option value="konteks">Konteks</option>
                     <option value="silvikultur">Silvikultur</option>
-                    <option value="penaggulangankebakaran">Penanggulangan Kebakaran</option>
+                    <option value="penanggulangankebakaran">Penanggulangan Kebakaran</option>
                     <option value="pelibatanmasyarakat">Pelibatan Masyarakat</option>
                 </select>
             </div>
