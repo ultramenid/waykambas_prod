@@ -12,11 +12,11 @@
             <div class="flex sm:flex-row flex-col items-center border border-gray-300 mt-4">
                 <a href="{{ route('diarycontent', [app()->getLocale(),  $diary[0]->slug]) }}" class="sm:w-7/12 w-full">
                     @if (in_array(pathinfo(asset('storage/files/photos/'.$diary[0]->img), PATHINFO_EXTENSION),['mp4', 'avi', '3gp', 'mov', 'm4a']))
-                                <video class="sm:h-green-diary-1 h-52  object-cover object-center video-bg" controls >
+                                <video class="sm:h-green-diary-1 h-52 w-full  object-cover object-center video-bg" controls >
                                     <source src="{{asset('storage/files/photos/'.$diary[0]->img)}}" type="video/mp4" >
                                 </video>
                             @else
-                            <img src="{{asset('storage/files/photos/'.$diary[0]->img)}}" alt="" class="sm:h-green-diary-1 h-52  object-cover object-center">
+                            <img src="{{asset('storage/files/photos/'.$diary[0]->img)}}" alt="" class="sm:h-green-diary-1 h-52 w-full  object-cover object-center">
                     @endif
                 </a>
                 {{-- <img src="{{ $diary[0]->img }}" alt="" class="w-full h-full"> --}}
