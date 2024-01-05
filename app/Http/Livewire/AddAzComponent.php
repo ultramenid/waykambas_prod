@@ -8,15 +8,16 @@ use Livewire\Component;
 
 class AddAzComponent extends Component
 {
-    public $titleEN, $titleID, $azEN, $azID;
+    public $titleEN, $titleID, $azEN, $azID, $category, $is_active = 0;
     public function storeaz(){
         if($this->manualValidation()){
             DB::table('azrestoration')->insert([
                 'titleEN' => $this->titleEN,
                 'titleID' => $this->titleID,
+                'category' => $this->category,
                 'azEN' => $this->azEN,
                 'azID' => $this->azID,
-                'isActive' => 1,
+                'isActive' => $this->is_active,
                 'created_at' => Carbon::now('Asia/Jakarta')
             ]);
             redirect()->to('/cms/cmsaz');
@@ -29,23 +30,13 @@ class AddAzComponent extends Component
         return view('livewire.add-az-component');
     }
     public function manualValidation(){
-        if(strlen($this->titleEN) > 120){
-            $message = 'Title english max limit 120 character';
-            $type = 'error'; //error, success
-            $this->emit('toast',$message, $type);
-            return;
-        }elseif($this->titleEN == ''){
+        if($this->titleEN == ''){
             $message = 'Title english is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
         }elseif($this->titleID == ''){
             $message = 'Title indonesia is required';
-            $type = 'error'; //error, success
-            $this->emit('toast',$message, $type);
-            return;
-        }elseif(strlen($this->titleID) > 120){
-            $message = 'Title indonesia max limit 120 character';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
@@ -56,6 +47,11 @@ class AddAzComponent extends Component
             return;
         }elseif($this->azID == ''){
             $message = 'Content indonesia is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }elseif($this->category == ''){
+            $message = 'Category is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;

@@ -9,6 +9,7 @@ use App\Http\Controllers\CmsStoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DiaryController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\KinerjaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MatikanAPiController;
 use App\Http\Controllers\PageRawakadutController;
@@ -47,14 +48,21 @@ Route::redirect('/', '/id');
 Route::group(['prefix' => '{lang}'], function () {
 
     Route::get('/', [IndexController::class, 'index'])->name('index');
-    Route::get('/about/tentangkami', [WhowheareController::class, 'index'])->name('whoweare');
-    Route::get('/about/waykambas', [WaykambasController::class, 'index'])->name('waykambas');
-    Route::get('/about/rawakadut', [RawakadutController::class, 'index'])->name('rawakadut');
-    Route::get('/azrestoration', [AZrestorationController::class, 'index'])->name('azrestoration');
-    Route::get('/diary', [DiaryController::class, 'index'])->name('diary');
-    Route::get('/greendiary/{slug}', [DiaryController::class, 'detail'])->name('diarycontent');
-    Route::get('/sitemap.xml', [IndexController::class, 'sitemap'])->name('sitemap');
+    Route::get('/about/tentang-kami', [WhowheareController::class, 'index'])->name('whoweare');
+    Route::get('/about/way-kambas', [WaykambasController::class, 'index'])->name('waykambas');
+    Route::get('/about/rawa-kadut', [RawakadutController::class, 'index'])->name('rawakadut');
+    Route::get('/a-to-z-restorasi-kadut', [AZrestorationController::class, 'index'])->name('azrestoration');
+    Route::get('/green-diary', [DiaryController::class, 'index'])->name('diary');
+    Route::get('/green-diary/{slug}', [DiaryController::class, 'detail'])->name('diarycontent');
+    Route::get('/site-map.xml', [IndexController::class, 'sitemap'])->name('sitemap');
     Route::get('/stories', [StoryController::class, 'index'])->name('story');
+    Route::get('/new-interface', [IndexController::class, 'newInterface'])->name('newinterface');
+    Route::get('/new', [AZrestorationController::class, 'newAZ'])->name('new#konteks');
+    Route::get('/kinerja', [KinerjaController::class, 'index'])->name('kinerja');
+    Route::get('/kinerja-2023', [KinerjaController::class, 'duaribuduatiga'])->name('kinerja2023');
+
+
+    // Route::get('/new#konteks', [AZrestorationController::class, 'newAZ'])->name('new#konteks');
 
     // Route::get('/siteplan', [SiteplanController::class, 'index'])->name('siteplan');
     // Route::get('/silvikultur', [SilvikulturController::class, 'index'])->name('silvikultur');

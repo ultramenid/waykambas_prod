@@ -17,8 +17,28 @@
         </div>
     </div>
 
-    <div class="max-w-6xl mx-auto px-6 md:px-8  py-8 min-h-screen" x-data="{ tabs: 'english' }">
+    <div class="max-w-4xl mx-auto px-6 md:px-8  py-8 min-h-screen" x-data="{ tabs: 'english' }">
+        <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6 flex gap-4">
+            <div class="w-full">
+                <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4">Category</h1>
+                <select wire:model="category" class=" mb-6 bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20">
+                    <option value="">...</option>
+                    <option value="konteks">Konteks</option>
+                    <option value="silvikultur">Silvikultur</option>
+                    <option value="penaggulangankebakaran">Penanggulangan Kebakaran</option>
+                    <option value="pelibatanmasyarakat">Pelibatan Masyarakat</option>
+                </select>
+            </div>
 
+            <div class="w-full">
+                <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4">Publish</h1>
+                <select wire:model="is_active" class=" mb-6 bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20">
+                    <option value="1">Publish</option>
+                    <option value="0">Non Publish</option>
+                </select>
+            </div>
+
+        </div>
         <div  class="overflow-x-auto scrollbar-hide whitespace-nowrap   subpixel-antialiased flex mb-6 justify-end">
             {{-- tabs english --}}
             <div @click="tabs='english'" class="hover:bg-gray-200 dark:hover:bg-newgray-700 py-2 px-2 rounded  cursor-pointer"
@@ -43,19 +63,20 @@
         <div class="col-span-12 " >
             {{-- tab english --}}
 
+
             <div x-show="tabs==='english'" x-cloak style="display: none !important">
 
                 <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6" x-data="{count:0}">
-                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4">Title</h1>
-                    <input maxlength="120" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" type="text" class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20"  wire:model.defer='titleEN' placeholder="Title. . . ">
-                    <div class="flex justify-end text-newgray-700 dark:text-gray-500  italic text-xs mt-2">
-                        <span x-html="count"></span> / <span  x-html="$refs.countme.maxLength"></span>
-                      </div>
+                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4">Question</h1>
+                    <input type="text" class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20"  wire:model.defer='titleEN' placeholder="Title. . . ">
+
+
+
                 </div>
 
 
                 <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6">
-                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-6">Content </h1>
+                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-6">Answer </h1>
                     <div class="w-full py-2 mb-6">
                         <div class="w-full border border-gray-300 dark:border-opacity-20 rounded"
                             wire:ignore
@@ -124,7 +145,7 @@
             <div x-show="tabs==='indonesia'" x-cloak style="display: none !important">
 
                 <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6" x-data="{count:0}">
-                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4">Title</h1>
+                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4">Question</h1>
                     <input maxlength="120" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" type="text" class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20"  wire:model.defer='titleID' placeholder="Title. . . ">
                     <div class="flex justify-end text-newgray-700 dark:text-gray-500  italic text-xs mt-2">
                         <span x-html="count"></span> / <span  x-html="$refs.countme.maxLength"></span>
@@ -134,7 +155,7 @@
 
 
                 <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6">
-                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-6">Content </h1>
+                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-6">Answer </h1>
                     <div class="w-full py-2 mb-6">
                         <div class="w-full border border-gray-300 dark:border-opacity-20 rounded"
                             wire:ignore

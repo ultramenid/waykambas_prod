@@ -32,13 +32,13 @@ module.exports = {
         },
         fontFamily: {
             'sans': ['Lora', ...defaultTheme.fontFamily.sans],
-            'notoserif' : ['Noto Serif'],
-            'caption' : ['Source Code Pro']
+            'satunya' : ['Asap'],
         },
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
+    require('tailwind-scrollbar-hide'),
   ],
 }

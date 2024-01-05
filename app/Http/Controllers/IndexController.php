@@ -45,6 +45,13 @@ class IndexController extends Controller
         return view('frontend.index', compact('title', 'diary', 'story'));
     }
 
+    public function newInterface(){
+        $title = 'Index - Way kambas';
+        $diary = $this->getDiary();
+        $story = $this->getStory();
+        return view('frontend.newinterface', compact('title', 'diary', 'story'));
+    }
+
     public function sitemap(){
         return response()->view('frontend.sitemap')->header('Content-Type', 'text/xml');
     }

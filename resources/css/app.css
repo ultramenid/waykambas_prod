@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +6,13 @@
 @layer utilities {
     .h-slider {
         height: 35rem;
+    }
+    .h-green-diary-1 {
+        height: 60vh;
+    }
+    .text-xss {
+        font-size: 0.55rem/* 12px */;
+        line-height: 1rem/* 16px */;
     }
   }
 
@@ -104,7 +112,7 @@
             background-repeat: no-repat;
             background-size: cover;
             height: 60vh;
-            background-position: center;
+            background-position: bottom;
             background-color: transparent;
             background-blend-mode:multiply;
 }

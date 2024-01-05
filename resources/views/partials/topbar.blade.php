@@ -1,10 +1,10 @@
  <!-- topbar -->
- <header class="bg-green-ndpe sticky top-0 z-50">
+ <header class="bg-green-ndpe sticky top-0 z-50 font-satunya">
     <div x-data="{ open: false }" class="px-4 py-2 bg-black z-20 sm:hidden block">
         <svg @click="open = true" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
-        <div class="fixed w-3/4 h-screen z-50 bg-black inset-0 overflow-y-auto " x-show="open"
+        <div class="fixed w-4/4 h-screen z-50 bg-black inset-0 overflow-y-auto " x-show="open"
         x-transition:enter="transition ease-in-out duration-150"
         x-transition:enter-start="opacity-0"
         x-transition:enter-end="opacity-100"
@@ -51,6 +51,10 @@
                 </div>
                 <div class=" px-4">
                     <a href="{{ route('diary', app()->getlocale() )}}"class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">Diary<a>
+                    <p class="border-b border-gray-300"></p>
+                </div>
+                <div class=" px-4">
+                    <a href="#"class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">Kinerja<a>
                     <p class="border-b border-gray-300"></p>
                 </div>
                 {{-- <div class="px-4 flex space-x-2 text-gray-300 text-sm  bottom-10 fixed z-30">

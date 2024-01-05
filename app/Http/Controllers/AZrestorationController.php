@@ -10,9 +10,9 @@ class AZrestorationController extends Controller
 {
     public function getSelect(){
         if (App::getLocale() == 'id') {
-            return 'id, azID as az, titleID as title';
+            return 'id, azID as az, titleID as title, category';
         }else{
-            return 'id, azID as az, titleID as title';
+            return 'id, azID as az, titleID as title, category';
 
             // return 'id, azEN as az, titleEN as title';
         }
@@ -23,11 +23,58 @@ class AZrestorationController extends Controller
                 ->get();
     }
     public function index(){
-        $title = 'A-Z Restoration - Way Kambas';
+        $title = 'A to Z Restorasi Kadut - Way Kambas';
         $text = 'A to Z Restorasi Kadut';
         $content = $this->getAz();
         $cssbackground = 'bg-az';
         $nav = 'az';
         return view('frontend.azrestoration', compact('title', 'text', 'content','cssbackground','nav'));
+    }
+
+    public function getKonteks(){
+        return DB::table('azrestoration')
+                ->selectRaw($this->getSelect())
+                ->where('category', 'konteks')
+                ->where('isActive', 1)
+                ->get();
+    }
+
+    public function getSilvikultur(){
+        return DB::table('azrestoration')
+                ->selectRaw($this->getSelect())
+                ->where('category', 'silvikultur')
+                ->where('isActive', 1)
+                ->get();
+    }
+
+    public function getPenanggulanganKebakaran(){
+        return DB::table('azrestoration')
+        ->selectRaw($this->getSelect())
+        ->where('category', 'penanggulangankebakaran')
+        ->where('isActive', 1)
+        ->get();
+    }
+
+    public function getPelibatanMasyarakat(){
+        return DB::table('azrestoration')
+        ->selectRaw($this->getSelect())
+        ->where('category', 'pelibatanmasyarakat')
+        ->where('isActive', 1)
+        ->get();
+    }
+
+
+    public function newAZ(){
+        $title = 'A to Z Restorasi Kadut - Way Kambas';
+        $text = 'A to Z Restorasi Kadut';
+        // $content = $this->getAz();
+        // $cssbackground = 'bg-az';
+        $konteks = $this->getKonteks();
+        $silvikultur = $this->getSilvikultur();
+        $penanggulangankebakaran = $this->getPenanggulanganKebakaran();
+        $pelibatanmasyarakat = $this->getPelibatanMasyarakat();
+        // dd($konteks);
+        $nav = 'az';
+        return view('frontend.new-az', compact('title', 'text','nav', 'konteks', 'silvikultur','penanggulangankebakaran', 'pelibatanmasyarakat'));
     }
 }
