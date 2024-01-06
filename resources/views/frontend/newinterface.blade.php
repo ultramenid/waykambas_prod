@@ -72,7 +72,7 @@
     {{-- a to z --}}
     <div class="max-w-4xl mx-auto px-4 mt-16">
         <h1 class="flex justify-center sm:text-5xl text-4xl font-bold text-center">A to Z Restorasi Kadut</h1>
-        <p class="flex justify-center text-center mt-6 sm:text-xl text-base">Gambaran umum hingga informasi mendalam mengenai Restorasi Kadut</p>
+        <p class="flex justify-center text-center mt-6 sm:text-xl text-base">Kenapa di Kadut. Apa urgensi dan nilai pentingnya. Apa-apa saja pekerjaan teknis yang dilakukan. Kenapa tindakan teknis tertentu yang dipilih. Bagaimana pelibatan masyarakat. Dan berbagai hal teknis lainnya.</p>
     </div>
 
     <div class="max-w-5xl mx-auto px-4 sm:mt-16 mt-4 flex gap-6 py-12 scrollbar-hide overflow-x-scroll snap-x snap-mandatory">
