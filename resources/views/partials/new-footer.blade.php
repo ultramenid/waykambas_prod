@@ -31,8 +31,8 @@
 
     <div class="max-w-3xl mx-auto px-4">
         <div class="sm:gap-16 gap-6 flex sm:flex-row flex-col mt-6 ">
-            <img src="{{ asset('img/rawakadut-logo.png') }}" alt="" class="h-16">
-            <div class="w-6/12">
+            <img src="{{ asset('img/rawakadut-logo.png') }}" alt="" class="sm:h-16 h-20 w-full">
+            <div class="sm:w-6/12 w-full">
                 <p class="">Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.</p>
                 <div class="flex sm:flex-row flex-col mt-4 text-xs">
                     <a >© 2024 Auriga Nusantara. All rights reserved.</a>
