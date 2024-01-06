@@ -8,8 +8,9 @@
     @include('partials.topbar')
     @include('partials.heroPage')
      <!-- content -->
-     <div class="flex flex-col space-y-6 max-w-2xl mx-auto py-2 px-4">
-        <div class="prose max-w-none mt-12">
+     <div class="flex flex-col  max-w-2xl mx-auto py-10 px-4">
+        <h1 class="text-3xl font-bold mt-12">Restorasi Kadut</h1>
+        <div class="prose max-w-none mt-6 mb-12">
             {!! $content->textrawakadut !!}
         </div>
     </div>

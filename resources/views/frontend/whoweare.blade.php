@@ -8,8 +8,9 @@
     @include('partials.topbar')
     @include('partials.heroPage')
     <!-- content -->
-    <div class="px-4 flex flex-col space-y-6 max-w-5xl mx-auto py-2 ">
-        <div class="prose max-w-none">
+    <div class="px-4 flex flex-col max-w-2xl mx-auto py-10 ">
+        <h1 class="text-3xl font-bold mt-12">Who We Are</h1>
+        <div class="prose max-w-none mb-12">
             {!! $content->textwhoweare !!}
         </div>
 
