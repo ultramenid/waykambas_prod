@@ -14,7 +14,7 @@ class CmsDiariComponent extends Component
 {
     use WithPagination;
     public $deleteName, $deleteID, $deleter;
-    public $dataField = 'titleEN', $dataOrder = 'asc', $paginate = 7, $search = '';
+    public $dataField = 'publishdate', $dataOrder = 'desc', $paginate = 7, $search = '';
 
     public function sortingField($field){
         $this->dataField = $field;
