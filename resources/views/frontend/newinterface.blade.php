@@ -77,7 +77,7 @@
 
     <div class="max-w-5xl mx-auto px-4  flex gap-6 py-12 scrollbar-hide overflow-x-scroll snap-x snap-mandatory">
         <div class="relative w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
-            <img src="{{ asset('img/restorasi.jpeg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
+            <img src="{{ asset('img/tentang-kami.jpg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
                 <a href="new#konteks" class="text-white font-black text-xl">KONTEKS</a>
             </div>
@@ -91,14 +91,14 @@
         </div>
 
         <div class="relative  w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
-            <img src="{{ asset('img/restorasi.jpeg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
+            <img src="{{ asset('img/kebakara-3.jpeg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
                 <a href="new#penanggulangankebakaran" class="text-white font-black text-xl text-center">PENANGGULANGAN KEBAKARAN</a>
             </div>
         </div>
 
         <div class="relative  w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
-            <img src="{{ asset('img/restorasi.jpeg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
+            <img src="{{ asset('img/masyarakat.jpeg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
                 <a href="new#pelibatanmasyarakat" class="text-white font-black text-xl text-center">PELIBATAN MASYARAKAT</a>
             </div>
@@ -113,24 +113,24 @@
         <div class="flex sm:flex-row flex-col justify-between gap-8 ">
             <div class="flex flex-col gap-6 sm:w-4/12 w-full">
                 <h1 class="text-5xl font-semibold">about</h1>
-                <p>Siapa kami. Sekilas Taman Nasional Way Kambas. Gambaran ringkas Restorasi Kadut.</p>
+                <p>Sekilas mengenai kami. Perihal dan pentingnya Taman Nasional Way Kambas. Gambaran ringkas Restorasi Kadut.</p>
             </div>
             <div class="flex flex-col gap-6 sm:w-3/12 w-full">
                 <div class="flex flex-col gap-6">
                     <h1 class="text-2xl font-bold text-green-700">who we are</h1>
-                    <p class="text-sm">Pengisian media tanam kedalam polybag kali ini mendapatkan 3400 polybag sudah terisi, dan selanjutnya dilakukan pembibitan di media tanam yang disiapkan.</p>
+                    <p class="text-sm">Mengenai Auriga Nusantara dan kiprahnya di Way Kambas. Sesiapa aja yang terlibat dalam kegiatan ini. Profil ringkas tim inti Restorasi Kadut.</p>
                 </div>
                 <span class="border-t border-gray-400"></span>
                 <div class="flex flex-col gap-6">
                     <h1 class="text-2xl font-bold text-green-700">restorasi rawa kadut</h1>
-                    <p class="text-sm">Pengisian media tanam kedalam polybag kali ini mendapatkan 3400 polybag sudah terisi, dan selanjutnya dilakukan pembibitan di media tanam yang disiapkan.</p>
+                    <p class="text-sm">Area Restorasi Kadut hanya seperseratus Way Kambas. Tapi, sedemikian penting dalam upaya mereforestasi area kritis di taman nasional ini. Pun bagi perlindungan spesies kuncinya.</p>
                 </div>
             </div>
 
             <div class="flex flex-col gap-6 sm:w-3/12 w-full">
                 <div class="flex flex-col gap-6">
                     <h1 class="text-2xl font-bold text-green-700">way kambas</h1>
-                    <p class="text-sm">Pengisian media tanam kedalam polybag kali ini mendapatkan 3400 polybag sudah terisi, dan selanjutnya dilakukan pembibitan di media tanam yang disiapkan.</p>
+                    <p class="text-sm">Nilai penting Taman Nasional Way Kambas. Kekayaan biodiversitasnya. Dinamika tutupan lahan di sana. Hingga riwayat kawasan konservasi ini.</p>
                 </div>
                 <span class=""></span>
 
@@ -149,7 +149,7 @@
     <div class="max-w-5xl mx-auto px-4 -mt-40">
         <div class="flex sm:flex-row flex-col items-center border border-gray-400 bg-white ">
             <div class="sm:w-6/12 w-full flex flex-col sm:gap-12 gap-4 justify-center items-center sm:px-12 px-4 py-4">
-                <h1 class="text-3xl text-center font-bold">{{$story[0]->titleID}}</h1>
+                <a href="{{ route($story[0]->slug, app()->getlocale() )}}" class="text-3xl text-center font-bold">{{$story[0]->titleID}}</a>
                 <p class="text-center sm:text-base text-sm">{{$story[0]->imgDescID}}</p>
             </div>
             <img src="{{ asset('storage/files/photos/'.$story[0]->img) }}" alt="" class="sm:w-6/12 w-full sm:h-96 h-full object-cover object-center">
@@ -158,14 +158,21 @@
             <img src="{{ asset('storage/files/photos/'.$story[1]->img) }}" alt="" class="sm:w-6/12 w-full sm:h-96 h-full object-cover object-center">
 
             <div class="sm:w-6/12 w-full flex flex-col sm:gap-12 gap-4 justify-center items-center sm:px-12 px-4 py-4">
-                <h1 class="text-3xl text-center font-bold">{{$story[1]->titleID}}</h1>
+                <a href="{{ route($story[1]->slug, app()->getlocale() )}}" class="text-3xl text-center font-bold">{{$story[1]->titleID}}</a>
                 <p class="text-center sm:text-base text-sm">{{$story[1]->imgDescID}}</p>
             </div>
         </div>
-
-        <div class="flex justify-center mt-8">
-            <a href="{{ route('story', app()->getlocale() )}}" class="text-xl font-bold bg-green-700 px-12 text-white py-1 font-satunya">read</a>
+        <div class="flex sm:flex-row flex-col items-center border border-gray-400 bg-white mt-4">
+            <div class="sm:w-6/12 w-full flex flex-col sm:gap-12 gap-4 justify-center items-center sm:px-12 px-4 py-4">
+                <a href="{{ route($story[2]->slug, app()->getlocale() )}}" class="text-3xl text-center font-bold">{{$story[2]->titleID}}</a>
+                <p class="text-center sm:text-base text-sm">{{$story[2]->imgDescID}}</p>
+            </div>
+            <img src="{{ asset('storage/files/photos/'.$story[2]->img) }}" alt="" class="sm:w-6/12 w-full sm:h-96 h-full object-cover object-center">
         </div>
+
+        {{-- <div class="flex justify-center mt-8">
+            <a href="{{ route('story', app()->getlocale() )}}" class="text-xl font-bold bg-green-700 px-12 text-white py-1 font-satunya">read</a>
+        </div> --}}
     </div>
 
     {{-- footer --}}
