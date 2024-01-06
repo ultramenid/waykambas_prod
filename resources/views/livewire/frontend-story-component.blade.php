@@ -1,5 +1,5 @@
 <div>
-    <h1 class="font-bold sm:text-5xl text-xl mb-4 mt-6">Feature Story</h1>
+    <h1 class="font-bold sm:text-5xl text-xl mb-4 mt-6">Feature</h1>
     <div class=" sm:grid-cols-2 grid-cols-1  grid   grid-flow-row gap-6  w-full ">
         @foreach ($story as $item)
             <div class="flex flex-col">
