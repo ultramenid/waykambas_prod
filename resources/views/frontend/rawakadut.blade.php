@@ -9,7 +9,7 @@
     @include('partials.heroPage')
      <!-- content -->
      <div class="flex flex-col space-y-6 max-w-2xl mx-auto py-2 px-4">
-        <div class="prose max-w-none">
+        <div class="prose max-w-none mt-12">
             {!! $content->textrawakadut !!}
         </div>
     </div>
