@@ -62,6 +62,9 @@ Route::group(['prefix' => '{lang}'], function () {
     Route::get('/kinerja-2023', [KinerjaController::class, 'duaribuduatiga'])->name('kinerja2023');
 
 
+    Route::get('/new#konteks', [AZrestorationController::class, 'newAZ'])->name('new#konteks');
+
+
     // Route::get('/new#konteks', [AZrestorationController::class, 'newAZ'])->name('new#konteks');
 
     // Route::get('/siteplan', [SiteplanController::class, 'index'])->name('siteplan');
