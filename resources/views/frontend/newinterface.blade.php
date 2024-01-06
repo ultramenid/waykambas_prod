@@ -79,7 +79,7 @@
         <div class="relative w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
             <img src="{{ asset('img/tentang-kami.jpg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
-                <a href="new#konteks" class="text-white font-black text-xl">KONTEKS</a>
+                <a href="{{ route('new#konteks', app()->getlocale() )}}" class="text-white font-black text-xl">KONTEKS</a>
             </div>
         </div>
 
