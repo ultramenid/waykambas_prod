@@ -133,9 +133,7 @@
                     <p class="text-sm">Pengisian media tanam kedalam polybag kali ini mendapatkan 3400 polybag sudah terisi, dan selanjutnya dilakukan pembibitan di media tanam yang disiapkan.</p>
                 </div>
                 <span class=""></span>
-                <div class="w-full bg-green-700 text-center text-white py-2 text-xl font-bold font-satunya">
-                    Donate
-                </div>
+
             </div>
         </div>
     </div>
