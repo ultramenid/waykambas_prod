@@ -63,6 +63,9 @@ Route::group(['prefix' => '{lang}'], function () {
 
 
     Route::get('/new#konteks', [AZrestorationController::class, 'newAZ'])->name('new#konteks');
+    Route::get('/new#silvikultur', [AZrestorationController::class, 'newAZ'])->name('new#silvikultur');
+    Route::get('/new#penanggulangankebakaran', [AZrestorationController::class, 'newAZ'])->name('new#penanggulangankebakaran');
+    Route::get('/new#pelibatanmasyarakat', [AZrestorationController::class, 'newAZ'])->name('new#pelibatanmasyarakat');
 
 
     // Route::get('/new#konteks', [AZrestorationController::class, 'newAZ'])->name('new#konteks');
