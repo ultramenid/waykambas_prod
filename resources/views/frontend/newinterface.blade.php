@@ -164,7 +164,7 @@
         </div>
 
         <div class="flex justify-center mt-8">
-            <a href="{{ route('story', app()->getlocale() )}}" class="text-xl font-bold bg-green-700 px-12 text-white py-1 font-satunya">Read</a>
+            <a href="{{ route('story', app()->getlocale() )}}" class="text-xl font-bold bg-green-700 px-12 text-white py-1 font-satunya">read</a>
         </div>
     </div>
 
