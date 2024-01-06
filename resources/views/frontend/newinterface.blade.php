@@ -63,7 +63,7 @@
         </div>
 
         <div class="flex justify-center mt-8">
-            <a href="{{ route('diary', app()->getlocale() )}}" class="text-xl font-bold bg-green-700 px-12 text-white py-1 font-satunya">See All</a>
+            <a href="{{ route('diary', app()->getlocale() )}}" class="text-xl font-bold bg-green-700 px-12 text-white py-1 font-satunya">more</a>
         </div>
     </div>
 
@@ -143,7 +143,7 @@
     {{-- story --}}
     <div class="bg-green-600 py-6 mt-12">
         <div class="max-w-3xl mx-auto px-4 mt-4">
-            <h1 class="flex justify-center sm:text-5xl text-4xl font-bold text-white text-center">Feature Story</h1>
+            <h1 class="flex justify-center sm:text-5xl text-4xl font-bold text-white text-center">Feature</h1>
             <p class="flex justify-center text-center mt-6 sm:text-2xl text-base text-white mb-48">Pengisian media tanam kedalam polybag kali ini mendapatkan 3400 polybag sudah terisi.</p>
         </div>
     </div>
@@ -166,7 +166,7 @@
         </div>
 
         <div class="flex justify-center mt-8">
-            <a href="{{ route('story', app()->getlocale() )}}" class="text-xl font-bold bg-green-700 px-12 text-white py-1 font-satunya">See All</a>
+            <a href="{{ route('story', app()->getlocale() )}}" class="text-xl font-bold bg-green-700 px-12 text-white py-1 font-satunya">Read</a>
         </div>
     </div>
 

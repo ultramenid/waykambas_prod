@@ -15,7 +15,7 @@
                 <a class="text-xl font-satunya font-bold">pelibatan masyarakat</a>
             </div>
             <div class="flex flex-col gap-3">
-                <a class="uppercase text-3xl font-black">Story</a>
+                <a class="uppercase text-3xl font-black">Feature</a>
             </div>
             <div class="flex flex-col gap-3">
                 <a class="uppercase text-3xl font-black">Diary</a>

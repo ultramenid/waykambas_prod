@@ -46,7 +46,7 @@
                     <p class="border-b border-gray-300"></p>
                 </div> --}}
                 <div class=" px-4">
-                    <a href="{{ route('story', app()->getlocale() )}}"class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">Story<a>
+                    <a href="{{ route('story', app()->getlocale() )}}"class="mb-4 px-4 inline-block text-base leading-5 text-gray-300 font-semibold uppercase">Feature<a>
                     <p class="border-b border-gray-300"></p>
                 </div>
                 <div class=" px-4">

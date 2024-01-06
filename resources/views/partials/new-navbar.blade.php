@@ -35,7 +35,7 @@
 
                 {{-- <a href="#" class="text-white">Kebakaran</a> --}}
 
-                <a href="{{ route('story', app()->getlocale() )}}" class="text-white text-xl font-semibold uppercase">Story</a>
+                <a href="{{ route('story', app()->getlocale() )}}" class="text-white text-xl font-semibold uppercase">Feature</a>
                 <a href="{{ route('diary', app()->getlocale() )}}" class="text-white text-xl font-semibold uppercase">Diary</a>
                 <a href="{{ route('kinerja', app()->getlocale() )}}" class="text-white text-xl font-semibold uppercase">Kinerja</a>
             </div>
