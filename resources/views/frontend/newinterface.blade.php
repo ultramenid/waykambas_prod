@@ -113,7 +113,7 @@
         <div class="flex sm:flex-row flex-col justify-between gap-8 ">
             <div class="flex flex-col gap-6 sm:w-4/12 w-full">
                 <h1 class="text-5xl font-semibold">about</h1>
-                <p>Pengisian media tanam kedalam polybag kali ini mendapatkan 3400 polybag sudah terisi, dan selanjutnya dilakukan pembibitan di media tanam yang disiapkan.</p>
+                <p>Siapa kami. Sekilas Taman Nasional Way Kambas. Gambaran ringkas Restorasi Kadut.</p>
             </div>
             <div class="flex flex-col gap-6 sm:w-3/12 w-full">
                 <div class="flex flex-col gap-6">
