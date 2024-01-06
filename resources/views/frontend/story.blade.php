@@ -6,7 +6,7 @@
 
 @section('content')
     @include('partials.topbar')
-    @include('partials.heroPage')
+    @include('partials.new-navbar')
 
     <!-- content -->
     <div class=" max-w-5xl mx-auto py-4 px-4 ">
@@ -15,6 +15,6 @@
     </div>
 
 
-    @include('partials.footer')
+    @include('partials.new-footer')
 @endsection
 

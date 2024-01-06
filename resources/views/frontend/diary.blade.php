@@ -6,7 +6,7 @@
 
 @section('content')
     @include('partials.topbar')
-    @include('partials.heroPage')
+    @include('partials.new-navbar')
      <!-- content -->
      <div class=" max-w-7xl mx-auto py-4 px-4">
         <livewire:frontend-diary-component />
@@ -15,6 +15,6 @@
 
 
 
-    @include('partials.footer')
+    @include('partials.new-footer')
 @endsection
 

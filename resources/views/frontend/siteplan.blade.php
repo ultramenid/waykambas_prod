@@ -6,7 +6,7 @@
 
 @section('content')
     @include('partials.topbar')
-    @include('partials.heroPage')
+    @include('partials.new-navbar')
      <!-- content -->
     <div class="flex flex-col space-y-6 max-w-5xl mx-auto py-12 px-4">
         <div class="prose max-w-none ">
@@ -17,6 +17,6 @@
 
 
 
-    @include('partials.footer')
+    @include('partials.new-footer')
 @endsection
 

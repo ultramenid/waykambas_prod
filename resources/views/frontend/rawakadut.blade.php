@@ -6,7 +6,7 @@
 
 @section('content')
     @include('partials.topbar')
-    @include('partials.heroPage')
+    @include('partials.new-navbar')
      <!-- content -->
      <div class="flex flex-col  max-w-2xl mx-auto py-10 px-4">
         <h1 class="text-3xl font-bold mt-12">Restorasi Kadut</h1>
@@ -16,6 +16,6 @@
     </div>
 
 
-    @include('partials.footer')
+    @include('partials.new-footer')
 @endsection
 
