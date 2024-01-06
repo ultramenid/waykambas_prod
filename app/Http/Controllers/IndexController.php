@@ -39,7 +39,7 @@ class IndexController extends Controller
         ->get();
     }
     public function index(){
-        $title = 'Index - Way kambas';
+        $title = 'Home - Way Kambas';
         $diary = $this->getDiary();
         $story = $this->getStory();
         return view('frontend.newinterface', compact('title', 'diary', 'story'));
