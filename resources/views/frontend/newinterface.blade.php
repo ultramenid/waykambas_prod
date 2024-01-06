@@ -79,28 +79,28 @@
         <div class="relative w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
             <img src="{{ asset('img/tentang-kami.jpg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
-                <a href="{{ route('new#konteks', app()->getlocale() )}}" class="text-white font-black text-xl">KONTEKS</a>
+                <a href="{{ route('a-to-z-restorasi-kadut#konteks', app()->getlocale() )}}" class="text-white font-black text-xl">KONTEKS</a>
             </div>
         </div>
 
         <div class="relative  w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
             <img src="{{ asset('img/restorasi.jpeg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
-                <a href="{{ route('new#silvikultur', app()->getlocale() )}}" class="text-white font-black text-xl">SILVIKULTUR</a>
+                <a href="{{ route('a-to-z-restorasi-kadut#silvikultur', app()->getlocale() )}}" class="text-white font-black text-xl">SILVIKULTUR</a>
             </div>
         </div>
 
         <div class="relative  w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
             <img src="{{ asset('img/kebakara-3.jpeg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
-                <a href="{{ route('new#penanggulangankebakaran', app()->getlocale() )}}" class="text-white font-black text-xl text-center">PENANGGULANGAN KEBAKARAN</a>
+                <a href="{{ route('a-to-z-restorasi-kadut#penanggulangankebakaran', app()->getlocale() )}}" class="text-white font-black text-xl text-center">PENANGGULANGAN KEBAKARAN</a>
             </div>
         </div>
 
         <div class="relative  w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
             <img src="{{ asset('img/masyarakat.jpeg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
-                <a href="{{ route('new#pelibatanmasyarakat', app()->getlocale() )}}" class="text-white font-black text-xl text-center">PELIBATAN MASYARAKAT</a>
+                <a href="{{ route('a-to-z-restorasi-kadut#pelibatanmasyarakat', app()->getlocale() )}}" class="text-white font-black text-xl text-center">PELIBATAN MASYARAKAT</a>
             </div>
         </div>
 

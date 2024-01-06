@@ -5,7 +5,7 @@
                 <a class="uppercase text-2xl font-black">About</a>
                 <a href="{{ route('whoweare', app()->getlocale() )}}" class="text-xl font-satunya font-bold">who we are</a>
                 <a href="{{ route('waykambas', app()->getlocale() )}}" class="text-xl font-satunya font-bold">way kambas</a>
-                <a href="{{ route('rawakadut', app()->getlocale() )}} class="text-xl font-satunya font-bold">restorasi rawa kadut</a>
+                <a href="{{ route('rawakadut', app()->getlocale() )}}" class="text-xl font-satunya font-bold">restorasi kadut</a>
             </div>
             <div class="flex flex-col gap-3">
                 <a href="{{ route('azrestoration', app()->getlocale() )}}" class="uppercase text-2xl font-black">A to Z Restorasi Kadut</a>

@@ -51,7 +51,7 @@ Route::group(['prefix' => '{lang}'], function () {
     Route::get('/about/tentang-kami', [WhowheareController::class, 'index'])->name('whoweare');
     Route::get('/about/way-kambas', [WaykambasController::class, 'index'])->name('waykambas');
     Route::get('/about/rawa-kadut', [RawakadutController::class, 'index'])->name('rawakadut');
-    Route::get('/a-to-z-restorasi-kadut', [AZrestorationController::class, 'index'])->name('azrestoration');
+    Route::get('/a-to-z-restorasi-kadut', [AZrestorationController::class, 'newAZ'])->name('azrestoration');
     Route::get('/green-diary', [DiaryController::class, 'index'])->name('diary');
     Route::get('/green-diary/{slug}', [DiaryController::class, 'detail'])->name('diarycontent');
     Route::get('/site-map.xml', [IndexController::class, 'sitemap'])->name('sitemap');
@@ -62,10 +62,10 @@ Route::group(['prefix' => '{lang}'], function () {
     Route::get('/kinerja-2023', [KinerjaController::class, 'duaribuduatiga'])->name('kinerja2023');
 
 
-    Route::get('/new#konteks', [AZrestorationController::class, 'newAZ'])->name('new#konteks');
-    Route::get('/new#silvikultur', [AZrestorationController::class, 'newAZ'])->name('new#silvikultur');
-    Route::get('/new#penanggulangankebakaran', [AZrestorationController::class, 'newAZ'])->name('new#penanggulangankebakaran');
-    Route::get('/new#pelibatanmasyarakat', [AZrestorationController::class, 'newAZ'])->name('new#pelibatanmasyarakat');
+    Route::get('/a-to-z-restorasi-kadut#konteks', [AZrestorationController::class, 'newAZ'])->name('a-to-z-restorasi-kadut#konteks');
+    Route::get('/a-to-z-restorasi-kadut#silvikultur', [AZrestorationController::class, 'newAZ'])->name('a-to-z-restorasi-kadut#silvikultur');
+    Route::get('/a-to-z-restorasi-kadut#penanggulangankebakaran', [AZrestorationController::class, 'newAZ'])->name('a-to-z-restorasi-kadut#penanggulangankebakaran');
+    Route::get('/a-to-z-restorasi-kadut#pelibatanmasyarakat', [AZrestorationController::class, 'newAZ'])->name('a-to-z-restorasi-kadut#pelibatanmasyarakat');
 
 
     // Route::get('/new#konteks', [AZrestorationController::class, 'newAZ'])->name('new#konteks');
