@@ -12,7 +12,13 @@ class StoryIlalangController extends Controller
         ->where('slug', 'Waykambas_tenggelam_dalam_balutan_ilalang')
         ->first();
     }
+    public function anotherStory(){
+        return DB::table('featurestory')
+        ->whereNot('slug', 'Waykambas_tenggelam_dalam_balutan_ilalang')
+        ->get();
+    }
     public function index(){
+        // dd($this->anotherStory());
         $title = $this->getStory()->titleID;
         $text = $this->getStory()->titleID;
         $imageHero = 'ilalang.jpg';
