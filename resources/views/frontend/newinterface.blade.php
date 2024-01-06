@@ -75,7 +75,7 @@
         <p class="flex justify-center text-center mt-6 sm:text-xl text-base">Kenapa di Kadut. Apa urgensi dan nilai pentingnya. Apa-apa saja yang dikerjakan. Kenapa tindakan tertentu dilakukan. Bagaimana pelibatan masyarakat. Dan berbagai hal teknis lainnya.</p>
     </div>
 
-    <div class="max-w-5xl mx-auto px-4 sm:mt-16 mt-4 flex gap-6 py-12 scrollbar-hide overflow-x-scroll snap-x snap-mandatory">
+    <div class="max-w-5xl mx-auto px-4  flex gap-6 py-12 scrollbar-hide overflow-x-scroll snap-x snap-mandatory">
         <div class="relative w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
             <img src="{{ asset('img/restorasi.jpeg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
