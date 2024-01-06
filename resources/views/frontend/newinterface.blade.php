@@ -144,7 +144,7 @@
     <div class="bg-green-600 py-6 mt-12">
         <div class="max-w-3xl mx-auto px-4 mt-4">
             <h1 class="flex justify-center sm:text-5xl text-4xl font-bold text-white text-center">Feature</h1>
-            <p class="flex justify-center text-center mt-6 sm:text-2xl text-base text-white mb-48">Pengisian media tanam kedalam polybag kali ini mendapatkan 3400 polybag sudah terisi.</p>
+            <p class="flex justify-center text-center mt-6 sm:text-2xl text-base text-white mb-48">Cerita dari lapangan. Dikisahkan sendiri atau oleh pihak lain.</p>
         </div>
     </div>
 
