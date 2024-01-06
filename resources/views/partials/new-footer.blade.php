@@ -35,15 +35,8 @@
             <div class="">
                 <p>Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.</p>
                 <div class="flex sm:flex-row flex-col gap-2 mt-12 text-xss">
-                    <a>© 2024 Auriga Nusantara</a>
-                    <span class="sm:block hidden">|</span>
-                    <a>Privacy Statement</a>
-                    <span class="sm:block hidden">|</span>
-                    <a>Charitable Solicitation Disclosures </a>
-                    <span class="sm:block hidden">|</span>
-                    <a>Mobile Terms & Conditions</a>
-                    <span class="sm:block hidden">|</span>
-                    <a>Notice of Nondiscrimination</a>
+                    <a>© 2024 Auriga Nusantara - All rights reserved</a>
+
                 </div>
             </div>
         </div>
