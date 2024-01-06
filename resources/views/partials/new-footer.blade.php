@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <div class="max-w-6xl mx-auto px-4 border-t border-gray-200 mt-12"></div>
+    {{-- <div class="max-w-6xl mx-auto px-4 border-t border-gray-200 mt-12"></div> --}}
     <div class="max-w-6xl mx-auto px-4 border-t border-gray-400 mt-24"></div>
 
     <div class="max-w-3xl mx-auto px-4">
