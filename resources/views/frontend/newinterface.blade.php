@@ -70,7 +70,7 @@
     <div class="max-w-6xl mx-auto px-4 border-t border-gray-400 mt-6"></div>
 
     {{-- a to z --}}
-    <div class="max-w-4xl mx-auto px-4 mt-16">
+    <div class="max-w-3xl mx-auto px-4 mt-16">
         <h1 class="flex justify-center sm:text-5xl text-4xl font-bold text-center">A to Z Restorasi Kadut</h1>
         <p class="flex justify-center text-center mt-6 sm:text-xl text-base">Kenapa di Kadut. Apa urgensi dan nilai pentingnya. Apa-apa saja yang dikerjakan. Kenapa tindakan tertentu dilakukan. Bagaimana pelibatan masyarakat. Dan berbagai hal teknis lainnya.</p>
     </div>
