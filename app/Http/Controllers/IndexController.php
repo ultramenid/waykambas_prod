@@ -47,6 +47,7 @@ class IndexController extends Controller
 
     public function newInterface(){
         $title = 'Index - Way kambas';
+        $description = '';
         $diary = $this->getDiary();
         $story = $this->getStory();
         return view('frontend.index', compact('title', 'diary', 'story'));

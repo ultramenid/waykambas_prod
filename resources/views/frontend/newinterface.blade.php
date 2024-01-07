@@ -154,7 +154,7 @@
             <div class="sm:w-6/12 w-full flex flex-col sm:gap-12 gap-4 justify-center items-center sm:px-12 px-4 py-4">
                 <a href="{{ route($story[0]->slug, app()->getlocale() )}}" class="text-3xl text-center font-bold">{{$story[0]->titleID}}</a>
                 {{-- <p class="text-center sm:text-base text-sm">{{$story[0]->imgDescID}}</p> --}}
-                <textarea disabled style="resize: none;" class="bg-transparent text-center sm:text-base text-sm w-full h-full" rows="7">{{$story[0]->imgDescID}}</textarea>
+                <textarea disabled style="resize: none;" class="scrollbar-hide bg-transparent text-center sm:text-base text-sm w-full h-full" rows="7">{{$story[0]->imgDescID}}</textarea>
 
             </div>
             <img src="{{ asset('storage/files/photos/'.$story[0]->img) }}" alt="" class="sm:w-6/12 w-full sm:h-96 h-full object-cover object-center">
@@ -165,7 +165,7 @@
             <div class="sm:w-6/12 w-full flex flex-col sm:gap-12 gap-4 justify-center items-center sm:px-12 px-4 py-4">
                 <a href="{{ route($story[1]->slug, app()->getlocale() )}}" class="text-3xl text-center font-bold">{{$story[1]->titleID}}</a>
                 {{-- <p class="text-center sm:text-base text-sm">{{$story[1]->imgDescID}}</p> --}}
-                <textarea disabled style="resize: none;" class="bg-transparent text-center sm:text-base text-sm w-full h-full" rows="7">{{$story[1]->imgDescID}}</textarea>
+                <textarea disabled style="resize: none;" class="scrollbar-hide bg-transparent text-center sm:text-base text-sm w-full h-full" rows="7">{{$story[1]->imgDescID}}</textarea>
 
             </div>
         </div>

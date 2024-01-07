@@ -9,10 +9,10 @@
             </div>
             <div class="flex flex-col gap-3">
                 <a href="{{ route('azrestoration', app()->getlocale() )}}" class="uppercase text-2xl font-black">A to Z Restorasi Kadut</a>
-                <a href="new#konteks" class="text-xl font-satunya font-bold">konteks</a>
-                <a href="new#silvikultur" class="text-xl font-satunya font-bold">silvikultur</a>
-                <a href="new#penanggulangankebakaran" class="text-xl font-satunya font-bold">penanggulangan kebakaran</a>
-                <a href="new#pelibatanmasyarakat" class="text-xl font-satunya font-bold">pelibatan masyarakat</a>
+                <a href="{{ route('a-to-z-restorasi-kadut#konteks', app()->getlocale() )}}" class="text-xl font-satunya font-bold">konteks</a>
+                <a href="{{ route('a-to-z-restorasi-kadut#silvikultur', app()->getlocale() )}}" class="text-xl font-satunya font-bold">silvikultur</a>
+                <a href="{{ route('a-to-z-restorasi-kadut#penanggulangankebakaran', app()->getlocale() )}}" class="text-xl font-satunya font-bold">penanggulangan kebakaran</a>
+                <a href="{{ route('a-to-z-restorasi-kadut#pelibatanmasyarakat', app()->getlocale() )}}" class="text-xl font-satunya font-bold">pelibatan masyarakat</a>
             </div>
             <div class="flex flex-col gap-3">
                 <a href="{{ route('story', app()->getlocale() )}}" class="uppercase text-2xl font-black">Feature</a>
