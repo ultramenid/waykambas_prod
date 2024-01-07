@@ -37,7 +37,7 @@ class WhowheareController extends Controller
     public function index(){
         $text = $this->geth1();
         $content = $this->getWhoweare();
-        $title = 'Tentang Kami - Way kambas';
+        $title = 'About - Who We Are ';
         $cssbackground = 'bg-tentangkami';
         $nav = 'about';
         return view('frontend.whoweare', compact('title', 'content', 'text', 'cssbackground', 'nav'));

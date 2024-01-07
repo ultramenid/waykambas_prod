@@ -26,9 +26,9 @@ class RawakadutController extends Controller
                 ->first();
     }
     public function index(){
-        $text = 'Rawa Kadut';
+        $text = 'Restorasi Kadut';
         $content = $this->getrawakadut();
-        $title = 'Rawa Kadut - Way kambas';
+        $title = 'About - Restorasi Kadut';
         $nav = 'about';
         $cssbackground = 'bg-restorasi';
         return view('frontend.rawakadut', compact('title', 'content', 'text', 'nav', 'cssbackground'));
