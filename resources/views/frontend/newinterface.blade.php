@@ -168,7 +168,7 @@
         <div class="flex sm:flex-row flex-col items-center border border-gray-400 bg-white mt-4">
             <div class="sm:w-6/12 w-full flex flex-col sm:gap-12 gap-4 justify-center items-center sm:px-12 px-4 py-4">
                 <a href="{{ route($story[2]->slug, app()->getlocale() )}}" class="text-3xl text-center font-bold">{{$story[2]->titleID}}</a>
-                <textarea class="text-center sm:text-base text-sm">{{$story[2]->imgDescID}}</textarea>
+                <textarea class="text-center sm:text-base text-sm w-full h-full">{{$story[2]->imgDescID}}</textarea>
             </div>
             <img src="{{ asset('storage/files/photos/'.$story[2]->img) }}" alt="" class="sm:w-6/12 w-full sm:h-96 h-full object-cover object-center">
         </div>
