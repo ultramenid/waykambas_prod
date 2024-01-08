@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class SettingsController extends Controller
 {
     public function index(){
-        $title = 'Settings - NDPE Transparency Platform';
+        $title = 'Settings - Restorasi Kadut';
         $nav = 'settings';
         $sidenav = 'general';
         return view('backend.settings', compact('title','nav','sidenav'));

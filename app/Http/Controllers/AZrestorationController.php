@@ -65,7 +65,7 @@ class AZrestorationController extends Controller
 
 
     public function newAZ(){
-        $title = 'A to Z Restorasi Kadut - Way Kambas';
+        $title = 'A to Z - Restorasi Kadut ';
         $text = 'A to Z Restorasi Kadut';
         $description = 'Kenapa di Kadut. Apa urgensi dan nilai pentingnya. Apa-apa saja yang dikerjakan. Kenapa tindakan tertentu dilakukan. Bagaimana pelibatan masyarakat. Dan berbagai hal teknis lainnya.';
         $ogimage = 'meta.png';

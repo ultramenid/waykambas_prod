@@ -27,7 +27,7 @@ class SilvikulturController extends Controller
     public function index(){
         $text = 'Silvikultur';
         $content = $this->getsilvikultur();
-        $title = 'Silvikultur - Way kambas';
+        $title = 'Silvikultur - Restorasi Kadut';
         return view('frontend.silvikultur', compact('title', 'content', 'text'));
     }
 }

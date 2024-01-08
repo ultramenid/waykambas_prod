@@ -7,17 +7,17 @@ use Illuminate\Http\Request;
 class CmsAzController extends Controller
 {
     public function index(){
-        $title = 'A-Z Restoration - Way kambas';
+        $title = 'A to Z - Restorasi Kadut';
         $nav = 'az';
         return view('backend.cmsaz', compact('title','nav'));
     }
     public function addAz(){
-        $title = 'Add - A-Z Restoration';
+        $title = 'Add - A to Z';
         $nav = 'az';
         return view('backend.addaz', compact('title','nav'));
     }
     public function editAz($id){
-        $title = 'Add - A-Z Restoration';
+        $title = 'Edit - A to Z';
         $nav = 'az';
         $id = $id;
         return view('backend.editaz', compact('title','nav', 'id'));

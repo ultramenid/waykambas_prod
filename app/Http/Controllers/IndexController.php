@@ -39,7 +39,7 @@ class IndexController extends Controller
         ->get();
     }
     public function index(){
-        $title = 'Home - Way Kambas';
+        $title = 'Home - Restorasi Kadut';
         $description = 'Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.';
         $ogimage = 'meta.png';
         $diary = $this->getDiary();
@@ -48,7 +48,7 @@ class IndexController extends Controller
     }
 
     public function newInterface(){
-        $title = 'Index - Way kambas';
+        $title = 'Index - Restorasi Kadut';
         $description = 'Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.';
         $ogimage = 'meta.png';
         $diary = $this->getDiary();

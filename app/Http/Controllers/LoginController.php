@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class LoginController extends Controller
 {
     public function index(){
-        $title = 'Login - Way Kambas';
+        $title = 'Login - Restorasi Kadut';
         return view('backend.login', compact('title'));
     }
 }

@@ -27,7 +27,7 @@ class SiteplanController extends Controller
     public function index(){
         $text = 'Site Plan';
         $content = $this->getsiteplan();
-        $title = 'Site Plan - Way kambas';
+        $title = 'Site Plan - Restorasi Kadut';
         return view('frontend.siteplan', compact('title', 'content', 'text'));
     }
 }

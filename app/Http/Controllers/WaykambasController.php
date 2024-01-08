@@ -36,7 +36,7 @@ class WaykambasController extends Controller
     public function index(){
         $text = $this->geth1();
         $content = $this->getwaykambas();
-        $title = 'About - Way kambas';
+        $title = 'About - Way Kambas';
         $description = 'Nilai penting Taman Nasional Way Kambas. Kekayaan biodiversitasnya. Dinamika tutupan lahan di sana. Hingga riwayat kawasan konservasi ini.';
         $ogimage = 'meta.png';
         $nav = 'about';

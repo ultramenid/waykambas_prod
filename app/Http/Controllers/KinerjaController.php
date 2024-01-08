@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class KinerjaController extends Controller
 {
     public function index(){
-        $title = 'Kinerja - Way Kambas';
+        $title = 'Kinerja - Restorasi Kadut';
         $text = 'Kinerja';
         $nav = 'kinerja';
         // $diary = $this->getDiary();
@@ -16,7 +16,7 @@ class KinerjaController extends Controller
     }
 
     public function duaribuduatiga(){
-        $title = 'Kinerja 2023 - Way Kambas';
+        $title = 'Kinerja 2023 - Restorasi Kadut';
         $text = 'Kinerja 2023';
         $nav = 'kinerja';
         // $diary = $this->getDiary();
