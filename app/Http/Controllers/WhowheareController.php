@@ -39,8 +39,9 @@ class WhowheareController extends Controller
         $content = $this->getWhoweare();
         $title = 'About - Who We Are ';
         $description = 'Mengenai Auriga Nusantara dan kiprahnya di Way Kambas. Sesiapa aja yang terlibat dalam kegiatan ini. Profil ringkas tim inti Restorasi Kadut.';
+        $ogimage = 'meta.png';
         $cssbackground = 'bg-tentangkami';
         $nav = 'about';
-        return view('frontend.whoweare', compact('title', 'content', 'text', 'cssbackground', 'nav'));
+        return view('frontend.whoweare', compact('title', 'content', 'text', 'cssbackground', 'nav', 'description', 'ogimage'));
     }
 }

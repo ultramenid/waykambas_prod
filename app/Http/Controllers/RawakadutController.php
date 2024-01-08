@@ -30,8 +30,9 @@ class RawakadutController extends Controller
         $content = $this->getrawakadut();
         $title = 'About - Restorasi Kadut';
         $description = 'Area Restorasi Kadut hanya seperseratus Way Kambas. Tapi, sedemikian penting dalam upaya mereforestasi area kritis di taman nasional ini. Pun bagi perlindungan spesies kuncinya.';
+        $ogimage = 'meta.png';
         $nav = 'about';
         $cssbackground = 'bg-restorasi';
-        return view('frontend.rawakadut', compact('title', 'content', 'text', 'nav', 'cssbackground'));
+        return view('frontend.rawakadut', compact('title', 'content', 'text', 'nav', 'cssbackground', 'description', 'ogimage'));
     }
 }

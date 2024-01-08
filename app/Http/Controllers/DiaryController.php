@@ -12,11 +12,13 @@ class DiaryController extends Controller
 
     public function index(){
         $title = 'Diary - Way Kambas';
+        $description = 'Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.';
+        $ogimage = 'meta.png';
         $text = 'Green Diary';
         $nav = 'diary';
         // $diary = $this->getDiary();
         $cssbackground = 'bg-green-diary';
-        return view('frontend.diary', compact('title','text', 'cssbackground','nav'));
+        return view('frontend.diary', compact('title','text', 'cssbackground','nav', 'description', 'ogimage'));
     }
     public function detail($lang, $slug){
         try {

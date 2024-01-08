@@ -7,10 +7,12 @@ use Illuminate\Http\Request;
 class StoryController extends Controller
 {
     public function index(){
-        $title = 'Stories - Way Kambas';
+        $title = 'Feature - Way Kambas';
+        $description = 'Cerita dari lapangan. Dikisahkan sendiri atau oleh pihak lain.';
+        $ogimage = 'meta.png';
         $nav = 'story';
-        $text = 'A-Z Restoration';
+        $text = 'Feature Story';
         $cssbackground = 'bg-story-css';
-        return view('frontend.story', compact('title', 'nav', 'cssbackground'));
+        return view('frontend.story', compact('title', 'nav', 'cssbackground', 'description', 'ogimage'));
     }
 }

@@ -40,17 +40,20 @@ class IndexController extends Controller
     }
     public function index(){
         $title = 'Home - Way Kambas';
+        $description = 'Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.';
+        $ogimage = 'meta.png';
         $diary = $this->getDiary();
         $story = $this->getStory();
-        return view('frontend.newinterface', compact('title', 'diary', 'story'));
+        return view('frontend.newinterface', compact('title', 'diary', 'story', 'description', 'ogimage'));
     }
 
     public function newInterface(){
         $title = 'Index - Way kambas';
-        $description = '';
+        $description = 'Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.';
+        $ogimage = 'meta.png';
         $diary = $this->getDiary();
         $story = $this->getStory();
-        return view('frontend.index', compact('title', 'diary', 'story'));
+        return view('frontend.index', compact('title', 'diary', 'story', 'description', 'ogimage'));
     }
 
     public function sitemap(){

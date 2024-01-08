@@ -67,6 +67,8 @@ class AZrestorationController extends Controller
     public function newAZ(){
         $title = 'A to Z Restorasi Kadut - Way Kambas';
         $text = 'A to Z Restorasi Kadut';
+        $description = 'Kenapa di Kadut. Apa urgensi dan nilai pentingnya. Apa-apa saja yang dikerjakan. Kenapa tindakan tertentu dilakukan. Bagaimana pelibatan masyarakat. Dan berbagai hal teknis lainnya.';
+        $ogimage = 'meta.png';
         // $content = $this->getAz();
         // $cssbackground = 'bg-az';
         $konteks = $this->getKonteks();
@@ -75,6 +77,6 @@ class AZrestorationController extends Controller
         $pelibatanmasyarakat = $this->getPelibatanMasyarakat();
         // dd($konteks);
         $nav = 'az';
-        return view('frontend.new-az', compact('title', 'text','nav', 'konteks', 'silvikultur','penanggulangankebakaran', 'pelibatanmasyarakat'));
+        return view('frontend.new-az', compact('title', 'text','nav', 'konteks', 'silvikultur','penanggulangankebakaran', 'pelibatanmasyarakat', 'description', 'ogimage'));
     }
 }
