@@ -1,8 +1,8 @@
  <!-- hero -->
     <!-- image -->
     <div class=" bg-black  z-50 font-satunya">
-        <div class="max-w-7xl px-4 py-6  mx-auto relative  justify-between items-end sm:flex hidden">
-            <div class="flex gap-8 items-center">
+        <div class="max-w-7xl px-4 py-6  mx-auto relative  justify-between items-center sm:flex hidden">
+            <div class="flex gap-8 items-end">
                 <a class="mr-12" href="{{ route('index', app()->getlocale() )}}"><img src="{{ asset('img/rawakadut-logo-atas.png') }}" alt="Waykambas - Rawa Kadut" class="h-16"></a>
                 <!-- about -->
                 <div class="flex-col flex" x-data="{pages:false}">
