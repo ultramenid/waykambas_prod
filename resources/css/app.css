@@ -98,6 +98,17 @@
             background-color: transparent;
             background-blend-mode:multiply;
 }
+
+.bg-aducepat{
+    background-image: url('/assets/14.png');
+            background-repeat: no-repat;
+            background-size: cover;
+            height: 60vh;
+            background-position: center;
+            background-color: transparent;
+            background-blend-mode:multiply;
+}
+
 .bg-az{
     background-image: url('/img/tentang-kami.jpg');
             background-repeat: no-repat;

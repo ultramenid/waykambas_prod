@@ -80,6 +80,9 @@ Route::group(['prefix' => '{lang}'], function () {
     Route::get('/Adu_cepat_di_Rawa_Kadut', [AducepatdirawakadutController::class, 'index'])->name('Adu_cepat_di_Rawa_Kadut');
     Route::get('/Matikan_api_menjaga_puspa', [MatikanAPiController::class, 'index'])->name('Matikan_api_menjaga_puspa');
 
+
+    Route::get('/new-aducepat', [AducepatdirawakadutController::class, 'newAducepat'])->name('new-aducepat');
+
 });
 
 

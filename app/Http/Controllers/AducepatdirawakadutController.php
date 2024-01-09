@@ -31,4 +31,17 @@ class AducepatdirawakadutController extends Controller
         $publish = date("F Y", strtotime($this->getStory()->publishdate)) ;
         return view('frontend.aducepat', compact('title','text', 'imageHero','nav', 'imgdesc', 'publish', 'desc','ogimage'));
     }
+
+    public function newAducepat(){
+        $title = $this->getStory()->titleID;
+        $text = $this->getStory()->titleID;
+        $cssbackground = 'bg-aducepat';
+        $imageHero = 'aducepat.png';
+        $nav = 'story';
+        $desc = 'Hutan ditumbuhkan kembali di hamparan ilalang Way Kambas. Namun, pemulihan ekosistem ini sungguh tidak mudah.';
+        $imgdesc = $this->getStory()->imgDescID;
+        $ogimage = 'ogaducepat3150.jpeg';
+        $publish = date("F Y", strtotime($this->getStory()->publishdate)) ;
+        return view('frontend.new-aducepat', compact('cssbackground','title','text', 'imageHero','nav', 'imgdesc', 'publish', 'desc','ogimage'));
+    }
 }
