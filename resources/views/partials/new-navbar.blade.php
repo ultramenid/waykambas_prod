@@ -44,7 +44,7 @@
             </div> --}}
         </div>
     </div>
-    <div class="bg-restorasi py-6">
+    <div class="{{$cssbackground}} py-6">
         <div class="max-w-7xl px-4 py-3  mx-auto relative ">
             <!-- bahasa -->
             {{-- <div class="sm:flex hidden justify-end">

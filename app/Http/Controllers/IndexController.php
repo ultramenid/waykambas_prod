@@ -39,12 +39,13 @@ class IndexController extends Controller
         ->get();
     }
     public function index(){
+        $cssbackground = 'bg-restorasi';
         $title = 'Home - Restorasi Kadut';
         $description = 'Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.';
         $ogimage = 'meta.png';
         $diary = $this->getDiary();
         $story = $this->getStory();
-        return view('frontend.newinterface', compact('title', 'diary', 'story', 'description', 'ogimage'));
+        return view('frontend.newinterface', compact('title', 'diary', 'story', 'description', 'ogimage', 'cssbackground'));
     }
 
     public function newInterface(){

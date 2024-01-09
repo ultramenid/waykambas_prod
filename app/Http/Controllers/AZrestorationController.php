@@ -70,13 +70,13 @@ class AZrestorationController extends Controller
         $description = 'Kenapa di Kadut. Apa urgensi dan nilai pentingnya. Apa-apa saja yang dikerjakan. Kenapa tindakan tertentu dilakukan. Bagaimana pelibatan masyarakat. Dan berbagai hal teknis lainnya.';
         $ogimage = 'meta.png';
         // $content = $this->getAz();
-        // $cssbackground = 'bg-az';
+        $cssbackground = 'bg-az';
         $konteks = $this->getKonteks();
         $silvikultur = $this->getSilvikultur();
         $penanggulangankebakaran = $this->getPenanggulanganKebakaran();
         $pelibatanmasyarakat = $this->getPelibatanMasyarakat();
         // dd($konteks);
         $nav = 'az';
-        return view('frontend.new-az', compact('title', 'text','nav', 'konteks', 'silvikultur','penanggulangankebakaran', 'pelibatanmasyarakat', 'description', 'ogimage'));
+        return view('frontend.new-az', compact('cssbackground','title', 'text','nav', 'konteks', 'silvikultur','penanggulangankebakaran', 'pelibatanmasyarakat', 'description', 'ogimage'));
     }
 }

@@ -30,7 +30,8 @@ class FrontendDiaryComponent extends Component
             ->where('publishdate' , '<=', Carbon::now('Asia/Jakarta'))
             ->where('isActive', 1)
             ->orderBy('publishdate', 'desc')
-            ->paginate($this->paginate);
+            ->take($this->paginate)
+            ->get();
         }else{
             return DB::table('greendiary')
             ->select('publishdate')
@@ -38,9 +39,14 @@ class FrontendDiaryComponent extends Component
             ->where('publishdate' , '<=', Carbon::now('Asia/Jakarta'))
             ->where('isActive', 1)
             ->orderBy('publishdate', 'desc')
-            ->paginate($this->paginate);
+            ->take($this->paginate)
+            ->get();
         }
 
+    }
+
+    public function getMore(){
+        $this->paginate += 7;
     }
 
 
