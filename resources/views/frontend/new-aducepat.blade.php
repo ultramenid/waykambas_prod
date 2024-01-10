@@ -9,14 +9,14 @@
     @include('partials.new-navbar')
 
     <div class="max-w-5xl mx-auto mt-12 px-4">
-        <h1 class="font-satunya text-green-600 font-bold text-2xl uppercase">Feature Story</h1>
+        <h1 class="font-satunya text-green-600 font-bold text-2xl uppercase">Feature</h1>
         <h1 class="mt-6 font-semibold text-5xl">{{$text}}</h1>
         <p class="text-xl mt-4" >
             Luasnya hamparan ilalang menjadi tengara masa lalu masih menggelayuti Way Kambas. Untuk menumpas rumput tangguh itu, hutan ditumbuhkan kembali. Namun, upaya pemulihan hutan sungguh tidak mudah.
         </p>
 
         <div class="sm:mt-16 mt-8 py-6 border-t border-t-gray-800 border-b border-b-gray-400">
-            <h2 class=" italic">Didesain ulang, dengan naskah disalin sepenuhnya:</h2>
+            <h2 class=" italic">Didesain ulang dengan naskah disalin sepenuhnya, dari:</h2>
             <a class="mt-1 underline text-green-600" href="https://auriga.or.id/resource/reference/ekuilibrium_konservasi_menjaga_keseimbangan_di_taman_nasional_way_kambas.pdf" class="mt-2">Ekuilibrium Konservasi: Menjaga Keseimbangan di Taman Nasional Way Kambas (TFCA Sumatera, 2017)</a>
         </div>
     </div>
@@ -420,7 +420,7 @@
         <p class="leading-relaxed tracking-wide mt-8">Ada tiga jalur patroli untuk operasi perlindungan dan penga - manan. “Tetapi
             waktu itu api begitu besar dan angin berhembus kencang. Situasi tidak
             terkendali lagi. Apalagi kebakaran terjadi pada malam hari, sehingga makin
-            sulit memobilisasi orang,” tandas Fajar.
+            sulit memobilisasi orang,” tandas Fajar. <span class="bg-red-500 h-3 w-3 inline-flex"></span>
         </p>
     </div>
 
