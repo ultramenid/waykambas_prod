@@ -77,7 +77,7 @@ Route::group(['prefix' => '{lang}'], function () {
 
     // story
     Route::get('/Waykambas_tenggelam_dalam_balutan_ilalang', [StoryIlalangController::class, 'index'])->name('Waykambas_tenggelam_dalam_balutan_ilalang');
-    Route::get('/Adu_cepat_di_Rawa_Kadut', [AducepatdirawakadutController::class, 'newMatikanapi'])->name('Adu_cepat_di_Rawa_Kadut');
+    Route::get('/Adu_cepat_di_Rawa_Kadut', [AducepatdirawakadutController::class, 'newAducepat'])->name('Adu_cepat_di_Rawa_Kadut');
     Route::get('/Matikan_api_menjaga_puspa', [MatikanAPiController::class, 'index'])->name('Matikan_api_menjaga_puspa');
 
 
