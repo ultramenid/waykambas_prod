@@ -87,7 +87,7 @@
 
             </button>
         </div>
-        <div class="sm:block hidden sm:h-[35rem] h-56 w-[25%] mt-4 bg-black absolute bg-opacity-70  z-20 -ml-4 rounded">
+        <div class="sm:block hidden sm:h-[35rem] h-56 w-[25%] mt-12 bg-black absolute bg-opacity-70  z-20 -ml-4 rounded">
             <div class="inset-y-0 left-0">
             </div>
         </div>
@@ -95,9 +95,9 @@
         <div class="swiper-container" x-ref="container">
             <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide p-4 flex flex-col  bg-newgray-300 relative" >
+                    <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/11.png') }}" alt="">
-                        <p class="sm:absolute  bottom-10 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Masa depan kawasan ini tergantung pada
+                        <p class="sm:absolute  bottom-16 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Masa depan kawasan ini tergantung pada
                             ribuan bibit tanaman reforestasi. Namun,
                             jumlah dalam bilangan 'ribuan' bagaikan
                             setetes air di samudra ilalang. Tahuntahun awal adalah masa yang menentukan
@@ -105,21 +105,21 @@
                             sehingga mampu bersaing dengan alangalang.</p>
                     </div>
                     <!-- Slides -->
-                    <div class="swiper-slide p-4 flex flex-col  bg-newgray-300 relative" >
+                    <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/6.png') }}" alt="">
-                        <p class="sm:absolute  bottom-10 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Masa depan kawasan ini tergantung pada
+                        <p class="sm:absolute  bottom-16 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Masa depan kawasan ini tergantung pada
                             Pondok kerja di lapangan untuk menjaga, merawat, dan memastikan bibit tanaman dapat tumbuh secara normal. Aktivitas di pondok kerja juga untuk mencegah pemburu liar masuk taman nasional. Sayangnya, upaya pencegahan itu tak selalu berhasil. Pemburu tetap saja membakar lahan untuk memburu satwa liar. AGUS PRIJONO .</p>
                     </div>
                     <!-- Slides -->
-                    <div class="swiper-slide p-4 flex flex-col  bg-newgray-300 relative" >
+                    <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/12.png') }}" alt="">
-                        <p class="sm:absolute  bottom-10 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Bila tak terbakar, semestinya tanaman sudah setinggi dua meteran, seperti terlihat pada pohon yang menaungi sepeda motor. Deretan pohon di depan pondok kerja ini selamat dari kobaran api 2014. AGUS PRIJONO</p>
+                        <p class="sm:absolute  bottom-16 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Bila tak terbakar, semestinya tanaman sudah setinggi dua meteran, seperti terlihat pada pohon yang menaungi sepeda motor. Deretan pohon di depan pondok kerja ini selamat dari kobaran api 2014. AGUS PRIJONO</p>
                     </div>
             </div>
-            <div class="swiper-pagination -mb-2"></div>
+            <div class="swiper-pagination"></div>
         </div>
 
-        <div class="sm:block hidden sm:h-[35rem] h-56 w-[24%]  rounded mt-4 bg-black absolute bg-opacity-70  inset-y-0 right-0 z-20">
+        <div class="sm:block hidden sm:h-[35rem] h-56 w-[24%]  rounded mt-12 bg-black absolute bg-opacity-70  inset-y-0 right-0 z-20">
         </div>
 
         <div class="absolute inset-y-0 sm:right-40 right-0 z-30 flex items-center">
@@ -355,7 +355,7 @@
 
             </button>
         </div>
-        <div class="sm:block hidden sm:h-[35rem] h-56 w-[25%] mt-4 bg-black absolute bg-opacity-70  z-20 -ml-4 rounded">
+        <div class="sm:block hidden sm:h-[35rem] h-56 w-[25%] mt-12 bg-black absolute bg-opacity-70  z-20 -ml-4 rounded">
             <div class="inset-y-0 left-0">
             </div>
         </div>
@@ -363,27 +363,27 @@
         <div class="swiper-container" x-ref="container">
             <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide p-4 flex flex-col  bg-newgray-300 relative" >
+                    <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/9_1.png') }}" alt="">
-                        <p class="sm:absolute  bottom-10 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Masa depan kawasan ini tergantung pada
+                        <p class="sm:absolute  bottom-16 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Masa depan kawasan ini tergantung pada
                             Bibit tanaman dipungut dari wilayah taman nasional untuk menjamin keaslian spesiesnya. Areal pembibitan berada di lapangan untuk membantu adaptasi bibit, serta memudahkan pengangkutan bibit ke areal penanaman. AGUS PRIJONO</p>
                     </div>
                     <!-- Slides -->
-                    <div class="swiper-slide p-4 flex flex-col  bg-newgray-300 relative" >
+                    <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/9_2.png') }}" alt="">
-                        <p class="sm:absolute  bottom-10 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Bibit tanaman dipungut dari wilayah taman nasional untuk menjamin keaslian spesiesnya. Areal pembibitan berada di lapangan untuk membantu adaptasi bibit, serta memudahkan pengangkutan bibit ke areal penanaman. AGUS PRIJONO</p>
+                        <p class="sm:absolute  bottom-16 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Bibit tanaman dipungut dari wilayah taman nasional untuk menjamin keaslian spesiesnya. Areal pembibitan berada di lapangan untuk membantu adaptasi bibit, serta memudahkan pengangkutan bibit ke areal penanaman. AGUS PRIJONO</p>
                     </div>
                     <!-- Slides -->
-                    <div class="swiper-slide p-4 flex flex-col  bg-newgray-300 relative" >
+                    <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/9_3.png') }}" alt="">
-                        <p class="sm:absolute  bottom-10 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Bibit tanaman dipungut dari wilayah taman nasional untuk menjamin keaslian spesiesnya. Areal pembibitan berada di lapangan untuk membantu adaptasi bibit, serta memudahkan pengangkutan bibit ke areal penanaman. AGUS PRIJONO</p>
+                        <p class="sm:absolute  bottom-16 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Bibit tanaman dipungut dari wilayah taman nasional untuk menjamin keaslian spesiesnya. Areal pembibitan berada di lapangan untuk membantu adaptasi bibit, serta memudahkan pengangkutan bibit ke areal penanaman. AGUS PRIJONO</p>
                     </div>
             </div>
-            <div class="swiper-pagination -mb-3"></div>
+            <div class="swiper-pagination"></div>
         </div>
 
 
-        <div class="sm:block hidden sm:h-[35rem] h-56 w-[24%]  rounded mt-4 bg-black absolute bg-opacity-70  inset-y-0 right-0 z-20">
+        <div class="sm:block hidden sm:h-[35rem] h-56 w-[24%]  rounded mt-12     bg-black absolute bg-opacity-70  inset-y-0 right-0 z-20">
         </div>
 
         <div class="absolute inset-y-0 sm:right-40 right-0 z-30 flex items-center">
