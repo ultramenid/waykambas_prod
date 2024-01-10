@@ -16,8 +16,8 @@
         </p>
 
         <div class="sm:mt-16 mt-8 py-6 border-t border-t-gray-800 border-b border-b-gray-400">
-            <h2 class="font-bold">Disalin sepenuhnya dari:</h2>
-            <p class="mt-2">Ekuilibrium Konservasi: Menjaga Keseimbangan di Taman Nasional Way Kambas (TFCA Sumatera, 2017)</p>
+            <h2 class=" italic">Didesain ulang, dengan naskah disalin sepenuhnya:</h2>
+            <a class="mt-1 underline text-green-600" href="https://auriga.or.id/resource/reference/ekuilibrium_konservasi_menjaga_keseimbangan_di_taman_nasional_way_kambas.pdf" class="mt-2">Ekuilibrium Konservasi: Menjaga Keseimbangan di Taman Nasional Way Kambas (TFCA Sumatera, 2017)</a>
         </div>
     </div>
 
@@ -233,8 +233,8 @@
             <p class=" text-black  text-xs mt-2 text-left ">Kebakaran hutan menghanguskan apa saja yang ada di padang ilalang. Rumput yang mengering amat rawan kebakaran. Sekali tersulut, api akan berkobar, lalu melalap semua bentuk kehidupan. AGUS PRIJONO</p>
         </div>
         <div class="sm:w-6/12 w-full">
-            <div class="w-full flex justify-end">
-                <h2 class="text-2xl font-bold w-8/12 mb-12">“Sayangnya, baru berumur 8 - 9 bulan, tanaman lebur dilalap api.”</h2>
+            <div class="w-full flex sm:justify-end justify-center">
+                <h2 class="text-2xl font-bold sm:w-8/12 w-full  mb-12 sm:text-left text-center">“Sayangnya, baru berumur 8 - 9 bulan, tanaman lebur dilalap api.”</h2>
 
             </div>
             <p class="leading-relaxed tracking-wide mt-8">
