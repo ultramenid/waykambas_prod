@@ -16,7 +16,7 @@
         </p>
 
         <div class="sm:mt-16 mt-8 py-6 border-t border-t-gray-800 border-b border-b-gray-400">
-            <h2 class=" italic">Didesain ulang dengan naskah disalin sepenuhnya, dari:</h2>
+            <h2 class=" italic">Disalin sepenuhnya dari:</h2>
             <a class="mt-1 underline text-green-600" href="https://auriga.or.id/resource/reference/ekuilibrium_konservasi_menjaga_keseimbangan_di_taman_nasional_way_kambas.pdf" class="mt-2">Ekuilibrium Konservasi: Menjaga Keseimbangan di Taman Nasional Way Kambas (TFCA Sumatera, 2017)</a>
         </div>
     </div>
