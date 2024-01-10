@@ -77,9 +77,9 @@
         })"
         class="relative flex flex-row mt-10 "
         >
-        <div class="absolute inset-y-0 sm:left-44 left-0 z-30 flex items-center">
+        <div class="absolute inset-y-0 sm:left-5 left-1 z-30 flex items-center ">
             <button @click="swiper.slidePrev()"
-                class="bg-nav-slide text-white sm:-ml-2 lg:-ml-4 flex justify-center items-center sm:w-14 sm:h-14 w-12 h-12 rounded-full shadow focus:outline-none">
+                class="bg-black bg-nav-slide text-white sm:-ml-2 lg:-ml-4 flex justify-center items-center sm:w-14 sm:h-14 w-12 h-12  shadow focus:outline-none">
                 {{-- <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-8 h-8"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> --}}
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="sm:w-6 sm:h-6 w-5 h-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
@@ -87,17 +87,19 @@
 
             </button>
         </div>
-        <div class="sm:block hidden sm:h-[35rem] h-56 w-[25%] mt-12 bg-black absolute bg-opacity-70  z-20 -ml-4 rounded">
+        {{-- <div class="sm:block hidden sm:h-[35rem] h-56 w-[25%] mt-12 bg-black absolute bg-opacity-70 z-20 -ml-4 rounded">
             <div class="inset-y-0 left-0">
             </div>
-        </div>
+        </div> --}}
 
-        <div class="swiper-container" x-ref="container">
+        <div class="swiper-container relative" x-ref="container">
+            <div class="sm:block hidden bottom-0 w-[24%] bg-newgray-300 h-[9rem] absolute z-40"></div>
             <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/11.png') }}" alt="">
-                        <p class="sm:absolute  bottom-16 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Masa depan kawasan ini tergantung pada
+                        <p class=" text-black font-light sm:text-sm text-xs mt-4 text-left tracking-wide">
+                            Masa depan kawasan ini tergantung pada
                             ribuan bibit tanaman reforestasi. Namun,
                             jumlah dalam bilangan 'ribuan' bagaikan
                             setetes air di samudra ilalang. Tahuntahun awal adalah masa yang menentukan
@@ -107,24 +109,26 @@
                     <!-- Slides -->
                     <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/6.png') }}" alt="">
-                        <p class="sm:absolute  bottom-16 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Masa depan kawasan ini tergantung pada
+                        <p class=" text-black sm:text-sm text-xs mt-4 text-left tracking-wide">Masa depan kawasan ini tergantung pada
                             Pondok kerja di lapangan untuk menjaga, merawat, dan memastikan bibit tanaman dapat tumbuh secara normal. Aktivitas di pondok kerja juga untuk mencegah pemburu liar masuk taman nasional. Sayangnya, upaya pencegahan itu tak selalu berhasil. Pemburu tetap saja membakar lahan untuk memburu satwa liar. AGUS PRIJONO .</p>
                     </div>
                     <!-- Slides -->
                     <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/12.png') }}" alt="">
-                        <p class="sm:absolute  bottom-16 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Bila tak terbakar, semestinya tanaman sudah setinggi dua meteran, seperti terlihat pada pohon yang menaungi sepeda motor. Deretan pohon di depan pondok kerja ini selamat dari kobaran api 2014. AGUS PRIJONO</p>
+                        <p class=" text-black sm:text-sm text-xs mt-4 text-left tracking-wide">Bila tak terbakar, semestinya tanaman sudah setinggi dua meteran, seperti terlihat pada pohon yang menaungi sepeda motor. Deretan pohon di depan pondok kerja ini selamat dari kobaran api 2014. AGUS PRIJONO</p>
                     </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="sm:block hidden bottom-0 right-0 w-[24%] bg-newgray-300 h-[9rem] absolute z-40"></div>
+
+            {{-- <div class="swiper-pagination"></div> --}}
         </div>
 
-        <div class="sm:block hidden sm:h-[35rem] h-56 w-[24%]  rounded mt-12 bg-black absolute bg-opacity-70  inset-y-0 right-0 z-20">
-        </div>
+        {{-- <div class="sm:block hidden sm:h-[35rem] h-56 w-[24%]  rounded mt-12 bg-black absolute bg-opacity-70  inset-y-0 right-0 z-20">
+        </div> --}}
 
-        <div class="absolute inset-y-0 sm:right-40 right-0 z-30 flex items-center">
+        <div class="absolute inset-y-0  right-1 z-30 flex items-center">
             <button @click="swiper.slideNext()"
-                class="bg-nav-slide text-white flex justify-center items-center sm:w-14 sm:h-14 w-12 h-12 rounded-full shadow focus:outline-none">
+                class="bg-black text-white flex justify-center items-center sm:w-14 sm:h-14 w-12 h-12  shadow focus:outline-none">
                 {{-- <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-8 h-8"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg> --}}
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="sm:w-6 sm:h-6 w-5 h-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
@@ -189,7 +193,7 @@
             </div>
             <div class="sm:w-6/12 w-full relative">
                 <img src="{{asset('assets/3.png')}}" alt="" class="h-[45rem] w-full object-cover relative">
-                <p class="sm:absolute  bottom-8 right-3 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Masa depan kawasan ini tergantung pada
+                <p class=" text-black text-xs mt-2 text-left ">Masa depan kawasan ini tergantung pada
                     Menjulang di tengah padang, pohon ini menunjukkan hutan pernah menyelimuti kawasan Rawa Kadut. Kini, perlu usaha keras untuk memulihkan kembali hutan yang telah sirna. AGUS PRIJONO</p>
             </div>
         </div>
@@ -223,10 +227,10 @@
         </p>
     </div>
 
-    <div class="max-w-7xl flex sm:flex-row flex-col-reverse gap-10 sm:mt-16 mt-8 sm:px-12 px-4">
+    <div class="max-w-7xl flex sm:flex-row flex-col-reverse gap-10 sm:mt-16 mt-8 sm:px-12 px-4 mb-12">
         <div class="sm:w-6/12 w-full relative">
             <img src="{{asset('assets/5.png')}}" alt="" class="h-full w-full object-cover relative">
-            <p class="sm:absolute  bottom-8 right-3 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Kebakaran hutan menghanguskan apa saja yang ada di padang ilalang. Rumput yang mengering amat rawan kebakaran. Sekali tersulut, api akan berkobar, lalu melalap semua bentuk kehidupan. AGUS PRIJONO</p>
+            <p class=" text-black  text-xs mt-2 text-left ">Kebakaran hutan menghanguskan apa saja yang ada di padang ilalang. Rumput yang mengering amat rawan kebakaran. Sekali tersulut, api akan berkobar, lalu melalap semua bentuk kehidupan. AGUS PRIJONO</p>
         </div>
         <div class="sm:w-6/12 w-full">
             <div class="w-full flex justify-end">
@@ -260,7 +264,7 @@
 
     </div>
 
-    <div class="max-w-2xl mx-auto px-4 sm:mt-16 mt-8 ">
+    <div class="max-w-2xl mx-auto px-4 sm:mt-24 mt-8 ">
         <p class="leading-relaxed tracking-wide mt-8">cukup terbuka untuk sinar matahari; dan mudah dijangkau. Di atas segala
             syarat tersebut, yang terpenting adalah sumber air di sekitar persemaian.
             Air menjadi faktor pembatas keberhasilan tanam-menanam. Di sekitar Rawa
@@ -282,7 +286,7 @@
 
     <div class="max-w-6xl mx-auto px-4 mt-8 mb-16 relative">
         <img src="{{ asset('assets/8.png') }}" alt="" class="w-full h-full relative">
-        <p class="sm:absolute  bottom-8 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Sekali ilalang terbakar, api akan mengamuk ke segala arah. Kebakaran telah melumat bibit penghutanan kembali pada 2014. Embusan angin mempersulit usaha memutus menjalarnya api. AGUS PRIJONO</p>
+        <p class=" text-black text-xs mt-2 text-left">Sekali ilalang terbakar, api akan mengamuk ke segala arah. Kebakaran telah melumat bibit penghutanan kembali pada 2014. Embusan angin mempersulit usaha memutus menjalarnya api. AGUS PRIJONO</p>
     </div>
 
     <div class="max-w-2xl mx-auto px-4 mt-8">
@@ -313,91 +317,97 @@
         </p>
     </div>
 
-    {{-- image --}}
-    <div x-data="{swiper: null}"
-        x-init="swiper = new Swiper($refs.container, {
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 1,
-            centeredSlides: true,
-            centeredSlidesBounds: true,
-            centeredSlides: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            breakpoints: {
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 0,
-                initialSlide: 0,
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 0,
-                initialSlide: 0,
-            },
-            1024: {
-                slidesPerView: 2,
-                spaceBetween: 0,
-                initialSlide: 1,
-            },
-            },
-        })"
-        class="relative flex flex-row mt-10"
-        >
-        <div class="absolute inset-y-0 sm:left-44 left-0 z-30 flex items-center">
-            <button @click="swiper.slidePrev()"
-                class="bg-nav-slide text-white sm:-ml-2 lg:-ml-4 flex justify-center items-center sm:w-14 sm:h-14 w-12 h-12 rounded-full shadow focus:outline-none">
-                {{-- <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-8 h-8"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> --}}
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="sm:w-6 sm:h-6 w-5 h-5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
-                </svg>
-
-            </button>
-        </div>
-        <div class="sm:block hidden sm:h-[35rem] h-56 w-[25%] mt-12 bg-black absolute bg-opacity-70  z-20 -ml-4 rounded">
-            <div class="inset-y-0 left-0">
-            </div>
-        </div>
-
-        <div class="swiper-container" x-ref="container">
-            <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
-                        <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/9_1.png') }}" alt="">
-                        <p class="sm:absolute  bottom-16 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Masa depan kawasan ini tergantung pada
-                            Bibit tanaman dipungut dari wilayah taman nasional untuk menjamin keaslian spesiesnya. Areal pembibitan berada di lapangan untuk membantu adaptasi bibit, serta memudahkan pengangkutan bibit ke areal penanaman. AGUS PRIJONO</p>
-                    </div>
-                    <!-- Slides -->
-                    <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
-                        <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/9_2.png') }}" alt="">
-                        <p class="sm:absolute  bottom-16 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Bibit tanaman dipungut dari wilayah taman nasional untuk menjamin keaslian spesiesnya. Areal pembibitan berada di lapangan untuk membantu adaptasi bibit, serta memudahkan pengangkutan bibit ke areal penanaman. AGUS PRIJONO</p>
-                    </div>
-                    <!-- Slides -->
-                    <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
-                        <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/9_3.png') }}" alt="">
-                        <p class="sm:absolute  bottom-16 right-5 sm:text-white text-black sm:text-sm text-xs sm:mt-0 mt-1 text-left sm:w-8/12 sm:not-italic italic">Bibit tanaman dipungut dari wilayah taman nasional untuk menjamin keaslian spesiesnya. Areal pembibitan berada di lapangan untuk membantu adaptasi bibit, serta memudahkan pengangkutan bibit ke areal penanaman. AGUS PRIJONO</p>
-                    </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
 
 
-        <div class="sm:block hidden sm:h-[35rem] h-56 w-[24%]  rounded mt-12     bg-black absolute bg-opacity-70  inset-y-0 right-0 z-20">
-        </div>
 
-        <div class="absolute inset-y-0 sm:right-40 right-0 z-30 flex items-center">
-            <button @click="swiper.slideNext()"
-                class="bg-nav-slide text-white flex justify-center items-center sm:w-14 sm:h-14 w-12 h-12 rounded-full shadow focus:outline-none">
-                {{-- <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-8 h-8"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg> --}}
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="sm:w-6 sm:h-6 w-5 h-5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                </svg>
+     {{-- image --}}
+     <div x-data="{swiper: null}"
+     x-init="swiper = new Swiper($refs.container, {
+         loop: true,
+         slidesPerView: 1,
+         spaceBetween: 1,
+         centeredSlides: true,
+         centeredSlidesBounds: true,
+         centeredSlides: true,
+         pagination: {
+             el: '.swiper-pagination',
+             dynamicBullets: true,
+         },
+         breakpoints: {
+         640: {
+             slidesPerView: 2,
+             spaceBetween: 0,
+             initialSlide: 0,
+         },
+         768: {
+             slidesPerView: 3,
+             spaceBetween: 0,
+             initialSlide: 0,
+         },
+         1024: {
+             slidesPerView: 2,
+             spaceBetween: 0,
+             initialSlide: 1,
+         },
+         },
+     })"
+     class="relative flex flex-row mt-10 "
+     >
+     <div class="absolute inset-y-0 sm:left-5 left-1 z-30 flex items-center ">
+         <button @click="swiper.slidePrev()"
+             class="bg-black bg-nav-slide text-white sm:-ml-2 lg:-ml-4 flex justify-center items-center sm:w-14 sm:h-14 w-12 h-12  shadow focus:outline-none">
+             {{-- <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-8 h-8"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> --}}
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="sm:w-6 sm:h-6 w-5 h-5">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
+             </svg>
 
-            </button>
-        </div>
+         </button>
+     </div>
+     {{-- <div class="sm:block hidden sm:h-[35rem] h-56 w-[25%] mt-12 bg-black absolute bg-opacity-70 z-20 -ml-4 rounded">
+         <div class="inset-y-0 left-0">
+         </div>
+     </div> --}}
 
-    </div>
+     <div class="swiper-container relative" x-ref="container">
+         <div class="sm:block hidden bottom-0 w-[24%] bg-newgray-300 h-[7rem] absolute z-40"></div>
+         <div class="swiper-wrapper">
+                 <!-- Slides -->
+                 <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
+                     <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/9_1.png') }}" alt="">
+                     <p class=" text-black font-light sm:text-sm text-xs mt-6 text-left tracking-wide">
+                        Bibit tanaman dipungut dari wilayah taman nasional untuk menjamin keaslian spesiesnya. Areal pembibitan berada di lapangan untuk membantu adaptasi bibit, serta memudahkan pengangkutan bibit ke areal penanaman. AGUS PRIJONO</p>
+                 </div>
+                 <!-- Slides -->
+                 <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
+                     <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/9_2.png') }}" alt="">
+                     <p class=" text-black sm:text-sm text-xs mt-6 text-left tracking-wide">Bibit tanaman dipungut dari wilayah taman nasional untuk menjamin keaslian spesiesnya. Areal pembibitan berada di lapangan untuk membantu adaptasi bibit, serta memudahkan pengangkutan bibit ke areal penanaman. AGUS PRIJONO</p>
+                 </div>
+                 <!-- Slides -->
+                 <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
+                     <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/9_3.png') }}" alt="">
+                     <p class=" text-black sm:text-sm text-xs mt-6 text-left tracking-wide">Bibit tanaman dipungut dari wilayah taman nasional untuk menjamin keaslian spesiesnya. Areal pembibitan berada di lapangan untuk membantu adaptasi bibit, serta memudahkan pengangkutan bibit ke areal penanaman. AGUS PRIJONO</p>
+                 </div>
+         </div>
+         <div class="sm:block hidden bottom-0 right-0 w-[24%] bg-newgray-300 h-[7rem] absolute z-40"></div>
+
+         {{-- <div class="swiper-pagination"></div> --}}
+     </div>
+
+     {{-- <div class="sm:block hidden sm:h-[35rem] h-56 w-[24%]  rounded mt-12 bg-black absolute bg-opacity-70  inset-y-0 right-0 z-20">
+     </div> --}}
+
+     <div class="absolute inset-y-0  right-1 z-30 flex items-center">
+         <button @click="swiper.slideNext()"
+             class="bg-black text-white flex justify-center items-center sm:w-14 sm:h-14 w-12 h-12  shadow focus:outline-none">
+             {{-- <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-8 h-8"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg> --}}
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="sm:w-6 sm:h-6 w-5 h-5">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+             </svg>
+
+         </button>
+     </div>
+
+ </div>
 
     <div class="max-w-2xl mx-auto px-4 mt-8">
         <p class="leading-relaxed tracking-wide mt-8">“Evaluasi kita ada beberapa hal. Pertama deteksi dini harus lebih cepat. Waktu
