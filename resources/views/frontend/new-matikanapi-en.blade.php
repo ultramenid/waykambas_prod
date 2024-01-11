@@ -27,7 +27,7 @@
     <div class="max-w-5xl mx-auto px-4">
         <div class=" py-4  border-b border-b-gray-400">
             <h2 class=" font-bold mb-2">Completely copied from:</h2>
-            <a  class="mt-1 mb-2 underline text-green-500">Published by <a href="https://auriga.or.id/resource/reference/matikan-api-menjaga-puspa.pdf" class="font-bold underline text-green-500">Tempo Magazine January 3 2016 edition.</a> Rewritten as the original.</a>
+            <p  class="mt-1 mb-2 underline text-green-500">Published by <a href="https://auriga.or.id/resource/reference/matikan-api-menjaga-puspa.pdf" class="font-bold underline text-green-500">Tempo Magazine January 3 2016 edition.</a> Rewritten as the original.</p>
         </div>
     </div>
 
