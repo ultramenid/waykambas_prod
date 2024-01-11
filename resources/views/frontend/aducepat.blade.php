@@ -55,7 +55,8 @@
             <div class="flex h-full items-center max-w-5xl mx-auto" >
                 <div class=" text-center  text-white  w-full flex flex-col">
                     <h1 class=" sm:text-7xl text-5xl font-bold inline-flex justify-center">{{ $text }}</h1>
-                    <p class="">Disalin sepenuhnya dari: <br> <a href="https://auriga.or.id/resource/reference/ekuilibrium_konservasi_menjaga_keseimbangan_di_taman_nasional_way_kambas.pdf" class="underline">Ekuilibrium Konservasi: Menjaga Keseimbangan di Taman Nasional Way Kambas</a> (<a href="https://tfcasumatera.org/" >TFCA Sumatera</a>, 2017)</p>
+                    <p class="italic">Disalin sepenuhnya dari:</p>
+                    <p><a href="https://auriga.or.id/resource/reference/ekuilibrium_konservasi_menjaga_keseimbangan_di_taman_nasional_way_kambas.pdf" class="underline">Ekuilibrium Konservasi: Menjaga Keseimbangan di Taman Nasional Way Kambas</a></p> (<a href="https://tfcasumatera.org/" >TFCA Sumatera</a>, 2017)
                 </div>
             </div>
 
