@@ -16,7 +16,7 @@ class MatikanAPiController extends Controller
 
     public function anotherStory(){
         return DB::table('featurestory')
-        ->whereNot('slug', 'Matikan_api_menjaga_puspa')
+        ->where('slug', '!=' , 'Matikan_api_menjaga_puspa')
         ->get();
     }
 
