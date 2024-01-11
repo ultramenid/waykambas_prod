@@ -15,7 +15,7 @@ class AducepatdirawakadutController extends Controller
     }
     public function anotherStory(){
         return DB::table('featurestory')
-        ->whereNot('slug', 'Adu_cepat_di_Rawa_Kadut')
+        ->where('slug', '!=' , 'Adu_cepat_di_Rawa_Kadut')
         ->get();
     }
 
