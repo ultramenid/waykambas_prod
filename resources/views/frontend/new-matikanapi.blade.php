@@ -23,7 +23,7 @@
     <div class="max-w-5xl mx-auto px-4">
         <div class=" py-4  border-b border-b-gray-400">
             <h2 class=" font-bold mb-2">Disalin sepenuhnya dari:</h2>
-            <p class="mt-1 mb-2">Diterbitkan Majalah Tempo edisi 3 Januari 2016. Ditulis ulang sebagaimana aslinya.</p>
+            <a  href="https://auriga.or.id/resource/reference/matikan-api-menjaga-puspa.pdf" class="mt-1 mb-2 underline text-green-500">Disalin dari artikel yang diterbitkan <a class="font-bold underline text-green-500">Majalah Tempo edisi 3 Januari 2015</a></a>
         </div>
     </div>
 

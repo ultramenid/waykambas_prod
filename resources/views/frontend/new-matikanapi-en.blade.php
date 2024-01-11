@@ -26,8 +26,8 @@
 
     <div class="max-w-5xl mx-auto px-4">
         <div class=" py-4  border-b border-b-gray-400">
-            <h2 class=" font-bold mb-2">Completely copied from::</h2>
-            <p class="mt-1 mb-2">Published by Tempo Magazine, January 3 2016 edition. Rewritten as the original.</p>
+            <h2 class=" font-bold mb-2">Completely copied from:</h2>
+            <a href="https://auriga.or.id/resource/reference/matikan-api-menjaga-puspa.pdf" class="mt-1 mb-2 underline text-green-500">Published by Tempo Magazine, January 3 2016 edition. Rewritten as the original.</a>
         </div>
     </div>
 
