@@ -424,6 +424,39 @@
         </p>
     </div>
 
+    <div class="max-w-6xl mx-auto border-b border-gray-300 mt-12 mb-12"></div>
+
+    <div class="max-w-5xl mx-auto px-4 md:mt-12 mt-6 ">
+        <a class="text-green-600 text-xl font-satunya font-bold uppercase"> More Feature</a>
+        <div class="flex flex-row  scrollbar-hide overflow-x-scroll h-full mt-6 gap-4   snap-x snap-mandatory">
+            @foreach ($stories as $key => $item)
+                <div class="sm:flex-shrink flex-shrink-0 snap-center sm:w-4/12 w-9/12  border border-gray-300">
+                    {{-- <img
+                    class="w-full h-52 object-cover"
+                    src="{{asset('storage/files/photos/'.$item->img)}}"
+                    alt=""> --}}
+                    <a href="{{ route('diarycontent', [app()->getLocale(),  $item->slug]) }}" class="sm:w-7/12 w-full">
+                        @if (in_array(pathinfo(asset('storage/files/photos/'.$item->img), PATHINFO_EXTENSION),['mp4', 'avi', '3gp', 'mov', 'm4a']))
+                                    <video class="w-full h-52 object-cover object-center video-bg" controls >
+                                        <source src="{{asset('storage/files/photos/'.$item->img)}}" type="video/mp4" >
+                                    </video>
+                                @else
+                                <img src="{{asset('storage/files/photos/'.$item->img)}}" alt="" class="w-full h-52 object-cover object-center">
+                        @endif
+                    </a>
+
+                    <a href="{{ route('diarycontent', [app()->getLocale(),  $item->slug]) }}" class="md:mt-6 mt-3 text-xl font-bold sm:px-6 px-4 flex-shrink-0 flex">{{$item->titleID}}
+                    </a>
+                    <div class="mt-4 px-6 text-sm mb-6">
+                        {{$item->imgDescID}}
+                    </div>
+                </div>
+            @endforeach
+
+
+        </div>
+    </div>
+
     @include('partials.new-footer')
 
 @endsection

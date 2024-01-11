@@ -13,9 +13,16 @@ class AducepatdirawakadutController extends Controller
             ->where('slug', 'Adu_cepat_di_Rawa_Kadut')
             ->first();
     }
+    public function anotherStory(){
+        return DB::table('featurestory')
+        ->whereNot('slug', 'Adu_cepat_di_Rawa_Kadut')
+        ->get();
+    }
+
     public function index(){
         $title = $this->getStory()->titleID;
         $text = $this->getStory()->titleID;
+        $stories = $this->anotherStory();
         $imageHero = 'aducepat.png';
         $nav = 'story';
         $desc = 'Hutan ditumbuhkan kembali di hamparan ilalang Way Kambas. Namun, pemulihan ekosistem ini sungguh tidak mudah.';
@@ -29,12 +36,13 @@ class AducepatdirawakadutController extends Controller
         dengan jutaan ilalang.AGUS PRIJONO';
         $ogimage = 'ogaducepat3150.jpeg';
         $publish = date("F Y", strtotime($this->getStory()->publishdate)) ;
-        return view('frontend.aducepat', compact('title','text', 'imageHero','nav', 'imgdesc', 'publish', 'desc','ogimage'));
+        return view('frontend.aducepat', compact('stories','title','text', 'imageHero','nav', 'imgdesc', 'publish', 'desc','ogimage'));
     }
 
     public function newAducepat(){
         $title = $this->getStory()->titleID;
         $text = $this->getStory()->titleID;
+        $stories = $this->anotherStory();
         $cssbackground = 'bg-aducepat';
         $imageHero = 'aducepat.png';
         $nav = 'story';
@@ -42,6 +50,6 @@ class AducepatdirawakadutController extends Controller
         $imgdesc = $this->getStory()->imgDescID;
         $ogimage = 'ogaducepat3150.jpeg';
         $publish = date("F Y", strtotime($this->getStory()->publishdate)) ;
-        return view('frontend.new-aducepat', compact('cssbackground','title','text', 'imageHero','nav', 'imgdesc', 'publish', 'desc','ogimage'));
+        return view('frontend.new-aducepat', compact('stories','cssbackground','title','text', 'imageHero','nav', 'imgdesc', 'publish', 'desc','ogimage'));
     }
 }
