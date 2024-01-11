@@ -160,7 +160,7 @@
                     class="w-full h-52 object-cover"
                     src="{{asset('storage/files/photos/'.$item->img)}}"
                     alt=""> --}}
-                    <a href="{{ route('diarycontent', [app()->getLocale(),  $item->slug]) }}" class="sm:w-7/12 w-full">
+                    <a href="{{ route($item->slug, app()->getlocale() )}}" class="sm:w-7/12 w-full">
                         @if (in_array(pathinfo(asset('storage/files/photos/'.$item->img), PATHINFO_EXTENSION),['mp4', 'avi', '3gp', 'mov', 'm4a']))
                                     <video class="w-full h-52 object-cover object-center video-bg" controls >
                                         <source src="{{asset('storage/files/photos/'.$item->img)}}" type="video/mp4" >
@@ -170,7 +170,7 @@
                         @endif
                     </a>
 
-                    <a href="{{ route('diarycontent', [app()->getLocale(),  $item->slug]) }}" class="md:mt-6 mt-3 text-xl font-bold sm:px-6 px-4 flex-shrink-0 flex">{{$item->titleID}}
+                    <a href="{{ route($item->slug, app()->getlocale() )}}" class="md:mt-6 mt-3 text-xl font-bold sm:px-6 px-4 flex-shrink-0 flex">{{$item->titleID}}
                     </a>
                     <div class="mt-4 px-6 text-sm mb-6">
                         {{$item->imgDescID}}
