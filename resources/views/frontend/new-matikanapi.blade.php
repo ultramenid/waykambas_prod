@@ -143,7 +143,7 @@
             Way Bungur pada Agustus lalu sekitar 1.500 hektare, sedangkan pada Oktober
             mencapai 2.000 hektare. Selain sukses memadamkan api, gerak cepat Fajar dan
             kawan-kawan berhasil menyelamatkan sekitar 20 ribu tanaman puspa, sungkai,
-            dan jambon yang ditanam Silvagama di jalur tanam seluas 22,8 hektare.
+            dan jambon yang ditanam Silvagama di jalur tanam seluas 22,8 hektare. <span class="bg-red-500 h-3 w-3 inline-flex"></span>
         </p>
 
 

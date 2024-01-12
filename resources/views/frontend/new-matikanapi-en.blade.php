@@ -182,7 +182,7 @@
         <p class="leading-relaxed tracking-wide mt-8">The total land scorched by fire at Way Bungur last August came to about 1,500
             hectares. By October, 2,000 hectares were totally damaged. Nevertheless, Fajar
             and his team’s rapid response has saved about 22,000 evergreen trees and
-            shrubs planted by Silvagama on its 22.8 hectares of reforestation land.
+            shrubs planted by Silvagama on its 22.8 hectares of reforestation land. <span class="bg-red-500 h-3 w-3 inline-flex"></span>
         </p>
 
 

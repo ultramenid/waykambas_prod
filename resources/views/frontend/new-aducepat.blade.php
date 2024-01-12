@@ -93,32 +93,37 @@
         </div> --}}
 
         <div class="swiper-container relative" x-ref="container">
-            <div class="sm:block hidden bottom-0 w-[24%] bg-newgray-300 h-[9rem] absolute z-40"></div>
+            <div class="sm:block hidden bottom-0 w-[24%] bg-newgray-300 h-[8rem] absolute z-40"></div>
             <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/11.png') }}" alt="">
-                        <p class=" text-black font-light sm:text-sm text-xs mt-4 text-left tracking-wide">
-                            Masa depan kawasan ini tergantung pada
-                            ribuan bibit tanaman reforestasi. Namun,
-                            jumlah dalam bilangan 'ribuan' bagaikan
-                            setetes air di samudra ilalang. Tahuntahun awal adalah masa yang menentukan
-                            bagi bibit tanaman untuk tumbuh besar,
-                            sehingga mampu bersaing dengan alangalang.</p>
+                        <p class=" text-black font-light sm:text-sm text-xs mt-6 text-left tracking-wide">
+                            Perlahan-lahan, di areal restorasi Bambangan,
+                            taman nasional dan AleRT menumbuhkan
+                            kembali hutan Way Kambas. Pemulihan
+                            ekosistem di Bambangan membuktikan
+                            bahwa hutan dapat kembali tumbuh dengan
+                            usaha keras dan kesabaran.</p>
                     </div>
                     <!-- Slides -->
                     <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/6.png') }}" alt="">
-                        <p class=" text-black sm:text-sm text-xs mt-4 text-left tracking-wide">Masa depan kawasan ini tergantung pada
-                            Pondok kerja di lapangan untuk menjaga, merawat, dan memastikan bibit tanaman dapat tumbuh secara normal. Aktivitas di pondok kerja juga untuk mencegah pemburu liar masuk taman nasional. Sayangnya, upaya pencegahan itu tak selalu berhasil. Pemburu tetap saja membakar lahan untuk memburu satwa liar. AGUS PRIJONO .</p>
+                        <p class=" text-black sm:text-sm text-xs mt-6 text-left tracking-wide">
+                            Pondok kerja di lapangan untuk menjaga, merawat, dan
+                            memastikan bibit tanaman dapat tumbuh secara normal. Aktivitas
+                            di pondok kerja juga untuk mencegah pemburu liar masuk taman
+                            nasional. Sayangnya, upaya pencegahan itu tak selalu berhasil.
+                            Pemburu tetap saja membakar lahan untuk memburu satwa liar.
+                        </p>
                     </div>
                     <!-- Slides -->
                     <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/12.png') }}" alt="">
-                        <p class=" text-black sm:text-sm text-xs mt-4 text-left tracking-wide">Bila tak terbakar, semestinya tanaman sudah setinggi dua meteran, seperti terlihat pada pohon yang menaungi sepeda motor. Deretan pohon di depan pondok kerja ini selamat dari kobaran api 2014. AGUS PRIJONO</p>
+                        <p class=" text-black sm:text-sm text-xs mt-6 text-left tracking-wide">Bila tak terbakar, semestinya tanaman sudah setinggi dua meteran, seperti terlihat pada pohon yang menaungi sepeda motor. Deretan pohon di depan pondok kerja ini selamat dari kobaran api 2014. AGUS PRIJONO</p>
                     </div>
             </div>
-            <div class="sm:block hidden bottom-0 right-0 w-[24%] bg-newgray-300 h-[9rem] absolute z-40"></div>
+            <div class="sm:block hidden bottom-0 right-0 w-[24%] bg-newgray-300 h-[8rem] absolute z-40"></div>
 
             {{-- <div class="swiper-pagination"></div> --}}
         </div>
@@ -193,8 +198,18 @@
             </div>
             <div class="sm:w-6/12 w-full relative">
                 <img src="{{asset('assets/3.png')}}" alt="" class="h-[45rem] w-full object-cover relative">
-                <p class=" text-black text-xs mt-2 text-left ">Masa depan kawasan ini tergantung pada
-                    Menjulang di tengah padang, pohon ini menunjukkan hutan pernah menyelimuti kawasan Rawa Kadut. Kini, perlu usaha keras untuk memulihkan kembali hutan yang telah sirna. AGUS PRIJONO</p>
+                <p class=" text-black text-xs mt-2 text-left ">Menjulang di
+                    tengah padang,
+                    pohon ini
+                    menunjukkan
+                    hutan pernah
+                    menyelimuti
+                    kawasan Rawa
+                    Kadut. Kini, perlu
+                    usaha keras untuk
+                    memulihkan
+                    kembali hutan
+                    yang telah sirna.</p>
             </div>
         </div>
     {{-- </div> --}}
