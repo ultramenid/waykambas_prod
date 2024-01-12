@@ -99,7 +99,7 @@
                     <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
                         <img class="sm:h-[35rem] h-56 w-full object-cover object-center rounded relative" src="{{ asset('assets/11.png') }}" alt="">
                         <p class=" text-black font-light sm:text-sm text-xs mt-6 text-left tracking-wide">
-                            HUTAN TUMBUM KEMBALI. Perlahan-lahan, di areal restorasi Bambangan, taman nasional dan AleRT menumbuhkan kembali hutan Way Kambas. Pemulihan ekosistem di Bambangan membuktikan bahwa hutan dapat kembali tumbuh dengan usaha keras dan kesabaran.</p>
+                            HUTAN TUMBUH KEMBALI. Perlahan-lahan, di areal restorasi Bambangan, taman nasional dan AleRT menumbuhkan kembali hutan Way Kambas. Pemulihan ekosistem di Bambangan membuktikan bahwa hutan dapat kembali tumbuh dengan usaha keras dan kesabaran.</p>
                     </div>
                     <!-- Slides -->
                     <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
