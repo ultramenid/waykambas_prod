@@ -26,8 +26,8 @@
 
     <div class="max-w-5xl mx-auto px-4">
         <div class=" py-4  border-b border-b-gray-400">
-            <h2 class=" font-bold mb-2">Completely copied from:</h2>
-            <p  class="mt-1 mb-2 underline text-green-500">Published by <a href="https://auriga.or.id/resource/reference/matikan-api-menjaga-puspa.pdf" class="font-bold underline text-green-500">Tempo Magazine January 3 2016 edition.</a> Rewritten as the original.</p>
+            <h2 class=" font-bold mb-2">Copied from:</h2>
+            <p  class="mt-1 mb-2 "> <a href="https://magz.tempo.co/read/cover-story/31071/fajar-sandhika-negara-simanjuntak-all-in-a-days-work" class=" underline text-green-500">Tempo Magazine</a> January 3, 2016 edition. </p>
         </div>
     </div>
 
