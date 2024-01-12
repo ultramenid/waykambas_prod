@@ -116,7 +116,7 @@
             </div>
             <div class="sm:block hidden bottom-0 right-0 w-[24%] bg-newgray-300 h-[8rem] absolute z-40"></div>
 
-            {{-- <div class="swiper-pagination"></div> --}}
+            <div class="swiper-pagination"></div>
         </div>
 
         {{-- <div class="sm:block hidden sm:h-[35rem] h-56 w-[24%]  rounded mt-12 bg-black absolute bg-opacity-70  inset-y-0 right-0 z-20">
@@ -385,7 +385,7 @@
          </div>
          <div class="sm:block hidden bottom-0 right-0 w-[24%] bg-newgray-300 h-[7rem] absolute z-40"></div>
 
-         {{-- <div class="swiper-pagination"></div> --}}
+         <div class="swiper-pagination"></div>
      </div>
 
      {{-- <div class="sm:block hidden sm:h-[35rem] h-56 w-[24%]  rounded mt-12 bg-black absolute bg-opacity-70  inset-y-0 right-0 z-20">
