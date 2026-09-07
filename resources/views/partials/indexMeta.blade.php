@@ -30,6 +30,11 @@
     <meta property="og:url" content="{{url()->full()}}" />
     <!-- Facebook image must be at least 600x315px -->
     <meta property="og:image" content="{{asset('img/'.$ogimage)}}" />
+    @if ($ogimage == 'meta-index.jpg')
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    @endif
     <meta property="og:description" content="{{$description}}" />
     <meta property="og:site_name" content="{{$title}}" />
     <meta property="article:tag" content="way kambas, Auriga Nusantara, waykambas, way kambas, rawa kadut, way kambas Transparency Platform, waykambas indonesia" />

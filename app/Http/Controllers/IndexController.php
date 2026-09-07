@@ -42,7 +42,7 @@ class IndexController extends Controller
         $cssbackground = 'bg-restorasi';
         $title = 'Home - Restorasi Kadut';
         $description = 'Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.';
-        $ogimage = 'meta.png';
+        $ogimage = 'meta-index.jpg';
         $diary = $this->getDiary();
         $story = $this->getStory();
         return view('frontend.newinterface', compact('title', 'diary', 'story', 'description', 'ogimage', 'cssbackground'));
@@ -51,7 +51,7 @@ class IndexController extends Controller
     public function newInterface(){
         $title = 'Index - Restorasi Kadut';
         $description = 'Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.';
-        $ogimage = 'meta.png';
+        $ogimage = 'meta-index.jpg';
         $diary = $this->getDiary();
         $story = $this->getStory();
         return view('frontend.index', compact('title', 'diary', 'story', 'description', 'ogimage'));
