@@ -11,7 +11,7 @@
     {{-- diary --}}
     <div class="max-w-5xl mx-auto px-4 sm:mt-16 mt-4">
         <h1 class="font-extrabold font-satunya sm:text-5xl text-2xl">Green Diary</h1>
-        @if ($diary[0])
+        @if (isset($diary[0]))
             <div class="flex sm:flex-row flex-col items-center border border-gray-300 mt-4">
                 <a href="{{ route('diarycontent', [app()->getLocale(),  $diary[0]->slug]) }}" class="sm:w-7/12 w-full">
                     @if (in_array(pathinfo(asset('storage/files/photos/'.$diary[0]->img), PATHINFO_EXTENSION),['mp4', 'avi', '3gp', 'mov', 'm4a']))
@@ -66,7 +66,7 @@
         </div>
 
         <div class="flex justify-center mt-8">
-            <a href="{{ route('diary', app()->getlocale() )}}" class="text-xl font-bold bg-green-700 px-12 text-white py-1 font-satunya">more</a>
+            <a href="{{ route('diary', app()->getlocale() )}}" class="text-xl font-bold bg-green-700 px-12 text-white py-1 font-satunya">{{ __('more') }}</a>
         </div>
     </div>
 
@@ -74,36 +74,36 @@
 
     {{-- a to z --}}
     <div class="max-w-3xl mx-auto px-4 mt-16">
-        <h1 class="flex justify-center sm:text-5xl text-4xl font-bold text-center">A to Z Restorasi Kadut</h1>
-        <p class="flex justify-center text-center mt-6 sm:text-xl text-base">Kenapa di Kadut. Apa urgensi dan nilai pentingnya. Apa-apa saja yang dikerjakan. Kenapa tindakan tertentu dilakukan. Bagaimana pelibatan masyarakat. Dan berbagai hal teknis lainnya.</p>
+        <h1 class="flex justify-center sm:text-5xl text-4xl font-bold text-center">{{ __('A to Z Restorasi Kadut') }}</h1>
+        <p class="flex justify-center text-center mt-6 sm:text-xl text-base">{{ __('Kenapa di Kadut. Apa urgensi dan nilai pentingnya. Apa-apa saja yang dikerjakan. Kenapa tindakan tertentu dilakukan. Bagaimana pelibatan masyarakat. Dan berbagai hal teknis lainnya.') }}</p>
     </div>
 
     <div class="max-w-5xl mx-auto px-4  flex gap-6 py-12 scrollbar-hide overflow-x-scroll snap-x snap-mandatory">
         <div class="relative w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
             <img src="{{ asset('img/tentang-kami.jpg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
-                <a href="{{ route('a-to-z-restorasi-kadut#konteks', app()->getlocale() )}}" class="text-white font-black text-xl">KONTEKS</a>
+                <a href="{{ route('a-to-z-restorasi-kadut#konteks', app()->getlocale() )}}" class="text-white font-black text-xl">{{ __('KONTEKS') }}</a>
             </div>
         </div>
 
         <div class="relative  w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
             <img src="{{ asset('img/restorasi.jpeg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
-                <a href="{{ route('a-to-z-restorasi-kadut#silvikultur', app()->getlocale() )}}" class="text-white font-black text-xl">SILVIKULTUR</a>
+                <a href="{{ route('a-to-z-restorasi-kadut#silvikultur', app()->getlocale() )}}" class="text-white font-black text-xl">{{ __('SILVIKULTUR') }}</a>
             </div>
         </div>
 
         <div class="relative  w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
             <img src="{{ asset('img/kebakara-3.jpeg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
-                <a href="{{ route('a-to-z-restorasi-kadut#penanggulangankebakaran', app()->getlocale() )}}" class="text-white font-black text-xl text-center">PENANGGULANGAN KEBAKARAN</a>
+                <a href="{{ route('a-to-z-restorasi-kadut#penanggulangankebakaran', app()->getlocale() )}}" class="text-white font-black text-xl text-center">{{ __('PENANGGULANGAN KEBAKARAN') }}</a>
             </div>
         </div>
 
         <div class="relative  w-56 h-64 sm:flex-shrink flex-shrink-0 snap-center">
             <img src="{{ asset('img/masyarakat.jpeg') }}" alt="Way kambas Rawa Kadut" class="relative object-cover object-center h-full w-full">
             <div class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center">
-                <a href="{{ route('a-to-z-restorasi-kadut#pelibatanmasyarakat', app()->getlocale() )}}" class="text-white font-black text-xl text-center">PELIBATAN MASYARAKAT</a>
+                <a href="{{ route('a-to-z-restorasi-kadut#pelibatanmasyarakat', app()->getlocale() )}}" class="text-white font-black text-xl text-center">{{ __('PELIBATAN MASYARAKAT') }}</a>
             </div>
         </div>
 
@@ -116,24 +116,24 @@
         <div class="flex sm:flex-row flex-col justify-between gap-8 ">
             <div class="flex flex-col gap-6 sm:w-4/12 w-full">
                 <h1 class="text-5xl font-semibold">about</h1>
-                <p>Sekilas mengenai kami. Perihal dan pentingnya Taman Nasional Way Kambas. Gambaran ringkas Restorasi Kadut.</p>
+                <p>{{ __('Sekilas mengenai kami. Perihal dan pentingnya Taman Nasional Way Kambas. Gambaran ringkas Restorasi Kadut.') }}</p>
             </div>
             <div class="flex flex-col gap-6 sm:w-3/12 w-full">
                 <div class="flex flex-col gap-6">
                     <h1 class="text-2xl font-bold text-green-700">who we are</h1>
-                    <p class="text-sm">Mengenai Auriga Nusantara dan kiprahnya di Way Kambas. Sesiapa aja yang terlibat dalam kegiatan ini. Profil ringkas tim inti Restorasi Kadut.</p>
+                    <p class="text-sm">{{ __('Mengenai Auriga Nusantara dan kiprahnya di Way Kambas. Sesiapa aja yang terlibat dalam kegiatan ini. Profil ringkas tim inti Restorasi Kadut.') }}</p>
                 </div>
                 <span class="border-t border-gray-400"></span>
                 <div class="flex flex-col gap-6">
-                    <h1 class="text-2xl font-bold text-green-700">restorasi rawa kadut</h1>
-                    <p class="text-sm">Area Restorasi Kadut hanya seperseratus Way Kambas. Tapi, sedemikian penting dalam upaya mereforestasi area kritis di taman nasional ini. Pun bagi perlindungan spesies kuncinya.</p>
+                    <h1 class="text-2xl font-bold text-green-700">{{ __('restorasi rawa kadut') }}</h1>
+                    <p class="text-sm">{{ __('Area Restorasi Kadut hanya seperseratus Way Kambas. Tapi, sedemikian penting dalam upaya mereforestasi area kritis di taman nasional ini. Pun bagi perlindungan spesies kuncinya.') }}</p>
                 </div>
             </div>
 
             <div class="flex flex-col gap-6 sm:w-3/12 w-full">
                 <div class="flex flex-col gap-6">
                     <h1 class="text-2xl font-bold text-green-700">way kambas</h1>
-                    <p class="text-sm">Nilai penting Taman Nasional Way Kambas. Kekayaan biodiversitasnya. Dinamika tutupan lahan di sana. Hingga riwayat kawasan konservasi ini.</p>
+                    <p class="text-sm">{{ __('Nilai penting Taman Nasional Way Kambas. Kekayaan biodiversitasnya. Dinamika tutupan lahan di sana. Hingga riwayat kawasan konservasi ini.') }}</p>
                 </div>
                 <span class=""></span>
 
@@ -144,38 +144,44 @@
     {{-- story --}}
     <div class="bg-green-600 py-6 mt-12">
         <div class="max-w-3xl mx-auto px-4 mt-4">
-            <h1 class="flex justify-center sm:text-5xl text-4xl font-bold text-white text-center">Feature</h1>
-            <p class="flex justify-center text-center mt-6 sm:text-2xl text-base text-white mb-48">Cerita dari lapangan. Dikisahkan sendiri atau oleh pihak lain.</p>
+            <h1 class="flex justify-center sm:text-5xl text-4xl font-bold text-white text-center">{{ __('Feature') }}</h1>
+            <p class="flex justify-center text-center mt-6 sm:text-2xl text-base text-white mb-48">{{ __('Cerita dari lapangan. Dikisahkan sendiri atau oleh pihak lain.') }}</p>
         </div>
     </div>
 
     <div class="max-w-5xl mx-auto px-4 -mt-40">
+        @isset($story[0])
         <div class="flex sm:flex-row flex-col items-center border border-gray-400 bg-white ">
             <div class="sm:w-6/12 w-full flex flex-col sm:gap-12 gap-4 justify-center items-center sm:px-12 px-4 py-4">
-                <a href="{{ route($story[0]->slug, app()->getlocale() )}}" class="text-3xl text-center font-bold">{{$story[0]->titleID}}</a>
+                <a href="{{ route($story[0]->slug, app()->getlocale() )}}" class="text-3xl text-center font-bold">{{ localizedField($story[0], 'title') }}</a>
                 {{-- <p class="text-center sm:text-base text-sm">{{$story[0]->imgDescID}}</p> --}}
-                <textarea disabled style="resize: none;" class="scrollbar-hide bg-transparent text-center sm:text-base text-sm w-full h-full" rows="7">{{$story[0]->imgDescID}}</textarea>
+                <textarea disabled style="resize: none;" class="scrollbar-hide bg-transparent text-center sm:text-base text-sm w-full h-full" rows="7">{{ localizedField($story[0], 'imgDesc') }}</textarea>
 
             </div>
             <img src="{{ asset('storage/files/photos/'.$story[0]->img) }}" alt="" class="sm:w-6/12 w-full sm:h-96 h-full object-cover object-center">
         </div>
+        @endisset
+        @isset($story[1])
         <div class="flex sm:flex-row flex-col items-center border border-gray-400 bg-white  mt-4">
             <img src="{{ asset('storage/files/photos/'.$story[1]->img) }}" alt="" class="sm:w-6/12 w-full sm:h-96 h-full object-cover object-center">
 
             <div class="sm:w-6/12 w-full flex flex-col sm:gap-12 gap-4 justify-center items-center sm:px-12 px-4 py-4">
-                <a href="{{ route($story[1]->slug, app()->getlocale() )}}" class="text-3xl text-center font-bold">{{$story[1]->titleID}}</a>
+                <a href="{{ route($story[1]->slug, app()->getlocale() )}}" class="text-3xl text-center font-bold">{{ localizedField($story[1], 'title') }}</a>
                 {{-- <p class="text-center sm:text-base text-sm">{{$story[1]->imgDescID}}</p> --}}
-                <textarea disabled style="resize: none;" class="scrollbar-hide bg-transparent text-center sm:text-base text-sm w-full h-full" rows="7">{{$story[1]->imgDescID}}</textarea>
+                <textarea disabled style="resize: none;" class="scrollbar-hide bg-transparent text-center sm:text-base text-sm w-full h-full" rows="7">{{ localizedField($story[1], 'imgDesc') }}</textarea>
 
             </div>
         </div>
+        @endisset
+        @isset($story[2])
         <div class="flex sm:flex-row flex-col items-center border border-gray-400 bg-white mt-4">
             <div class="sm:w-6/12 w-full flex flex-col sm:gap-12 gap-4 justify-center items-center sm:px-12 px-4 py-4">
-                <a href="{{ route($story[2]->slug, app()->getlocale() )}}" class="text-3xl text-center font-bold">{{$story[2]->titleID}}</a>
-                <textarea disabled style="resize: none;" class="scrollbar-hide bg-transparent text-center sm:text-base text-sm w-full h-full" rows="7">{{$story[2]->imgDescID}}</textarea>
+                <a href="{{ route($story[2]->slug, app()->getlocale() )}}" class="text-3xl text-center font-bold">{{ localizedField($story[2], 'title') }}</a>
+                <textarea disabled style="resize: none;" class="scrollbar-hide bg-transparent text-center sm:text-base text-sm w-full h-full" rows="7">{{ localizedField($story[2], 'imgDesc') }}</textarea>
             </div>
             <img src="{{ asset('storage/files/photos/'.$story[2]->img) }}" alt="" class="sm:w-6/12 w-full sm:h-96 h-full object-cover object-center">
         </div>
+        @endisset
 
         {{-- <div class="flex justify-center mt-8">
             <a href="{{ route('story', app()->getlocale() )}}" class="text-xl font-bold bg-green-700 px-12 text-white py-1 font-satunya">read</a>

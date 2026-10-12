@@ -12,7 +12,7 @@ class AZrestorationController extends Controller
         if (App::getLocale() == 'id') {
             return 'id, azID as az, titleID as title, category';
         }else{
-            return 'id, azID as az, titleID as title, category';
+            return "id, COALESCE(NULLIF(azEN, ''), azID) as az, COALESCE(NULLIF(titleEN, ''), titleID) as title, category";
 
             // return 'id, azEN as az, titleEN as title';
         }
@@ -23,7 +23,7 @@ class AZrestorationController extends Controller
                 ->get();
     }
     public function index(){
-        $title = 'A to Z Restorasi Kadut - Way Kambas';
+        $title = __('A to Z Restorasi Kadut - Way Kambas');
         $text = 'A to Z Restorasi Kadut';
         $content = $this->getAz();
         $cssbackground = 'bg-az';
@@ -65,9 +65,9 @@ class AZrestorationController extends Controller
 
 
     public function newAZ(){
-        $title = 'A to Z - Restorasi Kadut ';
+        $title = __('A to Z - Restorasi Kadut ');
         $text = 'A to Z Restorasi Kadut';
-        $description = 'Kenapa di Kadut. Apa urgensi dan nilai pentingnya. Apa-apa saja yang dikerjakan. Kenapa tindakan tertentu dilakukan. Bagaimana pelibatan masyarakat. Dan berbagai hal teknis lainnya.';
+        $description = __('Kenapa di Kadut. Apa urgensi dan nilai pentingnya. Apa-apa saja yang dikerjakan. Kenapa tindakan tertentu dilakukan. Bagaimana pelibatan masyarakat. Dan berbagai hal teknis lainnya.');
         $ogimage = 'meta.png';
         // $content = $this->getAz();
         $cssbackground = 'bg-az';

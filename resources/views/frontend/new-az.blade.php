@@ -8,7 +8,7 @@
     @include('partials.topbar')
     @include('partials.new-navbar')
         <div class="max-w-3xl mx-auto py-3 px-4 border-b-2 border-green-600 mt-12" id="konteks">
-            <h1 class="text-green-600 font-bold text-3xl font-satunya">Konteks</h1>
+            <h1 class="text-green-600 font-bold text-3xl font-satunya">{{ __('Konteks') }}</h1>
         </div>
         <div class="max-w-3xl mx-auto mt-12" x-data="{ open: '' }">
             @if ($konteks)
@@ -38,7 +38,7 @@
 
 
         <div class="max-w-3xl mx-auto py-3 px-4 border-b-2 border-green-600 mt-12" id="silvikultur">
-            <h1 class="text-green-600 font-bold text-3xl font-satunya">Silvikultur</h1>
+            <h1 class="text-green-600 font-bold text-3xl font-satunya">{{ __('Silvikultur') }}</h1>
         </div>
         <div class="max-w-3xl mx-auto mt-12" x-data="{ open: '' }">
             @if ($silvikultur)
@@ -67,7 +67,7 @@
         </div>
 
         <div class="max-w-3xl mx-auto py-3 px-4 border-b-2 border-green-600 mt-12" id="penanggulangankebakaran">
-            <h1 class="text-green-600 font-bold text-3xl font-satunya">Penanggulangan Kebakaran</h1>
+            <h1 class="text-green-600 font-bold text-3xl font-satunya">{{ __('Penanggulangan Kebakaran') }}</h1>
         </div>
         <div class="max-w-3xl mx-auto mt-12" x-data="{ open: '' }">
             @if ($penanggulangankebakaran)
@@ -97,7 +97,7 @@
 
 
         <div class="max-w-3xl mx-auto py-3 px-4 border-b-2 border-green-600 mt-12" id="pelibatanmasyarakat">
-            <h1 class="text-green-600 font-bold text-3xl font-satunya">Pelibatan Masyarakat</h1>
+            <h1 class="text-green-600 font-bold text-3xl font-satunya">{{ __('Pelibatan Masyarakat') }}</h1>
         </div>
         <div class="max-w-3xl mx-auto mt-12" x-data="{ open: '' }">
             @if ($pelibatanmasyarakat)

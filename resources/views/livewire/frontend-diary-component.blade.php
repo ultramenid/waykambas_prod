@@ -2,9 +2,9 @@
     <div class="flex sm:justify-end mb-12" wire:ignore x-init="flatpickr('#start', { enableTime: false,dateFormat: 'Y-m-d', disableMobile: 'true'}), flatpickr('#end', { enableTime: false,dateFormat: 'Y-m-d', disableMobile: 'true'});">
 
         <div class="flex sm:flex-row flex-col justif-between sm:items-center sm:space-x-4 space-x-0 sm:space-y-0 space-y-2 sm:w-6/12 w-full">
-            <a class="whitespace-nowrap">Filter Tanggal </a>
-            <input id="start" type="text" class="bg-white  text-black rounded w-full border  py-2 px-4 focus:outline-none border-black "  wire:model='start' placeholder="Dari. . .">
-            <input id="end" type="text" class="bg-white  text-black rounded w-full border  py-2 px-4 focus:outline-none border-black "  wire:model='end' placeholder="Sampai. . .">
+            <a class="whitespace-nowrap">{{ __('Filter Tanggal') }} </a>
+            <input id="start" type="text" class="bg-white  text-black rounded w-full border  py-2 px-4 focus:outline-none border-black "  wire:model='start' placeholder="{{ __('Dari. . .') }}">
+            <input id="end" type="text" class="bg-white  text-black rounded w-full border  py-2 px-4 focus:outline-none border-black "  wire:model='end' placeholder="{{ __('Sampai. . .') }}">
         </div>
     </div>
     @foreach ($diaries as $item)
@@ -38,7 +38,7 @@
     {{-- {{ $diaries->links('livewire.pagination') }} --}}
     <div class="px-6 mb-4 text-center mt-12">
         <button wire:loading.remove wire:click="getMore" type="button" class=" inline-flex justify-center  sm:w-2/12 w-full rounded-md border border-transparent px-4 py-2 bg-black text-base leading-6 font-medium text-white shadow-sm hover:bg-white hover:text-black hover:border-black transition ease-in-out duration-150 sm:text-sm sm:leading-5">
-            more
+            {{ __('more') }}
         </button>
         {{-- loading --}}
         <button wire:loading wire:target='getMore' type="button" class=" inline-flex justify-center  sm:w-2/12 w-full rounded-md border border-transparent px-4 py-2 bg-black text-base leading-6 font-medium text-white shadow-sm transition ease-in-out duration-150 sm:text-sm sm:leading-5 cursor-not-allowed">

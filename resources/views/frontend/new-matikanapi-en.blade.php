@@ -210,10 +210,10 @@
                         @endif
                     </a>
 
-                    <a href="{{ route($item->slug, app()->getlocale() )}}" class="md:mt-6 mt-3 text-xl font-bold sm:px-6 px-4 flex-shrink-0 flex">{{$item->titleID}}
+                    <a href="{{ route($item->slug, app()->getlocale() )}}" class="md:mt-6 mt-3 text-xl font-bold sm:px-6 px-4 flex-shrink-0 flex">{{ localizedField($item, 'title') }}
                     </a>
                     <div class="mt-4 px-6 text-sm mb-6">
-                        {{$item->imgDescID}}
+                        {{ localizedField($item, 'imgDesc') }}
                     </div>
                 </div>
             @endforeach

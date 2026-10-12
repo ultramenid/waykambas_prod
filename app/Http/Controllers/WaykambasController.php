@@ -12,7 +12,7 @@ class WaykambasController extends Controller
         if (App::getLocale() == 'id') {
             return 'id, textwaykambasID as textwaykambas';
         }else{
-            return 'id, textwaykambasID as textwaykambas';
+            return "id, COALESCE(NULLIF(textwaykambasEN, ''), textwaykambasID) as textwaykambas";
 
             // return 'id, textwaykambasEN as textwaykambas';
         }
@@ -36,8 +36,8 @@ class WaykambasController extends Controller
     public function index(){
         $text = $this->geth1();
         $content = $this->getwaykambas();
-        $title = 'About - Way Kambas';
-        $description = 'Nilai penting Taman Nasional Way Kambas. Kekayaan biodiversitasnya. Dinamika tutupan lahan di sana. Hingga riwayat kawasan konservasi ini.';
+        $title = __('About - Way Kambas');
+        $description = __('Nilai penting Taman Nasional Way Kambas. Kekayaan biodiversitasnya. Dinamika tutupan lahan di sana. Hingga riwayat kawasan konservasi ini.');
         $ogimage = 'meta.png';
         $nav = 'about';
         $cssbackground = 'bg-waykambas';

@@ -1,8 +1,8 @@
 <meta name="title" content="{{$title}}"/>
-<meta name="description" content="{{$data->titleID}}. {{$data->imgDescID}}" />
+<meta name="description" content="{{ localizedField($data, 'title') }}. {{ localizedField($data, 'imgDesc') }}" />
 <meta name="news_keywords" content="way kambas, Auriga Nusantara, waykambas, way kambas, rawa kadut, way kambas Transparency Platform, waykambas indonesia, {{$title}}" />
 <meta name="geo.country" content="id" />
-<meta http-equiv="content-language" content="ID-id" />
+<meta http-equiv="content-language" content="{{ app()->getLocale() == 'en' ? 'en' : 'ID-id' }}" />
 <meta name="geo.placename" content="Indonesia" />
 <meta name="copyright" content="{{url()->full()}}">
 <meta name="creation date" content="2022">
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@AURIGA_ID">
 <meta name="twitter:title" content="{{$title}}">
-<meta name="twitter:description" content="{{$data->titleID}}. {{$data->imgDescID}}">
+<meta name="twitter:description" content="{{ localizedField($data, 'title') }}. {{ localizedField($data, 'imgDesc') }}">
 <meta name="twitter:creator" content="@AURIGA_ID">
 <meta name="twitter:url" content="{{url()->full()}}" />
 <!-- Twitter summary card with large image must be at least 280x150px -->
@@ -30,7 +30,7 @@
 <meta property="og:url" content="{{url()->full()}}" />
 <!-- Facebook image must be at least 600x315px -->
 {{-- <meta property="og:image" content="{{asset('assets/way kambas.jpg')}}" /> --}}
-<meta property="og:description" content="{{$data->titleID}}. {{$data->imgDescID}} " />
+<meta property="og:description" content="{{ localizedField($data, 'title') }}. {{ localizedField($data, 'imgDesc') }} " />
 <meta property="og:site_name" content="{{$title}}" />
 <meta property="article:tag" content="way kambas, Auriga Nusantara, waykambas, way kambas, rawa kadut, way kambas Transparency Platform, waykambas indonesia" />
 
