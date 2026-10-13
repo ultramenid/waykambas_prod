@@ -24,6 +24,7 @@ use App\Http\Controllers\SiteplanController;
 use App\Http\Controllers\StoryController;
 use App\Http\Controllers\StoryIlalangController;
 use App\Http\Controllers\WaykambasController;
+use App\Http\Controllers\WebauthnController;
 use App\Http\Controllers\WhowheareController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
@@ -106,6 +107,9 @@ Route::group(['middleware' => 'checkSession'], function () {
     Route::get('/cms/cmsstory', [CmsStoryController::class, 'index']);
     Route::get('/cms/addstory', [CmsStoryController::class, 'addStory']);
     Route::get('/cms/story/{id}', [CmsStoryController::class, 'editStory']);
+    Route::post('/cms/webauthn/register/options', [WebauthnController::class, 'registerOptions']);
+    Route::post('/cms/webauthn/register', [WebauthnController::class, 'register']);
+    Route::delete('/cms/webauthn/{id}', [WebauthnController::class, 'destroy']);
     Route::group(['prefix' => '/cms/laravel-filemanager', 'middleware' => 'checkSession'], function () {
         \UniSharp\LaravelFilemanager\Lfm::routes();
     });
@@ -115,6 +119,11 @@ Route::group(['middleware' => 'checkSession'], function () {
 //if there is no session , redirect to login page
 Route::group(['middleware' => 'hashsession'], function () {
     Route::get('cms/login', [LoginController::class, 'index'])->name('login');
+});
+//biometric login
+Route::group(['middleware' => 'throttle:10,1'], function () {
+    Route::post('/cms/webauthn/login/options', [WebauthnController::class, 'loginOptions']);
+    Route::post('/cms/webauthn/login', [WebauthnController::class, 'login']);
 });
 //route logout
 Route::get('/cms/page/logout', function () {

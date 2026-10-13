@@ -20,8 +20,8 @@
             @endif
         </div>
         <div class="sm:w-4/12 w-full ">
-            <a class="font-bold"> {{$data->titleID}} </a>
-            <p class="leading-relaxed mt-4">{{$data->imgDescID}}</p>
+            <a class="font-bold"> {{ localizedField($data, 'title') }} </a>
+            <p class="leading-relaxed mt-4">{{ localizedField($data, 'imgDesc') }}</p>
         </div>
 
     </div>

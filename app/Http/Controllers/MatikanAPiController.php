@@ -34,9 +34,9 @@ class MatikanAPiController extends Controller
 
     public function newMatikanapi(){
         $stories = $this->anotherStory();
-        $title = $this->getStory()->titleID;
+        $title = localizedField($this->getStory(), 'title');
         $cssbackground = null;
-        $text = $this->getStory()->titleID;
+        $text = localizedField($this->getStory(), 'title');
         $imageHero = 'matikanapimenjagapuspa.png';
         $nav = 'story';
         $ogimage = 'matikanapimenjagapuspa350.png';

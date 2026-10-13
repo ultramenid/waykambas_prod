@@ -14,7 +14,7 @@ class IndexController extends Controller
         if (App::getLocale() == 'id') {
             return 'id, titleID as title, slugID as slug, imgDescID as imgDesc, img, publishdate';
         }else{
-            return 'id, titleID as title, slugID as slug, imgDescID as imgDesc, img, publishdate';
+            return "id, COALESCE(NULLIF(titleEN, ''), titleID) as title, slugID as slug, COALESCE(NULLIF(imgDescEN, ''), imgDescID) as imgDesc, img, publishdate";
 
             // return 'id, titleEN as title, slugEN as slug, imgDescEN as imgDesc, img, publishdate';
         }
@@ -40,8 +40,8 @@ class IndexController extends Controller
     }
     public function index(){
         $cssbackground = 'bg-restorasi';
-        $title = 'Home - Restorasi Kadut';
-        $description = 'Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.';
+        $title = __('Home - Restorasi Kadut');
+        $description = __('Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.');
         $ogimage = 'meta-index.jpg';
         $diary = $this->getDiary();
         $story = $this->getStory();
@@ -49,8 +49,8 @@ class IndexController extends Controller
     }
 
     public function newInterface(){
-        $title = 'Index - Restorasi Kadut';
-        $description = 'Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.';
+        $title = __('Index - Restorasi Kadut');
+        $description = __('Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.');
         $ogimage = 'meta-index.jpg';
         $diary = $this->getDiary();
         $story = $this->getStory();

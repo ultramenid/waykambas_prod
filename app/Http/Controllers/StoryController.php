@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 class StoryController extends Controller
 {
     public function index(){
-        $title = 'Feature - Restorasi Kadut';
-        $description = 'Cerita dari lapangan. Dikisahkan sendiri atau oleh pihak lain.';
+        $title = __('Feature - Restorasi Kadut');
+        $description = __('Cerita dari lapangan. Dikisahkan sendiri atau oleh pihak lain.');
         $ogimage = 'meta.png';
         $nav = 'story';
         $text = 'Feature Story';

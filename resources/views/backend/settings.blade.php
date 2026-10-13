@@ -39,9 +39,69 @@
 
                             </div>
                         </div>
+
+                        {{-- biometric login --}}
+                        <div class="w-full border border-gray-300 dark:border-opacity-20 rounded mt-6">
+                            <h1 class="text-2xl font-semibold px-6 py-6 text-newbg-newgray-900 dark:text-gray-300">Biometric login</h1>
+                            <p class="px-6 mb-6 text-sm font-light text-newbg-newgray-900 dark:text-gray-300">
+                                Log in to the CMS with Touch ID, Face ID, Windows Hello or your phone's fingerprint instead of typing your password. Register each device you use.
+                            </p>
+
+                            <div class="px-6 mb-6">
+                                @forelse ($credentials as $credential)
+                                    <div class="flex justify-between items-center py-3 border-t border-gray-300 dark:border-opacity-20 text-sm dark:text-gray-300">
+                                        <div>
+                                            <p class="font-semibold">{{ $credential->name }}</p>
+                                            <p class="text-xs text-gray-500">
+                                                Added {{ \Carbon\Carbon::parse($credential->created_at)->format('d M Y') }}
+                                                · Last used {{ $credential->last_used_at ? \Carbon\Carbon::parse($credential->last_used_at)->format('d M Y H:i') : 'never' }}
+                                            </p>
+                                        </div>
+                                        <form method="POST" action="{{ url('/cms/webauthn/'.$credential->id) }}" onsubmit="return confirm('Remove biometric login for this device?')">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="text-xs text-red-500">Remove</button>
+                                        </form>
+                                    </div>
+                                @empty
+                                    <p class="text-sm text-gray-500 py-3 border-t border-gray-300 dark:border-opacity-20">No device registered yet.</p>
+                                @endforelse
+                            </div>
+
+                            <div id="biometric-register" class="px-6 pb-6" style="display: none">
+                                <div class="flex sm:flex-row flex-col gap-2">
+                                    <input id="biometric-name" type="text" maxlength="60" placeholder="Device name, e.g. MacBook Basuki" class="flex-1 appearance-none border rounded py-2 px-4 text-sm text-gray-700 leading-tight focus:outline-none">
+                                    <button type="button" onclick="startBiometricRegister()" class="inline-flex justify-center rounded-md border border-transparent px-4 py-2 bg-gray-900 text-sm font-medium text-white hover:bg-white hover:text-black hover:border-black transition ease-in-out duration-150">
+                                        Register this device
+                                    </button>
+                                </div>
+                                <p id="biometric-register-message" class="text-xs mt-2"></p>
+                            </div>
+                            <p id="biometric-unsupported" class="px-6 pb-6 text-xs text-red-500" style="display: none">
+                                This browser cannot use biometric login here. It needs HTTPS (or localhost) and a device with Touch ID, Face ID, Windows Hello or a fingerprint sensor.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    @include('partials.webauthnScript')
+    <script>
+        document.getElementById(biometricSupported() ? 'biometric-register' : 'biometric-unsupported').style.display = 'block';
+
+        async function startBiometricRegister() {
+            const message = document.getElementById('biometric-register-message');
+            message.className = 'text-xs mt-2';
+            message.textContent = 'Follow the prompt on your device...';
+            try {
+                await registerBiometric(document.getElementById('biometric-name').value);
+                window.location.reload();
+            } catch (e) {
+                message.className = 'text-xs mt-2 text-red-500';
+                message.textContent = biometricError(e);
+            }
+        }
+    </script>
 @endsection

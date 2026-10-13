@@ -13,7 +13,7 @@ class RawakadutController extends Controller
         if (App::getLocale() == 'id') {
             return 'id, textrawakadutID as textrawakadut';
         }else{
-            return 'id, textrawakadutID as textrawakadut';
+            return "id, COALESCE(NULLIF(textrawakadutEN, ''), textrawakadutID) as textrawakadut";
 
             // return 'id, textrawakadutEN as textrawakadut';
         }
@@ -28,8 +28,8 @@ class RawakadutController extends Controller
     public function index(){
         $text = 'Restorasi Kadut';
         $content = $this->getrawakadut();
-        $title = 'About - Restorasi Kadut';
-        $description = 'Area Restorasi Kadut hanya seperseratus Way Kambas. Tapi, sedemikian penting dalam upaya mereforestasi area kritis di taman nasional ini. Pun bagi perlindungan spesies kuncinya.';
+        $title = __('About - Restorasi Kadut');
+        $description = __('Area Restorasi Kadut hanya seperseratus Way Kambas. Tapi, sedemikian penting dalam upaya mereforestasi area kritis di taman nasional ini. Pun bagi perlindungan spesies kuncinya.');
         $ogimage = 'meta.png';
         $nav = 'about';
         $cssbackground = 'bg-restorasi';

@@ -2,7 +2,7 @@
     <meta name="description" content="{{$description}}" />
     <meta name="news_keywords" content="way kambas, Auriga Nusantara, waykambas, way kambas, rawa kadut, way kambas Transparency Platform, waykambas indonesia, {{$title}}" />
     <meta name="geo.country" content="id" />
-    <meta http-equiv="content-language" content="ID-id" />
+    <meta http-equiv="content-language" content="{{ app()->getLocale() == 'en' ? 'en' : 'ID-id' }}" />
     <meta name="geo.placename" content="Indonesia" />
     <meta name="copyright" content="{{url()->full()}}">
     <meta name="creation date" content="2022">

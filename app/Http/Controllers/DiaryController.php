@@ -11,8 +11,8 @@ class DiaryController extends Controller
 {
 
     public function index(){
-        $title = 'Diary - Restorasi Kadut';
-        $description = 'Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.';
+        $title = __('Diary - Restorasi Kadut');
+        $description = __('Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.');
         $ogimage = 'meta.png';
         $text = 'Green Diary';
         $nav = 'diary';
@@ -23,7 +23,7 @@ class DiaryController extends Controller
     public function detail($lang, $slug){
         try {
             $data = DB::table('greendiary')->where('slugID', $slug)->first();
-            $title = $data->titleID.' - Restorasi Kadut';
+            $title = localizedField($data, 'title').' - '.__('Restorasi Kadut');
             $nav = 'diary';
             return view('frontend.contentdiary', compact('title', 'nav' , 'data'));
         } catch (\Throwable $th) {
