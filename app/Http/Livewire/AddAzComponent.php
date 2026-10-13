@@ -15,8 +15,8 @@ class AddAzComponent extends Component
                 'titleEN' => $this->titleEN,
                 'titleID' => $this->titleID,
                 'category' => $this->category,
-                'azEN' => $this->azEN,
-                'azID' => $this->azID,
+                'azEN' => fixVideoWrappers($this->azEN),
+                'azID' => fixVideoWrappers($this->azID),
                 'isActive' => $this->is_active,
                 'created_at' => Carbon::now('Asia/Jakarta')
             ]);

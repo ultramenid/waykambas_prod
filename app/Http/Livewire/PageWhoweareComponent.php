@@ -25,8 +25,8 @@ class PageWhoweareComponent extends Component
             ->updateOrInsert(
                 ['name' => 'whoweare', 'id' => 1],
                 [
-                    'textwhoweareEN' => $this->textwhoweareEN,
-                    'textwhoweareID' => $this->textwhoweareID,
+                    'textwhoweareEN' => fixVideoWrappers($this->textwhoweareEN),
+                    'textwhoweareID' => fixVideoWrappers($this->textwhoweareID),
                 ]
             );
         //passing to toast
