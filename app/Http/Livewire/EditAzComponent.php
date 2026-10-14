@@ -28,8 +28,8 @@ class EditAzComponent extends Component
             ->update([
                 'titleEN' => $this->titleEN,
                 'titleID' => $this->titleID,
-                'azEN' => $this->azEN,
-                'azID' => $this->azID,
+                'azEN' => fixVideoWrappers($this->azEN),
+                'azID' => fixVideoWrappers($this->azID),
                 'isActive' => $this->is_active,
                 'category' => $this->category,
                 'updated_at' => Carbon::now('Asia/Jakarta')

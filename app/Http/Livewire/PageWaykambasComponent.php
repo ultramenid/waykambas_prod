@@ -25,8 +25,8 @@ class PageWaykambasComponent extends Component
             ->updateOrInsert(
                 ['name' => 'waykambas', 'id' => 1],
                 [
-                    'textwaykambasEN' => $this->textwaykambasEN,
-                    'textwaykambasID' => $this->textwaykambasID,
+                    'textwaykambasEN' => fixVideoWrappers($this->textwaykambasEN),
+                    'textwaykambasID' => fixVideoWrappers($this->textwaykambasID),
                 ]
             );
         //passing to toast

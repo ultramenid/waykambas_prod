@@ -25,8 +25,8 @@ class PageSiteplanComponent extends Component
             ->updateOrInsert(
                 ['name' => 'siteplan', 'id' => 1],
                 [
-                    'textsiteplanEN' => $this->textsiteplanEN,
-                    'textsiteplanID' => $this->textsiteplanID,
+                    'textsiteplanEN' => fixVideoWrappers($this->textsiteplanEN),
+                    'textsiteplanID' => fixVideoWrappers($this->textsiteplanID),
                 ]
             );
         //passing to toast

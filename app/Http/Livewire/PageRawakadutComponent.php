@@ -25,8 +25,8 @@ class PageRawakadutComponent extends Component
             ->updateOrInsert(
                 ['name' => 'rawakadut', 'id' => 1],
                 [
-                    'textrawakadutEN' => $this->textrawakadutEN,
-                    'textrawakadutID' => $this->textrawakadutID,
+                    'textrawakadutEN' => fixVideoWrappers($this->textrawakadutEN),
+                    'textrawakadutID' => fixVideoWrappers($this->textrawakadutID),
                 ]
             );
         //passing to toast

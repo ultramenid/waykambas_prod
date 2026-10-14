@@ -25,8 +25,8 @@ class PageSilvikulturComponent extends Component
             ->updateOrInsert(
                 ['name' => 'silvikultur', 'id' => 1],
                 [
-                    'textsilvikulturEN' => $this->textsilvikulturEN,
-                    'textsilvikulturID' => $this->textsilvikulturID,
+                    'textsilvikulturEN' => fixVideoWrappers($this->textsilvikulturEN),
+                    'textsilvikulturID' => fixVideoWrappers($this->textsilvikulturID),
                 ]
             );
         //passing to toast
