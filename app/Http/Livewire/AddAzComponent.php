@@ -8,6 +8,7 @@ use Livewire\Component;
 
 class AddAzComponent extends Component
 {
+    use WithTranslation;
     public $titleEN, $titleID, $azEN, $azID, $category, $is_active = 0;
     public function storeaz(){
         if($this->manualValidation()){

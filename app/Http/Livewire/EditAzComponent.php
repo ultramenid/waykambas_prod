@@ -8,6 +8,7 @@ use Livewire\Component;
 
 class EditAzComponent extends Component
 {
+    use WithTranslation;
     // public $idaz, $titleEN, $titleID, $azEN, $azID;
     public $idaz, $titleEN, $titleID, $azEN, $azID, $category, $is_active;
     public function mount($idaz){

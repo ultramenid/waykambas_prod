@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class PageWhoweareComponent extends Component
 {
+    use WithTranslation;
     public $textwhoweareEN, $textwhoweareID;
 
     public function mount(){

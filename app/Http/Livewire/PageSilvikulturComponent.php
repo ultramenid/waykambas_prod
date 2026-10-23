@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class PageSilvikulturComponent extends Component
 {
+    use WithTranslation;
     public $textsilvikulturEN, $textsilvikulturID;
 
     public function mount(){

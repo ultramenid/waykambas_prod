@@ -30,4 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    // DeepL API Free, used by the "Translate from Indonesian" buttons in the CMS
+    'deepl' => [
+        'key' => env('DEEPL_API_KEY'),
+    ],
+
 ];

@@ -12,6 +12,7 @@ use Illuminate\Support\Str;
 class EditdiaryComponent extends Component
 {
     use WithFileUploads;
+    use WithTranslation;
     public $idDiary, $filetypeupload ;
     public $urlfiles = [];
     public $uphoto, $imgDescEN,$imgDescID, $publishdate, $titleID, $titleEN, $photo, $isactive;

@@ -13,6 +13,7 @@ use Illuminate\Support\Str;
 class AdddiaryComponent extends Component
 {
     use WithFileUploads;
+    use WithTranslation;
     public $tags = [], $urlfiles = [], $filetypeupload;
     public $photo, $imgDescEN,$imgDescID, $publishdate, $titleID, $titleEN;
     public $mediafile, $urlfile, $isactive = 1, $proses = 0;
