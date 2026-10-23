@@ -33,32 +33,36 @@ trait WithTranslation
         }
 
         set_time_limit(180);
-        try {
-            $translation = app(Translator::class)->toEnglish($text);
-        } catch (RuntimeException $e) {
-            $this->emit('toast', $e->getMessage(), 'error');
-            return;
-        } catch (AuthorizationException $e) {
-            $this->emit('toast', 'The DEEPL_API_KEY in .env is not valid', 'error');
-            return;
-        } catch (QuotaExceededException $e) {
-            $this->emit('toast', 'The free DeepL quota for this month is used up', 'error');
-            return;
-        } catch (TooManyRequestsException $e) {
-            $this->emit('toast', 'Too many translations at once, please try again in a minute', 'error');
-            return;
-        } catch (ConnectionException $e) {
-            report($e);
-            $this->emit('toast', 'Could not reach DeepL, please try again', 'error');
-            return;
-        } catch (DeepLException $e) {
-            report($e);
-            $this->emit('toast', 'Translation failed, please try again', 'error');
+        $translation = $this->translateOrToast(fn (Translator $translator) => $translator->toEnglish($text));
+        if ($translation === null) {
             return;
         }
 
         $this->{$field.'EN'} = $translation;
         $this->dispatchBrowserEvent('translated', ['field' => $field.'EN', 'value' => $translation]);
         $this->emit('toast', 'Translated, please check the English text before saving', 'success');
+    }
+
+    // runs $translate with the Translator, a failure becomes an error toast and null
+    protected function translateOrToast(callable $translate)
+    {
+        try {
+            return $translate(app(Translator::class));
+        } catch (RuntimeException $e) {
+            $this->emit('toast', $e->getMessage(), 'error');
+        } catch (AuthorizationException $e) {
+            $this->emit('toast', 'The DEEPL_API_KEY in .env is not valid', 'error');
+        } catch (QuotaExceededException $e) {
+            $this->emit('toast', 'The free DeepL quota for this month is used up', 'error');
+        } catch (TooManyRequestsException $e) {
+            $this->emit('toast', 'Too many translations at once, please try again in a minute', 'error');
+        } catch (ConnectionException $e) {
+            report($e);
+            $this->emit('toast', 'Could not reach DeepL, please try again', 'error');
+        } catch (DeepLException $e) {
+            report($e);
+            $this->emit('toast', 'Translation failed, please try again', 'error');
+        }
+        return null;
     }
 }
