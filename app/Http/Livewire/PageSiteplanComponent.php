@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class PageSiteplanComponent extends Component
 {
+    use WithTranslation;
     public $textsiteplanEN, $textsiteplanID;
 
     public function mount(){

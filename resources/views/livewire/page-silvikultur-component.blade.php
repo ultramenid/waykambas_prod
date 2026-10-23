@@ -37,7 +37,10 @@
     </div>
     <div x-show="lang==='english'" x-cloak style="display: none !important">
         <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6">
-            <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4">Content</h1>
+            <div class="flex justify-between items-center gap-4 mb-4">
+                <h1 class="text-2xl font-semibold text-newbg-newgray-900 dark:text-gray-300">Content</h1>
+                @include('partials.translateButton', ['field' => 'textsilvikultur'])
+            </div>
             <div class="w-full border border-gray-300 dark:border-opacity-20 rounded"
                 wire:ignore
                 x-init="

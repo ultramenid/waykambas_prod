@@ -67,7 +67,10 @@
             <div x-show="tabs==='english'" x-cloak style="display: none !important">
 
                 <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6" x-data="{count:0}">
-                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4">Question</h1>
+                    <div class="flex justify-between items-center gap-4 mb-4">
+                        <h1 class="text-2xl font-semibold text-newbg-newgray-900 dark:text-gray-300">Question</h1>
+                        @include('partials.translateButton', ['field' => 'title'])
+                    </div>
                     <input type="text" class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20"  wire:model.defer='titleEN' placeholder="Title. . . ">
 
 
@@ -76,7 +79,10 @@
 
 
                 <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6">
-                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-6">Answer </h1>
+                    <div class="flex justify-between items-center gap-4 mb-6">
+                        <h1 class="text-2xl font-semibold text-newbg-newgray-900 dark:text-gray-300">Answer</h1>
+                        @include('partials.translateButton', ['field' => 'az'])
+                    </div>
                     <div class="w-full py-2 mb-6">
                         <div class="w-full border border-gray-300 dark:border-opacity-20 rounded"
                             wire:ignore

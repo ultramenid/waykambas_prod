@@ -11,6 +11,7 @@ use Livewire\WithFileUploads;
 class EditstoryComponent extends Component
 {
     use WithFileUploads;
+    use WithTranslation;
     public $idStory;
     public $photo, $imgDescEN,$imgDescID, $publishdate, $titleID, $titleEN, $slug, $uphoto, $isactive;
 

@@ -88,14 +88,20 @@
 
             <div x-show="tabs==='english'" x-cloak style="display: none !important">
                 <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6" x-data="{count:0}">
-                    <h1 class="text-2xl font-semibold  text-newbg-newgray-900 dark:text-gray-300 mb-4">Title</h1>
+                    <div class="flex justify-between items-center gap-4 mb-4">
+                        <h1 class="text-2xl font-semibold text-newbg-newgray-900 dark:text-gray-300">Title</h1>
+                        @include('partials.translateButton', ['field' => 'title'])
+                    </div>
                     <input maxlength="120" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" type="text" class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20"  wire:model.defer='titleEN' placeholder="Title. . . ">
                     <div class="flex justify-end text-newgray-700 dark:text-gray-500  italic text-xs mt-2">
                         <span x-html="count"></span> / <span  x-html="$refs.countme.maxLength"></span>
                       </div>
                 </div>
                 <div class="w-full border border-gray-300 dark:border-opacity-20 rounded px-6 py-6 mb-6" x-data="{count1:0}">
-                    <h1 class="text-2xl font-semibold mt-4  text-newbg-newgray-900 dark:text-gray-300 mb-6">Image Description</h1>
+                    <div class="flex justify-between items-center gap-4 mt-4 mb-6">
+                        <h1 class="text-2xl font-semibold text-newbg-newgray-900 dark:text-gray-300">Image Description</h1>
+                        @include('partials.translateButton', ['field' => 'imgDesc'])
+                    </div>
                     <textarea maxlength="250" x-ref="countme1" x-on:keyup="count1 = $refs.countme1.value.length"  rows="6"  wire:model.defer='imgDescEN' required class="bg-gray-100 dark:bg-newgray-700 text-newgray-700 dark:text-gray-300 rounded w-full border  py-2 px-4 focus:outline-none border-gray-300 dark:border-opacity-20" placeholder="Description. . ."></textarea>
                     <div class="flex justify-end text-newgray-700 dark:text-gray-500  italic text-xs">
                         <span x-html="count1"></span> / <span  x-html="$refs.countme1.maxLength"></span>

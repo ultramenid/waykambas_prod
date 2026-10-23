@@ -12,6 +12,7 @@ use Livewire\WithFileUploads;
 class AddstoryComponent extends Component
 {
     use WithFileUploads;
+    use WithTranslation;
     public $photo, $imgDescEN,$imgDescID, $publishdate, $titleID, $titleEN, $slug;
     public $isactive = 1;
 

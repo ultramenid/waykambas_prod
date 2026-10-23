@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class PageRawakadutComponent extends Component
 {
+    use WithTranslation;
     public $textrawakadutEN, $textrawakadutID;
 
     public function mount(){

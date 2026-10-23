@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class PageWaykambasComponent extends Component
 {
+    use WithTranslation;
     public $textwaykambasEN, $textwaykambasID;
 
     public function mount(){
