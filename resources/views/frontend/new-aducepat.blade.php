@@ -2,6 +2,11 @@
 
 @section('meta')
     @include('partials.metaStory')
+    <style>
+        /* the sliders show part of the neighbouring slides, only the centered slide shows its caption */
+        .story-slider .swiper-slide p { transition: opacity .3s; }
+        .story-slider .swiper-slide:not(.swiper-slide-active) p { opacity: 0; }
+    </style>
 @endsection
 
 @section('content')
@@ -92,8 +97,7 @@
             </div>
         </div> --}}
 
-        <div class="swiper-container relative" x-ref="container">
-            <div class="sm:block hidden bottom-0 w-[24%] bg-newgray-300 h-[8rem] absolute z-40"></div>
+        <div class="swiper-container relative story-slider" x-ref="container">
             <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
@@ -114,7 +118,6 @@
                         <p class=" text-black sm:text-sm text-xs mt-6 text-left tracking-wide">Bila tak terbakar, semestinya tanaman sudah setinggi dua meteran, seperti terlihat pada pohon yang menaungi sepeda motor. Deretan pohon di depan pondok kerja ini selamat dari kobaran api 2014.</p>
                     </div>
             </div>
-            <div class="sm:block hidden bottom-0 right-0 w-[24%] bg-newgray-300 h-[8rem] absolute z-40"></div>
 
             <div class="swiper-pagination"></div>
         </div>
@@ -363,8 +366,7 @@
          </div>
      </div> --}}
 
-     <div class="swiper-container relative" x-ref="container">
-         <div class="sm:block hidden bottom-0 w-[24%] bg-newgray-300 h-[7rem] absolute z-40"></div>
+     <div class="swiper-container relative story-slider" x-ref="container">
          <div class="swiper-wrapper">
                  <!-- Slides -->
                  <div class="swiper-slide px-4 py-12 flex flex-col  bg-newgray-300 relative" >
@@ -383,7 +385,6 @@
                      <p class=" text-black sm:text-sm text-xs mt-6 text-left tracking-wide">Areal pembibitan berada di lapangan untuk membantu adaptasi bibit, serta memudahkan pengangkutan bibit ke areal penanaman.</p>
                  </div>
          </div>
-         <div class="sm:block hidden bottom-0 right-0 w-[24%] bg-newgray-300 h-[7rem] absolute z-40"></div>
 
          <div class="swiper-pagination"></div>
      </div>

@@ -13,15 +13,15 @@
                 <div class="absolute mt-8 z-20 bg-white px-2 py-2 flex flex-col space-y-2" x-show="pages" x-cloak style="display: none !important">
                     <a href="{{ route('whoweare', app()->getlocale() )}}" class="text-sm mr-6">Who We Are</a>
                     <a href="{{ route('waykambas', app()->getlocale() )}}" class="text-sm mr-6">Way Kambas</a>
-                    <a href="{{ route('rawakadut', app()->getlocale() )}}" class="text-sm mr-6">Restorasi Kadut</a>
+                    <a href="{{ route('rawakadut', app()->getlocale() )}}" class="text-sm mr-6">{{ __('Restorasi Kadut') }}</a>
                 </div>
             </div>
 
-            <a href="#" class="text-white">A to Z Restorasi Kadut</a>
+            <a href="#" class="text-white">{{ __('A to Z Restorasi Kadut') }}</a>
 
             <a href="#" class="text-white">Story</a>
             <a href="#" class="text-white">Diary</a>
         </div>
-        <p class="text-white text-sm mt-1 max-w-xl italic"> Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.</p>
+        <p class="text-white text-sm mt-1 max-w-xl italic"> {{ __('Memulihkan ekosistem Way Kambas sehingga menjadi habitat yang aman dan nyaman bagi satwa setempat, seperti gajah, harimau, badak.') }}</p>
     </div>
 </div>
