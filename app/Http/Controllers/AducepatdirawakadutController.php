@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 
 class AducepatdirawakadutController extends Controller
@@ -40,16 +41,21 @@ class AducepatdirawakadutController extends Controller
     }
 
     public function newAducepat(){
-        $title = $this->getStory()->titleID;
-        $text = $this->getStory()->titleID;
+        $title = localizedField($this->getStory(), 'title');
+        $text = localizedField($this->getStory(), 'title');
         $stories = $this->anotherStory();
         $cssbackground = 'bg-aducepat';
         $imageHero = 'aducepat.png';
         $nav = 'story';
-        $desc = 'Hutan ditumbuhkan kembali di hamparan ilalang Way Kambas. Namun, pemulihan ekosistem ini sungguh tidak mudah.';
-        $imgdesc = $this->getStory()->imgDescID;
+        $imgdesc = localizedField($this->getStory(), 'imgDesc');
         $ogimage = 'ogaducepat3150.jpeg';
         $publish = date("F Y", strtotime($this->getStory()->publishdate)) ;
-        return view('frontend.new-aducepat', compact('stories','cssbackground','title','text', 'imageHero','nav', 'imgdesc', 'publish', 'desc','ogimage'));
+        if (App::getLocale() == 'id') {
+            $desc = 'Hutan ditumbuhkan kembali di hamparan ilalang Way Kambas. Namun, pemulihan ekosistem ini sungguh tidak mudah.';
+            return view('frontend.new-aducepat', compact('stories','cssbackground','title','text', 'imageHero','nav', 'imgdesc', 'publish', 'desc','ogimage'));
+        }else{
+            $desc = 'The forest is being regrown on the cogon grasslands of Way Kambas. But restoring this ecosystem is no easy task.';
+            return view('frontend.new-aducepat-en', compact('stories','cssbackground','title','text', 'imageHero','nav', 'imgdesc', 'publish', 'desc','ogimage'));
+        }
     }
 }
